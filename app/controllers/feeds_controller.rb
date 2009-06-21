@@ -5,6 +5,7 @@ class FeedsController < ApplicationController
   end
 
   def feed
+    # TODO: Of course, need refactoring
     require "open-uri"
 #     # doc = REXML::Document.new(open("mycom.xml"))
     doc = REXML::Document.new(Net::HTTP.get_response(URI.parse(params[:src])).body)
