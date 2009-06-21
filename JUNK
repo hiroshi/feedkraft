@@ -1,0 +1,21 @@
+
+I tried to use nokogiri instead of rexml but I failed.
+A feed xml has item node without namespace. Nokogiri, version 1.3.1 I used, doesn't seem handle them.
+The nodes must have the name "item" has no name in parsed nokogiri document.
+=begin
+    require 'open-uri'
+    require "nokogiri"
+
+    xml = Nokogiri::XML.parse(open("http://feeds.journal.mycom.co.jp/haishin/rss/pc?format=xml"))
+    xml.xpath("//*").each {|n| p n.path}
+results:
+"/rdf:RDF/text()[1]"
+"/rdf:RDF/*[1]"
+"/rdf:RDF/text()[2]"
+"/rdf:RDF/*[2]"
+...
+
+The names of nodes replaced with '*'.
+I think there are workaround or somting. However,
+at very first stage of development process, I should not be bothered with this kind of things... I gave up.
+=end
