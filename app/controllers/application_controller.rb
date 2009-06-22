@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password # Scrub sensitive parameters from your log
 
   def filter_params
-    params.except(:controller, :aciton)
+    params.except(:controller, :action)
   end
   helper_method :filter_params
 end
