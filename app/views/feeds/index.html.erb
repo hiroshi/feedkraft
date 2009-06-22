@@ -1,8 +1,30 @@
 <%= flash[:error] %>
-<% form_tag feed_path, :method => "get" do %>
+<% form_tag "", :method => "get" do %>
   <%= label_tag "src", "Source URI" %>: <%= text_field_tag "src", params[:src], :size => 80 %>
   <br/>
   <%= label_tag "rdf_about", "rdf:about" %> contains <%= text_field_tag "rdf_about", params[:rdf_about] %>
   <br/>
-  <button>feed</button>
+  <button>filter</button>
 <% end %> 
+
+<% if @src_feed %>
+<div class="span-9">
+Source: <%= @src_feed.items.size %> items.
+<% @src_feed.items.each do |item| %>
+  <div class='<%= cycle "odd", "even" %>'>
+    <%= link_to h(item.title), item.link %>
+  </div>
+<% end %>
+</div>
+<% end %>
+
+<% if @result_feed %>
+<div class="span-9 last">
+Results: <%= @result_feed.items.size %> items. --> <%= link_to "feed", feed_path(params) %>
+<% @result_feed.items.each do |item| %>
+  <div class='<%= cycle "odd", "even" %>'>
+    <%= link_to h(item.title), item.link %>
+  </div>
+<% end %>
+</div>
+<% end %>
