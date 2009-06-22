@@ -1,4 +1,4 @@
 = Pursuer
 Pursuer will be a feed generator, but is a feed filter yet.
 
-It also available as a service at http://pursuer.yakitara.com/
+It is also available as a service at http://pursuer.yakitara.com/
