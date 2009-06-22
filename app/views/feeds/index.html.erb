@@ -20,7 +20,7 @@ Source: <%= @src_feed.items.size %> items.
 
 <% if @result_feed %>
 <div class="span-9 last">
-Results: <%= @result_feed.items.size %> items. --> <%= link_to "feed", feed_path(params) %>
+Results: <%= @result_feed.items.size %> items. --> <%= link_to "feed", feed_path(filter_params) %>
 <% @result_feed.items.each do |item| %>
   <div class='<%= cycle "odd", "even" %>'>
     <%= link_to h(item.title), item.link %>
