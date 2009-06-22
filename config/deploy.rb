@@ -1,5 +1,6 @@
 set :application, "pursuer"
-set :repository,  "hiroshi@silent.yakitara.com:/var/git/pursuer.git"
+#set :repository,  "hiroshi@silent.yakitara.com:/var/git/pursuer.git"
+set :repository,  "git://github.com/hiroshi/pursuer.git"
 set :deploy_to, "/var/www/pursuer"
 set :scm, :git
 set :deploy_via, :remote_cache
