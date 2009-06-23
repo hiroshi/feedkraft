@@ -1,0 +1,6 @@
+<% feed.entries.each do |entry| %>
+  <div class='<%= cycle "odd", "even" %>'>
+    <div title='<%= entry.identity %>' style="overflow:hidden;"><%= h entry.identity %></div>
+    <div><%= link_to h(entry.title), entry.link, :target => "_blank" %></div>
+  </div>
+<% end %>

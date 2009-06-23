@@ -9,14 +9,14 @@
 
 <% if @src_feed %>
 <div class="span-9">
-  Source: <%= @src_feed.items.size %> items.
-  <%= render :partial => "items", :locals => {:feed => @src_feed} %>
+  Source: <%= @src_feed.entries.size %> entries.
+  <%= render :partial => "entries", :locals => {:feed => @src_feed} %>
 </div>
 <% end %>
 
 <% if @result_feed %>
 <div class="span-9 last">
-  Results: <%= @result_feed.items.size %> items. --&gt; <%= link_to "feed", feed_path(filter_params) %>
-  <%= render :partial => "items", :locals => {:feed => @result_feed} %>
+  Results: <%= @result_feed.entries.size %> entries. --&gt; <%= link_to "feed", feed_path(filter_params) %>
+  <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
 </div>
 <% end %>

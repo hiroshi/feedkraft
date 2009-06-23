@@ -1,6 +1,0 @@
-<% feed.items.each do |item| %>
-  <div class='<%= cycle "odd", "even" %>'>
-    <div title='<%= item.rdf_about%>' style="overflow:hidden;"><%= h item.rdf_about %></div>
-    <div><%= link_to h(item.title), item.link, :target => "_blank" %></div>
-  </div>
-<% end %>
