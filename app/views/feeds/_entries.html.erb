@@ -1,6 +1,14 @@
 <% feed.entries.each do |entry| %>
   <div class='<%= cycle "odd", "even" %>'>
-    <div title='<%= entry.identity %>' style="overflow:hidden;"><%= h entry.identity %></div>
+    <div title='<%= entry.identifier %>' style="overflow:hidden;">
+      <%= entry.identifier_name %>: <%= truncate(h(entry.identifier), 50 - entry.identifier_name.size) %>
+    </div>
+  <% unless entry.categories.blank? %>
+    <div>
+       Categories: <%= entry.categories.join(", ") %>
+    </div>
+  <% end %>
     <div><%= link_to h(entry.title), entry.link, :target => "_blank" %></div>
   </div>
 <% end %>
+<% reset_cycle %>

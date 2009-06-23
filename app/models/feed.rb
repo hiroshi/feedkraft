@@ -4,8 +4,12 @@ module RSS1
       @element = element
     end
 
-    def identity
+    def identifier
       @element.attributes["rdf:about"].to_s
+    end
+
+    def identifier_name
+      "rdf:about"
     end
 
     def title
@@ -14,6 +18,10 @@ module RSS1
 
     def link
       @element.get_text("link").to_s
+    end
+
+    def categories
+      []
     end
   end
 end
@@ -24,8 +32,13 @@ module RSS2
       @element = element
     end
 
-    def identity
-      %w(guid link title).map{|name| @element.get_text(name) }.compact.first.to_s
+    def identifier
+      #%w(guid link title).map{|name| @element.get_text(name) }.compact.first.to_s
+      @element.get_text("guid").to_s
+    end
+
+    def identifier_name
+      "guid"
     end
 
     def title
@@ -34,6 +47,10 @@ module RSS2
 
     def link
       @element.get_text("link").to_s
+    end
+
+    def categories
+      @element.get_elements("category").map{|c| c.text.strip }
     end
   end
 end
@@ -44,8 +61,12 @@ module Atom
       @element = element
     end
 
-    def identity
+    def identifier
       @element.get_text("id").to_s
+    end
+
+    def identifier_name
+      "id"
     end
 
     def title
@@ -54,6 +75,10 @@ module Atom
 
     def link
       @element.elements["link[@rel='alternate']"].attributes["href"]
+    end
+
+    def categories
+      @element.get_elements("category").map{|c| c.attributes["term"] }
     end
   end
 end
