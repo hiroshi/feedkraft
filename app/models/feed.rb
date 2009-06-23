@@ -5,7 +5,7 @@ class Feed
     end
 
     def rdf_about
-      
+      @element.attributes["rdf:about"]
     end
 
     def title
