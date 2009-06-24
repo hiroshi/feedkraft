@@ -13,8 +13,12 @@ class FeedsController < ApplicationController
   def set_feeds
     unless params[:src].blank?
       # sample: src = http://feeds.journal.mycom.co.jp/haishin/rss/pc?format=xml
-      #src = open("mycom.xml").read
-      src = Net::HTTP.get_response(URI.parse(params[:src])).body
+      uri = URI.parse(params[:src])
+      if Rails.env == "development" && uri.relative?
+        src = File.read(File.join(Rails.root,uri.to_s))
+      else
+        src = Net::HTTP.get_response(URI.parse(params[:src])).body
+      end
       @src_feed = Feed.new(src)
       @result_feed = Feed.new(src)
       @result_feed.filter!("rdf:about" => params[:rdf_about])
