@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' version='2.0'>
+  <channel>
+    <atom:id>tag:blogger.com,1999:blog-9178620729627808446
+    </atom:id>
+    <lastBuildDate>Wed, 17 Jun 2009 01:14:07 +0000
+    </lastBuildDate>
+    <title>Yakitara
+    </title>
+    <description>
+    </description>
+    <link>http://blog.yakitara.com/
+    </link>
+    <managingEditor>noreply@blogger.com (hiroshi saito)
+    </managingEditor>
+    <generator>Blogger
+    </generator>
+    <openSearch:totalResults>39
+    </openSearch:totalResults>
+    <openSearch:startIndex>1
+    </openSearch:startIndex>
+    <openSearch:itemsPerPage>25
+    </openSearch:itemsPerPage>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-2941965331293286689
+      </guid>
+      <pubDate>Mon, 15 Jun 2009 03:05:00 +0000
+      </pubDate>
+      <atom:updated>2009-06-15T19:42:14.872+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>annotates where partial code come from
+      </title>
+      <description>Rails アプリケーションの view で partial を多用しているときに、どこからどこまでがどの partial でレンダリングされているのか知りたいことがあるのでプラグイン &lt;a href="http://github.com/hiroshi/partial_annotation"&gt;partial_annotation&lt;/a&gt; というものを作ってみました。&lt;br /&gt;&lt;br /&gt;&lt;pre class="brush:html;"&gt;&lt;br /&gt;&amp;lt;%= render :partial =&gt; "/foo" %&amp;gt;&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;がレンダリングされるとこうなります。&lt;br /&gt;&lt;br /&gt;&lt;pre class="brush:html;"&gt;&lt;br /&gt;&amp;lt;!-- begin partial "_foo.html.erb" --&amp;gt;&lt;br /&gt;content of the partial....&lt;br /&gt;&amp;lt;!-- end partial "_foo.html.erb" --&amp;gt;&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;ちなみに、&lt;a href="http://github.com/hiroshi/partial_annotation/blob/d4d82d21cb5d6f9583e0ec902a5512678cba0148/init.rb"&gt;development 以外では無効になるようにしてます&lt;/a&gt;。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-2941965331293286689?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/06/annotates-where-partial-code-come-from.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>2
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-7065874642464512412
+      </guid>
+      <pubDate>Fri, 05 Jun 2009 02:54:00 +0000
+      </pubDate>
+      <atom:updated>2009-06-05T13:48:19.442+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Safari
+      </category>
+      <title>Safari hanging up due to Dropbox contextual menu plugin
+      </title>
+      <description>最近、気がついたら、 Safari の Contextual Menu を開こうとするとしばらくハングするようになったので犯人探しをしてみました。&lt;br /&gt;&lt;a href="http://www.getdropbox.com/"&gt;Dropbox&lt;/a&gt; にバグ報告をしようと思って英語で書いたものです。&lt;br /&gt;&lt;br /&gt;Recently I got Safari hanging up when I try to pop up contextual menu in Safari.&lt;br /&gt;So I sampled with Activity monitor.app when Safari got hang.&lt;br /&gt;&lt;pre class="brush:plain;"&gt;&lt;br /&gt;...&lt;br /&gt;  1724 TContextualMenuPlugin::LoadCMPluginsFromCFPlugin(FSRef const&amp;, __CFArray*)&lt;br /&gt;    1724 DropboxPluginFactory&lt;br /&gt;      1724 AllocDropboxPluginType&lt;br /&gt;        1724 reconnect&lt;br /&gt;          1724 connect$NOCANCEL$UNIX2003&lt;br /&gt;            1724 connect$NOCANCEL$UNIX2003&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;I found a suspect.&lt;br /&gt;&lt;pre class="brush:plain;"&gt;&lt;br /&gt;~/Library/Contextual Menu Items/DropboxPlugin.plugin&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;After removing DropboxPlugin.plugin, Safari's contextual menu is popped up as smoothly as ever.&lt;br /&gt;However, every time Dropbox.app is started, it places the plugin. As I'm a programmer I can't bear torment of removing the plugin every boot time of Mac by hand. So I renamed the plugin:&lt;br /&gt;&lt;pre class="brush:shell;"&gt;&lt;br /&gt;$ mv /Applications/Dropbox.app/Contents/Resources/DropboxPlugin.plugin \&lt;br /&gt;/Applications/Dropbox.app/Contents/Resources/DropboxPlugin.disabled.plugin&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;I'v used Dropbox for most half a year. Until this problem happened, it works great. I couldn't remind when I upgraded Dropbox app recently, so I suppose other changes of mac caused this problem.&lt;br /&gt;&lt;br /&gt;Mac OS X 10.5.7&lt;br /&gt;Safari 3.2.3 (5525.28.3)&lt;br /&gt;Dropbox.app 0.6.402 or 0.6.507&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-7065874642464512412?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/06/safari-hanging-up-due-to-dropbox.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-4405778683366245366
+      </guid>
+      <pubDate>Mon, 04 May 2009 12:24:00 +0000
+      </pubDate>
+      <atom:updated>2009-05-04T21:48:16.073+09:00
+      </atom:updated>
+      <title>Rechargeable Batteries
+      </title>
+      <description>&lt;a href="http://lifehacker.com/5236603/top-10-battery-hacks-tips-and-tricks?skyline=true&amp;s=x"&gt;Lifehacker の記事&lt;/a&gt;のリンクから、 &lt;a href="http://www.codinghorror.com/blog/archives/001078.html"&gt;Coding Horror: Adventures in Rechargeable Batteries&lt;/a&gt; を読んで、乾電池型充電池について勉強になりました。というか、おすすめの充電器が欲しくなった。&lt;br /&gt;&lt;br /&gt;箇条書きに要約すると、&lt;br /&gt;&lt;ul&gt;&lt;br /&gt;&lt;li&gt;アンペア時(mAh) の大きさに踊らされるな、エネループ(または同等品)を買え。ニッカド(Ni-Cd)電池の10-20%、(従来の)ニッケル水素(Ni-MH)電池の20-30%の容量が一ヶ月で自己放電する。(&lt;a href="http://ja.wikipedia.org/wiki/エネループ"&gt;eneloop - wikipedia&lt;/a&gt; によると15%/年なのでおよそ1.4%/月の自己放電)&lt;/li&gt;&lt;br /&gt;&lt;li&gt;低電流で充電すると充電に時間はかかるが、電池を痛めない。高電流で急速充電すると、電池の寿命が縮まる。&lt;/li&gt;&lt;br /&gt;&lt;li&gt;安い充電器(とくに急速充電タイプ)は電流や充電済みかどうかのチェックをしないので電池を痛める。(ほとんどの電池とセット売りのものはゴミ)&lt;/li&gt;&lt;br /&gt;&lt;li&gt;&lt;a href="http://www.amazon.com/Crosse-Technology-BC-900-AlphaPower-Battery/dp/B00077AA5Q/"&gt;La Crosse Technology BC-900 AlphaPower battery charger&lt;/a&gt;を買え。充電電流を設定できたり、現在の容量(mAh)を確認できる。&lt;/li&gt;&lt;br /&gt;&lt;/ul&gt;&lt;br /&gt;まあ、もっと奥が深いのでしょうが、そんなに深追いはしたくないので。&lt;br /&gt;&lt;br /&gt;ちなみに、 BC-900 の安価版 BC-700 は充電電流を高く設定できないだけで他の機能は同じ、余計なケースや充電池が付いていなので、それを &lt;a href="http://www.amazon.com/"&gt;amazon.com&lt;/a&gt; で注文しようとしたら、米国内のみ出荷可能でした。&lt;br /&gt;&lt;br /&gt;元記事にあるように米国より日本のほうが乾電池型充電池は出回っているようなのですが、日本では電池メーカーの専用充電器でないものはほとんどみあたりませんね(ミニ四駆向けの高価な特殊なやつは除外)。&lt;a href="http://www.tec-core.co.jp/product/index.html#battery_boost_charger"&gt;TECHNO CORE という会社が作っていた&lt;/a&gt;みたいですが、今は販売していないようですし、液晶で容量などを表示できるやつが欲しい。&lt;br /&gt;&lt;br /&gt;ほとんど、受け売りなので間違いなどの指摘は大歓迎です。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-4405778683366245366?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/05/rechargeable-batteries.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-114025383508771447
+      </guid>
+      <pubDate>Sat, 18 Apr 2009 14:00:00 +0000
+      </pubDate>
+      <atom:updated>2009-04-18T23:05:40.228+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>life
+      </category>
+      <title>9 life lessons
+      </title>
+      <description>ちょっと普通のブログみたいなこと書いてみます。&lt;br /&gt;&lt;br /&gt;よく知らないんですけど、有名なクライマーの9つの教訓は他の分野でも当てはまるいい話のようでした(ちゃんと聴き取れてない)。&lt;br /&gt;&lt;a href="http://www.ted.com/index.php/talks/matthew_childs_9_rules_of_rock_climbing.html"&gt;Matthew Childs: Hang in there! 9 life lessons from rock climbing&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;1. Don't let go - 手を離すな&lt;br /&gt;2. Hesitation is bad - ためらいは良くない&lt;br /&gt;3. Have a plan - 無計画ではだめだ&lt;br /&gt;4. The move is the end - 進む限り辿り着く&lt;br /&gt;5. Know how to rest - 休む方法を知る&lt;br /&gt;6. Fear sucks  - 恐れは人を無能にする&lt;br /&gt;7. Opposites is good - 対称的な力は良い&lt;br /&gt;8. Strength &amp;#8800; success - 力だけでは成功しない (バランンスが重要)&lt;br /&gt;9. Know how to let go - 撤退(失敗)する方法を知る&lt;br /&gt;&lt;br /&gt;適当に意訳してみましたが、わかりにくいのは 7 の対称性についてで、岩壁の割れ目に体が入る場合は突っ張るようにして登り、逆に指先しか入らない割れ目では自動ドアをこじ開けるようにして体を支えるので、その左右対称な力のことを言っているようです。&lt;br /&gt;&lt;br /&gt;1, 9 は矛盾するように見えますが、状況によってはって感じですよね。変な例ですけど、満員電車の車内に自力で立とうとしない奴っていますよね。ドアが閉まったら、完全脱力で他人に寄りかかるのではなく人として自力で立とうとする努力が欲しいと思います。逆にドアが空いたら、無理に社内に留まろうとせずに流れに身を任せる感じで一旦ホームに出る潔さ。&lt;br /&gt;&lt;br /&gt;6 もアレですね、電車がホームに到着したときに降りる人がまだいるのに乗ろうとする奴。利己的に座りたいからという人が大半かとは思うのですが、乗り遅れてしまうのではないかという恐怖を克服できない人もいるんじゃないかなと思います。&lt;br /&gt;&lt;br /&gt;ルールにより制約が生じる大半のスポーツと違い、環境と肉体が制約となるフリークライミングならではの原理に近い教訓だと思いました。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-114025383508771447?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/04/9-life-lessons.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-5121566761217566250
+      </guid>
+      <pubDate>Sun, 12 Apr 2009 08:32:00 +0000
+      </pubDate>
+      <atom:updated>2009-04-12T17:57:50.657+09:00
+      </atom:updated>
+      <title>using SyntaxHighlighter
+      </title>
+      <description>&lt;a href="http://alexgorbatchev.com/wiki/SyntaxHighlighter"&gt;SyntaxHighlighter&lt;/a&gt;を試してみました。&lt;br /&gt;&lt;br /&gt;&lt;pre class="brush: ruby;"&gt;&lt;br /&gt;class FooController &amp;lt; ApplicationController&lt;br /&gt;  before_filter :set_foo&lt;br /&gt;&lt;br /&gt;  # 詳細&lt;br /&gt;  def show&lt;br /&gt;  end&lt;br /&gt;end&lt;br /&gt;&lt;/pre&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-5121566761217566250?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/04/using-syntaxhighlighter.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>1
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-7461606087779386323
+      </guid>
+      <pubDate>Sun, 12 Apr 2009 07:35:00 +0000
+      </pubDate>
+      <atom:updated>2009-04-12T16:41:01.913+09:00
+      </atom:updated>
+      <title>EMOBILE H11LC with Mac - a review
+      </title>
+      <description>イーモバイルの小型通話+データ通信端末 &lt;a href="http://emobile.jp/products/lc/h11lc/"&gt;H11LC&lt;/a&gt; を買ってしまいました。&lt;br /&gt;Mac につないで実際に利用した場合のレビュー記事が見つからなかったのでちょっと書いてみます。&lt;br /&gt;&lt;br /&gt;まだ一週間も経っていませんが、いまのところは、まあ、いいんじゃないですかね。&lt;br /&gt;&lt;br /&gt;使う前は、一度何かをインストールすればあとは、USBで接続したらもうネットに接続されると勝手に思い込んでいましたが、実際は、&lt;br /&gt;1. USBで接続すると、"Modem" という名のボリュームがマウントされる&lt;br /&gt;2. そのボリュームに含まれる "H11LC_utility_mac_V1_00.app" または /Application にインストールされる "EMOBILE H11LC Utility.app" を起動する&lt;br /&gt;3. その Utility で接続をクリックするとモデムで発信してネットに接続する&lt;br /&gt;最低でも3アクション必要で、(自分の環境では) utility の起動に数秒かかります。&lt;br /&gt;&lt;br /&gt;勝手に接続すると、接続料金が知らずに加算されていたりしそうなので、考えてみればあり得ないですね。&lt;br /&gt;でも、USBに挿したらメニューバーの常駐アプリケーションの表示が変わり、メニューから「接続」を選択できたりするといいのに。&lt;br /&gt;&lt;br /&gt;あとは文章にするのが面倒なので箇条書きに列挙します。&lt;br /&gt;&lt;br /&gt;他に気づいた点を列挙すると、&lt;br /&gt;* microSD のボリュームも utility 起動にちょっと遅れてマウントされるので USBメモリと同じ感覚では使えない&lt;br /&gt;* 有機ELだからなのか?ディスプレイは日中の太陽光の下では非常に見にくい&lt;br /&gt;* なぜか試供品扱いのストラップになる USBケーブル2 はかっこ悪いが便利なので外せない&lt;br /&gt;&lt;br /&gt;音楽プレイヤーに関しては、(音質を気にするなら使わない前提で)&lt;br /&gt;* utf-8 の日本語ファイル名は表示できている&lt;br /&gt;* スペック通り mp3 以外は再生できないので m4a などは変換する必要あり&lt;br /&gt;* mp3 の(ID3などの)タグ情報は参照されないのでファイル名でのみ識別&lt;br /&gt;* mac 接続してユーティリティーを起動すると音楽再生は停止する&lt;br /&gt;* イヤホンを接続するためには黒くダサイ専用イヤホンマイクを利用するか、ありえないデザインと大きさの黒いアダプタを利用する必要がある (pdfマニュアル p21 参照) =&gt; 他の携帯向けの変換アダプタが使えるか?&lt;br /&gt;* 背面スピーカーからの音量は以外と大きいのでポケットに入れて、フロ掃除したりするときのBGMには使えるかも&lt;br /&gt;* プレイリストの編集はメモリカードでなく本体のメモリ?に保存され、本体からでしか操作できない&lt;br /&gt;現実的にはmp3を厳選するか、たくさん入れて全曲プレイリストのランダム再生?&lt;br /&gt;&lt;br /&gt;Mac と他のシステムとファイル共有したりするときのいつもの問題だが、&lt;br /&gt;* Finder を利用してコピーするとリソースフォークが ._ファイル名 として保存されるてしまい、音楽再生時に ._ファイル名.mp3 を無視してくれないので、いちいち「ファイルが壊れています」と表示されウザイ &lt;br /&gt;* Spotlight 環境設定で除外しないと Spotlight の index が作成されて容量がムダになる (._ ファイルと同様、 Mac OS X 側の問題)&lt;br /&gt;&lt;br /&gt;プログラマの視点からのどうでもいいこととしては、&lt;br /&gt;* Utility はいちおう Cocoa アプリケーションのため、連絡先編集などのテキスト入力で emacs binding は使えるが、コスト削減のためか Windows 版と同じ設計(デザイン)で非常に格好悪い(スプラッシュ画面が出るようなアプリケーションに共通の格好悪さがある)。&lt;br /&gt;&lt;br /&gt;あとは、参考資料&lt;br /&gt;* &lt;a href="http://emobile.jp/support/online/dll.html"&gt;イーモバイルのダウンロードページ&lt;/a&gt;に H11LC の マニュアル(pdf)があります。&lt;br /&gt;* &lt;a href="http://ascii.jp/elem/000/000/402/402027/"&gt;ASCII.jp でのレビュー&lt;/a&gt;&lt;br /&gt;* &lt;a href="http://www.kogure.biz/biz/2009/03/h11lc-8f88.html"&gt;小暮祐一という方のブログ記事&lt;/a&gt;&lt;br /&gt;* &lt;a href="http://www.minpos.com/index.php?pg=category.series&amp;category=6&amp;item=83&amp;series=7958"&gt;みんぽす (先のリンクに複数のレビューあり)&lt;/a&gt;&lt;br /&gt;などを参考にしてください。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-7461606087779386323?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/04/emobile-h11lc-with-mac-review.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-2875790769027503970
+      </guid>
+      <pubDate>Thu, 02 Apr 2009 07:38:00 +0000
+      </pubDate>
+      <atom:updated>2009-04-12T21:54:53.833+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>git
+      </category>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>Pulling forked changes with git - an example
+      </title>
+      <description>うれしいことに、拙作 &lt;a href="http://github.com/hiroshi/script-refactor"&gt;script/refactor&lt;/a&gt; を改善する変更の pull request のメッセージが届いていたので早速、 pull しようと思ったけど手間取ってしまったのでそのメモです。&lt;br /&gt;&lt;br /&gt;GitHub の&lt;a href="http://github.com/guides"&gt;ガイド wiki&lt;/a&gt; には &lt;a href="http://github.com/guides/pull-requests"&gt;Pull Requests&lt;/a&gt;があるんですけど、手元の git (v 1.6.2.1) では、そのまんまだとリモートブランチとローカルブランチの名前が同じになってしまって、何かすると&lt;br /&gt;&lt;pre&gt;warning: refname 'tjsheehy/master' is ambiguous.&lt;/pre&gt;&lt;br /&gt;のような warning が出て気持ちわるい。&lt;br /&gt;&lt;br /&gt;試行錯誤の結果、シンプルにローカルブランチは作らずに master ブランチで pull して GitHub に push しました。&lt;pre&gt;$ git remote add -f tjsheehy git://github.com/tjsheehy/script-refactor.git&lt;br /&gt;$ git pull tjsheehy master&lt;br /&gt;$ git commit&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;また、CHANGELOG をつくるのには、&lt;pre&gt;$ git log --pretty=format:"* %s [%an] %h" | cat&lt;/pre&gt;こんな感じでログをフォーマット指定の pager なしで吐いて、切り貼りしました。&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;でも、あれですね。メジャーなプロジェクトをホストしている人は pull request 来まくって、ウザいでしょうね。&lt;br /&gt;&lt;br /&gt;あと思うのは、 &lt;a href="http://github.com/rails/ssl_requirement/network"&gt;ssl_required&lt;/a&gt; など、とりあえず GitHub に引っ越しただけのプロジェクトとか fork されまくってるけど全然本家にマージされてないやつとかどれ使っていいのかわからなくて困りますね。Network グラフをみてどのリポジトリの本気度が高いか見極める必要があるし。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-2875790769027503970?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/04/pulling-forked-changes-with-git-example.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-5606167996990512565
+      </guid>
+      <pubDate>Mon, 30 Mar 2009 15:55:00 +0000
+      </pubDate>
+      <atom:updated>2009-05-13T21:10:53.968+09:00
+      </atom:updated>
+      <title>Disassembling Microsoft Bluetooth Notebook Mouse 5000
+      </title>
+      <description>(English version of instruction at the bottom of the post...)&lt;br /&gt;&lt;br /&gt;Microsoft Wireless Notebook Optical Mouse 4000 を気に入っていたのですが、&lt;br /&gt;* Macbook で使うには USBレシーバーが邪魔&lt;br /&gt;* 光学式なので僕の机だとマウスパッドがないと動かない&lt;br /&gt;* ホイールを左右に傾けられるやつなのでホイールが溝にひっかかる感じになることがある&lt;br /&gt;というところが気に入らなかった。&lt;br /&gt;&lt;br /&gt;&lt;a href="http://www.microsoft.com/japan/hardware/mouse/bl_note5000.mspx"&gt;Microsoft Bluetooth Notebook Mouse 5000&lt;/a&gt;ですべて解消すると思って買ってみました。&lt;br /&gt;しかし、&lt;br /&gt;1. 4000 と比べると形状が違うのでホールド感に違和感がある&lt;br /&gt;2. 4000 のホイールはヌルヌルだったけど 5000 はゴリゴリでうるさいし、ちゃんとホールドしないと回しにくい&lt;br /&gt;&lt;br /&gt;1 の問題は、まあ慣れればいいかなと思いましたが、2のゴリゴリ言うホイールは我慢できなかったので、分解して調整してみました。&lt;br /&gt;分解の仕方がわからなかったけど、試行錯誤の結果分解できたのでそれを共有しようというのが本題です。&lt;br /&gt;&lt;br /&gt;ポイントは&lt;br /&gt;1. 最初にまわすべきネジの位置 -&gt; 上部後方の三角のレーザーマーク?の下&lt;br /&gt;2. そのネジがトルクスネジ(T6)なのでふつうの+/-のドライバーでは外せない&lt;br /&gt;3. 2/3番目のねじはマウスボタンの下だけど、マウスボタンが固定されている後方のツメをうまくはずさないと回せない&lt;br /&gt;という感じですね。&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_qsyweV0vXTA/SdDxnrR-UxI/AAAAAAAAAIs/LYmJPDQUpzg/s1600-h/IMG_5940.JPG"&gt;&lt;img style="cursor:pointer; cursor:hand;width: 200px; height: 150px;" src="http://3.bp.blogspot.com/_qsyweV0vXTA/SdDxnrR-UxI/AAAAAAAAAIs/LYmJPDQUpzg/s200/IMG_5940.JPG" border="0" alt=""id="BLOGGER_PHOTO_ID_5319016823859860242" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;分解できたら、ホイールの軸受けみたいなところのデコボコと金属のヤマがゴリゴリいうのでそのヤマをマイナスドライバーとかで少し潰す。(画像ピンボケですいません)&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_qsyweV0vXTA/SdDx-TSgv8I/AAAAAAAAAI0/q78N6ZzxF8g/s1600-h/IMG_5938.JPG"&gt;&lt;img style="cursor:pointer; cursor:hand;width: 200px; height: 150px;" src="http://4.bp.blogspot.com/_qsyweV0vXTA/SdDx-TSgv8I/AAAAAAAAAI0/q78N6ZzxF8g/s200/IMG_5938.JPG" border="0" alt=""id="BLOGGER_PHOTO_ID_5319017212556656578" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;はい終わり。&lt;br /&gt;&lt;br /&gt;以下は英語で助けを求められたので説明を英語で書いてみました。(2009-5-13)&lt;br /&gt;&lt;br /&gt;Instruction&lt;br /&gt;1. Remove the emblem (image of laser?) on the hip? of the mouse. Because of it is glued you can remove it with tip of pin or needle.&lt;br /&gt;2. After removing the emblem, you can see a &lt;a href="http://en.wikipedia.org/wiki/Torx"&gt;torx&lt;/a&gt; screw (See the first photo). Remove it (I suppose required size of driver is T6).&lt;br /&gt;3. I can't recall precisely, but without the screw you can slid mouse buttons, then unscrew pair of screws under the mouse buttons. Be careful to slid the mouse buttons, they are fixed with claws on the body.&lt;br /&gt;4. Sorry, I can't recall anymore, I hope you get the point from my instruction.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-5606167996990512565?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/03/disassembling-microsoft-bluetooth.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://3.bp.blogspot.com/_qsyweV0vXTA/SdDxnrR-UxI/AAAAAAAAAIs/LYmJPDQUpzg/s72-c/IMG_5940.JPG' height='72' width='72'/>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>8
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-1270483463106940150
+      </guid>
+      <pubDate>Mon, 02 Feb 2009 12:36:00 +0000
+      </pubDate>
+      <atom:updated>2009-04-12T23:30:08.656+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>search with named scopes
+      </title>
+      <description>複数条件の AND 検索機能は Web アプリケーションを実装すると必ずといっていいほど実装するかと思います。&lt;br /&gt;例えば、フォームからの入力で &lt;pre class="brush:ruby;light:true;"&gt;params  # =&gt; {:city =&gt; "tokyo", :age =&gt; 30}&lt;/pre&gt; のようなパラメータが与えられるとすると、 fat controller を気にしなければ rails のアクションの実装は以下のようにやってました。&lt;br /&gt;&lt;pre class="brush:ruby;"&gt;def index&lt;br /&gt;  conds, args = [], {}&lt;br /&gt;  unless (city = params[:city]).blank?&lt;br /&gt;    conds &lt;&lt; "city = :city"&lt;br /&gt;    args[:city] = city&lt;br /&gt;  end&lt;br /&gt;  unless (age = params[:age]).blank?&lt;br /&gt;    conds &lt;&lt; "age = :age"&lt;br /&gt;    args[:age] = age&lt;br /&gt;  end&lt;br /&gt;&lt;br /&gt;  if conds.blank?&lt;br /&gt;    @users = User.find(:all)&lt;br /&gt;  else&lt;br /&gt;    @users = User.find(:all, :conditions =&gt; [conds.map{|c|"(#{c})"}.join(" AND "), args])&lt;br /&gt;  end&lt;br /&gt;end&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;named scope を使うと&lt;br /&gt;&lt;pre class="brush:ruby;"&gt;class User&lt;br /&gt;  named_scope :city, lambda{|city| {:conditions =&gt; ["city = ?", city]}}&lt;br /&gt;  named_scope :age, lambda{|age| {:conditions =&gt; ["age = ?", age]}}&lt;br /&gt;end&lt;/pre&gt;&lt;br /&gt;&lt;pre class="brush:ruby;"&gt;def index&lt;br /&gt;  @users = [:city, :age].inject(User) do |ret, scope|&lt;br /&gt;    params[scope].blank? ? ret : ret.send(scope, params[scope])&lt;br /&gt;  end.all&lt;br /&gt;end&lt;/pre&gt;&lt;br /&gt;すばらしいじゃないですか。&lt;br /&gt;&lt;br /&gt;&lt;a href="http://www.google.com/search?q=rails+search+named+scope+inject+send+params"&gt;検索してみると&lt;/a&gt;すでに同じ事を思いついている人はたくさんいるようですね。&lt;br /&gt;&lt;br /&gt;(上記、実際に動かしたコードをブログ用に書き換えたのでどっか間違っていたらごめんなさい。)&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-1270483463106940150?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/02/search-with-named-scopes.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>1
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-6752139389008175864
+      </guid>
+      <pubDate>Tue, 27 Jan 2009 08:26:00 +0000
+      </pubDate>
+      <atom:updated>2009-01-27T18:09:57.009+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>script/refactor
+      </title>
+      <description>script/refactor という rails アプリケーションのリファクタリングを支援するスクリプトを書いてみました。&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;$ script/plugin install git://github.com/hiroshi/script-refactor.git&lt;/pre&gt;&lt;br /&gt;インストールすると、 script/refactor が生成されます。&lt;br /&gt;&lt;br /&gt;例: user を person に変える。&lt;br /&gt;&lt;pre&gt;$ script/refactor resource user person&lt;br /&gt;Renamming files and directories:&lt;br /&gt;git mv app/views/users app/views/people&lt;br /&gt;git mv app/helpers/users_helper.rb app/helpers/people_helper.rb&lt;br /&gt;git mv app/models/user.rb app/models/person.rb&lt;br /&gt;git mv test/unit/user_test.rb test/unit/person_test.rb&lt;br /&gt;git mv test/functional/users_controller_test.rb test/functional/people_controller_test.rb&lt;br /&gt;git mv app/controllers/users_controller.rb app/controllers/people_controller.rb&lt;br /&gt;git mv test/fixtures/users.yml test/fixtures/people.yml&lt;br /&gt;&lt;br /&gt;Replacing class and variables:&lt;br /&gt;user -&gt; person&lt;br /&gt;Users -&gt; People&lt;br /&gt;User -&gt; Person&lt;br /&gt;users -&gt; people&lt;br /&gt;pettern: /(\b|_)(user|Users|User|users)(\b|[_A-Z])/&lt;br /&gt;&lt;br /&gt;./test/unit/person_test.rb:3: class UserTest &lt; ActiveSupport::TestCase&lt;br /&gt;./test/unit/person_test.rb:7:   fixtures :users&lt;br /&gt;./test/unit/person_test.rb:9:   def test_should_create_user&lt;br /&gt;./test/unit/person_test.rb:10:     assert_difference 'User.count' do&lt;br /&gt;...&lt;br /&gt;./app/controllers/application.rb:18:     current_user.group&lt;br /&gt;&lt;br /&gt;NOTE: If you want to revert them:&lt;br /&gt;  git reset --hard&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;こんな感じにモデル、コントローラ、ヘルパー、テストのファイル名を変更して、コード中のクラス名、変数名もルールに従っているものは変更します。&lt;br /&gt;&lt;br /&gt;適当に書いたスクリプトなので、特に置換する部分が思うような挙動にならない場合もあるかと思います。改善案やパッチをください。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-6752139389008175864?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/01/scriptrefactor.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-5698989506155627598
+      </guid>
+      <pubDate>Fri, 23 Jan 2009 08:10:00 +0000
+      </pubDate>
+      <atom:updated>2009-01-23T17:14:47.057+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>test
+      </category>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>My philosophy about testing
+      </title>
+      <description>テストを含む開発の哲学については Rails 開発者の中でも様々あります。僕の場合、現状ではこんな感じなんですけど、みなさんどうですか？&lt;br /&gt;&lt;br /&gt;テストの目的は２つあると考えます。&lt;br /&gt;開発する最中に自分の書いているコードが正しいか確認するためのものと、コードを変更したときにその影響により過去に書いたコードが壊れないか確認するもの。&lt;br /&gt;&lt;br /&gt;Rails アプリケーション開発の場合、前者は、基本的には、見た目の確認も行うため development mode でブラウザ確認で行います。&lt;br /&gt;例外的に、レコードの作成、更新などで複雑な処理をする場合など、ブラウザでフォームに入力して、レコード作成、表示をするのに手間がかかったり、画面には現れないカラムの内容を確認したいときに、簡単な unit test を書いたりもします。&lt;br /&gt;&lt;br /&gt;後者は一般的に回帰テスト(regression test)と呼ばれるもので、 Rails では functional test を中心に書いてゆきます。記述する精度は余裕やモチベーションによっても違うと思いますが、controller の各 action を実行して結果を簡単に確認して、 rcov による coverage 率が 100% に近づくようにします。&lt;br /&gt;&lt;br /&gt;実装と平行、またはテスト駆動が望ましいとは思いますが、そうは言ってもね、たいていの場合は仕様がガッチリ決まっているわけではなく実験しながら実装することになるので、大きく変更する可能性があったり場合によっては捨ててしまうコードのテストに時間をかけるのはもったいないしモチベーションも上がらないので、実装がほぼ完了して次のタスクにとりかかる前にテストを書きます。&lt;br /&gt;仕様決定権限がある人に確認してもらうこともある意味テストなので、極論ですけど、実装したものが仕様として望ましいかどうかのテストに合格してから実装の品質をテストしないと、「テストも全部書いてしまったので変更はできません」なんて本末転倒なことになるかと思います。&lt;br /&gt;&lt;br /&gt;あとは、リリース後に不具合が見つかった場合、テストが甘かったわけなので、理想的には、その不具合を再現するテストを書いて、コードの修正でテストが通ることを確認して解決とします。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-5698989506155627598?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2009/01/my-philosophy-about-testing.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>1
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-6880449924766988749
+      </guid>
+      <pubDate>Sun, 14 Dec 2008 14:30:00 +0000
+      </pubDate>
+      <atom:updated>2008-12-22T13:25:11.492+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Mac OS X
+      </category>
+      <category domain='http://www.blogger.com/atom/ns#'>RubyCocoa
+      </category>
+      <title>PDFPack.app
+      </title>
+      <description>名刺をデザインしてA4の用紙に複数面割り付けて印刷しようと思ったけど、どうすればいいのかわからない。&lt;br /&gt;&lt;br /&gt;DTPの知識(と高価なソフトウェア?)があれば簡単なことだろうとは思うけれど、適切なフリーソフトも見つからない。Mac OS X プリンタダイアログ標準のレイアウト機能の複数ページを1枚に割り付ける方法ではあらかじめ同じデザインのページのコピーを作成してPDFなどにまとめる必要があるし、そもそも名刺などの場合はサイズが重要なので1ページ分の出力サイズを指定できないので使えない。&lt;br /&gt;&lt;br /&gt;やりたいことは実にシンプルで、名刺やカードなど小さいサイズで同じデザインのものを、出力する用紙(A4など)1枚に対して複数印刷したいだけなので、RubyCocoa のリハビリを兼ねて、その目的を達成するためだけのフィルターのようなツール &lt;a href="http://code.google.com/p/pdfpack/"&gt;PDFPack.app&lt;/a&gt; を作ってみました。&lt;br /&gt;&lt;br /&gt;単体のアプリケーションとしても動きますが、インストールすると PDF Service (プリントダイアログの左下の "PDF" ボタンで出てくるメニュー)として登録されるので、以下のような使い方ができます。&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;使用例として名刺を印刷する場合&lt;/h3&gt;&lt;br /&gt;1. カードをデザインするツール (僕は &lt;a href="http://www.omnigroup.com/applications/OmniGraffle/"&gt;OminiGraffle&lt;/a&gt; を使いました)のページ設定(新しいアプリケーションではプリントダイアログに統合されているようです)の用紙サイズのカスタムサイズを管理で 5.5 x 9.1cmの用紙を追加して選択&lt;br /&gt;&lt;br /&gt;2. そのサイズにあわせて名刺をデザインしてプリントダイアログ(Cmd+P)を開いて、PDFメニューから "PDFPack" を選択&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_qsyweV0vXTA/SU77RG0KgmI/AAAAAAAAAHQ/vIMUoOfu7hU/s1600-h/pdf_menu.png"&gt;&lt;img style="cursor:pointer; cursor:hand;width: 147px; height: 200px;" src="http://3.bp.blogspot.com/_qsyweV0vXTA/SU77RG0KgmI/AAAAAAAAAHQ/vIMUoOfu7hU/s200/pdf_menu.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5282435684257923682" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;3. PDFPack.app が起動するので必要ならマージンを調整して印刷&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_qsyweV0vXTA/SU78G0cX_gI/AAAAAAAAAHY/69O62hAHVqM/s1600-h/pdfpack.png"&gt;&lt;img style="cursor:pointer; cursor:hand;width: 200px; height: 200px;" src="http://3.bp.blogspot.com/_qsyweV0vXTA/SU78G0cX_gI/AAAAAAAAAHY/69O62hAHVqM/s200/pdfpack.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5282436607039241730" /&gt;&lt;/a&gt;&lt;br /&gt;ちなみに、用紙は&lt;a href="http://www.a-one.co.jp/catalogue/keyword/product.php?id=51002"&gt;エーワンマルチカード#51002&lt;/a&gt;、プリンタは&lt;a href="http://h10025.www1.hp.com/ewfrf/wc/product?lc=ja&amp;dlc=ja&amp;cc=jp&amp;product=71899"&gt;HP Deskjet 5551&lt;/a&gt;を利用。このA4サイズの用紙では 5.5x9.1cm のサイズを10面印刷するときに左右の余白は1.4cm、上下の余白が 1.1cm になるのですが、PDFPack のバグかプリンタの仕様か、bottom margin を 0.9cm と 0.3mm 小さく設定しないとうまい具合に印刷できませんでした。&lt;br /&gt;&lt;br /&gt;蛇足ですが、似たようなツールに &lt;a href="http://en.wikipedia.org/wiki/Hipster_PDA"&gt;Hipster PDA&lt;/a&gt; を印刷する &lt;a href="http://weblog.bignerdranch.com/?p=23"&gt;PagePacker&lt;/a&gt; というものがあります。PDFPack も1枚の紙に異なる種類のカードを印刷できると便利かもしれません。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-6880449924766988749?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/12/pdfpackapp.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://3.bp.blogspot.com/_qsyweV0vXTA/SU77RG0KgmI/AAAAAAAAAHQ/vIMUoOfu7hU/s72-c/pdf_menu.png' height='72' width='72'/>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-1343769587271564985
+      </guid>
+      <pubDate>Mon, 24 Nov 2008 04:49:00 +0000
+      </pubDate>
+      <atom:updated>2008-12-14T23:39:03.583+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>MySQL
+      </category>
+      <category domain='http://www.blogger.com/atom/ns#'>Ruby
+      </category>
+      <title>mysql_xml2google_notebook_atom
+      </title>
+      <description>&lt;a href="http://www.google.com/notebook/"&gt;Google Notebook&lt;/a&gt; を使うようになってから、以前に作ったメモを溜める web application が必要なくなったけれど、メモの内容は参照したいことがあったので、Google Notebook にインポートしてみました。&lt;br /&gt;&lt;br /&gt;その web application は mysql を使っていたので、 mysql コマンドの --xml オプションで出力した結果の XML を Google Notebook がインポートできる Atom フォーマットの XML に変換するスクリプト &lt;a href="http://code.google.com/p/mysql-xml2google-notebook-atom/source/browse/trunk/mysql_xml2google_notebook_atom.rb"&gt;mysql_xml2google_notebook_atom.rb&lt;/a&gt; を書き、変換してからインポート。&lt;br /&gt;&lt;br /&gt;余談ですが、Google Notebook には Atom フォーマットでエクスポートする機能もあります。しかし、残念なことに XML の encoding を iso-8859-1 (latin-1) から変更する方法が分からないので、日本語のノートは Atom ではエクスポートできない。&lt;br /&gt;どこにフィードバックを送ればよいのかわからないので、&lt;a href="http://googlenotebookblog.blogspot.com/2008/07/notebooks-to-go.html"&gt;Google Notebook Official Blog の記事&lt;/a&gt;にコメントしました。オープンソースでないとこういうところがもどかしい。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-1343769587271564985?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/11/mysqlxml2googlenotebookatom.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-3943758049329083375
+      </guid>
+      <pubDate>Fri, 14 Nov 2008 12:55:00 +0000
+      </pubDate>
+      <atom:updated>2008-11-14T22:37:26.654+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>Polymorphic_url should compact given array
+      </title>
+      <description>ネストした URL にしたい場合、たとえば /groups/1/users だと、routes.rb は、こんな感じ。&lt;br /&gt;&lt;pre&gt;map.resources :groups, :has_many =&gt; :users&lt;/pre&gt;&lt;br /&gt;さらに、 group を指定しないユーザーの一覧を取得したい場合 (/users) には resources を追加。&lt;br /&gt;&lt;pre&gt;map.resouces :users&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;polymorphic_path を使うと&lt;br /&gt;&lt;pre&gt;polymorphic_path([@group, :users]) # A&lt;br /&gt;polymorphic_path(:users) # B&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;ここで、 @group が nil だったら、 A は B と同じ解釈をしてほしいいのだけど、&lt;br /&gt;&lt;pre&gt;"NoMethodError: undefined method nil_class_users_url'"&lt;/pre&gt;&lt;br /&gt;のようにエラーになってしまうので、&lt;a href="http://rails.lighthouseapp.com/projects/8994/tickets/1317-polymorphic_url-should-compact-given-array#ticket-1317-1"&gt;patch&lt;/a&gt; を投げたら、 &lt;a href="http://github.com/rails/rails/commit/94d6716324126028b89dde886f160474049b1b0c"&gt;commit&lt;/a&gt; された。&lt;br /&gt;&lt;br /&gt;非常に小さな変更だけど、パッチが受け入れられるとうれしいもんですね。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-3943758049329083375?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/11/polymorphicurl-should-compact-given.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-8158183968214504587
+      </guid>
+      <pubDate>Thu, 30 Oct 2008 08:47:00 +0000
+      </pubDate>
+      <atom:updated>2008-10-30T17:49:36.570+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>How to skip ActionController::Filters with block
+      </title>
+      <description>&lt;pre&gt;before_filter :foo&lt;br /&gt;def foo&lt;br /&gt;  ...&lt;br /&gt;end&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;メソッド名のシンボルを与えてフィルターを指定する場合、&lt;br /&gt;&lt;pre&gt;skip_before_filter :foo&lt;/pre&gt;&lt;br /&gt;でスキップできるけど、&lt;br /&gt;&lt;pre&gt;before_filter do |controller|&lt;br /&gt;  ...&lt;br /&gt;end&lt;/pre&gt;&lt;br /&gt;ブロックを使った場合スキップする方法がわからないので ActionController::Filters の実装を調べたら、&lt;br /&gt;&lt;pre&gt;before_filter :identifier =&gt; :foo do |controller|&lt;br /&gt;  ...&lt;br /&gt;end&lt;/pre&gt;&lt;br /&gt;とすることで、&lt;br /&gt;&lt;pre&gt;skip_before_filter :foo&lt;/pre&gt;&lt;br /&gt;できることがわかった。&lt;br /&gt;&lt;br /&gt;:identifier オプションは ActiveSupport::Callbacks::Callback のアトリビュートなので、 ActionController::Filters の実装が ActiveSupport::Callbacks::Callback を使っていない 2.0.X 以前のバージョンでは使えないと思われるので注意。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-8158183968214504587?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/10/how-to-skip-actioncontrollerfilters.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-5979317607210617503
+      </guid>
+      <pubDate>Mon, 27 Oct 2008 08:20:00 +0000
+      </pubDate>
+      <atom:updated>2008-10-28T22:37:32.996+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>MySQL
+      </category>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>Fixing false latin1 encoding MySQL database into utf8
+      </title>
+      <description>Rails 2.2 には mysql pure ruby adapter が含まれていないので、アップデートしたときに mysql native adapter を入れていない事に気がついた。&lt;br /&gt;&lt;pre&gt; sudo gem install mysql&lt;/pre&gt;&lt;br /&gt;その後、アプリケーションを再起動したら、データベースに保存されている文字列の表示が思いっきり文字化けしてしまった。&lt;br /&gt;database.yml をよく見てみると、&lt;br /&gt;&lt;pre&gt; encoding: utf-8&lt;/pre&gt;&lt;br /&gt;しまった。 MySQL adapter の場合、&lt;br /&gt;&lt;pre&gt; encoding: utf8&lt;/pre&gt;&lt;br /&gt;と書かなければいけなかったのだ。&lt;br /&gt;MySQL native adapter のデフォルトエンコーディングは latin1 らしいので、一度、 latin1 としてダンプして、&lt;br /&gt;&lt;pre&gt; mysqldump --default-character-set=latin1 -u root foo_production &gt; foo.mysql&lt;/pre&gt;&lt;br /&gt;ダンプファイルの SET NAMES を書き換え&lt;br /&gt;&lt;pre&gt;- /*!40101 SET NAMES latin1 */;&lt;br /&gt;+ /*!40101 SET NAMES utf8 */;&lt;/pre&gt;&lt;br /&gt;database の再作成&lt;br /&gt;&lt;pre&gt;mysql -u root -e "drop database foo_production; create database foo_production"&lt;/pre&gt;&lt;br /&gt;そして、ロード&lt;br /&gt;&lt;pre&gt;mysql -u root foo_production &lt; foo.sql&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;つまらないバッドノウハウで恐縮ですが、以前にも同じ事をやらかしてしまったことがあったので役に立つこともあるかと。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-5979317607210617503?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/10/fixing-false-latin1-encoding-mysql.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-4411195845955563207
+      </guid>
+      <pubDate>Wed, 22 Oct 2008 14:33:00 +0000
+      </pubDate>
+      <atom:updated>2008-10-23T10:50:31.717+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Passenger
+      </category>
+      <category domain='http://www.blogger.com/atom/ns#'>Rails
+      </category>
+      <title>Passenger: Keeping ApplicationSpawner alive speeds up spawning an instance
+      </title>
+      <description>アクセス頻度が少ないサイトで &lt;a href="http://www.modrails.com/"&gt;Passenger&lt;/a&gt; を使っている場合、しばらくしてからアクセスするとデプロイ直後や apache のリスタート直後と同じくらいレスポンスが遅くなることがあります。&lt;br /&gt;&lt;br /&gt;Passenger は fork 時の copy-on-write により複数のアプリケーションプロセスが消費する実メモリのサイズが小さくなるようになっていて、その fork も以下のような3段階で行っているようです。&lt;br /&gt;&lt;ol&gt;&lt;br /&gt;&lt;li&gt;最初に起動する spawn server から fork して、 Rails をロード (framework spawner)&lt;/li&gt;&lt;br /&gt;&lt;li&gt;framework spawner から fork して、アプリケーションをロード (application spawner)&lt;/li&gt;&lt;br /&gt;&lt;li&gt;application spawner から fork して、リクエストを処理する過程で必要なファイルをオートロード (application instance)&lt;/li&gt;&lt;br /&gt;&lt;/ol&gt;&lt;br /&gt;spawn server は apache が終了するまで生きているようなんですけど、 framework spawner と application spawner にはタイムアウトする時間が設定されていて、 Passenger 2.0.3 のデフォルトではそれぞれ、30分、10分となっています。&lt;br /&gt;したがって、前回のアクセスから10分過ぎると、再度 application spawner から生成し直すのでレスポンスに時間がかかります。&lt;br /&gt;&lt;br /&gt;ということは、 application spawner のタイムアウト時間を十分に長くすればよいということで、無理矢理 passenger のファイルを変更。&lt;br /&gt;&lt;br /&gt;/usr/lib/ruby/gems/1.8/gems/passenger-2.0.3/lib/passenger/constants.rb:&lt;br /&gt;&lt;pre&gt;-   FRAMEWORK_SPAWNER_MAX_IDLE_TIME = 30 * 60&lt;br /&gt;-   APP_SPAWNER_MAX_IDLE_TIME       = 10 * 60&lt;br /&gt;+   # keep them alive for a week&lt;br /&gt;+   FRAMEWORK_SPAWNER_MAX_IDLE_TIME = 7 * 24 * 60 * 60&lt;br /&gt;+   APP_SPAWNER_MAX_IDLE_TIME       = 7 * 24 * 60 * 60&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;Passenger 2.0.3 の段階では上記のような変更が必要ですが、 将来のバージョンでは apache の設定ファイルで RailsFrameworkSpawnerIdleTime, RailsAppSpawnerIdleTime を指定すれば変更できるようになるようです。&lt;br /&gt;&lt;br /&gt;また、 &lt;a href="http://www.modrails.com/documentation/Users%20guide.html#capistrano"&gt;Phusion Passenger users guide - 8.3 Capistrano Recipe&lt;/a&gt; の note に書いてあるように、デプロイ後に新しい application spawner が生成されても古いのが残ったままになるので、デプロイするときに kill。&lt;br /&gt;&lt;br /&gt;config/deploy.rb:&lt;br /&gt;&lt;pre&gt;namespace :passenger do&lt;br /&gt;  namespace :application_spawner do&lt;br /&gt;    desc "kill Passenger ApplicationSpawner"&lt;br /&gt;    task :kill do&lt;br /&gt;      run "kill $( passenger-memory-stats | grep 'Passenger ApplicationSpawner' | awk '{ print $1 }' ) || true"&lt;br /&gt;    end&lt;br /&gt;    after "deploy:update_code", "passenger:application_spawner:kill"&lt;br /&gt;  end&lt;br /&gt;end&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;Passenger のドキュメントに書かれているように "Passenger spawn server" を殺すには root 権限が必要なので代わりに application spawner を kill。なんとなく不安定な気もするけど、これで様子を見ることにします。&lt;br /&gt;&lt;br /&gt;参考資料:&lt;br /&gt;&lt;a href="http://github.com/FooBarWidget/passenger/wikis/wishlist"&gt;Wishlist — passenger — GitHub&lt;/a&gt;&lt;br /&gt;&lt;a href="http://groups.google.com/group/phusion-passenger/browse_thread/thread/43a735dd4e1748de"&gt;RailsFrameworkSpawnerIdleTime and RailsAppSpawnerIdleTime - Phusion Passenger Discussions | Google Groups&lt;/a&gt;&lt;br /&gt;&lt;a href="http://groups.google.com/group/phusion-passenger/browse_thread/thread/c21b8d17cdb073fd"&gt;Modrails ... Slow first request ... - Phusion Passenger Discussions | Google Groups&lt;/a&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-4411195845955563207?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/10/passenger-keeping-applicationspawner.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>2
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-6478103144076721245
+      </guid>
+      <pubDate>Sun, 19 Oct 2008 13:24:00 +0000
+      </pubDate>
+      <atom:updated>2008-10-19T22:53:25.130+09:00
+      </atom:updated>
+      <title>URL options for polymorphic_url
+      </title>
+      <description>routes.rb:&lt;br /&gt;&lt;pre&gt; map.resources :users &lt;/pre&gt;&lt;br /&gt;というリソースへのルートを定義している場合、&lt;br /&gt;&lt;br /&gt;&lt;pre&gt; polymorphic_url(:users) # =&gt; "/users"&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;という具合になります。&lt;br /&gt;&lt;br /&gt;そこで、追加のパラメータをあたえると&lt;br /&gt;&lt;pre&gt; polymorphic_url(:users, :foo =&gt; 1) # =&gt; "/users?foo=1"&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;となることを期待する訳なんですけど、 Rails 2.1.1 ではそうはならなくて、URLパラメータが付かない一つ前の例と同じパスが返ってくる。&lt;br /&gt;&lt;br /&gt;&lt;a href="http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/880"&gt;#880 URL options for polymorphic_url - Ruby on Rails - rails&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;edge では修正されてますけど、リリースするまでは、以下のような汚いパッチでごまかします。&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;if Rails::VERSION::STRING == "2.1.1"&lt;br /&gt;  # polymorphic_url should accept extra parameter options&lt;br /&gt;  # polymorphic_path(:projects, :foo =&gt; 1) # should be =&gt; /projects?foo=1&lt;br /&gt;  # This portion of code fixes this issue in a quick and dirty way.&lt;br /&gt;  ActionController::PolymorphicRoutes.module_eval do&lt;br /&gt;    def polymorphic_url_with_params(record_or_hash_or_array, options = {})&lt;br /&gt;      url = polymorphic_url_without_params(record_or_hash_or_array, options)&lt;br /&gt;      url_options = options.except(:action, :routing_type, :format)&lt;br /&gt;      unless url_options.blank?&lt;br /&gt;        url += "?" + url_options.to_param&lt;br /&gt;      end&lt;br /&gt;      url&lt;br /&gt;    end&lt;br /&gt;    alias_method_chain :polymorphic_url, :params&lt;br /&gt;&lt;br /&gt;    %w(edit new formatted).each do |action|&lt;br /&gt;      module_eval &lt;&lt;-EOT, __FILE__, __LINE__&lt;br /&gt;        def #{action}_polymorphic_url(record_or_hash, options = {})&lt;br /&gt;          polymorphic_url(record_or_hash, options.merge(:action =&gt; "#{action}"))&lt;br /&gt;        end&lt;br /&gt;&lt;br /&gt;        def #{action}_polymorphic_path(record_or_hash, options = {})&lt;br /&gt;          polymorphic_url(record_or_hash, options.merge(:action =&gt; "#{action}", :routing_type =&gt; :path))&lt;br /&gt;        end&lt;br /&gt;      EOT&lt;br /&gt;    end&lt;br /&gt;  end&lt;br /&gt;end&lt;br /&gt;&lt;/pre&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-6478103144076721245?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/10/url-options-for-polymorphicurl.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-3225658332861965409
+      </guid>
+      <pubDate>Tue, 14 Oct 2008 04:11:00 +0000
+      </pubDate>
+      <atom:updated>2008-10-14T13:26:02.030+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>git
+      </category>
+      <title>Cloning a local git repository into a remote host
+      </title>
+      <description>リモートリポジトリをローカルにクローンする方法は知っているけど、ローカルリポジトリのクローンをリモートに作る方法がいまいちわからなかったので調べてみました(より標準的な方法を知っているひとはコメントください)。&lt;br /&gt;&lt;br /&gt;まずは、ローカルにベアリポジトリのクローンを作成してアーカイブ。&lt;br /&gt;&lt;pre&gt; $ git clone --bare -l foo/.git foo.git&lt;br /&gt; $ tar czf foo.git.tar.gz foo.git&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;これをリモートにコピーして展開すればOK&lt;br /&gt;&lt;br /&gt;あとは、ローカルの clone 元の .git/config に以下の行を追加&lt;br /&gt;&lt;pre&gt;[remote "origin"]&lt;br /&gt;        url = ssh://name.of.host/path/to/repos.git&lt;br /&gt;        fetch = +refs/heads/*:refs/remotes/origin/*&lt;br /&gt;[branch "master"]&lt;br /&gt;        remote = origin&lt;br /&gt;        merge = refs/heads/master&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;git push はデフォルトで "origin" リポジトリのすべてのブランチを push するので、.git/config に remote "origin" のセクションがあれば、その url と fetch として記述されている refspec のマッピングを利用します。&lt;br /&gt;&lt;br /&gt;また、 git pull はデフォルトで "origin" リポジトリから、 .git/config の branch セクションの remote が pull するリポジトリと一致するブランチを pull する (たぶん)。&lt;br /&gt;&lt;br /&gt;よって、上記の設定により "git push", "git pull" だけで svn commit/update 相当の操作ができる。&lt;br /&gt;&lt;br /&gt;ちなみに、これらの設定は &lt;pre&gt; git clone ssh://name.of.host/path/to/repos.git &lt;/pre&gt; で得られるクローンリポジトリの設定と同じです。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-3225658332861965409?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/10/cloning-local-git-repository-into.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-3354318489065296995
+      </guid>
+      <pubDate>Tue, 07 Oct 2008 15:28:00 +0000
+      </pubDate>
+      <atom:updated>2008-10-08T00:54:12.678+09:00
+      </atom:updated>
+      <title>Test-driven learning
+      </title>
+      <description>Andrew Hunt のブログの記事 &lt;a href="http://blog.toolshed.com/2008/10/test-driven-lea.html"&gt;/\ndy - Test-driven Learning&lt;/a&gt; より。TDD (Test-Driven Development) から思いついたと書いてます。&lt;br /&gt;&lt;br /&gt;それが最良の方法かどうかはわからないけど、やっぱり「習うより慣れよ」というのは効果があると思います。特に学習するコトが今までの経験から推測できなかったりするときには特に。今までの経験が活用できる場合は頭の中でテストがある程度できるけど、そうでない場合は実際に手を動かしてそれがどういう結果になるかどうかのフィードバックが得られないとなかなか進めない。&lt;br /&gt;&lt;br /&gt;すいません、当たり前の事書いて...。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-3354318489065296995?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/10/test-driven-learning.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-362854974519356578
+      </guid>
+      <pubDate>Thu, 28 Aug 2008 15:58:00 +0000
+      </pubDate>
+      <atom:updated>2008-08-29T01:21:39.872+09:00
+      </atom:updated>
+      <title>The insanity of flavored mineral water
+      </title>
+      <description>先日、ホームで電車を待っているときにノドが乾いたので、自動販売機で「Volvic Fruit Kiss Lemon」という飲み物を買った。あまりよく見ずに自動販売機のボタンを押したので、口にしてはじめて、それが香料入り飲料水だと気がついた。原材料名の一覧には香料としか書いていないのでそれが天然なのか合成なのか定かではないが、後味の悪さから合成だと思う。&lt;br /&gt;&lt;br /&gt;なんてアホなものを買ってしまったのだろうと反省した。&lt;br /&gt;&lt;br /&gt;ただでさえ、大量のエネルギーを費やしてわざわざフランスから水を輸入しているのは、その水質に価値があるからだと思うのだけど、それを香料で台無しにしているなんて、なんてアホなんだろう。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-362854974519356578?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/08/insanity-of-flavored-mineral-water.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-9158105798981554065
+      </guid>
+      <pubDate>Tue, 22 Jul 2008 04:17:00 +0000
+      </pubDate>
+      <atom:updated>2008-12-10T10:16:08.336+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Mac OS X
+      </category>
+      <title>EmacsClient.app
+      </title>
+      <description>僕はソースコードの編集に、Leopard に最初から入っている emacs を使ってます。&lt;br /&gt;Leopard のターミナルでは日本語の入力も問題なくできるのですが、 ネイティブアプリケーションのように Dock アイコンにファイルをドロップすることでファイルを簡単に開けないので、find-file のミニバッファの内容を空にしてからターミナルのウィンドウにファイルをドロップしなければならないのが面倒です。&lt;br /&gt;&lt;br /&gt;AquaEmacs, CarbonEmacs などを使えばドラッグ&amp;ドロップも問題ないのですが、なんとなく余計なものを入れたくないので emacsclient を実行するだけの簡単なアプリケーションをつくればいいかな、誰か作ってないかなと "EmacsClient.app" を探したところ、 &lt;a href="http://www.sveinbjorn.org/platypus" &gt;Platypus&lt;/a&gt; というスクリプトを実行するアプリケーションを簡単に作成できるツールを見つけました。&lt;br /&gt;&lt;br /&gt;以下のようなシェルスクリプトを作成して、&lt;br /&gt;emacsclient.sh&lt;pre style="background-color:#BBB"&gt;&lt;code&gt;&lt;br /&gt;/usr/bin/emacsclient -n "$1"&lt;br /&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;スクリーンショットのような設定で、"Create" するだけで&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_qsyweV0vXTA/SIVl4eh7oDI/AAAAAAAAAHI/qkKn0RfE4sw/s1600-h/platypus.png"&gt;&lt;img style="cursor:pointer; cursor:hand;" src="http://4.bp.blogspot.com/_qsyweV0vXTA/SIVl4eh7oDI/AAAAAAAAAHI/qkKn0RfE4sw/s200/platypus.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5225694963575791666" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;EmacsClient.app が生成されます。&lt;br /&gt;&lt;br /&gt;あ、すでに開いている emacs で M-x server-start するのをお忘れなく。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-9158105798981554065?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/07/emacsclientapp.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://4.bp.blogspot.com/_qsyweV0vXTA/SIVl4eh7oDI/AAAAAAAAAHI/qkKn0RfE4sw/s72-c/platypus.png' height='72' width='72'/>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-6340306110189593458
+      </guid>
+      <pubDate>Tue, 01 Jul 2008 13:48:00 +0000
+      </pubDate>
+      <atom:updated>2008-12-10T10:16:08.519+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Mac OS X
+      </category>
+      <title>Getting wherefrom of downloaded files
+      </title>
+      <description>Mac OS X の Safari でファイルをダウンロードすると、ファイルのメタデータとして "where from" という情報が保存され、「あれーこのファイルどこから取ってきたんだっけ？」という疑問に答えてくれます。&lt;br /&gt;&lt;br /&gt;Finder の情報を見る確認することはできるんですけど、残念ながら選択してクリップボード(ペーストボード)へのコピーができません。&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_qsyweV0vXTA/SGo2jxAc5FI/AAAAAAAAAHA/onbxrf0G_jo/s1600-h/wherefrom.png"&gt;&lt;img style="cursor:pointer; cursor:hand;" src="http://4.bp.blogspot.com/_qsyweV0vXTA/SGo2jxAc5FI/AAAAAAAAAHA/onbxrf0G_jo/s200/wherefrom.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5218043106340693074" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;そういうときは、ターミナルで、 "mdls" + スペースを入力してから、ダウンロードしたファイルをターミナルにドロップすると...。&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;&lt;br /&gt;$ mdls /Users/hiroshi/Desktop/Velocity/High\ Performance\ Ajax\ Applications\ Presentation.ppt&lt;br /&gt;....&lt;br /&gt;kMDItemWhereFroms              = (&lt;br /&gt;    "http://en.oreilly.com/velocity2008/public/asset/attachment/1956",&lt;br /&gt;    "http://en.oreilly.com/velocity2008/public/schedule/proceedings"&lt;br /&gt;)&lt;br /&gt;&lt;/pre&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-6340306110189593458?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/07/getting-wherefrom-of-downloaded-files.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://4.bp.blogspot.com/_qsyweV0vXTA/SGo2jxAc5FI/AAAAAAAAAHA/onbxrf0G_jo/s72-c/wherefrom.png' height='72' width='72'/>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-8869662095262054863
+      </guid>
+      <pubDate>Thu, 24 Apr 2008 14:15:00 +0000
+      </pubDate>
+      <atom:updated>2008-04-24T23:28:12.837+09:00
+      </atom:updated>
+      <title>a ruby to javascript bridge, Johnson
+      </title>
+      <description>こんなものがあった。&lt;br /&gt;&lt;br /&gt;&lt;a href="http://github.com/jbarnette/johnson/tree/maste"&gt;http://github.com/jbarnette/johnson/tree/master&lt;/a&gt;&lt;br /&gt;&lt;a href="http://tenderlovemaking.com/2008/04/23/take-it-to-the-limit-one-more-time"&gt;http://tenderlovemaking.com/2008/04/23/take-it-to-the-limit-one-more-time&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Firefox が使っている javascript エンジン&lt;br /&gt;&lt;a href="http://www.mozilla.org/js/spidermonkey/"&gt;http://www.mozilla.org/js/spidermonkey/&lt;/a&gt;&lt;br /&gt;の ruby bridge のようだ。&lt;br /&gt;&lt;br /&gt;&lt;a href="http://github.com/jbarnette/johnson/tree/master/README.txt"&gt;README.txt&lt;/a&gt; に書いてあるとおりに gem install jhonson できなかったので、&lt;br /&gt;&lt;br /&gt; git clone git://github.com/jbarnette/johnson.git&lt;br /&gt; cd johnson&lt;br /&gt; rake&lt;br /&gt;&lt;br /&gt;irb で試すとこんな感じ&lt;br /&gt; irb -I./lib -rjohnson&lt;br /&gt; &gt;&gt; Johnson.evaluate("var foo = {x: 1}; foo").x&lt;br /&gt; =&gt; 1&lt;br /&gt;&lt;br /&gt;これで、 rails アプリケーションで使っている .js のテストができるといいな。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-8869662095262054863?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/04/ruby-to-javascript-bridge-johnson.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+    <item>
+      <guid isPermaLink='false'>tag:blogger.com,1999:blog-9178620729627808446.post-2550522666985589039
+      </guid>
+      <pubDate>Fri, 11 Apr 2008 07:27:00 +0000
+      </pubDate>
+      <atom:updated>2008-12-10T10:16:08.815+09:00
+      </atom:updated>
+      <category domain='http://www.blogger.com/atom/ns#'>Leopard
+      </category>
+      <title>My Spotlight in Leopard goes mad
+      </title>
+      <description>数日前から Spotlight が index を何度も作成しようと試みるようになった。&lt;br /&gt;&lt;br /&gt;&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_qsyweV0vXTA/R_8VqHRQuPI/AAAAAAAAAG4/34dPXaghMdg/s1600-h/spotlight_indexing.png"&gt;&lt;img style="cursor:pointer; cursor:hand;" src="http://2.bp.blogspot.com/_qsyweV0vXTA/R_8VqHRQuPI/AAAAAAAAAG4/34dPXaghMdg/s200/spotlight_indexing.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5187889109004237042" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;コンソールにはこんなログが&lt;br /&gt;&lt;pre&gt;&lt;code&gt;&lt;br /&gt;08/04/11 4/11(金)16:18:04 mds[2477] /SourceCache/Spotlight/Spotlight-398.7/index/ContentIndex/FlatStore.c:706: failed assertion 'pageSize &gt; 0' /.Spotlight-V100/Store-V1/Stores/E67A0F96-8AFF-43AF-B2AD-6665DE9CAD94/2.indexArrays flat store&lt;br /&gt;08/04/11 4/11(金)16:18:04 mds[2477] (/)(Error) IndexCI in mergeIndexDataTrampoline:Caught mach exception. Fun Fun Fun.&lt;br /&gt;08/04/11 4/11(金)16:18:04 mds[2477] /SourceCache/Spotlight/Spotlight-398.7/index/ContentIndex/CIMerging.c:216: failed assertion '!buffers-&gt;badIndex' /.Spotlight-V100/Store-V1/Stores/E67A0F96-8AFF-43AF-B2AD-6665DE9CAD94/0.indexHead corrupt ro index need to rebuild 0.&lt;br /&gt;08/04/11 4/11(金)16:18:07 ReportCrash[2635] Formulating crash report for process mds[2477]&lt;br /&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;残念ながら、いろいろ調べてみたけど解決しないので、Leopard を再インストールすることに決めました。&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9178620729627808446-2550522666985589039?l=blog.yakitara.com'/&gt;&lt;/div&gt;
+      </description>
+      <link>http://blog.yakitara.com/2008/04/my-spotlight-in-leopard-goes-mad.html
+      </link>
+      <author>noreply@blogger.com (hiroshi saito)
+      </author>
+      <media:thumbnail xmlns:media='http://search.yahoo.com/mrss/' url='http://2.bp.blogspot.com/_qsyweV0vXTA/R_8VqHRQuPI/AAAAAAAAAG4/34dPXaghMdg/s72-c/spotlight_indexing.png' height='72' width='72'/>
+      <thr:total xmlns:thr='http://purl.org/syndication/thread/1.0'>0
+      </thr:total>
+    </item>
+  </channel>
+</rss>

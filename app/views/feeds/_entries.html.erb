@@ -1,7 +1,7 @@
 <% feed.entries.each do |entry| %>
   <div class='<%= cycle "odd", "even" %>'>
     <div title='<%= entry.identifier %>' style="overflow:hidden;">
-      <%= entry.identifier_name %>: <%= truncate(h(entry.identifier), 50 - entry.identifier_name.size) %>
+      <%= entry.identifier_name %>: <%= truncate h(entry.identifier), :length => (50 - entry.identifier_name.size) %>
     </div>
   <% unless entry.categories.blank? %>
     <div>

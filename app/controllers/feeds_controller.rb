@@ -19,9 +19,9 @@ class FeedsController < ApplicationController
       else
         src = Net::HTTP.get_response(URI.parse(params[:src])).body
       end
-      @src_feed = Feed.new(src)
-      @result_feed = Feed.new(src)
-      @result_feed.filter!("rdf:about" => params[:rdf_about])
+      @src_feed = Feed.parse(src)
+      @result_feed = Feed.parse(src)
+      @result_feed.filter!(filter_params)
     end
   rescue SocketError => e
     flash[:error] = e.message

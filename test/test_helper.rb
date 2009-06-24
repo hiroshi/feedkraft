@@ -35,4 +35,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def fixture_file_read(path)
+    File.read(File.join(Rails.root,"test","fixtures",path))
+  end
 end

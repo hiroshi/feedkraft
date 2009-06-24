@@ -1,5 +1,29 @@
+class Feed
+  def self.parse(src)
+    doc = REXML::Document.new(src)
+    case doc.root.name
+    when "RDF" # RSS 1.0
+      RSS1::Feed.new(doc)
+    when "rss" # RSS 2.0
+      RSS2::Feed.new(doc)
+    when "feed" # Atom
+      Atom::Feed.new(doc)
+    end
+  end
+
+  def to_s
+    @doc.to_s
+  end
+end
+
+class Entry
+  def identifier_name
+    self.class.identifier_name
+  end
+end
+
 module RSS1
-  class Entry
+  class Entry < ::Entry
     def initialize(element)
       @element = element
     end
@@ -8,7 +32,7 @@ module RSS1
       @element.attributes["rdf:about"].to_s
     end
 
-    def identifier_name
+    def self.identifier_name
       "rdf:about"
     end
 
@@ -24,10 +48,31 @@ module RSS1
       []
     end
   end
+
+  class Feed < ::Feed
+    def initialize(doc)
+      @doc = doc
+    end
+
+    def entries
+      @entries ||= @doc.get_elements("/rdf:RDF/item").map {|e| Entry.new(e) }
+    end
+
+    def filter!(options={})
+      @entries = nil
+      key, val = options.shift.map(&:to_s)
+      case key
+      when "identifier"
+        unless val.blank?
+          @doc.elements.delete_all "/rdf:RDF/item[not(contains(@rdf:about,'#{val}'))]"
+        end
+      end
+    end
+  end
 end
 
 module RSS2
-  class Entry
+  class Entry < ::Entry
     def initialize(element)
       @element = element
     end
@@ -37,7 +82,7 @@ module RSS2
       @element.get_text("guid").to_s
     end
 
-    def identifier_name
+    def self.identifier_name
       "guid"
     end
 
@@ -53,10 +98,31 @@ module RSS2
       @element.get_elements("category").map{|c| c.text.strip }
     end
   end
+
+  class Feed < ::Feed
+    def initialize(doc)
+      @doc = doc
+    end
+
+    def entries
+      @entries ||= @doc.get_elements("/rss/channel/item").map {|e| Entry.new(e) }
+    end
+
+    def filter!(options={})
+      @entries = nil
+      key, val = options.shift.map(&:to_s)
+      case key
+      when "category"
+        unless val.blank?
+          @doc.elements.delete_all "/rss/channel/item[not(category[normalize-space(text())='#{val}'])]"
+        end
+      end
+    end
+  end
 end
 
 module Atom
-  class Entry
+  class Entry < ::Entry
     def initialize(element)
       @element = element
     end
@@ -65,7 +131,7 @@ module Atom
       @element.get_text("id").to_s
     end
 
-    def identifier_name
+    def self.identifier_name
       "id"
     end
 
@@ -81,30 +147,26 @@ module Atom
       @element.get_elements("category").map{|c| c.attributes["term"] }
     end
   end
-end
 
-class Feed
-  def initialize(src)
-    @doc = REXML::Document.new(src)
-  end
+  class Feed < ::Feed
+    def initialize(doc)
+      @doc = doc
+    end
 
-  def entries
-    case @doc.root.name
-    when "RDF" # RSS 1.0
-      @entries ||= @doc.get_elements("/rdf:RDF/item").map {|e| RSS1::Entry.new(e) }
-    when "rss" # RSS 2.0
-      @entries ||= @doc.get_elements("/rss/channel/item").map {|e| RSS2::Entry.new(e) }
-    when "feed" # Atom
-      @entries ||= @doc.get_elements("/feed/entry").map {|e| Atom::Entry.new(e) }
+    def entries
+      @entries ||= @doc.get_elements("/feed/entry").map {|e| Entry.new(e) }
+    end
+
+    def filter!(options={})
+      @entries = nil
+      key, val = options.shift.map(&:to_s)
+      case key
+      when "category"
+        unless val.blank?
+          @doc.elements.delete_all "/feed/entry[not(category[@term='#{val}'])]"
+        end
+      end
     end
   end
-
-  def filter!(options={})
-    key, val = options.shift
-    @doc.elements.delete_all "//item[not(contains(@#{key},'#{val}'))]"
-  end
-
-  def to_s
-    @doc.to_s
-  end
 end
+

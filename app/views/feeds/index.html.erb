@@ -2,7 +2,9 @@
 <% form_tag "", :method => "get" do %>
   <%= label_tag "src", "Source URI" %>: <%= text_field_tag "src", params[:src], :size => 80 %>
   <br/>
-  <%= label_tag "rdf_about", "rdf:about" %> contains <%= text_field_tag "rdf_about", params[:rdf_about] %>
+  <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", params[:identifier] %>
+  <br/>
+  <%= label_tag "category" %>: <%= text_field_tag "category", params[:category] %>
   <br/>
   <button>filter</button>
 <% end %> 

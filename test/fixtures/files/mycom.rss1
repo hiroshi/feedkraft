@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss1japanesefull.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.journal.mycom.co.jp/~d/styles/itemcontent.css"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">
+<channel rdf:about="http://journal.mycom.co.jp/pc/">
+  <title>マイコミジャーナル パソコン
+  </title>
+  <link>http://journal.mycom.co.jp/pc/
+  </link>
+  <description>「マイコミジャーナル」は、「信頼と革新」を旨とする総合ニュースサイトです。エンタープライズ、PC、デジタル製品関連情報からホビー、エンタテインメント、生活情報まで幅広い話題をカバーします。また、ネットユーザーのニーズを的確に捉えた、コアで独創性の高い話題を積極的に提供しています。
+  </description>
+  <dc:language>ja
+  </dc:language>
+<dc:rights>Copyright (C) Mainichi Communications Inc. All
+  rights reserved. 掲載記事の無断転載を禁じます.
+</dc:rights>
+<dc:date>2009-06-20T15:50:13+09:00
+</dc:date>
+<dc:publisher>株式会社 毎日コミュニケーションズ
+</dc:publisher>
+<dc:creator>マイコミジャーナル編集部&lt;mj-reader@mycom.co.jp&gt;
+</dc:creator>
+<dc:subject>マイコミジャーナル パソコン
+</dc:subject>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/20/runwithparameters/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/20/017/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/20/011/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/20/010/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/20/009/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/071/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/068/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/064/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/057/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/044/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/19/vba/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/19/deskpower_ce_d50n/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/19/deskpower_lx_d90n/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/column/graphics/068/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/029/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/028/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/column/motherboard/042/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/024/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/column/sopinion/290/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/kikaku/2009/06/19/002/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/kikaku/2009/06/19/001/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/19/010/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/19/buffalo/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/079/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/073/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/072/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/071/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/070/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/063/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/055/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/054/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/053/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/051/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/050/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/049/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/044/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/037/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/18/sandisk/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/articles/2009/06/18/endeavor_np11_v/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/016/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/009/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/005/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/18/004/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/096/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/095/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/094/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/093/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/092/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/091/index.html" />
+<rdf:li rdf:resource="http://journal.mycom.co.jp/news/2009/06/17/090/index.html" />
+</rdf:Seq>
+</items>
+<image rdf:resource="http://journal.mycom.co.jp/images/mj_logo_fb.gif" />
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.journal.mycom.co.jp/haishin/rss/pc" type="application/rss+xml" />
+<feedburner:feedFlare href="http://add.my.yahoo.co.jp/rss?url=http%3A%2F%2Ffeeds.journal.mycom.co.jp%2Fhaishin%2Frss%2Fpc" src="http://img.yahoo.co.jp/i/jp/my/addtomy1.gif">myyahoo???
+</feedburner:feedFlare>
+<feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.journal.mycom.co.jp%2Fhaishin%2Frss%2Fpc" src="http://buttons.googlesyndication.com/fusion/add.gif">Google???
+</feedburner:feedFlare>
+<feedburner:feedFlare href="http://r.hatena.ne.jp/append/http://feeds.journal.mycom.co.jp/haishin/rss/pc" src="http://r.hatena.ne.jp/images/addto_w.gif">???RSS???
+</feedburner:feedFlare>
+<feedburner:feedFlare href="http://reader.livedoor.com/subscribe/http://feeds.journal.mycom.co.jp/haishin/rss/pc" src="http://image.reader.livedoor.com/img/banner/91_17_1.gif">Livedoor???????
+</feedburner:feedFlare>
+<feedburner:feedFlare href="http://reader.goo.ne.jp/web/bookmarklet.html?,,http%3A%2F%2Ffeeds.journal.mycom.co.jp%2Fhaishin%2Frss%2Fpc" src="http://reader.goo.ne.jp/web/img/addwebrss.gif">goo RSS???????
+</feedburner:feedFlare>
+</channel>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/20/runwithparameters/index.html">
+  <title>【レビュー】起動オプションにコマンドプロンプトは不要 － オープンソースソフト「RunWithParameters」
+  </title>
+<description>「起動オプション」という言葉は日常的にPCを使用していてもあまり耳慣れないかもしれない。起動オプションとは、アプリケーションを任意の方法で起動するために付け加えるパラメーターのこと。例えば、電車内でPCを開いていて、Internet Explorer(以下、IEと略記)を起動する際に、初期画面となるホームページを表示したくない場合もあるだろう。そんな時には、起動オプションを指定することで、IEを空白ページで起動することが可能となる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/D3avcwSe-Xhdsi1qwUTideSVH5k/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/D3avcwSe-Xhdsi1qwUTideSVH5k/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+  &lt;a href="http://feedads.g.doubleclick.net/~a/D3avcwSe-Xhdsi1qwUTideSVH5k/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/D3avcwSe-Xhdsi1qwUTideSVH5k/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/Yal9w1GBqW0" height="1" width="1"/&gt;
+</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/Yal9w1GBqW0/index.html
+</link>
+<dc:date>2009-06-20T15:48:08+09:00
+</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/20/runwithparameters/index.html
+</feedburner:origLink>
+</item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/20/017/index.html">
+<title>エクストラ、点訳エディタ「EXTRA for Windows Ver.5.0.3」へのアップデータ</title>
+<description>エクストラは、同社の点訳エディタ「EXTRA for Windows Ver.5.0.3」を公開した。「Ver.5.0.2」未満の「EXTRA for Windows Version 5」からアップデートできる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/wlEKmLEJdqLJftXJsqv2Yb9kTrs/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/wlEKmLEJdqLJftXJsqv2Yb9kTrs/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/wlEKmLEJdqLJftXJsqv2Yb9kTrs/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/wlEKmLEJdqLJftXJsqv2Yb9kTrs/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/4ampjqck9cs" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/4ampjqck9cs/index.html</link>
+<dc:date>2009-06-20T14:29:19+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/20/017/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/20/011/index.html">
+<title>ユニットコム、モンハン動作推奨スペックノート3機種</title>
+<description>「パソコン工房」「TWOTOP」「Faith」を展開するユニットコムは、「モンスターハンター フロンティア オンライン」動作推奨スペックノートPCとして、「Lesance BTO GSN628GW TYPE-G-MHF」「Lesance BTO GSN625GW TYPE-G-MHF」「Lesance BTO GSN625GW TYPE-GX-MHF」の発売を開始した。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/3xZe5PpTcVbkOxUixFh6RyRyzaE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/3xZe5PpTcVbkOxUixFh6RyRyzaE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/3xZe5PpTcVbkOxUixFh6RyRyzaE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/3xZe5PpTcVbkOxUixFh6RyRyzaE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/_ErvwyyEeZg" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/_ErvwyyEeZg/index.html</link>
+<dc:date>2009-06-20T08:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/20/011/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/20/010/index.html">
+<title>ユニットコム、ブラック塗装新ケース採用のゲーム向けデスクトップ</title>
+<description>「パソコン工房」「TWOTOP」「Faith」を展開するユニットコムは、アルミ/スチールのハイブリッド新ケース採用の「VIP G-Spec」シリーズ6モデルを発表。TWOTOPブランドにて販売を開始した。いずれもケース内にもブラック塗装を施し、前面・背面にブルーLED FAN静音ファンをを採用。クリアサイドパネルも標準搭載している。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/jTEliU-7Ei_22rCIAlmcYgS2__I/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/jTEliU-7Ei_22rCIAlmcYgS2__I/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/jTEliU-7Ei_22rCIAlmcYgS2__I/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/jTEliU-7Ei_22rCIAlmcYgS2__I/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/p0aXu-G63pQ" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/p0aXu-G63pQ/index.html</link>
+<dc:date>2009-06-20T08:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/20/010/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/20/009/index.html">
+<title>コレガ、USB HDDをNAS化できる11n &amp; 1000BASE-T対応無線LANルータ - 価格9,975円</title>
+<description>コレガは、IEEE802.11b/g/n対応無線LAN、10/100/1000BASE-T対応有線LANに対応した、USBポート搭載無線LANルータ「CG-WLR300GNH」シリーズを発表した。ラインナップは、ルータ本体のみの「CG-WLR300GNH」、無線LAN USBアダプタセットモデル「CG-WLR300GNH-U」、無線LANカード セットモデル「CG-WLR300GNH-P」。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/KW3CdPwnA-akD3gcY9VpBUw99yM/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/KW3CdPwnA-akD3gcY9VpBUw99yM/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/KW3CdPwnA-akD3gcY9VpBUw99yM/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/KW3CdPwnA-akD3gcY9VpBUw99yM/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/zfhIxaW3QDk" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/zfhIxaW3QDk/index.html</link>
+<dc:date>2009-06-20T08:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/20/009/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/071/index.html">
+<title>米Intelが「Research@Intel Day 2009」を開催、最新研究成果を報告</title>
+<description>米Intelの最新技術や研究成果を報告する「Research@Intel Day 2009」が6月18日(現地時間)、米カリフォルニア州マウンテンビューにあるComputer History Museumで開催された。Atomの次期省電力プラットフォーム「Moorestown」で採用される電力管理技術「PPM」といった製品に近いレベルのものから、3Dインターネットのような研究レベルの技術まで、同社のさまざまな研究成果が紹介されている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/-DtHQNZZM-uqOBE8TIheOZC7S-U/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/-DtHQNZZM-uqOBE8TIheOZC7S-U/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/-DtHQNZZM-uqOBE8TIheOZC7S-U/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/-DtHQNZZM-uqOBE8TIheOZC7S-U/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/4AsUBbMTAiM" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/4AsUBbMTAiM/index.html</link>
+<dc:date>2009-06-19T23:07:45+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/071/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/068/index.html">
+<title>iPhone OS 3.0のプッシュが伝書鳩になる「QuickPigeon」</title>
+<description>ユビキタスエンターテインメントから、iPhone OS 3.0の新機能「Push Notification Service」を利用したメッセージングツール「QuickPigeon」がリリースされた。App Store経由で無償ダウンロードできる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/UljX88hUp6RnoTKGKnsfAwXe91U/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/UljX88hUp6RnoTKGKnsfAwXe91U/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/UljX88hUp6RnoTKGKnsfAwXe91U/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/UljX88hUp6RnoTKGKnsfAwXe91U/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/qld4OQ5QuYw" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/qld4OQ5QuYw/index.html</link>
+<dc:date>2009-06-19T22:35:28+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/068/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/064/index.html">
+<title>"ヤフオク"の商品情報を検索できるiPhoneアプリ「Drop Auction」</title>
+<description>Drop widgetは、Yahoo!オークションの商品情報を検索できるiPhone/iPod touch用アプリ「オークション検索DropAuction」の配信を開始した。価格は無料で、ファイルサイズは0.5MB。対応デバイスはiPhone/iPod touch。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/ItyBkfC8MSADgtZvR-j_dD5gPVE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ItyBkfC8MSADgtZvR-j_dD5gPVE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/ItyBkfC8MSADgtZvR-j_dD5gPVE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ItyBkfC8MSADgtZvR-j_dD5gPVE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/DIvTMyjbZDg" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/DIvTMyjbZDg/index.html</link>
+<dc:date>2009-06-19T20:35:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/064/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/057/index.html">
+<title>3万5,000本のApp Storeで「埋もれない」ためのセミナーを開催!</title>
+<description>NPO法人MOSA(モサ)は「iPhone OS 3.0ビジネス 傾向と対策セミナー」を7月2日に開催する。3万5000本という膨大なiPhone用アプリケーションが存在する中で、iPhone OS 3.0以前と以後のビジネス潮流をワールドワイドの視点から知ることができる内容となっている。受け付けの締め切りは2009年6月26日。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/lWHnW5HiV9weFyk_S_4gMA7j6Bk/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/lWHnW5HiV9weFyk_S_4gMA7j6Bk/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/lWHnW5HiV9weFyk_S_4gMA7j6Bk/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/lWHnW5HiV9weFyk_S_4gMA7j6Bk/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/dodbZqIXBAA" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/dodbZqIXBAA/index.html</link>
+<dc:date>2009-06-19T19:42:57+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/057/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/044/index.html">
+<title>フリーのセキュリティ対策製品「Microsoft Security Essentials」、23日よりベータ版公開</title>
+<description>米Microsoftの無料セキュリティ対策ソフトの公開が近付いている。"Morro"の開発コード名で呼ばれた製品は正式名称が「Microsoft Security Essentials」となり、23日(米国時間)にもベータ版の配布が行われる。18日になり複数のメディアが報じた。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/J1FXE9bkwpmnIkD6CMhs2dv2PoQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/J1FXE9bkwpmnIkD6CMhs2dv2PoQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/J1FXE9bkwpmnIkD6CMhs2dv2PoQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/J1FXE9bkwpmnIkD6CMhs2dv2PoQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/p3_H7N4a6NU" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/p3_H7N4a6NU/index.html</link>
+<dc:date>2009-06-19T18:29:10+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/044/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/19/vba/index.html">
+<title>【ハウツー】ゼロからはじめるVBA － セル操作編</title>
+<description>前回までの説明で、VBAでマクロを作成し、実行することができるようになりました。今回からは、VBAのプログラムの書き方を勉強して行きたいと思います。前回の例題に出てきたものに、Cellsプロパティがありました。Excelのセルの内容を読み込んだり、セルにデータを設定したりできるものです。表を操作していろいろな作業をするのは、Excel（表計算プログラム）の得意とするところです。今回はExcel表におけるデータの操作に焦点を当てていきたいと思います。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/wAdG-cEyKQd18__hUOEZOiVTVC0/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/wAdG-cEyKQd18__hUOEZOiVTVC0/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/wAdG-cEyKQd18__hUOEZOiVTVC0/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/wAdG-cEyKQd18__hUOEZOiVTVC0/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/xWvqxhDiyJ8" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/xWvqxhDiyJ8/index.html</link>
+<dc:date>2009-06-19T17:53:48+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/19/vba/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/19/deskpower_ce_d50n/index.html">
+<title>【レビュー】シンプルさが心地よいハイスペック機 - 富士通「FMV-DESKPOWER CE/D50N」</title>
+<description>「FMV-DESKPOWER CE」シリーズは、今となっては大手メーカー製マシンとして珍しくなった、省スペースセパレート型デスクトップだ。「FMV-DESKPOWER CE/D50N」はその最上位機種「CE/D50」をベースに、カスタムメイド可能な「富士通直販WEB MART」でのみ販売される直販モデルだ。Intel Core 2 Quadとグラフィックボード「NVIDIA GeForce 9500 GT」を搭載しながら、基本構成の価格は10万円台からのお手頃モデルとなっている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/a4h7cLK1v6bT_8B8YPzS3P9qEng/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/a4h7cLK1v6bT_8B8YPzS3P9qEng/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/a4h7cLK1v6bT_8B8YPzS3P9qEng/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/a4h7cLK1v6bT_8B8YPzS3P9qEng/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/7ahNAswslRM" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/7ahNAswslRM/index.html</link>
+<dc:date>2009-06-19T17:48:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/19/deskpower_ce_d50n/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/19/deskpower_lx_d90n/index.html">
+<title>【レビュー】マルチメディア機能を高次元で融合! 富士通「FMV-DESKPOWER LX/D90N」</title>
+<description>液晶一体型のハイエンドデスクトップPCとして好調な売れ行きを誇る富士通の「FMV-DESKPOWER LX」シリーズが、2009年夏モデルでさらに進化を遂げた。内容としては液晶の大型化&amp;高解像度化をはじめ、マルチメディアに関する機能が大幅に強化されたようだ。今回はWEB MARTカスタムメイドモデル「FMV-DESKPOWER LX/D90N」の最高スペックバージョンが入手できたので、早速その実力を見ていこう。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/T_8qumTDFSFr3r2b6Cfxfjw9WgI/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/T_8qumTDFSFr3r2b6Cfxfjw9WgI/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/T_8qumTDFSFr3r2b6Cfxfjw9WgI/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/T_8qumTDFSFr3r2b6Cfxfjw9WgI/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/HkOGExZJvtE" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/HkOGExZJvtE/index.html</link>
+<dc:date>2009-06-19T17:46:46+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/19/deskpower_lx_d90n/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/column/graphics/068/index.html">
+<title>【コラム】3Dグラフィックス・マニアックス 第68回 事前計算放射輝度伝搬(PRT)～PRTの基本。静的PRT(3)</title>
+<description>「球面調和関数」は言葉の響きが難しいので、まずはイメージから捉えよう。かなり極端に簡略化して説明すると、球っぽいモノから任意の長さの針が突き出た「いびつなウニ」みたいな物体の形状を数学的な関数で表すためのもの……といえる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/pht_rBV-i83Kt1LCRrd5M5813uY/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pht_rBV-i83Kt1LCRrd5M5813uY/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/pht_rBV-i83Kt1LCRrd5M5813uY/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pht_rBV-i83Kt1LCRrd5M5813uY/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/ESNZvhtcLLs" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/ESNZvhtcLLs/index.html</link>
+<dc:date>2009-06-19T17:00:11+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/column/graphics/068/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/029/index.html">
+<title>東芝、ハイエンドAVノート「Qosmio G50」にスペック強化型Webオリジナルモデル</title>
+<description>東芝は、2009年夏モデルの「Qosmio G50」をスペックアップしたWebオリジナルモデル「Qosmio G50W/95JW」を発表した。受注はすでに開始しており、発売は7月下旬以降の予定。直販価格は304,800円となる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/LapzHVTx3TqQzMLcBiiXDxmwMhQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/LapzHVTx3TqQzMLcBiiXDxmwMhQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/LapzHVTx3TqQzMLcBiiXDxmwMhQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/LapzHVTx3TqQzMLcBiiXDxmwMhQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/3gBl6RKcHcU" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/3gBl6RKcHcU/index.html</link>
+<dc:date>2009-06-19T16:46:59+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/029/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/028/index.html">
+<title>ドスパラ、Core i7搭載など「クロシーノ」推奨ゲーミングPC3モデル発表</title>
+<description>パソコンショップ「ドスパラ」を運営するサードウェーブは、ジークレストが運営するMMORPG「CroXino - クロシーノ -」推奨のデスクトップ・ゲーミングパソコン「Prime Galleria」3モデルを発表した。既に発売を開始している。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/vpdYGmUkjz-E119qlEGB52IQznM/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/vpdYGmUkjz-E119qlEGB52IQznM/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/vpdYGmUkjz-E119qlEGB52IQznM/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/vpdYGmUkjz-E119qlEGB52IQznM/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/ynMS6CTvYYw" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/ynMS6CTvYYw/index.html</link>
+<dc:date>2009-06-19T16:40:09+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/028/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/column/motherboard/042/index.html">
+<title>【コラム】マザーボードの殿堂 第42回 コスト重視モデルながら"DrMOS"を備えたCore i7マザー「MSI X58 Pro」</title>
+<description>エムエスアイコンピュータージャパンの「X58 Pro」は、Core i7に対応したIntel X58 Expressマザーボード。比較的安価な部類に属するモデルでありながら、主に同社ハイエンドモデルで採用されている高性能電源回路"DrMOS"を搭載しており、高出力かつ低消費電力である点が特徴だ。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/85oa3v9hD14kdghi6VOrC_FhhJg/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/85oa3v9hD14kdghi6VOrC_FhhJg/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/85oa3v9hD14kdghi6VOrC_FhhJg/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/85oa3v9hD14kdghi6VOrC_FhhJg/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/Y4hDcWLOWpg" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/Y4hDcWLOWpg/index.html</link>
+<dc:date>2009-06-19T15:51:52+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/column/motherboard/042/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/024/index.html">
+<title>ツクモ、プライベートブランド「eX.computer」で新モデルを受注開始</title>
+<description>ツクモブランドでPCおよびPC周辺機器を展開するProject Whiteは、プライベートブランドPC「eX.computer」において、オリジナルデザインの新筐体によるモデルの受注・販売を開始した。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/SMsBE8fUpifg3zpQhCjqWKWgHyQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/SMsBE8fUpifg3zpQhCjqWKWgHyQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/SMsBE8fUpifg3zpQhCjqWKWgHyQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/SMsBE8fUpifg3zpQhCjqWKWgHyQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/LiuIvJld3D0" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/LiuIvJld3D0/index.html</link>
+<dc:date>2009-06-19T15:50:38+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/024/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/column/sopinion/290/index.html">
+<title>【コラム】セカンド・オピニオン 第290回 USB 3.0の研究(17)</title>
+<description>ではもう少し物理層の詳細を説明しておきたい。前回の順に沿って説明すると、まずはScrambleとなる。このScrambling/Descramblingの目的は、PCI Expressのそれと全く同じである。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/3MsMbt6HNpATeAoUUAg3pSG2NZE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/3MsMbt6HNpATeAoUUAg3pSG2NZE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/3MsMbt6HNpATeAoUUAg3pSG2NZE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/3MsMbt6HNpATeAoUUAg3pSG2NZE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/cYIwEZyKsqw" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/cYIwEZyKsqw/index.html</link>
+<dc:date>2009-06-19T14:59:57+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/column/sopinion/290/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/kikaku/2009/06/19/002/index.html">
+<title>【特別企画】オススメレビュー！ Core i7 搭載の低価格モデル Lm-i460S2登場！</title>
+<description>マウスコンピューターのベーシックBTOモデル「LUV MACHINES」のプレミアム構成に低価格ながらCore i7-920と搭載した「Lm-i460S2」が加わった。Webからゲーミング・動画編集など幅広く使えるお買い得度No.1のPCの登場だ。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/KHbw5LVC7BHvKC1fm3uXqXuK148/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/KHbw5LVC7BHvKC1fm3uXqXuK148/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/KHbw5LVC7BHvKC1fm3uXqXuK148/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/KHbw5LVC7BHvKC1fm3uXqXuK148/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/Ji-1OCTcZsU" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/Ji-1OCTcZsU/index.html</link>
+<dc:date>2009-06-19T14:15:28+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/kikaku/2009/06/19/002/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/kikaku/2009/06/19/001/index.html">
+<title>【特別企画】オススメレビュー！最強のゲーム環境がココに！ NEXTGEAR L720MV4</title>
+<description>マウスコンピューターのゲーミングブランド「G-Tune」に、発売されたばかりのインテルの最新クアッドコアCPU「Core i7-950」を採用した「NEXTGEAR L720MV4」が登場した。あらゆるゲーマーのニーズに応えるパワフルで満足度の高い1台だ。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/NvXRKj3HkZ92tESY1Sx2uhEsDKo/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/NvXRKj3HkZ92tESY1Sx2uhEsDKo/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/NvXRKj3HkZ92tESY1Sx2uhEsDKo/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/NvXRKj3HkZ92tESY1Sx2uhEsDKo/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/uMHsqWRxWGo" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/uMHsqWRxWGo/index.html</link>
+<dc:date>2009-06-19T12:03:33+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/kikaku/2009/06/19/001/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/19/010/index.html">
+<title>XP Home SP2がマルチコアで動く「Sun VirtualBox 3.0」β版が公開</title>
+<description>仮想化ソフト「Sun VirtualBox 3.0」のβ第1版が公開された。Virtual SMPの改良により、ゲストOSで最大32基の仮想プロセッサ / コアがサポートされるなど、大幅に機能強化されている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/ePKX6sdHGG5I2vQN39TO47jPimQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ePKX6sdHGG5I2vQN39TO47jPimQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/ePKX6sdHGG5I2vQN39TO47jPimQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ePKX6sdHGG5I2vQN39TO47jPimQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/-7Cad0XA-a0" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/-7Cad0XA-a0/index.html</link>
+<dc:date>2009-06-19T11:24:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/19/010/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/19/buffalo/index.html">
+<title>【レビュー】簡単にNASを構築できる高速無線LANルータ - バッファロー「WZR-HP-G300NH/U」</title>
+<description>「WZR-HP-G300NH」は高速の無線LAN規格IEEE802.11nドラフト2.0(以下11n)に対応するブロードバンドルーターだ。本体外部に2本、内部に1本のアンテナを搭載。高速性と安定性を実現しており、メーカーの公表値によれば、11n対応の従来機種と比べて、約30%高速となっている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/LH2_ifLxYP4ogCg2e6ZCAR00YEU/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/LH2_ifLxYP4ogCg2e6ZCAR00YEU/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/LH2_ifLxYP4ogCg2e6ZCAR00YEU/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/LH2_ifLxYP4ogCg2e6ZCAR00YEU/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/N_0ljkjIUGo" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/N_0ljkjIUGo/index.html</link>
+<dc:date>2009-06-19T10:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/19/buffalo/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/079/index.html">
+<title>日本エイサー、消費電力を削減した22型ワイド液晶「V223WBbmd」-価格22,800円</title>
+<description>日本エイサーは、19型ワイド液晶ディスプレイ「V193WBbmd」、22型ワイド液晶「V223WBbmd」、19型スクエア液晶「V193Bbmd」を、acerブランドにて19日より順次発売する。店頭予想価格は、V193WBbmdが17,800円、V223WBbmdが22,800円、V193Bbmdが19,800円。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/1jNfKlmEDg5d0qnqG7jJnflx740/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/1jNfKlmEDg5d0qnqG7jJnflx740/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/1jNfKlmEDg5d0qnqG7jJnflx740/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/1jNfKlmEDg5d0qnqG7jJnflx740/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/G6Sg5Oo_v8I" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/G6Sg5Oo_v8I/index.html</link>
+<dc:date>2009-06-18T23:02:57+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/079/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/073/index.html">
+<title>ラトックシステム、製品のWindows 7 RC版での動作確認状況をWebサイトで公開</title>
+<description>PCやワークステーション周辺機器などの製造・販売をおこなうラトックシステムは18日、同社製品のWindows 7 RC版での確認状況を一覧できるWebサイトを公開した。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/2KRa-OxkCJV6I0Hk0wT-JBfycI4/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/2KRa-OxkCJV6I0Hk0wT-JBfycI4/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/2KRa-OxkCJV6I0Hk0wT-JBfycI4/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/2KRa-OxkCJV6I0Hk0wT-JBfycI4/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/sssfBbBFI8s" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/sssfBbBFI8s/index.html</link>
+<dc:date>2009-06-18T20:26:29+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/073/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/072/index.html">
+<title>ロジクール、価格1,480円の光学式マウス「ロジクール マウス M110」</title>
+<description>ロジクールは、水平スクロール機能、シンメトリーデザイン採用の光学式マウス「ロジクール マウス M110」を19日に発売する。価格はオープンプライスだが、ロジクールオンラインストア価格は1,480円。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/P6vs5xD5PR-PAvTU34hAlKWaOhs/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/P6vs5xD5PR-PAvTU34hAlKWaOhs/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/P6vs5xD5PR-PAvTU34hAlKWaOhs/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/P6vs5xD5PR-PAvTU34hAlKWaOhs/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/mzcvG1Dr1XE" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/mzcvG1Dr1XE/index.html</link>
+<dc:date>2009-06-18T20:20:25+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/072/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/071/index.html">
+<title>Mac / Linux向けWindows互換レイヤー最新版「CrossOver 8.0」</title>
+<description>米CodeWeaversは17日、Windows API互換レイヤーの最新版「CrossOver 8.0」を発表した。動作環境はMac OS XとLinux、Intel製CPUを搭載したハードウェアで動作する。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/MwQN-miA7MLyoa4cP5ko_d-JEI8/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/MwQN-miA7MLyoa4cP5ko_d-JEI8/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/MwQN-miA7MLyoa4cP5ko_d-JEI8/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/MwQN-miA7MLyoa4cP5ko_d-JEI8/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/rJ41Xq_o328" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/rJ41Xq_o328/index.html</link>
+<dc:date>2009-06-18T20:17:31+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/071/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/070/index.html">
+<title>Windows Server 2008対応のiPhone用RDPクライアント</title>
+<description>WindowsリモートデスクトップサービスのiPhoneクライアント「iTap RDP Client」がリリースされた。対応デバイスはiPhoneとiPod touch、動作環境はiPhone OS 2.0以降。App Storeでの価格は1,400円。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/rBXK158GJi3VD2jOb1t_q9Fmw98/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/rBXK158GJi3VD2jOb1t_q9Fmw98/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/rBXK158GJi3VD2jOb1t_q9Fmw98/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/rBXK158GJi3VD2jOb1t_q9Fmw98/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/TdSwjfixEE4" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/TdSwjfixEE4/index.html</link>
+<dc:date>2009-06-18T19:48:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/070/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/063/index.html">
+<title>ソースネクスト、謝恩キャンペーン版に計6タイトルを追加</title>
+<description>ソースネクストは先月22日より「6年連続販売本数No.1を記念した謝恩キャンペーン」として謝恩キャンペーン版ソフトを10タイトルを販売しているが、当該ラインアップの販売が好調なため、さらに売れ筋の6タイトルを謝恩キャンペーン版として7月3日より追加発売する。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/l_rJ9XDOPg2EAtSg854BERpM0mA/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/l_rJ9XDOPg2EAtSg854BERpM0mA/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/l_rJ9XDOPg2EAtSg854BERpM0mA/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/l_rJ9XDOPg2EAtSg854BERpM0mA/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/5JfVXu3Pvdw" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/5JfVXu3Pvdw/index.html</link>
+<dc:date>2009-06-18T19:01:22+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/063/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/055/index.html">
+<title>東芝、コンパクトながらハイスペックを誇るビジネスデスクトップなど3モデル</title>
+<description>東芝は、コンパクトボディながら、CPUにIntel Core 2 Duo E7400を搭載する高性能な法人向けデスクトップ「EQUIUM S6700」を発表した。そのほか、拡張性に優れたモデルなど、2モデルをラインナップしている。すべて、7月上旬より順次発売予定となっている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/_ez998FVZkaHGTtGuvAEMYEB9Zo/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/_ez998FVZkaHGTtGuvAEMYEB9Zo/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/_ez998FVZkaHGTtGuvAEMYEB9Zo/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/_ez998FVZkaHGTtGuvAEMYEB9Zo/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/O8Fk2kgNbAE" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/O8Fk2kgNbAE/index.html</link>
+<dc:date>2009-06-18T18:23:09+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/055/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/054/index.html">
+<title>高速スクロールホイール採用「ロジクール Bluetooth マウス M555b」 - 価格4,980円</title>
+<description>ロジクールは、高速スクロール対応ホイール、レーザーセンサーを採用したBluetoothワイヤレスマウス、「ロジクール Bluetooth マウス M555b」を7月3日に発売する。価格はオープンプライスだが、ロジクールオンラインストア価格は4,980円。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/f1VRwL1k8TGSp3tJnQhwkIC2ohg/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/f1VRwL1k8TGSp3tJnQhwkIC2ohg/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/f1VRwL1k8TGSp3tJnQhwkIC2ohg/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/f1VRwL1k8TGSp3tJnQhwkIC2ohg/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/FeyPIkt1lBQ" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/FeyPIkt1lBQ/index.html</link>
+<dc:date>2009-06-18T18:21:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/054/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/053/index.html">
+<title>ビジネスイベントをGoogleカレンダーに設置するガジェットの提供開始</title>
+<description>inomaは、Googleカレンダー上にビジネスイベントの情報などを通知するガジェットを公開した。ガジェットは同社が運営するソーシャルイベントサイト「Comevent」に投稿されたビジネス関連のイベント情報を中心に自動的にGoogleカレンダー上に配置される。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/pFOmqtf0HxJdak_Eq9hGrPYVQ58/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pFOmqtf0HxJdak_Eq9hGrPYVQ58/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/pFOmqtf0HxJdak_Eq9hGrPYVQ58/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pFOmqtf0HxJdak_Eq9hGrPYVQ58/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/nLGVm1MG7pY" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/nLGVm1MG7pY/index.html</link>
+<dc:date>2009-06-18T18:19:36+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/053/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/051/index.html">
+<title>東芝、高精細液晶で快適なデスクトップ環境が得られる法人向けノートなど3モデル</title>
+<description>東芝は、法人向けノートPC「dynabook Satellite K32V」を発表した。1,680×1,050ドットの15.4型ワイドを搭載していることや、高い堅牢性が特長だ。そのほか、3モデルをラインナップする。6月下旬より順次発売となる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/-d42YGU4NWSQpN7AumEkZN4mtzs/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/-d42YGU4NWSQpN7AumEkZN4mtzs/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/-d42YGU4NWSQpN7AumEkZN4mtzs/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/-d42YGU4NWSQpN7AumEkZN4mtzs/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/st3kZprdJHY" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/st3kZprdJHY/index.html</link>
+<dc:date>2009-06-18T18:06:33+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/051/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/050/index.html">
+<title>Googleカレンダーにイベント情報を設置するガジェットの提供開始</title>
+<description>inomaは、Googleカレンダー上にイベント情報などを通知するガジェットを公開した。ガジェットは同社が運営するソーシャルイベントサイト「Comevent」に投稿されたビジネス関連のイベント情報を中心に自動的にGoogleカレンダー上に配置される。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/w5etyznaFkhsunPMG8Q27Jm9Nuw/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/w5etyznaFkhsunPMG8Q27Jm9Nuw/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/w5etyznaFkhsunPMG8Q27Jm9Nuw/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/w5etyznaFkhsunPMG8Q27Jm9Nuw/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/Nzkt0MaNOHw" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/Nzkt0MaNOHw/index.html</link>
+<dc:date>2009-06-18T18:02:14+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/050/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/049/index.html">
+<title>東芝、ストレージに128GBのSSDを採用した法人向けdynabook SS RX2</title>
+<description>東芝は、法人向けモバイルノートPCとして、12.1型ワイド液晶と128GBのSSD搭載の「dynabook SS RX2」を発表した。そのほか、12.1型ワイド液晶のモデルや13.3型ワイド液晶のモデルもラインナップする。すべてのモデルが6月下旬より順次発売予定となっている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/sGWeL-j9feSTFGkv2Sm-eYd8unE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/sGWeL-j9feSTFGkv2Sm-eYd8unE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/sGWeL-j9feSTFGkv2Sm-eYd8unE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/sGWeL-j9feSTFGkv2Sm-eYd8unE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/H-ivZhrZtuY" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/H-ivZhrZtuY/index.html</link>
+<dc:date>2009-06-18T18:01:16+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/049/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/044/index.html">
+<title>液晶一体型デスクトップ「FMV-DESKPOWER F/D70D」組み立て教室開催</title>
+<description>富士通アイソテックは、小中学生を対象とした「富士通パソコン組み立て教室」を7月25日に開催する。19型ワイド スーパーファインVX液晶一体型デスクトップ「FMV-DESKPOWER F/D70D」シリーズの組み立てを実際に行う。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/66vrI8WwT2J4LLE3NhuOK4yczew/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/66vrI8WwT2J4LLE3NhuOK4yczew/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/66vrI8WwT2J4LLE3NhuOK4yczew/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/66vrI8WwT2J4LLE3NhuOK4yczew/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/YgScYPAX4vc" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/YgScYPAX4vc/index.html</link>
+<dc:date>2009-06-18T17:27:05+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/044/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/037/index.html">
+<title>あの電子書籍がMacで読める「ebiBookReader Macintosh」が公開</title>
+<description>イーブックイニシアティブジャパンは18日、電子書籍リーダ「ebiBookReader」のMac OS X版を公開した。動作環境はMac OS X 10.5.6以降 (Intelのみ)、WebブラウザとしてSafari 3以降が必要。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/lLp7pGSJWrkmpQMrfwTAf-KoEF4/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/lLp7pGSJWrkmpQMrfwTAf-KoEF4/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/lLp7pGSJWrkmpQMrfwTAf-KoEF4/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/lLp7pGSJWrkmpQMrfwTAf-KoEF4/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/xD0R8JzsNtA" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/xD0R8JzsNtA/index.html</link>
+<dc:date>2009-06-18T16:57:23+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/037/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/18/sandisk/index.html">
+<title>【インタビュー】「エンタープライズでもMLC SSD」- NANDの次を見据えるSanDiskの最新戦略</title>
+<description>昨年から今年にかけて、もっともIT業界を沸かせたキーワードの1つが「SSD (Solid State Drive)」だろう。今回はSSDブームの立役者の1人である米SanDiskプレジデント兼COOのSanjay Mehrotra氏に、SSDやフラッシュメモリ市場の現状、将来の展望、そして同社の最新戦略について話を聞いた。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/ymNFnWzcA-wH8FF4WHrSTDO9mNQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ymNFnWzcA-wH8FF4WHrSTDO9mNQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/ymNFnWzcA-wH8FF4WHrSTDO9mNQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ymNFnWzcA-wH8FF4WHrSTDO9mNQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/aif8-NBohRk" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/aif8-NBohRk/index.html</link>
+<dc:date>2009-06-18T14:30:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/18/sandisk/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/articles/2009/06/18/endeavor_np11_v/index.html">
+<title>【レビュー】超小型で爆安! 場所を選ばないお手軽Nettop - エプソンダイレクト「Endeavor NP11-V」(前編)</title>
+<description>国内メーカー初のNettop、エプソンダイレクト「Endeavor NP11-V」は、直販価格26,800円という安さ、W20×D153.5×H172.5mmという小さく薄いサイズに驚かされる製品だ。PCを初めて買う初心者、また価格が手頃な2台目、3台目のマシンがほしい中上級者のため、その魅力を紹介しよう。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/soSPfHzobDiAYs_H3641ag15jaA/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/soSPfHzobDiAYs_H3641ag15jaA/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/soSPfHzobDiAYs_H3641ag15jaA/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/soSPfHzobDiAYs_H3641ag15jaA/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/0BLYRQeMKzA" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/0BLYRQeMKzA/index.html</link>
+<dc:date>2009-06-18T12:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/articles/2009/06/18/endeavor_np11_v/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/016/index.html">
+<title>iPhone OS 3.0で「iPhoneを探す」が可能に  - MobileMeユーザ向け</title>
+<description>アップルが18日、WebブラウザからiPhoneの現在位置を検出できる「iPhoneを探す」機能の提供を開始した。Webブラウザから紛失したiPhoneを探したり、iPhone上のデータを消去したりすることが可能になった。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/TpXBuQeDaVWTF9zik1CL2-NfaoU/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/TpXBuQeDaVWTF9zik1CL2-NfaoU/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/TpXBuQeDaVWTF9zik1CL2-NfaoU/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/TpXBuQeDaVWTF9zik1CL2-NfaoU/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/RKZIGfjw-XA" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/RKZIGfjw-XA/index.html</link>
+<dc:date>2009-06-18T11:27:09+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/016/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/009/index.html">
+<title>米Intelが"Core"中心のブランド計画を説明 - PC向けCentrino終了へ</title>
+<description>米Intelは6月17日 (現地時間)、Coreプロセッサを中心とした今後のブランド戦略について説明した。「Core i7」に「Core i3」と「Core i5」を加えて、Coreプロセッサを展開する。またモバイルプラットフォーム・ブランド「Centrino」をPC向けに終了させ、2010年からは同名称を無線テクノロジに使用する。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/9ecohgzqkjnGQLRlFw_s6IVEoqE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/9ecohgzqkjnGQLRlFw_s6IVEoqE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/9ecohgzqkjnGQLRlFw_s6IVEoqE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/9ecohgzqkjnGQLRlFw_s6IVEoqE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/mOjkF2X_k_4" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/mOjkF2X_k_4/index.html</link>
+<dc:date>2009-06-18T06:55:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/009/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/005/index.html">
+<title>Apple「iPhone OS 3.0」リリース - 100以上の新機能を搭載</title>
+<description>米Appleは6月17日 (現地時間)、iPhone/ iPhone 3GとiPod touchのOSをバージョン3.0にアップデートするソフトウェアアップデートの提供を開始した。iPhone OS 3.0は、カット/コピー/ペースト、MMS、Spotlightなど100以上の新機能を搭載する。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/S7JB-t0muJnJPgzqOyf4NXcedoc/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/S7JB-t0muJnJPgzqOyf4NXcedoc/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/S7JB-t0muJnJPgzqOyf4NXcedoc/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/S7JB-t0muJnJPgzqOyf4NXcedoc/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/Yllw0uFyQWw" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/Yllw0uFyQWw/index.html</link>
+<dc:date>2009-06-18T02:44:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/005/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/18/004/index.html">
+<title>Appleの警告、iTunes同期機能を持つライバル製音楽プレイヤーを排除へ</title>
+<description>米Appleが16日(現地時間)、サポートページに掲載した注意書きが話題になっている。iTunesはiPodやiPhoneとのセットで用いられるものであり、サードパーティ製の音楽プレイヤーとの連携は動作保証外というのがその趣旨だが、これは同時にiTunesへのただ乗りを行っている競合ベンダーへの警告メッセージでもある。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/dZraDp3ChU3h6LaNcds5SWKbp9M/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/dZraDp3ChU3h6LaNcds5SWKbp9M/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/dZraDp3ChU3h6LaNcds5SWKbp9M/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/dZraDp3ChU3h6LaNcds5SWKbp9M/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/5fEszvFUJcQ" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/5fEszvFUJcQ/index.html</link>
+<dc:date>2009-06-18T02:04:05+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/18/004/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/096/index.html">
+<title>ASUS、HDMI出力が可能なGeForce GTX 260カード「ENGTX260/HTDI/896M」</title>
+<description>ASUSTeK Computerは17日、HDMI出力アダプタが付属するNVIDIA GeForce GTX 260カード「ENGTX260/HTDI/896M」を発表した。GPUスペックはリファレンスデザインに沿ったもの。出荷開始時期は6月中旬～下旬を予定。店頭予想価格は25,000円前後。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/bDhHDtw-S6_bS5XnHH7T9ynP5bw/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/bDhHDtw-S6_bS5XnHH7T9ynP5bw/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/bDhHDtw-S6_bS5XnHH7T9ynP5bw/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/bDhHDtw-S6_bS5XnHH7T9ynP5bw/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/E_2A7Czpqfg" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/E_2A7Czpqfg/index.html</link>
+<dc:date>2009-06-17T23:22:42+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/096/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/095/index.html">
+<title>Googleサービスのヘルプをページ移動せず閲覧可能なFirefoxアドオンが公開</title>
+<description>ゴーガは、GmailやGoogleカレンダーなどGoogleサービス利用者がページを移動することなくヘルプメニューを表示できるFirefoxアドオン「Google Apps Help」を公開した。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/IkAPApQOiMMLSU0KO2AjAFr9NkY/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/IkAPApQOiMMLSU0KO2AjAFr9NkY/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/IkAPApQOiMMLSU0KO2AjAFr9NkY/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/IkAPApQOiMMLSU0KO2AjAFr9NkY/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/UznIrKuKs8I" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/UznIrKuKs8I/index.html</link>
+<dc:date>2009-06-17T23:09:49+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/095/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/094/index.html">
+<title>iPhoneからWindowsを遠隔操作「iTap RP Client」がリリース</title>
+<description>WindowsリモートデスクトップサービスのiPhoneクライアント「iTap RP Client」がリリースされた。対応デバイスはiPhoneとiPod touch、App Storeでの価格は1,400円。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/pOlpcK6zUSqQPYjKaFdZ9p4lgYo/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pOlpcK6zUSqQPYjKaFdZ9p4lgYo/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/pOlpcK6zUSqQPYjKaFdZ9p4lgYo/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pOlpcK6zUSqQPYjKaFdZ9p4lgYo/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/iEWo0xoYAf0" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/iEWo0xoYAf0/index.html</link>
+<dc:date>2009-06-17T23:01:49+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/094/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/093/index.html">
+<title>東芝、128GBのSSDを搭載した企業向けdynabook SS RX2 - ほか2モデル</title>
+<description>東芝は、法人向けモバイルノートPCとして、12.1型ワイド液晶搭載の「dynabook SS RX2」、同じく12.1型ワイド液晶搭載の「dynabook SS N11」、13.3型ワイド液晶搭載の「dynabook SS M52」を発表した。すべてのモデルが6月下旬より順次発売予定となっている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/nHxcyLOmuCi30KtGLDjKG-bi2lg/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/nHxcyLOmuCi30KtGLDjKG-bi2lg/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/nHxcyLOmuCi30KtGLDjKG-bi2lg/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/nHxcyLOmuCi30KtGLDjKG-bi2lg/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/rXF8NhKNRkI" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/rXF8NhKNRkI/index.html</link>
+<dc:date>2009-06-17T23:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/093/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/092/index.html">
+<title>東芝、最新技術と高精細液晶を搭載したビジネス向けノート - ほか3モデル</title>
+<description>東芝は、法人向けビジネスノートPCとして、1,680×1,050ドットの15.4型ワイドを搭載した「dynabook Satellite K32V」を発表した。そのほか、14.1型ワイド液晶を搭載して社内モバイルも可能な「dynabook Satellite B12」など、ビジネスノートを3モデルをラインナップする。6月下旬より順次発売となる。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/jLRGRoEzW5eEeXKytwUbKCHZtew/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/jLRGRoEzW5eEeXKytwUbKCHZtew/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/jLRGRoEzW5eEeXKytwUbKCHZtew/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/jLRGRoEzW5eEeXKytwUbKCHZtew/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/8TnGAwWmEfI" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/8TnGAwWmEfI/index.html</link>
+<dc:date>2009-06-17T23:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/092/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/091/index.html">
+<title>東芝、サイズと拡張性で選べるビジネス向けデスクトップ3モデル</title>
+<description>東芝は、サイズや拡張性から選ぶことができる法人向けデスクトップPC「EQUIUM」の新モデル「S6700」「5240」「3510」を発表した。7月上旬より順次発売予定となっている。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/rDVTRLTad4PSw_UFWS4ZGTsnXDY/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/rDVTRLTad4PSw_UFWS4ZGTsnXDY/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/rDVTRLTad4PSw_UFWS4ZGTsnXDY/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/rDVTRLTad4PSw_UFWS4ZGTsnXDY/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/3ycy-3x0Jo4" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/3ycy-3x0Jo4/index.html</link>
+<dc:date>2009-06-17T23:00:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/091/index.html</feedburner:origLink></item>
+<item rdf:about="http://journal.mycom.co.jp/news/2009/06/17/090/index.html">
+<title>日本ギガバイト、ドッキングステーション付属ミニノートPC「M1022M」</title>
+<description>日本ギガバイトは、個人向けノートパソコンの新シリーズとして、付属のドッキングステーションに差し込むことでデスクトップPC風に利用することもできる10.1型ミニノートPC「M1022M」を発表した。発売日は7月3日。店頭予想価格は54,800円。
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/ODO0JHsybqUxB8fw3vGNYlfpZt4/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ODO0JHsybqUxB8fw3vGNYlfpZt4/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/ODO0JHsybqUxB8fw3vGNYlfpZt4/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ODO0JHsybqUxB8fw3vGNYlfpZt4/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="http://feeds2.feedburner.com/~r/haishin/rss/pc/~4/IXIocMgJut0" height="1" width="1"/&gt;</description>
+<link>http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/IXIocMgJut0/index.html</link>
+<dc:date>2009-06-17T22:51:00+09:00</dc:date>
+<feedburner:origLink>http://journal.mycom.co.jp/news/2009/06/17/090/index.html</feedburner:origLink></item>
+<image rdf:about="http://journal.mycom.co.jp/images/mj_logo_fb.gif"><url>http://journal.mycom.co.jp/images/mj_logo_fb.gif</url><link>http://journal.mycom.co.jp/</link><title>マイコミジャーナル</title></image></rdf:RDF>
