@@ -1,6 +1,6 @@
 <%= flash[:error] %>
 <% form_tag "", :method => "get" do %>
-  <%= label_tag "src", "Source URI" %>: <%= text_field_tag "src", params[:src], :size => 80 %>
+  <%= label_tag "src", "Feed URL" %>: <%= text_field_tag "src", params[:src], :size => 80 %>
   <br/>
   <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", params[:identifier] %>
   <br/>
