@@ -11,6 +11,17 @@
   </head>
   <body>
     <div class="container span-18 no-showgrid" style="margin:0px 1em">
+      <div>
+        <% if current_user %>
+          <%= current_user.name ? h(current_user.name) : link_to("please fill your name", edit_user_path(current_user)) %>
+          | <%= link_to "logout", session_path, :method => "delete" %>
+        <% else %>
+          <%= link_to "login", new_session_path %>
+        <% end %>
+      </div>
+      <hr/>
+      <%= flash.map{|k,v| "<p class='#{k}'>#{v}</p>"} %>
+
       <%= yield %>
     </div>
   </body>

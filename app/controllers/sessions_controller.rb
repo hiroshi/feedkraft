@@ -25,6 +25,13 @@ class SessionsController < ApplicationController
 #       sreg_resp = OpenID::SReg::Response.from_success_response(oidresp)
 #       flash[:success] += sreg_resp.data.inspect
       # TODO: User.find or redirect ot users#new
+      if user = User.find_by_identity(oidresp.identity_url)
+        redirect_to root_path
+      else
+        user = User.create!(:identity => oidresp.identity_url)
+        redirect_to edit_user_path(user)
+      end
+      set_current_user(user)
     when OpenID::Consumer::FAILURE
       if oidresp.display_identifier
         flash[:error] = ("Verification of #{oidresp.display_identifier} failed: #{oidresp.message}")
@@ -39,6 +46,12 @@ class SessionsController < ApplicationController
       flash[:alert] = "OpenID transaction cancelled."
       redirect_to new_session_path
     end
+  end
+
+  # logout
+  def destroy
+    reset_session
+    redirect_to root_path
   end
 
   private
