@@ -1,0 +1,13 @@
+<h1>Login via OpenID</h1>
+<% form_tag inquire_session_path do %>
+  <div>
+    <%= radio_button_tag "provider", "google" %>
+    <%= label_tag "provider_google", "Use Google OpenID" %>
+  </div>
+  <div>
+    <%= radio_button_tag "provider", "other" %>
+    <%= label_tag "provider_other", "or Enter your OpenID URL:" %>
+    <%= text_field_tag "url" %>
+  </div>
+  <button type="submit">login</button>
+<% end %>

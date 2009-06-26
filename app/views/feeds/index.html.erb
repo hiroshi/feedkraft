@@ -1,4 +1,4 @@
-<%= flash[:error] %>
+<%= flash.map{|k,v| "<p class='#{k}'>#{v}</p>"} %>
 <% form_tag "", :method => "get" do %>
   <%= label_tag "src", "Feed URL" %>: <%= text_field_tag "src", params[:src], :size => 80 %>
   <br/>
