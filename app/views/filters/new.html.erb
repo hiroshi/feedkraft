@@ -1,0 +1,30 @@
+<% form_tag "", :method => "get", :id => "filter_form" do %>
+  <div>
+    <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", params[:url], :size => 80 %>
+  </div>
+  <div>
+    <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", params[:identifier], :size => 40 %>
+  </div>
+  <div>
+    <%= label_tag "category" %>: <%= text_field_tag "category", params[:category] %>
+  </div>
+  <button onclick="this.form.action='';this.form.method='get';">prevew</button>
+<% end %> 
+<% form_for @filter do |form| %>
+  <%= form.label "name" %>: <%= form.text_field "name", :size => 40 %>
+  <button name="filter[params_string]" onclick="this.value=Form.serialize('filter_form');">save</button>
+<% end %>
+
+<% if @src_feed %>
+<div class="span-9">
+  Source: <%= @src_feed.entries.size %> entries.
+  <%= render :partial => "entries", :locals => {:feed => @src_feed} %>
+</div>
+<% end %>
+
+<% if @result_feed %>
+<div class="span-9 last">
+  Results: <%= @result_feed.entries.size %> entries. --&gt; <%= link_to "feed", feed_path(filter_params) %>
+  <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
+</div>
+<% end %>

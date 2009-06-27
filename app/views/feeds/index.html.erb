@@ -1,23 +1,14 @@
-<% form_tag "", :method => "get" do %>
-  <%= label_tag "src", "Feed URL" %>: <%= text_field_tag "src", params[:src], :size => 80 %>
-  <br/>
-  <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", params[:identifier] %>
-  <br/>
-  <%= label_tag "category" %>: <%= text_field_tag "category", params[:category] %>
-  <br/>
-  <button>filter</button>
+<% form_tag new_filter_path, :method => "get" do %>
+  <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", params[:url], :size => 80 %>
+  <button>new</button>
 <% end %> 
 
-<% if @src_feed %>
-<div class="span-9">
-  Source: <%= @src_feed.entries.size %> entries.
-  <%= render :partial => "entries", :locals => {:feed => @src_feed} %>
-</div>
+<h2>Latest updated filters</h2>
+<ul>
+<% @filters.each do |filter| %>
+  <li>
+    <%= link_to h(filter.name), filter_path(filter) %>
+    (<%= link_to "feed", feed_path + "?" + filter.params_string %>)
+  </li>
 <% end %>
-
-<% if @result_feed %>
-<div class="span-9 last">
-  Results: <%= @result_feed.entries.size %> entries. --&gt; <%= link_to "feed", feed_path(filter_params) %>
-  <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
-</div>
-<% end %>
+</ul>

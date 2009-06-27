@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :filters
+
   map.root :controller => "feeds"
   map.feed "feed", :controller => "feeds", :action => "feed"
 

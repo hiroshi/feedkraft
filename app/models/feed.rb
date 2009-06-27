@@ -110,13 +110,17 @@ module RSS2
 
     def filter!(options={})
       @entries = nil
-      key, val = options.shift.map(&:to_s)
-      case key
-      when "category"
-        unless val.blank?
-          @doc.elements.delete_all "/rss/channel/item[not(category[normalize-space(text())='#{val}'])]"
-        end
+      options = options.stringify_keys
+      unless (val = options["category"]).blank?
+        @doc.elements.delete_all "/rss/channel/item[not(category[normalize-space(text())='#{val}'])]"
       end
+#       key, val = options.shift.map(&:to_s)
+#       case key
+#       when "category"
+#         unless val.blank?
+#           @doc.elements.delete_all "/rss/channel/item[not(category[normalize-space(text())='#{val}'])]"
+#         end
+#       end
     end
   end
 end

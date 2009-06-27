@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_filter :set_user
 
   def edit
+    session[:return_to] = request.referer
   end
 
   def update

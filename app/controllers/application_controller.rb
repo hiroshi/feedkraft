@@ -23,5 +23,24 @@ class ApplicationController < ActionController::Base
     session[:user_id] = user && user.id
   end
 
+  def set_feeds
+    unless params[:url].blank?
+      # sample: src = http://feeds.journal.mycom.co.jp/haishin/rss/pc?format=xml
+      uri = URI.parse(params[:url])
+      if Rails.env == "development" && uri.relative?
+        src = File.read(File.join(Rails.root,uri.to_s))
+      else
+        src = Net::HTTP.get_response(URI.parse(params[:url])).body
+      end
+      @src_feed = Feed.parse(src)
+      @result_feed = Feed.parse(src)
+      @result_feed.filter!(filter_params)
+    end
+  rescue SocketError => e
+    flash[:error] = e.message
+    redirect_to root_path(filter_params)
+    false
+  end
+ 
   helper_method :filter_params, :current_user
 end
