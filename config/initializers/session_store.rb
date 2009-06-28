@@ -5,7 +5,7 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_pursuer_session',
+  :key         => '_feedkraft_session',
   :secret      => '37022b3103bddaa757d9663da286ab13d360aa9fa3dca0c181018f46ccfe3b34fe15fbe88238f138933837b8ce85e118db6762c77dd74b0ae36e1b9d6dc70488'
 }
 
