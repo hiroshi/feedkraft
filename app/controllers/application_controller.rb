@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   class NotFoundError < Exception; end
 
   def filter_params
-    unless @filter_params
+    if @filter_params.blank?
       @filter_params = params.reject{|k,v|request.path_parameters[k]}
       if @filter
         @filter_params.update(@filter.params)

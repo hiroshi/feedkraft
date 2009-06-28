@@ -4,7 +4,11 @@ class Filter < ActiveRecord::Base
   belongs_to :user
 
   def params
-    @params ||= CGI.parse(self.params_string).inject({}){|h,pair| h.update(pair.first.to_sym => pair.last.first) }
+    if self.params_string
+      @params ||= CGI.parse(self.params_string).inject({}){|h,pair| h.update(pair.first.to_sym => pair.last.first) }
+    else
+      {}
+    end
   end
 
   before_save :set_sha1
