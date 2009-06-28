@@ -1,12 +1,12 @@
 <% form_tag "", :method => "get", :id => "filter_form" do %>
   <div>
-    <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", params[:url], :size => 80 %>
+    <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80 %>
   </div>
   <div>
-    <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", params[:identifier], :size => 40 %>
+    <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", filter_params[:identifier], :size => 40 %>
   </div>
   <div>
-    <%= label_tag "category" %>: <%= text_field_tag "category", params[:category] %>
+    <%= label_tag "category" %>: <%= text_field_tag "category", filter_params[:category] %>
   </div>
   <button onclick="this.form.action='';this.form.method='get';">prevew</button>
 <% end %> 

@@ -1,6 +1,7 @@
 class FiltersController < ApplicationController
-  before_filter :set_feeds, :only => [:new]
   before_filter :new_filter, :only => [:new, :create]
+  before_filter :set_filter, :only => [:show, :update]
+  before_filter :set_feeds, :only => [:new, :show]
 
   def new
   end
@@ -14,7 +15,7 @@ class FiltersController < ApplicationController
   end
 
   def show
-    @filter = ::Filter.find_by_id(params[:id]) or raise NotFoundError
+    render :action => "new"
   end
 
   private
@@ -25,5 +26,9 @@ class FiltersController < ApplicationController
     else
       @filter = ::Filter.new(params[:filter])
     end
+  end
+
+  def set_filter
+    @filter = ::Filter.find_by_id(params[:id]) or raise NotFoundError
   end
 end
