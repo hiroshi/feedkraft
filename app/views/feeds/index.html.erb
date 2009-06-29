@@ -7,7 +7,7 @@
 <ul>
 <% @filters.each do |filter| %>
   <li>
-    <%= link_to h(filter.name), filter_path(filter) %>
+    <%= link_to h(filter.title), filter_path(filter) %>
     (<%= link_to "feed", feed_path + "?" + filter.params_string %>)
   </li>
 <% end %>

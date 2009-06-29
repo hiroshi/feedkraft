@@ -4,7 +4,7 @@ class FiltersController < ApplicationController
   before_filter :set_feeds, :only => [:new, :show]
 
   def new
-    @filter.name ||= @src_feed.title
+    @filter.title ||= @src_feed.title
   end
 
   def create
