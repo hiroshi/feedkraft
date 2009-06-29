@@ -16,7 +16,17 @@ test:
   timeout: 5000
 
 production:
+  adapter: postgresql
+  encoding: unicode
+  database: feedkraft_production
+  username: www-data
+  password:
+  pool: 5
+  timeout: 5000
+
+production-sqlite3:
   adapter: sqlite3
   database: production.sqlite3
   pool: 5
   timeout: 5000
+
