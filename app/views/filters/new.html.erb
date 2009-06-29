@@ -25,7 +25,7 @@
 
 <% if @result_feed %>
 <div class="span-9 last">
-  Results: <%= @result_feed.entries.size %> entries. --&gt; <%= link_to "feed", feed_path(filter_params) %>
+  Results: <%= @result_feed.entries.size %> entries. <%= link_to image_tag("feedicons/28x28.png"), feed_path(filter_params) %>
   <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
 </div>
 <% end %>
