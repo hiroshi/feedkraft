@@ -77,6 +77,10 @@ module RSS1
       @doc = doc
     end
 
+    def title
+      @doc.get_text("/rdf:RDF/channel/title").to_s.strip
+    end
+
     def entries_xpath
       "/rdf:RDF/item"
     end
@@ -125,6 +129,10 @@ module RSS2
       @doc = doc
     end
 
+    def title
+      @doc.get_text("/rss/channel/title").to_s.strip
+    end
+
     def entries_xpath
       "/rss/channel/item"
     end
@@ -170,6 +178,10 @@ module Atom
   class Feed < ::Feed
     def initialize(doc)
       @doc = doc
+    end
+
+    def title
+      @doc.get_text("/feed/title").to_s.strip
     end
 
     def entries_xpath
