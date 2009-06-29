@@ -36,17 +36,19 @@ class ApplicationController < ActionController::Base
       if Rails.env == "development" && uri.relative?
         src = File.read(File.join(Rails.root,uri.to_s))
       else
+        # TODO: set timeout shorter
         src = Net::HTTP.get_response(URI.parse(filter_params[:url])).body
       end
       @src_feed = Feed.parse(src)
       @result_feed = Feed.parse(src)
       @result_feed.filter!(filter_params)
     end
-  rescue SocketError => e
-    flash[:error] = e.message
+  rescue SocketError, Feed::InvalidContentError => e
+    Rails.logger.debug e.message
+    flash[:error] = e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
     redirect_to root_path(filter_params)
     false
   end
- 
+
   helper_method :filter_params, :current_user
 end

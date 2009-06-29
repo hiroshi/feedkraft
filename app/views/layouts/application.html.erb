@@ -23,7 +23,7 @@
         </div>
       </div>
       <hr/>
-      <%= flash.map{|k,v| "<p class='#{k}'>#{v}</p>"} %>
+      <%= flash.map{|k,v| "<p class='#{k}'>#{h(v)}</p>"} %>
 
       <%= yield %>
     </div>

@@ -1,4 +1,6 @@
 class Feed
+  class InvalidContentError < Exception; end
+
   def self.parse(src)
     doc = REXML::Document.new(src)
     case doc.root.name
@@ -9,6 +11,8 @@ class Feed
     when "feed" # Atom
       Atom::Feed.new(doc)
     end
+  rescue REXML::ParseException => e
+    raise InvalidContentError, e.message
   end
 
   def to_s
