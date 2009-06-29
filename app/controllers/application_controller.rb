@@ -39,7 +39,7 @@ class ApplicationController < ActionController::Base
       if Rails.env == "development" && uri.relative?
         src = File.read(File.join(Rails.root,uri.to_s))
       else
-        src = open(uri)
+        src = open(uri).read
       end
       @src_feed = Feed.parse(src)
       @result_feed = Feed.parse(src)
