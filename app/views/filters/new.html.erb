@@ -13,7 +13,9 @@
 <% form_for @filter do |form| %>
   <%= form.label "title" %>: <%= form.text_field "title", :size => 40 %>
   <button name="filter[params_string]" onclick="this.value=Form.serialize('filter_form');">save</button>
+<% unless @filter.new_record? %>
   <%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
+<% end %>
 <% end %>
 
 <% if @src_feed %>
