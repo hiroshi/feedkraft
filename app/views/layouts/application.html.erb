@@ -12,12 +12,15 @@
   <body>
     <div class="container span-18 no-showgrid" style="margin:0px 1em">
       <div>
+        <span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span>
+        <div style="float:right">
         <% if current_user %>
           <%= current_user.name ? h(current_user.name) : link_to("please fill your name", edit_user_path(current_user)) %>
           | <%= link_to "logout", session_path, :method => "delete" %>
         <% else %>
           <%= link_to "login", new_session_path %>
         <% end %>
+        </div>
       </div>
       <hr/>
       <%= flash.map{|k,v| "<p class='#{k}'>#{v}</p>"} %>
