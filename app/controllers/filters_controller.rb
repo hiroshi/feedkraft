@@ -1,6 +1,6 @@
 class FiltersController < ApplicationController
   before_filter :new_filter, :only => [:new, :create]
-  before_filter :set_filter, :only => [:show, :update]
+  before_filter :set_filter, :only => [:show, :update, :destroy]
   before_filter :set_feeds, :only => [:new, :show]
 
   def new
@@ -17,6 +17,11 @@ class FiltersController < ApplicationController
 
   def show
     render :action => "new"
+  end
+
+  def destroy
+    @filter.destroy
+    redirect_to root_path
   end
 
   private
