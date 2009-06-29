@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
   class ForbiddenError < Exception; end
   class NotFoundError < Exception; end
 
+  class FeedSourceUnavailableError < Exception; end
+
   def filter_params
     if @filter_params.blank?
       @filter_params = params.reject{|k,v|request.path_parameters[k]}
@@ -30,20 +32,20 @@ class ApplicationController < ActionController::Base
   end
 
   def set_feeds
+    require "open-uri"
     unless filter_params[:url].blank?
       # sample: src = http://feeds.journal.mycom.co.jp/haishin/rss/pc?format=xml
       uri = URI.parse(filter_params[:url])
       if Rails.env == "development" && uri.relative?
         src = File.read(File.join(Rails.root,uri.to_s))
       else
-        # TODO: set timeout shorter
-        src = Net::HTTP.get_response(URI.parse(filter_params[:url])).body
+        src = open(uri)
       end
       @src_feed = Feed.parse(src)
       @result_feed = Feed.parse(src)
       @result_feed.filter!(filter_params)
     end
-  rescue SocketError, Feed::InvalidContentError => e
+  rescue SocketError, Feed::InvalidContentError, OpenURI::HTTPError => e
     Rails.logger.debug e.message
     flash[:error] = e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
     redirect_to root_path(filter_params)
