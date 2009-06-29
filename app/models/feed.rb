@@ -14,6 +14,29 @@ class Feed
   def to_s
     @doc.to_s
   end
+
+  def entries
+    entry_class = self.class.to_s.sub(/Feed/,"Entry").constantize # TODO: any better awy?
+    @entries ||= @doc.get_elements(self.entries_xpath).map {|e| entry_class.new(e) }
+  end
+
+  def filter!(params={})
+    @entries = nil
+
+    condition = params.map do |key, val|
+      filter_case(key.to_sym, val)
+    end.compact.join(" and ")
+
+    unless condition.blank?
+      xpath = "#{entries_xpath}[not(#{condition})]"
+      result = nil
+      ms = Benchmark.ms { @doc.elements.delete_all xpath }
+      Rails.logger.debug "  #{self.class.name}:filter! (%.1fms) #{xpath}" % [ms]
+    end
+  rescue
+    Rails.logger.debug "  #{self.class.name}:filter! #{params.inspect} => #{xpath}"
+    raise
+  end
 end
 
 class Entry
@@ -54,18 +77,16 @@ module RSS1
       @doc = doc
     end
 
-    def entries
-      @entries ||= @doc.get_elements("/rdf:RDF/item").map {|e| Entry.new(e) }
+    def entries_xpath
+      "/rdf:RDF/item"
     end
 
-    def filter!(options={})
-      @entries = nil
-      key, val = options.shift.map(&:to_s)
+    def filter_case(key, val)
       case key
-      when "identifier"
-        unless val.blank?
-          @doc.elements.delete_all "/rdf:RDF/item[not(contains(@rdf:about,'#{val}'))]"
-        end
+      when :identifier
+        "contains(@rdf:about,'#{val}')"
+      when :category
+        # TODO: use dc:type?
       end
     end
   end
@@ -104,23 +125,17 @@ module RSS2
       @doc = doc
     end
 
-    def entries
-      @entries ||= @doc.get_elements("/rss/channel/item").map {|e| Entry.new(e) }
+    def entries_xpath
+      "/rss/channel/item"
     end
 
-    def filter!(options={})
-      @entries = nil
-      options = options.stringify_keys
-      unless (val = options["category"]).blank?
-        @doc.elements.delete_all "/rss/channel/item[not(category[normalize-space(text())='#{val}'])]"
+    def filter_case(key, val)
+      case key
+      when :identifier
+        # FIXME
+      when :category
+        "category[normalize-space(text())='#{val}']"
       end
-#       key, val = options.shift.map(&:to_s)
-#       case key
-#       when "category"
-#         unless val.blank?
-#           @doc.elements.delete_all "/rss/channel/item[not(category[normalize-space(text())='#{val}'])]"
-#         end
-#       end
     end
   end
 end
@@ -157,18 +172,16 @@ module Atom
       @doc = doc
     end
 
-    def entries
-      @entries ||= @doc.get_elements("/feed/entry").map {|e| Entry.new(e) }
+    def entries_xpath
+      "/feed/entry"
     end
 
-    def filter!(options={})
-      @entries = nil
-      key, val = options.shift.map(&:to_s)
+    def filter_case(key, val)
       case key
-      when "category"
-        unless val.blank?
-          @doc.elements.delete_all "/feed/entry[not(category[@term='#{val}'])]"
-        end
+      when :identifier
+        # FIXME
+      when :category
+        "category[@term='#{val}']"
       end
     end
   end
