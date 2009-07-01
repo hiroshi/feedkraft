@@ -20,6 +20,16 @@ class FiltersController < ApplicationController
     render :action => "new"
   end
 
+  def update
+    @filter.attributes = params[:filter]
+    if @filter.save
+      redirect_to filter_path(@filter)
+    else
+      set_feeds
+      render :action => "new"
+    end
+  end
+
   def destroy
     @filter.destroy
     redirect_to root_path
