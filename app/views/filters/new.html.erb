@@ -1,15 +1,66 @@
 <% form_tag "", :method => "get", :id => "filter_form" do %>
   <div>
-    <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80 %>
+    <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>
   </div>
+  <div id="filter_fields">
+    <% filter_params.except(:url).each_with_index do |pair, index| %>
+      <%= render :partial => "filter_field", :object => {pair.first => pair.last}, :locals => {:index => index} %>
+    <% end %>
+  </div>
+  <div>
+    <button type="button" onclick="add_filter_field();">add condition</button>
+    <% javascript_tag do %>
+      var FilterField = {
+        nextIndex: function() {
+          return $$(".filter_field").length;
+        },
+        getIndex: function(dom) {
+          return dom.id.split("_").last();
+        }
+      };
+      function add_filter_field() {
+        var index = FilterField.nextIndex();
+        new Insertion.Bottom('filter_fields', '<%= escape_javascript render(:partial => "filter_field") %>');
+        $("filter_key_").id += index;
+        $("filter_option_").id += index;
+        $("filter_value_").id += index;
+        update_filter_option(index);
+      }
+      function filter_value_options(key) {
+        var opts = <%= @src_feed.filter_fields.inject({}) do |h,pair|
+              h.update(pair.first => options_for_select(pair.last.map{|v|truncate(v, :length => 80)}))
+            end.to_json
+        %>;
+        return opts[key];
+      }
+
+      function update_filter_value(index) {
+        $('filter_value_' + index).value = $('filter_option_' + index).value;
+      }
+      function update_filter_option(index) {
+        $('filter_option_' + index).innerHTML = filter_value_options($('filter_key_' + index).value);
+        $('filter_value_' + index).name = $('filter_key_' + index).value;
+        update_filter_value(index);
+      }
+
+    <% end %>
+  </div>
+<% if false %>
+<% @src_feed.filter_fields.each do |k,v| %>
+   <%= label_tag k %>: <%= select_tag k, options_for_select(v) %><br/>
+<% end %>
+<% end %>
+<% if false %>
   <div>
     <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", filter_params[:identifier], :size => 40 %>
   </div>
   <div>
     <%= label_tag "category" %>: <%= text_field_tag "category", filter_params[:category] %>
   </div>
+<% end %>
   <button onclick="this.form.action='';this.form.method='get';">prevew</button>
 <% end %> 
+
 <% form_for @filter do |form| %>
   <%= form.label "title" %>: <%= form.text_field "title", :size => 40 %>
   <button name="filter[params_string]" onclick="this.value=Form.serialize('filter_form');">save</button>

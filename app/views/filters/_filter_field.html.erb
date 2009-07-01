@@ -1,0 +1,22 @@
+<%
+  if filter_field
+    key, val = filter_field.shift
+  else
+    key, val = nil, nil
+  end
+  index = nil unless defined?(index)
+%>
+<div class="filter_field">
+  <%= select_tag "filter_key_#{index}", options_for_select(@src_feed.filter_fields.keys, key), :onchange => "update_filter_option(FilterField.getIndex(this));", :name => nil, :class => "span-3" %>
+    contains
+  <%= text_field_tag key, val, :id => "filter_value_#{index}", :class => "span-6" %>
+  <%= select_tag "filter_option_#{index}", key && options_for_select(@src_feed.filter_fields[key].map{|v|truncate(v, :length => 80)}, val), :onchange => "update_filter_value(FilterField.getIndex(this));", :name => nil, :class => "span-6" %>
+  <button type="button" onclick="Element.remove(this.parentNode);">delete condition</button>
+<% if false %>
+<% unless key %>
+  <% javascript_tag do %>
+    Event.observe(window, "load", update_filter_option);
+  <% end %>
+<% end %>
+<% end %>
+</div>

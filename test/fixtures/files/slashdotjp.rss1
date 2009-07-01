@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/css/rss10.xsl" type="text/xsl"?>
+<rdf:RDF xmlns:pheedo="http://www.pheedo.com/namespace/pheedo"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/">
+	<channel rdf:about="http://slashdot.jp/">
+		<title>スラッシュドット・ジャパン</title>
+		<link>http://slashdot.jp/</link>
+		<description>アレゲなニュースと雑談サイト</description>
+		<dc:language>ja-jp</dc:language>
+		<dc:rights>Copyright (C) Slashdot Japan, OSDN Corporation</dc:rights>
+		<dc:date>2009-06-29T12:00:16+00:00</dc:date>
+		<dc:publisher>Slashdot Japan</dc:publisher>
+		<dc:creator>slashmaster@slashdot.jp</dc:creator>
+		<dc:subject>Technology</dc:subject>
+		<syn:updatePeriod>hourly</syn:updatePeriod>
+		<syn:updateFrequency>2</syn:updateFrequency>
+		<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+		<items>
+			<rdf:Seq>
+				<rdf:li rdf:resource="http://slashdot.jp/yro/article.pl?sid=09/06/29/074228"/>
+				<rdf:li rdf:resource="http://slashdot.jp/yro/article.pl?sid=09/06/29/0420251"/>
+				<rdf:li rdf:resource="http://slashdot.jp/article.pl?sid=09/06/29/021241"/>
+				<rdf:li rdf:resource="http://slashdot.jp/yro/article.pl?sid=09/06/29/0156253"/>
+				<rdf:li rdf:resource="http://slashdot.jp/article.pl?sid=09/06/29/0149227"/>
+				<rdf:li rdf:resource="http://www.pheedo.jp/feeds/ht.php?t=c&amp;amp;i=4526d2f908a4d45a4a1bc6e0539952d8&amp;amp;p=4"/>
+				<rdf:li rdf:resource="http://slashdot.jp/mobile/article.pl?sid=09/06/29/0138220"/>
+				<rdf:li rdf:resource="http://slashdot.jp/article.pl?sid=09/06/29/0121246"/>
+				<rdf:li rdf:resource="http://slashdot.jp/article.pl?sid=09/06/29/0052252"/>
+				<rdf:li rdf:resource="http://slashdot.jp/science/article.pl?sid=09/06/28/0535215"/>
+				<rdf:li rdf:resource="http://slashdot.jp/askslashdot/article.pl?sid=09/06/28/0517238"/>
+			</rdf:Seq>
+		</items>
+		<image rdf:resource="http://images.slashdot.jp/topics/topicslashjp.png"/>
+		<textinput rdf:resource="http://slashdot.jp/search.pl"/>
+	</channel>
+	<image rdf:about="http://images.slashdot.jp/topics/topicslashjp.png">
+		<title>スラッシュドット・ジャパン</title>
+		<url>http://images.slashdot.jp/topics/topicslashjp.png</url>
+		<link>http://slashdot.jp/</link>
+	</image>
+	<item rdf:about="http://slashdot.jp/yro/article.pl?sid=09/06/29/074228">
+		<title>サンテレビのお色気系深夜番組、BPOからの質問状を受けて打ち切りに</title>
+		<link>http://www.pheedo.jp/click.phdo?i=6302795e526c37cc8a250bc71851ad4c</link>
+		<pheedo:origLink>http://slashdot.jp/yro/article.pl?sid=09/06/29/074228</pheedo:origLink>
+		<description>LARTH 曰く、 47 NEWSの記事によると、神戸市のUHF局サンテレビ製作の深夜番組「今夜もハッスル」が、視聴者からの苦情が多いなどの理由により放送打ち切りとなったそうだ。24日に放送倫理・番組向上機構（BPO）の青少年委員会からサンテレビに対し質問状を送るとの連絡があり、その日のうちに打ち切りが決まったのこと。既に番組のホームページは閉鎖されている。 単純な話ではありますが、問題の根は深いと考えています。&lt;p> &lt;a href="http://slashdot.jp/yro/article.pl?sid=09/06/29/074228">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/yro/">YROセクション&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=71">テレビ&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=19">検閲&lt;/a> &lt;/p> &lt;p> 関連ストーリー： &lt;br>&lt;a href="http://slashdot.jp/it/article.pl?sid=09/06/03/0218240">プロバイダーで児童ポルノ等を遮断する仕組み、自主運用に向けて協議中&lt;/a> &lt;small>2009年06月03日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/yro/article.pl?sid=09/05/29/0130256">「凌辱系」ゲーム、製造・販売禁止へ？&lt;/a> &lt;small>2009年05月29日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/yro/article.pl?sid=09/02/14/0647257">日本製18禁ゲームが英国会で追及される？&lt;/a> &lt;small>2009年02月14日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/article.pl?sid=08/03/13/0713230">アニメ・漫画・ゲームでの子どもポルノの違法化を求める署名活動&lt;/a> &lt;small>2008年03月13日&lt;/small> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=6302795e526c37cc8a250bc71851ad4c&quot;/&gt;
+</description>
+		<dc:creator>hylom</dc:creator>
+		<dc:date>2009-06-29T07:13:00+00:00</dc:date>
+		<dc:subject>tv</dc:subject>
+		<slash:department>低俗で何が悪い？</slash:department>
+		<slash:section>yro</slash:section>
+		<slash:comments>61</slash:comments>
+		<slash:hit_parade>61,59,20,6,1,0,0</slash:hit_parade>
+		<content:encoded><![CDATA[<p> <a href="http://slashdot.jp/~LARTH/">LARTH</a> 曰く、</p><blockquote><div><p>
+47 NEWSの記事によると、神戸市のUHF局サンテレビ製作の深夜番組「<a href="http://ja.wikipedia.org/wiki/%E4%BB%8A%E5%A4%9C%E3%82%82%E3%83%8F%E3%83%83%E3%82%B9%E3%83%AB">今夜もハッスル</a>」が、視聴者からの苦情が多いなどの理由により放送打ち切りとなったそうだ。24日に<a href="http://www.bpo.gr.jp/">放送倫理・番組向上機構（BPO）</a>の青少年委員会からサンテレビに対し質問状を送るとの連絡があり、その日のうちに打ち切りが決まったのこと。既に番組のホームページは閉鎖されている。
+
+</p><p>単純な話ではありますが、問題の根は深いと考えています。
+
+</p></div></blockquote><p>
+	<a href="http://slashdot.jp/yro/article.pl?sid=09/06/29/074228">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/yro/">YROセクション</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=71">テレビ</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=19">検閲</a>
+		</p>
+		<p>
+		関連ストーリー：
+		
+			<br><a href="http://slashdot.jp/it/article.pl?sid=09/06/03/0218240">プロバイダーで児童ポルノ等を遮断する仕組み、自主運用に向けて協議中</a>
+			<small>2009年06月03日</small>
+		
+			<br><a href="http://slashdot.jp/yro/article.pl?sid=09/05/29/0130256">「凌辱系」ゲーム、製造・販売禁止へ？</a>
+			<small>2009年05月29日</small>
+		
+			<br><a href="http://slashdot.jp/yro/article.pl?sid=09/02/14/0647257">日本製18禁ゲームが英国会で追及される？</a>
+			<small>2009年02月14日</small>
+		
+			<br><a href="http://slashdot.jp/article.pl?sid=08/03/13/0713230">アニメ・漫画・ゲームでの子どもポルノの違法化を求める署名活動</a>
+			<small>2008年03月13日</small>
+		
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=6302795e526c37cc8a250bc71851ad4c"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/yro/article.pl?sid=09/06/29/0420251">
+		<title>ウェブ魚拓、該当利用者のIPアドレスを開示</title>
+		<link>http://www.pheedo.jp/click.phdo?i=9063c89fd77307b95f332aed96fccc95</link>
+		<pheedo:origLink>http://slashdot.jp/yro/article.pl?sid=09/06/29/0420251</pheedo:origLink>
+		<description>あるAnonymous Cowardsやgreentea曰く、 ウェブ魚拓のトップページによると、2ちゃんねるのスレッドおよびまとめサイトにより名誉を毀損されたと主張する人物が、ウェブ魚拓で取得（アーカイブ）された記事について、魚拓を取得した利用者のIPアドレスの開示を請求し、千葉地方裁判所の和解勧告によりIPアドレスを原告に開示することとなったそうだ。 ミラーされていた2点のページは、2008年12月19日および12月28日に個人情報を理由に削除されている。 なお、ウェブ魚拓の利用規約には利用者のIPアドレスを保存し、必要に応じて開示することがあると明記されているとのこと。&lt;p> &lt;a href="http://slashdot.jp/yro/article.pl?sid=09/06/29/0420251">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/yro/">YROセクション&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=74">インターネット&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=19">検閲&lt;/a> &lt;/p> &lt;p> 関連ストーリー： &lt;br>&lt;a href="http://slashdot.jp/it/article.pl?sid=09/02/05/0259202">ブログへの中傷書き込みは名誉毀損、18人を書類送検する方針&lt;/a> &lt;small>2009年02月05日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/yro/article.pl?sid=06/12/27/0558215">プライバシー侵害等に関わる発信者情報開示ガイドライン策定へ&lt;/a> &lt;small>2006年12月27日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/it/article.pl?sid=06/09/03/133211">Googleがブラジル当局への利用者情報の開示を命令される&lt;/a> &lt;small>2006年09月03日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/yro/article.pl?sid=02/03/30/0229233">プロバイダー責任法の個人情報開示案に対する意見募集&lt;/a> &lt;small>2002年03月30日&lt;/small> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=9063c89fd77307b95f332aed96fccc95&quot;/&gt;
+</description>
+		<dc:creator>hylom</dc:creator>
+		<dc:date>2009-06-29T04:30:00+00:00</dc:date>
+		<dc:subject>censorship</dc:subject>
+		<slash:department>さあどうなる</slash:department>
+		<slash:section>yro</slash:section>
+		<slash:comments>30</slash:comments>
+		<slash:hit_parade>30,29,11,6,3,1,1</slash:hit_parade>
+		<content:encoded><![CDATA[<p>あるAnonymous Cowardsや<a href="http://slashdot.jp/~greentea/journal/480228">greentea</a>曰く、</p><blockquote><div><p>
+<a href="http://megalodon.jp/">ウェブ魚拓のトップページ</a>によると、2ちゃんねるのスレッドおよびまとめサイトにより名誉を毀損されたと主張する人物が、ウェブ魚拓で取得（アーカイブ）された記事について、魚拓を取得した利用者のIPアドレスの開示を請求し、千葉地方裁判所の和解勧告によりIPアドレスを原告に開示することとなったそうだ。
+
+</p><p>ミラーされていた2点のページは、<a href="http://megalodon.jp/delete/daily/20081219">2008年12月19日</a>および<a href="http://megalodon.jp/delete/daily/20081228">12月28日</a>に個人情報を理由に削除されている。
+</p></div></blockquote><p>なお、ウェブ魚拓の利用規約には利用者のIPアドレスを保存し、必要に応じて開示することがあると明記されているとのこと。</p><p>
+	<a href="http://slashdot.jp/yro/article.pl?sid=09/06/29/0420251">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/yro/">YROセクション</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=74">インターネット</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=19">検閲</a>
+		</p>
+		<p>
+		関連ストーリー：
+		
+			<br><a href="http://slashdot.jp/it/article.pl?sid=09/02/05/0259202">ブログへの中傷書き込みは名誉毀損、18人を書類送検する方針</a>
+			<small>2009年02月05日</small>
+		
+			<br><a href="http://slashdot.jp/yro/article.pl?sid=06/12/27/0558215">プライバシー侵害等に関わる発信者情報開示ガイドライン策定へ</a>
+			<small>2006年12月27日</small>
+		
+			<br><a href="http://slashdot.jp/it/article.pl?sid=06/09/03/133211">Googleがブラジル当局への利用者情報の開示を命令される</a>
+			<small>2006年09月03日</small>
+		
+			<br><a href="http://slashdot.jp/yro/article.pl?sid=02/03/30/0229233">プロバイダー責任法の個人情報開示案に対する意見募集</a>
+			<small>2002年03月30日</small>
+		
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=9063c89fd77307b95f332aed96fccc95"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/article.pl?sid=09/06/29/021241">
+		<title>子供の顔と大人の裸体の合成画像は児童ポルノ ?</title>
+		<link>http://www.pheedo.jp/click.phdo?i=f41cf127f248e7f84398a3e6c742fef0</link>
+		<pheedo:origLink>http://slashdot.jp/article.pl?sid=09/06/29/021241</pheedo:origLink>
+		<description>あるAnonymous Coward 曰く、 米テネシー州の男性が、所持していた 3 枚の画像が児童ポルノだとして刑事告訴されたとのこと。ただし、これら 3 枚の画像はどれも実際の子供の裸体を写したものではなく、子供の顔を大人の体に重ねた、いわゆるコラだったようだ (本家 /. の記事および CNN.com の記事より) 。記事中では、本物の児童ポルノをモーフィングなどを含む画像加工手段で編集し、摘発を逃れようとするケースが増加していると指摘されている。ところが、今回のケースでは体部分が別の実在の大人のものであると判明しているようで、2002 年の米最高裁の判決でその制作を禁じることが違憲と判断された、その生産過程において罪を犯すことも被害者を生み出すこともない ("records no crime and creates no victims by its production.") 作品と判断されるかに注目が集まっている。なお、渦中の男性は「彼女らが成長した姿を想像したかった」と供述しているようだ。&lt;p> &lt;a href="http://slashdot.jp/article.pl?sid=09/06/29/021241">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=145">ニュース&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=73">法廷&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=79">アメリカ合衆国&lt;/a> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=f41cf127f248e7f84398a3e6c742fef0&quot;/&gt;
+</description>
+		<dc:creator>reo</dc:creator>
+		<dc:date>2009-06-29T03:30:00+00:00</dc:date>
+		<dc:subject>news</dc:subject>
+		<slash:department>妄想は自由だ ! </slash:department>
+		<slash:section>mainpage</slash:section>
+		<slash:comments>59</slash:comments>
+		<slash:hit_parade>59,57,29,14,4,4,2</slash:hit_parade>
+		<content:encoded><![CDATA[<p>あるAnonymous Coward 曰く、</p><blockquote><div><p>
+米テネシー州の男性が、所持していた 3 枚の画像が児童ポルノだとして刑事告訴されたとのこと。ただし、これら 3 枚の画像はどれも実際の子供の裸体を写したものではなく、子供の顔を大人の体に重ねた、いわゆるコラだったようだ (<a href="http://news.slashdot.org/article.pl?sid=09/06/25/229251">本家 /. の記事</a>および <a href="http://edition.cnn.com/2009/CRIME/06/24/virtual.child.porn/">CNN.com の記事</a>より)  。</p><p>記事中では、本物の児童ポルノをモーフィングなどを含む画像加工手段で編集し、摘発を逃れようとするケースが増加していると指摘されている。ところが、今回のケースでは体部分が別の実在の大人のものであると判明しているようで、<a href="http://en.wikipedia.org/wiki/Ashcroft_v._Free_Speech_Coalition">2002 年の米最高裁の判決</a>でその制作を禁じることが違憲と判断された、その生産過程において罪を犯すことも被害者を生み出すこともない ("records no crime and creates no victims by its production.") 作品と判断されるかに注目が集まっている。</p><p>なお、渦中の男性は「彼女らが成長した姿を想像したかった」と供述しているようだ。</p></div></blockquote><p>
+	<a href="http://slashdot.jp/article.pl?sid=09/06/29/021241">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=145">ニュース</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=73">法廷</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=79">アメリカ合衆国</a>
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=f41cf127f248e7f84398a3e6c742fef0"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/yro/article.pl?sid=09/06/29/0156253">
+		<title>学校職員による、生徒を裸にした所持品検査は憲法違反。米最高裁が判決。</title>
+		<link>http://www.pheedo.jp/click.phdo?i=738fa7f97b7ba146a5a46319482d0cae</link>
+		<pheedo:origLink>http://slashdot.jp/yro/article.pl?sid=09/06/29/0156253</pheedo:origLink>
+		<description>ある Anonymous Coward 曰く、学校職員が 13 歳の女子生徒を裸にして所持品を検査したことは憲法違反かどうかと争われていた裁判で、米連邦最高裁判所が憲法違反であるとの判決を満場一致で下したそうだ (New York Times の記事、BBC NEWS の記事、本家 /. の記事より) 。当時 13 歳だった Savana Redding さんが通っていた米アリゾナ州の学校では処方箋薬や市販薬の学校への持込を禁じていた。ある日イブプロフェンを学校に持ち込んだと疑われた Redding さんは、学校職員による手荷物と衣服のチェックを受けたという。この時点では何もみつからなかったが、他の女子生徒が Redding さんから薬をもらったと主張したため、職員は Redding さんに上下の下着を脱ぐように指示し、胸部などを露にさせたという。錠剤などは結局みつからなかったそうだ。この裁判は、生徒の暴力や薬物使用に対し断固とした措置を取るという学校当局の取り組みがどこまで許容されるかという点から注目を集めていたとのこと。保護者の中には行き過ぎた捜索に対する憤りを表す者もいれば、子供の安全を委ねている学校の裁量を制限することに不安を覚えるという意見もみられたという。なお、この判決で最高裁は学校職員らの個人的な責任は問えないとも判断したとのことだ。&lt;p> &lt;a href="http://slashdot.jp/yro/article.pl?sid=09/06/29/0156253">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/yro/">YROセクション&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=27">教育&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=57">プライバシ&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=73">法廷&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=79">アメリカ合衆国&lt;/a> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=738fa7f97b7ba146a5a46319482d0cae&quot;/&gt;
+</description>
+		<dc:creator>reo</dc:creator>
+		<dc:date>2009-06-29T03:00:00+00:00</dc:date>
+		<dc:subject>privacy</dc:subject>
+		<slash:department>日本だと妥当な判決に思えるが……。</slash:department>
+		<slash:section>yro</slash:section>
+		<slash:comments>21</slash:comments>
+		<slash:hit_parade>21,21,10,6,4,2,1</slash:hit_parade>
+		<content:encoded><![CDATA[<p>ある Anonymous Coward 曰く、</p><blockquote><div><p>学校職員が 13 歳の女子生徒を裸にして所持品を検査したことは憲法違反かどうかと争われていた裁判で、米連邦最高裁判所が憲法違反であるとの判決を満場一致で下したそうだ (<a href="http://www.nytimes.com/2009/06/26/us/politics/26scotus.html?_r=3&amp;hp">New York Times の記事</a>、<a href="http://news.bbc.co.uk/2/hi/americas/8119392.stm">BBC NEWS の記事</a>、<a href="http://yro.slashdot.org/story/09/06/25/1943232/Middle-School-Strip-Search-Ruled-Unconstitutional">本家 /. の記事</a>より) 。</p><p>当時 13 歳だった Savana Redding さんが通っていた米アリゾナ州の学校では処方箋薬や市販薬の学校への持込を禁じていた。ある日イブプロフェンを学校に持ち込んだと疑われた Redding さんは、学校職員による手荷物と衣服のチェックを受けたという。この時点では何もみつからなかったが、他の女子生徒が Redding さんから薬をもらったと主張したため、職員は Redding さんに上下の下着を脱ぐように指示し、胸部などを露にさせたという。錠剤などは結局みつからなかったそうだ。</p><p>この裁判は、生徒の暴力や薬物使用に対し断固とした措置を取るという学校当局の取り組みがどこまで許容されるかという点から注目を集めていたとのこと。保護者の中には行き過ぎた捜索に対する憤りを表す者もいれば、子供の安全を委ねている学校の裁量を制限することに不安を覚えるという意見もみられたという。</p><p>なお、この判決で最高裁は学校職員らの個人的な責任は問えないとも判断したとのことだ。</p></div></blockquote><p>
+	<a href="http://slashdot.jp/yro/article.pl?sid=09/06/29/0156253">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/yro/">YROセクション</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=27">教育</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=57">プライバシ</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=73">法廷</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=79">アメリカ合衆国</a>
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=738fa7f97b7ba146a5a46319482d0cae"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/article.pl?sid=09/06/29/0149227">
+		<title>湘南モノレール事故、制御コンピュータに入り込んだノイズが原因か</title>
+		<link>http://www.pheedo.jp/click.phdo?i=4526d2f908a4d45a4a1bc6e0539952d8</link>
+		<pheedo:origLink>http://slashdot.jp/article.pl?sid=09/06/29/0149227</pheedo:origLink>
+		<description>ある Anonymous Coward 曰く、2008 年 2 月 24 日、湘南モノレールで約 40 メートルオーバーランして停車する事故があったが、運輸安全委員会がまとめた調査報告書によると、制御コンピュータに入ったノイズが原因だったという (asahi.com の記事より) 。当初、ブレーキディスク 24 枚すべてに亀裂が入っていたことから、ブレーキ故障が原因とみられていた。しかし、実際には、制御コンピュータにノイズ (VVVF インバータ内のゲート電源装置の高周波ノイズ) が入り込んだことが原因による誤動作、とのこと。これによりコンピュータが誤動作を起こし、「マスコンを力行位置としていないにもかかわらず加速する状態に」なり、加速が止まらなくなった。ブレーキディスクの亀裂は直接的にはブレーキ力低下に影響していないと推定される。&lt;p> &lt;a href="http://slashdot.jp/article.pl?sid=09/06/29/0149227">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=145">ニュース&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=141">交通&lt;/a> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=4526d2f908a4d45a4a1bc6e0539952d8&quot;/&gt;
+</description>
+		<dc:creator>reo</dc:creator>
+		<dc:date>2009-06-29T02:30:00+00:00</dc:date>
+		<dc:subject>news</dc:subject>
+		<slash:department>我々はノイズ (略) 抵抗は無意味だ。</slash:department>
+		<slash:section>mainpage</slash:section>
+		<slash:comments>43</slash:comments>
+		<slash:hit_parade>43,43,23,9,2,0,0</slash:hit_parade>
+		<content:encoded><![CDATA[<p>ある Anonymous Coward 曰く、</p><blockquote><div><p>2008 年 2 月 24 日、湘南モノレールで約 40 メートルオーバーランして停車する事故があったが、<a href="http://www.mlit.go.jp/jtsb/index.html">運輸安全委員会</a>がまとめた<a href="http://jtsb.assistmicro.co.jp/jtsb/railway/report/detail.asp?ID=1744">調査報告書</a>によると、制御コンピュータに入ったノイズが原因だったという (<a href="http://www.asahi.com/national/update/0626/TKY200906260058.html">asahi.com の記事</a>より) 。</p><p>当初、ブレーキディスク 24 枚すべてに亀裂が入っていたことから、ブレーキ故障が原因とみられていた。しかし、実際には、制御コンピュータにノイズ (<a href="http://ja.wikipedia.org/wiki/%E5%8F%AF%E5%A4%89%E9%9B%BB%E5%9C%A7%E5%8F%AF%E5%A4%89%E5%91%A8%E6%B3%A2%E6%95%B0%E5%88%B6%E5%BE%A1">VVVF インバータ</a>内のゲート電源装置の高周波ノイズ) が入り込んだことが原因による誤動作、とのこと。これによりコンピュータが誤動作を起こし、「マスコンを力行位置としていないにもかかわらず加速する状態に」なり、加速が止まらなくなった。ブレーキディスクの亀裂は直接的にはブレーキ力低下に影響していないと推定される。</p></div></blockquote><p>
+	<a href="http://slashdot.jp/article.pl?sid=09/06/29/0149227">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=145">ニュース</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=141">交通</a>
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=4526d2f908a4d45a4a1bc6e0539952d8"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=4526d2f908a4d45a4a1bc6e0539952d8&amp;p=4">
+		<title><![CDATA[AD: 【WEB業界の転職】いま動ける人は、つよい。]]></title>
+		<link>http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=4526d2f908a4d45a4a1bc6e0539952d8&amp;p=4</link>
+		<description><![CDATA[<table border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top">不況の今だからこそ、キャリアプランを真剣に考える時期。WEBエンジニアの転職成功の秘訣を、リクルートエージェントが公開</td></tr>
+<tr><td><a href="http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=4526d2f908a4d45a4a1bc6e0539952d8&amp;p=4">www.r-agent.co.jp</a></td></tr>
+</table>
+<div style="font-size:xx-small; padding-top: 1em;"><span style="border-top: 1px solid">
+<br style="display:none"/>
+Ads by Pheedo</span><img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/feeds/ht.php?t=v&amp;i=4526d2f908a4d45a4a1bc6e0539952d8&amp;p=4"/>
+<br/>
+</div>
+]]></description>
+		<dc:date>2009-06-29T02:30:00+00:00</dc:date>
+	</item>
+	<item rdf:about="http://slashdot.jp/mobile/article.pl?sid=09/06/29/0138220">
+		<title>iPhone 3GS のテザリング機能は定額料金では成り立たない ? </title>
+		<link>http://www.pheedo.jp/click.phdo?i=a709e58cbadacb7a43e34516cdc0c329</link>
+		<pheedo:origLink>http://slashdot.jp/mobile/article.pl?sid=09/06/29/0138220</pheedo:origLink>
+		<description>shunta 曰く、先週 24 日に開催されたソフトバンク第 29 回定時株主総会において、代表取締役社長の孫正義氏は iPhone 3GS のテザリング機能 (iPhone をモデムとして扱い、PC をインターネットに常時接続させる機能) への対応について、 「iPhone のユーザーは一般ユーザーの 10 倍のパケットを使う。そこにテザリング機能を利用可能にしたら，100 倍，200 倍のパケットを使う人が出てくるだろう。定額料金でデータ容量が増えるのは投資効率が悪い。一部のユーザーが求める機能を提供するために，100 人分の帯域を占拠させるのは，他のユーザーに申し訳ない。通信料金が青天井ならばテザリング機能も容認する。欧米でもその例が多いようだ。」と述べています (IT Pro の記事より) 。ということはソフトバンクでは今後も携帯電話の回線状況が技術的経済的に改善されない限り、iPhone によるテザリングはサポートされないということなのでしょうか。au などは HTC 製端末でテザリングをサポートしているような気がするのですが……。素朴な疑問ですが、テザリングが可能になったからといって、そんなに頻繁に利用する人がいるのでしょうか ?&lt;p> &lt;a href="http://slashdot.jp/mobile/article.pl?sid=09/06/29/0138220">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/mobile/">モバイルセクション&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=11">アップル&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=97">携帯通信&lt;/a> &lt;/p> &lt;p> 関連ストーリー： &lt;br>&lt;a href="http://slashdot.jp/apple/article.pl?sid=09/06/09/046240">「iPhone 3G S」、6月26日発売。iPhone OS 3.0も発表&lt;/a> &lt;small>2009年06月09日&lt;/small> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=a709e58cbadacb7a43e34516cdc0c329&quot;/&gt;
+</description>
+		<dc:creator>reo</dc:creator>
+		<dc:date>2009-06-29T02:00:00+00:00</dc:date>
+		<dc:subject>keitai</dc:subject>
+		<slash:department>いる、と踏んでいるんでしょうねえ</slash:department>
+		<slash:section>mobile</slash:section>
+		<slash:comments>45</slash:comments>
+		<slash:hit_parade>45,43,21,10,2,1,0</slash:hit_parade>
+		<content:encoded><![CDATA[<p> <a href="http://slashdot.jp/~shunta/">shunta</a> 曰く、</p><blockquote><div><p>先週 24 日に開催されたソフトバンク第 29 回定時株主総会において、代表取締役社長の孫正義氏は iPhone 3GS のテザリング機能 (iPhone をモデムとして扱い、PC をインターネットに常時接続させる機能) への対応について、</p><blockquote><div><p>
+「iPhone のユーザーは一般ユーザーの 10 倍のパケットを使う。そこにテザリング機能を利用可能にしたら，100 倍，200 倍のパケットを使う人が出てくるだろう。定額料金でデータ容量が増えるのは投資効率が悪い。一部のユーザーが求める機能を提供するために，100 人分の帯域を占拠させるのは，他のユーザーに申し訳ない。通信料金が青天井ならばテザリング機能も容認する。欧米でもその例が多いようだ。」</p></div></blockquote><p>と述べています (<a href="http://itpro.nikkeibp.co.jp/article/NEWS/20090624/332517/">IT Pro の記事</a>より) 。</p><p>ということはソフトバンクでは今後も携帯電話の回線状況が技術的経済的に改善されない限り、iPhone によるテザリングはサポートされないということなのでしょうか。au などは HTC 製端末でテザリングをサポートしているような気がするのですが……。</p><p>素朴な疑問ですが、テザリングが可能になったからといって、そんなに頻繁に利用する人がいるのでしょうか ?</p></div></blockquote><p>
+	<a href="http://slashdot.jp/mobile/article.pl?sid=09/06/29/0138220">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/mobile/">モバイルセクション</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=11">アップル</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=97">携帯通信</a>
+		</p>
+		<p>
+		関連ストーリー：
+		
+			<br><a href="http://slashdot.jp/apple/article.pl?sid=09/06/09/046240">「iPhone 3G S」、6月26日発売。iPhone OS 3.0も発表</a>
+			<small>2009年06月09日</small>
+		
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=a709e58cbadacb7a43e34516cdc0c329"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/article.pl?sid=09/06/29/0121246">
+		<title>Ｆ-22 調達、日本の初期負担 2200 億円との米軍試算</title>
+		<link>http://www.pheedo.jp/click.phdo?i=e3489dd136b263acee64490ab340ebd8</link>
+		<pheedo:origLink>http://slashdot.jp/article.pl?sid=09/06/29/0121246</pheedo:origLink>
+		<description>ある Anonymous Coward 曰く、米空軍の試算として、日本が米最新鋭戦闘機 F-22 を調達する場合、日本側が初期費用として約 23 億ドル (約 2200 億円) を負担する可能性があるとロイター通信が伝えている (NIKKEI NET の記事より) 。日本向けモデル開発費の名目になるという。 特別 (高い) 価格の (機能) 限定版を作ってあげるからお金ちょうだい、という事なのか、それともここまで言えばあきらめるよね売りたくないんだよ、という事なのか。一部のマスコミでは「最強の戦闘機」と呼んでいるようですが、ステルス性能以外はちょっとガッカリな F-22 を何故そんなに欲しがるのでしょうか。他国に侵攻する気が無いなら、ステルス性よりも運用性や格闘性能を重視すべきでは ? 偉い人の考える事はわかりません……。&lt;p> &lt;a href="http://slashdot.jp/article.pl?sid=09/06/29/0121246">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=152">軍事&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=145">ニュース&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=89">日本&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=79">アメリカ合衆国&lt;/a> &lt;/p> &lt;p> 関連ストーリー： &lt;br>&lt;a href="http://slashdot.jp/security/article.pl?sid=09/04/22/043235">米国防総省にクラッカー侵入、F-35の情報が漏洩&lt;/a> &lt;small>2009年04月22日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/it/article.pl?sid=07/02/26/0621224">F-22搭載コンピューターにバグ&lt;/a> &lt;small>2007年02月26日&lt;/small> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=e3489dd136b263acee64490ab340ebd8&quot;/&gt;
+</description>
+		<dc:creator>reo</dc:creator>
+		<dc:date>2009-06-29T01:30:00+00:00</dc:date>
+		<dc:subject>news</dc:subject>
+		<slash:department>かっこいいおもちゃがほしいんです ! </slash:department>
+		<slash:section>mainpage</slash:section>
+		<slash:comments>165</slash:comments>
+		<slash:hit_parade>165,163,58,21,1,0,0</slash:hit_parade>
+		<content:encoded><![CDATA[<p>ある Anonymous Coward 曰く、</p><blockquote><div><p>米空軍の試算として、日本が米最新鋭戦闘機 <a href="http://ja.wikipedia.org/wiki/F-22_(%E6%88%A6%E9%97%98%E6%A9%9F)">F-22</a> を調達する場合、日本側が初期費用として約 23 億ドル (約 2200 億円) を負担する可能性があるとロイター通信が伝えている (<a href="http://www.nikkei.co.jp/news/kaigai/20090623AT2M2302923062009.html">NIKKEI NET の記事</a>より) 。日本向けモデル開発費の名目になるという。</p><p> 特別 (高い) 価格の (機能) 限定版を作ってあげるからお金ちょうだい、という事なのか、それともここまで言えばあきらめるよね売りたくないんだよ、という事なのか。一部のマスコミでは「最強の戦闘機」と呼んでいるようですが、ステルス性能以外はちょっとガッカリな F-22 を何故そんなに欲しがるのでしょうか。</p><p>他国に侵攻する気が無いなら、ステルス性よりも運用性や格闘性能を重視すべきでは ? 偉い人の考える事はわかりません……。</p></div></blockquote><p>
+	<a href="http://slashdot.jp/article.pl?sid=09/06/29/0121246">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=152">軍事</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=145">ニュース</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=89">日本</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=79">アメリカ合衆国</a>
+		</p>
+		<p>
+		関連ストーリー：
+		
+			<br><a href="http://slashdot.jp/security/article.pl?sid=09/04/22/043235">米国防総省にクラッカー侵入、F-35の情報が漏洩</a>
+			<small>2009年04月22日</small>
+		
+			<br><a href="http://slashdot.jp/it/article.pl?sid=07/02/26/0621224">F-22搭載コンピューターにバグ</a>
+			<small>2007年02月26日</small>
+		
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=e3489dd136b263acee64490ab340ebd8"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/article.pl?sid=09/06/29/0052252">
+		<title>2009年世界平和度指数で日本は第 7 位</title>
+		<link>http://www.pheedo.jp/click.phdo?i=716bbcb2a93ca975f4cecdf41c1efa98</link>
+		<pheedo:origLink>http://slashdot.jp/article.pl?sid=09/06/29/0052252</pheedo:origLink>
+		<description>kieru_haim 曰く、いささか旧聞に属しますが、英エコノミスト誌が今月 6 日に発表した 2009 年の世界平和度指数 (GPI) によると、第 1 位はニュージーランドとなりました。日本は第 7 位。G8 諸国ではトップです。この指数は、戦争状態、政治的安定性、人権尊重レベル、殺人事件発生率、軍事費、テロの危険性など 24 項目を指数化してランク付けしているもの (Wikipedia:世界平和度指数より) 。ちなみに 2008 年は、アイスランドが第 1 位でしたが、同国の経済破綻後のデモなどにより第 4 位に転落。日本は 2008 年に第 5 位でしたが、オーストリアとスウェーデンがポイントを上げたため 7 位に落ち着きました。オーストリアとスウェーデンが順位を上げた理由はなんでしょうね。&lt;p> &lt;a href="http://slashdot.jp/article.pl?sid=09/06/29/0052252">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=145">ニュース&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=89">日本&lt;/a> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=716bbcb2a93ca975f4cecdf41c1efa98&quot;/&gt;
+</description>
+		<dc:creator>reo</dc:creator>
+		<dc:date>2009-06-29T01:00:00+00:00</dc:date>
+		<dc:subject>news</dc:subject>
+		<slash:department>日本って平和</slash:department>
+		<slash:section>mainpage</slash:section>
+		<slash:comments>27</slash:comments>
+		<slash:hit_parade>27,26,12,4,1,0,0</slash:hit_parade>
+		<content:encoded><![CDATA[<p>kieru_haim 曰く、</p><blockquote><div><p>いささか旧聞に属しますが、英エコノミスト誌が今月 6 日に発表した <a href="http://www.visionofhumanity.org/gpi/home.php">2009 年の世界平和度指数</a> (GPI) によると、第 1 位はニュージーランドとなりました。日本は第 7 位。G8 諸国ではトップです。</p><p>この指数は、戦争状態、政治的安定性、人権尊重レベル、殺人事件発生率、軍事費、テロの危険性など 24 項目を指数化してランク付けしているもの (<a href="http://ja.wikipedia.org/wiki/%E4%B8%96%E7%95%8C%E5%B9%B3%E5%92%8C%E5%BA%A6%E6%8C%87%E6%95%B0">Wikipedia:世界平和度指数</a>より) 。ちなみに 2008 年は、アイスランドが第 1 位でしたが、同国の経済破綻後のデモなどにより第 4 位に転落。日本は 2008 年に第 5 位でしたが、オーストリアとスウェーデンがポイントを上げたため 7 位に落ち着きました。</p></div></blockquote><p>オーストリアとスウェーデンが順位を上げた理由はなんでしょうね。</p><p>
+	<a href="http://slashdot.jp/article.pl?sid=09/06/29/0052252">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=145">ニュース</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=89">日本</a>
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=716bbcb2a93ca975f4cecdf41c1efa98"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/science/article.pl?sid=09/06/28/0535215">
+		<title>リンダウ・ノーベル賞受賞者会議の模様はTwitter・ブログで</title>
+		<link>http://www.pheedo.jp/click.phdo?i=b9de9076799860380277ee72f3c7d403</link>
+		<pheedo:origLink>http://slashdot.jp/science/article.pl?sid=09/06/28/0535215</pheedo:origLink>
+		<description>あるAnonymous Coward 曰く、 リンダウ・ノーベル賞受賞者会議が今年も開催される。将来を嘱望される若手研究者の育成およびネットワーク作りを理念とした交流会議であり、2009年8月につくばで開催予定となっているアジア・サイエンスキャンプのモデルとなったことでも知られる。物理学・化学・医学生理学の3分野が毎年ローテーションされており、2009年は化学領域を対象としている。20名程度のノーベル賞化学者と、世界67カ国から選抜された600名の若手化学者が、ドイツの保養地リンダウに一同する。期間は6月28日より一週間。邦人受賞者も招待されており、緑色蛍光タンパクの発見で受賞した下村脩氏、不斉水素化反応の開発で受賞した野依良治氏も参加者リストに名を連ねている。 Business Wireの記事によれば、会議の様子は、Twitter・ブログなどを通じ、英語/ドイツ語で実況配信される模様。現存するノーベル賞科学者の講演、および未来のノーベル賞候補者達の様子を、ネットを通じて楽しむのも悪くないだろう。&lt;p> &lt;a href="http://slashdot.jp/science/article.pl?sid=09/06/28/0535215">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/science/">サイエンスセクション&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=62">サイエンス&lt;/a> &lt;/p> &lt;p> 関連ストーリー： &lt;br>&lt;a href="http://slashdot.jp/science/article.pl?sid=08/10/08/1441253">分子生物学の道具：GFPの発見にノーベル化学賞が贈られる&lt;/a> &lt;small>2008年10月08日&lt;/small> &lt;br>&lt;a href="http://slashdot.jp/science/article.pl?sid=01/10/10/1034215">日本人にノーベル化学賞&lt;/a> &lt;small>2001年10月10日&lt;/small> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=b9de9076799860380277ee72f3c7d403&quot;/&gt;
+</description>
+		<dc:creator>soara</dc:creator>
+		<dc:date>2009-06-28T05:50:00+00:00</dc:date>
+		<dc:subject>science</dc:subject>
+		<slash:department>どんな呟きがとぶのだろう</slash:department>
+		<slash:section>science</slash:section>
+		<slash:comments>6</slash:comments>
+		<slash:hit_parade>6,6,2,0,0,0,0</slash:hit_parade>
+		<content:encoded><![CDATA[<p>あるAnonymous Coward 曰く、</p><blockquote><div><p> <a href="http://www.lindau-nobel.de/">リンダウ・ノーベル賞受賞者会議</a>が今年も開催される。将来を嘱望される若手研究者の育成およびネットワーク作りを理念とした交流会議であり、2009年8月につくばで開催予定となっている<a href="http://asc09.kek.jp/ja/">アジア・サイエンスキャンプ</a>のモデルとなったことでも知られる。</p><p>物理学・化学・医学生理学の3分野が毎年ローテーションされており、2009年は化学領域を対象としている。20名程度のノーベル賞化学者と、世界67カ国から選抜された600名の若手化学者が、ドイツの保養地リンダウに一同する。期間は6月28日より一週間。邦人受賞者も招待されており、緑色蛍光タンパクの発見で受賞した下村脩氏、不斉水素化反応の開発で受賞した野依良治氏も参加者リストに名を連ねている。</p><p> <a href="http://www.businesswire.com/portal/site/google/?ndmViewId=news_view&amp;newsId=20090623005487&amp;newsLang=ja">Business Wireの記事</a>によれば、会議の様子は、Twitter・ブログなどを通じ、英語/ドイツ語で実況配信される模様。</p><p>現存するノーベル賞科学者の講演、および未来のノーベル賞候補者達の様子を、ネットを通じて楽しむのも悪くないだろう。</p></div></blockquote><p>
+	<a href="http://slashdot.jp/science/article.pl?sid=09/06/28/0535215">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/science/">サイエンスセクション</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=62">サイエンス</a>
+		</p>
+		<p>
+		関連ストーリー：
+		
+			<br><a href="http://slashdot.jp/science/article.pl?sid=08/10/08/1441253">分子生物学の道具：GFPの発見にノーベル化学賞が贈られる</a>
+			<small>2008年10月08日</small>
+		
+			<br><a href="http://slashdot.jp/science/article.pl?sid=01/10/10/1034215">日本人にノーベル化学賞</a>
+			<small>2001年10月10日</small>
+		
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=b9de9076799860380277ee72f3c7d403"/>
+]]></content:encoded>
+	</item>
+	<item rdf:about="http://slashdot.jp/askslashdot/article.pl?sid=09/06/28/0517238">
+		<title>「ぢ」の予防・治療はどうされていますか？</title>
+		<link>http://www.pheedo.jp/click.phdo?i=449ba61b52350479c5083b6e9358c5cd</link>
+		<pheedo:origLink>http://slashdot.jp/askslashdot/article.pl?sid=09/06/28/0517238</pheedo:origLink>
+		<description>x-AC 曰く、「デイリーポータルZ」の記事「日本人の3人に1人は痔にかかっています」によると、どうもライターの住氏が「イボ痔(痔核)」にかかったらしい。なんでも肛門の入口に大豆大のものができているとのことで、同様にかつて痔を患った経験があるウェブマスターの林氏に相談したところ、「絶対病院に行った方がいいです！」ということになったらしい。その後の顛末は記事の方をごらんいただきたいところなのだが、やはりデスクワーク主体の仕事となると格段にかかりやすい職業病なのだろうか？ ある程度同様の仕事をしている人間としては、他人事ではすまされない記事である。そこで /.-jの諸兄に質問なのだが、この重大な問題についてなにか具体的な予防などはされているだろうか？ あるいはすでにかかってしまって、その体験談などあれば (ID|AC)に関わらずいろいろと伺いたいところである。&lt;p> &lt;a href="http://slashdot.jp/askslashdot/article.pl?sid=09/06/28/0517238">すべて読む&lt;/a> | &lt;a href="http://slashdot.jp/askslashdot/">Slashdotに聞けセクション&lt;/a> | &lt;a href="http://slashdot.jp/search.pl?tid=149">医療&lt;/a> &lt;/p>&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.jp/img.phdo?i=449ba61b52350479c5083b6e9358c5cd&quot;/&gt;
+</description>
+		<dc:creator>soara</dc:creator>
+		<dc:date>2009-06-28T05:30:00+00:00</dc:date>
+		<dc:subject>medicine</dc:subject>
+		<slash:department>あの看板とかあのTVCMとか</slash:department>
+		<slash:section>askslashdot</slash:section>
+		<slash:comments>108</slash:comments>
+		<slash:hit_parade>108,106,54,32,9,7,6</slash:hit_parade>
+		<content:encoded><![CDATA[<p> <a href="http://slashdot.jp/~x-AC/">x-AC</a> 曰く、</p><blockquote><div><p>「<a href="http://portal.nifty.com/">デイリーポータルZ</a>」の記事「<a href="http://portal.nifty.com/2009/06/27/a/">日本人の3人に1人は痔にかかっています</a>」によると、どうもライターの住氏が「<strong>イボ痔(痔核)</strong>」にかかったらしい。なんでも肛門の入口に大豆大のものができているとのことで、同様にかつて痔を患った経験があるウェブマスターの林氏に相談したところ、<strong>「絶対病院に行った方がいいです！」</strong>ということになったらしい。その後の顛末は記事の方をごらんいただきたいところなのだが、やはりデスクワーク主体の仕事となると格段にかかりやすい職業病なのだろうか？ ある程度同様の仕事をしている人間としては、他人事ではすまされない記事である。</p><p>そこで /.-jの諸兄に質問なのだが、この重大な問題についてなにか具体的な予防などはされているだろうか？ あるいはすでにかかってしまって、その体験談などあれば (ID|AC)に関わらずいろいろと伺いたいところである。</p></div></blockquote><p>
+	<a href="http://slashdot.jp/askslashdot/article.pl?sid=09/06/28/0517238">すべて読む</a>
+	
+		| <a href="http://slashdot.jp/askslashdot/">Slashdotに聞けセクション</a>
+	
+		| <a href="http://slashdot.jp/search.pl?tid=149">医療</a>
+		</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=449ba61b52350479c5083b6e9358c5cd"/>
+]]></content:encoded>
+	</item>
+	<textinput rdf:about="http://slashdot.jp/search.pl">
+		<title>スラッシュドット・ジャパン検索</title>
+		<description>検索条件: なし</description>
+		<name>query</name>
+		<link>http://slashdot.jp/search.pl</link>
+	</textinput>
+</rdf:RDF>

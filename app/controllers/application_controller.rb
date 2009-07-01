@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
       end
       @src_feed = Feed.parse(src)
       @result_feed = Feed.parse(src)
-      @result_feed.filter!(filter_params)
+      @result_feed.filter!(filter_params.except(:url))
     end
   rescue SocketError, Feed::InvalidContentError, OpenURI::HTTPError => e
     Rails.logger.debug e.message

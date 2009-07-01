@@ -3,8 +3,8 @@ class Feed
 
   def self.parse(src)
     doc = REXML::Document.new(src)
-    case doc.root.name
-    when "RDF" # RSS 1.0
+    case doc.root.expanded_name
+    when "rdf:RDF" # RSS 1.0
       RSS1::Feed.new(doc)
     when "rss" # RSS 2.0
       RSS2::Feed.new(doc)
@@ -20,15 +20,61 @@ class Feed
   end
 
   def entries
-    entry_class = self.class.to_s.sub(/Feed/,"Entry").constantize # TODO: any better awy?
-    @entries ||= @doc.get_elements(self.entries_xpath).map {|e| entry_class.new(e) }
+    unless @entries
+      entry_class = self.class.to_s.sub(/Feed/,"Entry").constantize # TODO: another better awy?
+      @entries = @doc.get_elements(self.entries_xpath).map {|e| entry_class.new(e) }
+    end
+    @entries
   end
+
+  def filter_fields
+    unless @filter_fields
+      hash = {}
+      self.entries.each do |entry|
+        element = entry.instance_variable_get("@element")
+        update_filter_field(hash, nil, element)
+      end
+      hash.each_value {|v| v.uniq!}
+      # NOTE: An ordered hash created with OrderedHash[] causes error when #keys are called.
+      # NOTE: It happens with rails 2.3.2
+      # NOTE: The fix is committed: http://github.com/rails/rails/commit/2bcb2443a9e2140e29799229d6c63a046e149597
+      # @filter_fields = ActiveSupport::OrderedHash[*hash.sort.inject([]){|a,pair|a+=pair}]
+      @filter_fields = hash.sort.inject(ActiveSupport::OrderedHash.new){|h,pair|h[pair.first] = pair.last;h}
+    end
+    @filter_fields
+  end
+
+  def update_filter_field(hash, path, element)
+    element.attributes.each do |name,val|
+      (hash["#{path}@#{name}"] ||= []) << val
+    end
+    if element.has_elements?
+      element.elements.each do |e|
+        update_filter_field(hash, [path, e.expanded_name].compact.join("/"), e)
+      end
+    elsif element.has_text?
+      (hash[path] ||= []) << element.get_text.to_s.strip
+    end
+  end
+  private :update_filter_field
 
   def filter!(params={})
     @entries = nil
 
     condition = params.map do |key, val|
-      filter_case(key.to_sym, val)
+      #filter_case(key.to_sym, val)
+      # "contains(@rdf:about,'#{val}')" # an attribute of entries
+      # "category[@term='#{val}']" # an attribute of child elements
+      # "category[normalize-space(text())='#{val}']" # text of child elements
+      case key
+      when /^@/ # attribute of entry
+        "contains(#{key},'#{val}')" # an attribute of entries
+      when /^[^@]+@/ # attribute of a child of entry
+        tag, attr = key.split("@")
+        "#{tag}[@#{attr}='#{val}']" # an attribute of child elements
+      else # child of entry (e.g. <entry>...<category>Rails</category>...</entry>)
+        "#{key}[contains(normalize-space(text()),'#{val}')]" # text of child elements
+      end
     end.compact.join(" and ")
 
     unless condition.blank?
@@ -89,6 +135,10 @@ module RSS1
       "/rdf:RDF/item"
     end
 
+    def content_tag_name
+      "description"
+    end
+
     def filter_case(key, val)
       case key
       when :identifier
@@ -141,6 +191,10 @@ module RSS2
       "/rss/channel/item"
     end
 
+    def content_tag_name
+      "description"
+    end
+
     def filter_case(key, val)
       case key
       when :identifier
@@ -190,6 +244,10 @@ module Atom
 
     def entries_xpath
       "/feed/entry"
+    end
+
+    def content_tag_name
+      "content"
     end
 
     def filter_case(key, val)
