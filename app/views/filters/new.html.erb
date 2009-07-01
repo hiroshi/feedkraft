@@ -61,13 +61,13 @@
   <button type="submit">prevew</button>
 <% end %> 
 
-<% form_for @filter do |form| %>
+<% form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
   <%= form.label "title" %>: <%= form.text_field "title", :size => 40 %>
-  <button type="submit" name="filter[params_string]" onclick="this.value=Form.serialize('filter_form');">save</button>
+  <button id="filter_submit" type="submit" name="filter[params_string]">save</button>
 <% unless @filter.new_record? %>
-  <%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
 <% end %>
 <% end %>
+<%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
 
 <% if @src_feed %>
 <div class="span-9">
