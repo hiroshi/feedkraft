@@ -9,9 +9,10 @@ class FiltersController < ApplicationController
 
   def create
     if @filter.save
-      render :action => "new"
-    else
       redirect_to filter_path(@filter)
+    else
+      set_feeds
+      render :action => "new"
     end
   end
 
