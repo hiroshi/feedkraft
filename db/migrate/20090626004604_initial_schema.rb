@@ -18,6 +18,7 @@ class InitialSchema < ActiveRecord::Migration
   end
 
   def self.down
+    drop_table "filters"
     drop_table "users"
   end
 end
