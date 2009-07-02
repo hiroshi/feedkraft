@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/css/rss20.xsl" type="text/xsl"?>
+<rss xmlns:pheedo="http://www.pheedo.com/namespace/pheedo" version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+	<channel>
+		<title>TechCrunch Japan</title>
+		<atom:link href="http://jp.techcrunch.com/feed/" rel="self" type="application/rss+xml"/>
+		<link>http://jp.techcrunch.com</link>
+		<description>次世代のウェブ社会に影響を与えるベンチャー企業・新サービス・スクープねたを毎日リアルタイムで綴るブログ‐TechCrunchの日本語版サイト</description>
+		<pubDate>Thu, 02 Jul 2009 00:35:44 +0000</pubDate>
+		<generator>http://wordpress.org/?v=2.7.1</generator>
+		<language>en</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<item>
+			<title>Firefox 3.5が24時間で500万ダウンロード。すばらしいが、新記録はならず</title>
+			<link>http://www.pheedo.jp/click.phdo?i=45f993beb2ab1a35afbc48328a17b1e7</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090701firefox-35-hits-five-million-downloads-in-24-hours-respectable-but-not-a-record/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090701firefox-35-hits-five-million-downloads-in-24-hours-respectable-but-not-a-record/#comments</comments>
+			<pubDate>Thu, 02 Jul 2009 00:35:44 +0000</pubDate>
+			<dc:creator>Erick Schonfeld</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[Firefox]]></category>
+			<category><![CDATA[mozilla]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22137</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/07/firefox-35-logo-215x178.jpg" width="215" height="178" />昨日（米国時間6/30）の公開から24時間で、Firefox 3.5のダウンロード数が<a href="http://downloadstats.mozilla.com/">500万を越えた</a>（<a href="http://www.techcrunch.com/2009/06/30/firefox-35-soars-past-a-million-downloads-approaching-100-downloads-a-second/">100万回を越える</a>には数時間しかかからなかった）。これは間違いなく立派な数字だが、昨年夏にFirefox 3.0が起こした熱狂には遠く及ばない。あの時は1日で<a href="http://jp.techcrunch.com/archives/20080618firefox-3-downloaded-83-million-times-in-first-24-hours/">830万ダウンロード</a>の「世界記録」を打ち立てたのだ。これを破るためにはFirefox 4.0まだ待たなくてはならないだろう。それでもFirefox 3.5には、Safari 4が最初の3日間で記録した<a href="http://jp.techcrunch.com/archives/20090612browser-wars-continue-apple-claims-11-million-downloads-for-new-safari-in-3-days/">1100万ダウンロード</a>を破る可能性がある。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=45f993beb2ab1a35afbc48328a17b1e7"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/07/ff-5-million-downloads.png"/></p>
+<p>昨日（米国時間6/30）の公開から24時間で、Firefox 3.5のダウンロード数が<a href="http://downloadstats.mozilla.com/">500万を越えた</a>（<a href="http://www.techcrunch.com/2009/06/30/firefox-35-soars-past-a-million-downloads-approaching-100-downloads-a-second/">100万回を越える</a>には数時間しかかからなかった）。これは間違いなく立派な数字だが、昨年夏にFirefox 3.0が起こした熱狂には遠く及ばない。あの時は1日で<a href="http://jp.techcrunch.com/archives/20080618firefox-3-downloaded-83-million-times-in-first-24-hours/">830万ダウンロード</a>の「世界記録」を打ち立てたのだ。これを破るためにはFirefox 4.0まだ待たなくてはならないだろう。それでもFirefox 3.5には、Safari 4が最初の3日間で記録した<a href="http://jp.techcrunch.com/archives/20090612browser-wars-continue-apple-claims-11-million-downloads-for-new-safari-in-3-days/">1100万ダウンロード</a>を破る可能性がある。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/07/who-amongus-browser-market-share.jpg" class="shot2"/></p>
+<p>Who&#8217;s.among.usに、同サイトが追跡している80万人のインターネットサーファーによる<a href="http://whos.amung.us/firefox/">リアルタイム利用統計データ</a>がある。これによると、Firefox 3.5はすでに、ブラウザー市場全体の2.4%のシェアを獲得している。Firefoxの全バージョン合計では29%だ。即ちFirefoxユーザーの10%近くがアップグレードを済ませたことになる。また、Safariの市場シェアは2.5%となっていて、これは低すぎるように思える（<a href="http://en.wikipedia.org/wiki/Usage_share_of_web_browsers">他の統計</a>では8%近い）。</p>
+<p>ここTechCrunchのGoogle Analyticsを見ると、Firefoxユーザーの28%が既に3.5になっているが、われわれの読者はFirefoxの大ファンであり、全訪問者の半分近くがいずれかのバージョンのFirefoxを使っている。これは、他の多くのサイトに比べてはるかに高い割合だ。</p>
+<p>私は3.5のリリース候補版を一週間ほどいじっていた。3.0よりずっとスピーディーで、タブバーのプラス機能も、タブの追加が簡単になって手放せない。<a href="http://jp.techcrunch.com/archives/20090609demo-firefox-35-treats-videos-like-web-pages-why-cant-flash-do-that/">オープンビデオ標準</a>に対する方向性も気に入っている。タブをたくさん開きすぎると、少々クラッシュしやすいようだが、これも改善されてきている。アドオンの中には動かないものがあるが、致命的なものではない。全般を通じてかなり良くなっている。</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/product/firefox">Firefox</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/product/firefox.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/">CrunchBase</a></div>
+</div>
+</div>
+<p>[<a href="http://www.techcrunch.com/2009/07/01/firefox-35-hits-five-million-downloads-in-24-hours-respectable-but-not-a-record/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=45f993beb2ab1a35afbc48328a17b1e7"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090701firefox-35-hits-five-million-downloads-in-24-hours-respectable-but-not-a-record/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>GoolgeがGmailのラベル機能を強化してドラッグ＆ドロップが可能に</title>
+			<link>http://www.pheedo.jp/click.phdo?i=b542721703db62b34238a7d8dc5e8c65</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090701google-enhances-gmail-labeling-with-drag-and-drop-feature-retires-right-side-labels/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090701google-enhances-gmail-labeling-with-drag-and-drop-feature-retires-right-side-labels/#comments</comments>
+			<pubDate>Thu, 02 Jul 2009 00:04:20 +0000</pubDate>
+			<dc:creator>Leena Rao</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[Gmail]]></category>
+			<category><![CDATA[Google]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22134</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/07/gmai-215x141.jpg" width="215" height="141" />Gmailでは、ユーザーの整理整頓を良くするべく、次々と機能を追加している。今日（米国時間7/1）Googleは、Gmailのラベル機能に<a href="http://gmailblog.blogspot.com/2009/07/labels-drag-and-drop-hiding-and-more.html">微修正を加え</a> 、ラベルの整理をしやすくした。まずラベル一覧の位置がチャットリストの上に移動し、受信箱、ドラフト、チャットなどのシステムラベルと一体化した。UI上にどのラベルを表示するかを設定することも可能で、他のラベルは「more」タブの中に隠しておける。【訳注：現時点（7/2 8am）では訳者の環境で新機能は有効になっていない。】
+
+追加された機能の中でも新しいのが、メッセージをフォルダー感覚でラベルにドラッグアンドドロップできるようになったことだ。ラベルをメッセージにドラッグすることもできる。また、「more」メニューにラベルをドラッグすると非表示にできるので、設定画面に行くよりも簡単にラベルを変更できる。これは、GmailにOutlookのようなドラッグアンドドロップ機能がないことに不満を漏らしていた人たちにとって、大きな変更だ。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=b542721703db62b34238a7d8dc5e8c65"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/07/gmai.jpg" class="shot2"/></p>
+<p>Gmailでは、ユーザーの整理整頓を良くするべく、次々と機能を追加している。今日（米国時間7/1）Googleは、Gmailのラベル機能に<a href="http://gmailblog.blogspot.com/2009/07/labels-drag-and-drop-hiding-and-more.html">微修正を加え</a> 、ラベルの整理をしやすくした。まずラベル一覧の位置がチャットリストの上に移動し、受信箱、ドラフト、チャットなどのシステムラベルと一体化した。UI上にどのラベルを表示するかを設定することも可能で、他のラベルは「more」タブの中に隠しておける。【訳注：現時点（7/2 8am）では訳者の環境で新機能は有効になっていない。】</p>
+<p>追加された機能の中でも新しいのが、メッセージをフォルダー感覚でラベルにドラッグアンドドロップできるようになったことだ。ラベルをメッセージにドラッグすることもできる。また、「more」メニューにラベルをドラッグすると非表示にできるので、設定画面に行くよりも簡単にラベルを変更できる。これは、GmailにOutlookのようなドラッグアンドドロップ機能がないことに不満を漏らしていた人たちにとって、大きな変更だ。</p>
+<p>Googleは、今回の変更によってGmail Labsが実験的に試行していた「右側ラベル」は不要になると言っている。どうやらこれが、Gmail Labsの中で最初に引退する機能になりそうだ。</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/product/gmail">Gmail</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/product/gmail.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>[<a href="http://www.techcrunch.com/2009/07/01/google-enhances-gmail-labeling-with-drag-and-drop-feature-retires-right-side-labels/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=b542721703db62b34238a7d8dc5e8c65"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090701google-enhances-gmail-labeling-with-drag-and-drop-feature-retires-right-side-labels/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>メジャーサイトに大画面広告導入。ディスプレイ広告はいったいどうなる？</title>
+			<link>http://www.pheedo.jp/click.phdo?i=baf1f221ba98408d2a756ff4353aca6d</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090701big-websites-start-running-bigger-display-ads-big-mistake/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090701big-websites-start-running-bigger-display-ads-big-mistake/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 23:01:21 +0000</pubDate>
+			<dc:creator>Robin Wauters</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22130</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/07/wom-ad-215x131.jpg" width="215" height="131" />昨日（米国時間6/30）の<a href="http://www.mediapost.com/publications/?fa=Articles.showArticle&#38;art_aid=108864">MediaPost</a>の記事によると、New York Times、Forbes、ESPN、CNN、およびMSNBC.comなどで構成されるOnline Publishers Association（OPA）は、3月に導入した新しい大画面広告をの掲載を始めた（ないし間もなく始める）そうだ。
+
+バンク・オブ・アメリカやメルセデス・ベンツの広告で採用され、米国におけるインターネット利用者の68%にリーチするとのことなので、間もなく目にすることになるかもしれない。そして多分、目にした人は、それらの広告を嫌うことになるだろう。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=baf1f221ba98408d2a756ff4353aca6d"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/07/wom-ad.png" class="shot2" />昨日（米国時間6/30）の<a href="http://www.mediapost.com/publications/?fa=Articles.showArticle&amp;art_aid=108864">MediaPost</a>の記事によると、New York Times、Forbes、ESPN、CNN、およびMSNBC.comなどで構成されるOnline Publishers Association（OPA）は、3月に導入した新しい大画面広告をの掲載を始めた（ないし間もなく始める）そうだ。バンク・オブ・アメリカやメルセデス・ベンツの広告で採用され、米国におけるインターネット利用者の68%にリーチするとのことなので、間もなく目にすることになるかもしれない。</p>
+<p>そして多分、目にした人は、それらの広告を嫌うことになるだろう。</p>
+<p>新たに導入されたサイズと名称は以下の通り。</p>
+<p>- The Fixed Panel (336&#215;700)。上下どちらにスクロールしても表示され続ける。<br />
+- The XXL Box (468&#215;648)。936&#215;648のサイズに広がるサイド広告。ページめくりの機能と、動画にも対応。<br />
+- The Pushdown (970&#215;418)。大きな広告を表示して、7秒後にページ上部にロールアップする（970&#215;66のサイズに縮む）。</p>
+<p>最初のものは当初、高さ860ピクセルの予定だった。しかし広告掲載者側のフィードバックを受けて700ピクセルに修正したとのこと。</p>
+<p>これらの広告が、最大サイズ時にどのように見えるものなのか、TechCrunchのページにオーバーレイして画像を作ってみた。</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.techcrunch.com/wp-content/uploads/2009/07/tc-ads.png" alt="" /></p>
+<p>新たな広告ユニットの導入について、OPAのプレジデントであるPam Horanは次のように説明している。</p>
+<blockquote><p>新たな広告ユニットを導入したのは、マーケッターやエージェンシーに、リッチコンテンツを利用したブランド展開を行う機会を提供するためです。</p></blockquote>
+<p>しかしWhat about the childrenではないが、サイトを見る人のことはどう考えているのだろう。</p>
+<p>誰もそんなことは気にしていないようだ。OPAはメンバーに対して、Pushdownは同一ページにおいては一日に一度のみ表示するようにすべきだと勧告してはいる。Horanによれば、それが「消費者のことも考えて」のことなのだと言う。あまりのことに嫌悪感すら覚えてしまう。</p>
+<p>ウェブサイトのディスプレイ広告というのは、サイズを大きくするなんてことよりも、サイトの内容に関連したものにすべきだと考える人はいないのだろうか。いったい次は1200&#215;600なんていう広告ユニットを出してくるつもりなんだろうか。</p>
+<p><script src="http://static.polldaddy.com/p/1750055.js" type="text/javascript"></script></p>
+<p><noscript><br />
+<a href="http://answers.polldaddy.com/poll/1750055/">How do you feel about the new ad units?</a><span style="font-size:9px;">(<a href="http://www.polldaddy.com">survey software</a>)</span><br />
+</noscript></p>
+<p>［<a href="http://www.techcrunch.com/2009/07/01/big-websites-start-running-bigger-display-ads-big-mistake/">原文へ</a>］</p>
+<p>（翻訳：Maeda, H）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=baf1f221ba98408d2a756ff4353aca6d"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090701big-websites-start-running-bigger-display-ads-big-mistake/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>ベンチャーに投じられる資金は減少に減少を重ねて前年比50%割れ</title>
+			<link>http://www.pheedo.jp/click.phdo?i=bcfe7e4e1d9da7689289fb6c6a6df081</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090701venture-backed-liquidity-going-down-down-down/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090701venture-backed-liquidity-going-down-down-down/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 21:53:24 +0000</pubDate>
+			<dc:creator>Robin Wauters</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22126</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/07/downjones-214x161.jpg" width="214" height="161" />低下率57%。これは昨年第2四半期と比較した2009年第2四半期におけるベンチャーに投じられた資金量の減少率を示す数字だ。額で示した方がわかりやすければ、$6.48B（64億8千万ドル）から$2.8B（28億ドル）になった。グラフを見てわかるように、2007年の第2四半期（$14.6B - 146億ドル）と比べてみればさらに大きな下落率となる。この数字は<a href="http://www.fis.dowjones.com/VS/2Q09USLiquidity.html">発表されたばかりのDow Jones VentureSourceレポート</a>に掲載されているものだ。唯一の明るい材料は、9ヵ月に及んだ停滞期を経て、ベンチャーキャピタルの支援する企業がようやくIPOを果たしたことだ（調達総額2億3200万ドル）。
+
+つい先ほどの記事で、National Venture Capital Association（NVCA）が第2四半期における<a href="http://jp.techcrunch.com/archives/20090701the-venture-backed-ipo-pokes-its-head-out-of-the-water-in-2nd-quarter-ma-still-meh/">IPOの数を実質5件と見なしており</a>、調達額を$721M（7億2100万ドル）としていることを書いた（DigitalGlobe-$279M=2億7900万ドル、SolarWinds-$152M=1億5200万ドル、およびOpenTable-$60M=6000万ドル等）。またNVCAの基準では、第2四半期におけるベンチャーキャピタルの関係する企業買収件数は59件で、総額$2.6B（26億ドル）だったとのこと。但しDow Jones VentureSourceの数値によれば、67社のポートフォリオ企業でM&#038;Aが行われ、総額は$2.8B（28億ドル）ということになっている。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=bcfe7e4e1d9da7689289fb6c6a6df081"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/07/downjones.png" />低下率57%。これは昨年第2四半期と比較した2009年第2四半期におけるベンチャーに投じられた資金量の減少率を示す数字だ。額で示した方がわかりやすければ、$6.48B（64億8千万ドル）から$2.8B（28億ドル）になった。グラフを見てわかるように、2007年の第2四半期（$14.6B - 146億ドル）と比べてみればさらに大きな下落率となる。この数字は<a href="http://www.fis.dowjones.com/VS/2Q09USLiquidity.html">発表されたばかりのDow Jones VentureSourceレポート</a>に掲載されているものだ。唯一の明るい材料は、9ヵ月に及んだ停滞期を経て、ベンチャーキャピタルの支援する企業がようやくIPOを果たしたことだ（調達総額2億3200万ドル）。</p>
+<p>つい先ほどの記事で、National Venture Capital Association（NVCA）が第2四半期における<a href="http://jp.techcrunch.com/archives/20090701the-venture-backed-ipo-pokes-its-head-out-of-the-water-in-2nd-quarter-ma-still-meh/">IPOの数を実質5件と見なしており</a>、調達額を$721M（7億2100万ドル）としていることを書いた（DigitalGlobe-$279M=2億7900万ドル、SolarWinds-$152M=1億5200万ドル、およびOpenTable-$60M=6000万ドル等）。またNVCAの基準では、第2四半期におけるベンチャーキャピタルの関係する企業買収件数は59件で、総額$2.6B（26億ドル）だったとのこと。但しDow Jones VentureSourceの数値によれば、67社のポートフォリオ企業でM&#038;Aが行われ、総額は$2.8B（28億ドル）ということになっている。</p>
+<p>いずれにせよ、ベンチャーキャピタリストにとって、ポートフォリオ企業を公開しようとするにせよ、売却しようとするにしても、状況見通しは非常に暗いものとなっているようだ。Dow Jonesのレポートによれば2008年の第2四半期には89件で$6.48B（64億8000万ドル）のM&#038;Aが成立しているのに対し、今期は60%の減少となっている。この数字は1999年以来、最低となっている。さらに2009年第2四半期においてVCが企業に投じた額は平均で僅か$22M（2200万ドル）となっており、これは2008年同時期における平均額$41M（4100万ドル）と比較して46%の減少となっている。</p>
+<p>Dow Jones VentureSourceのGlobal Research部門のディレクターであるJessica Canningは、2007年におけるインフレ傾向を市場が是正しつつ、再度IPOの動きが活発化しつつあるのだと結論している。</p>
+<p>Erickも言うように、これを復調と呼ぶには時期尚早だろう。ただ、少なくとも数件のIPOが行われたことに胸をなで下ろしている人もいることだろう。もちろん2004年から2007年の時期と比べればまだまだ手放しで喜んでいるわけにもいかない。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/07/dowjones.png" /></p>
+<p>［<a href="http://www.techcrunch.com/2009/07/01/venture-backed-liquidity-going-down-down-down/">原文へ</a>］</p>
+<p>（翻訳：Maeda, H）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=bcfe7e4e1d9da7689289fb6c6a6df081"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090701venture-backed-liquidity-going-down-down-down/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>第2四半期はベンチャーキャピタルの支援する株式公開に薄明かり―M&amp;Aは壊滅のまま</title>
+			<link>http://www.pheedo.jp/click.phdo?i=660491828660c2d32111e47cdd748d45</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090701the-venture-backed-ipo-pokes-its-head-out-of-the-water-in-2nd-quarter-ma-still-meh/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090701the-venture-backed-ipo-pokes-its-head-out-of-the-water-in-2nd-quarter-ma-still-meh/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 16:16:32 +0000</pubDate>
+			<dc:creator>Erick Schonfeld</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22121</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/q2-ipos-215x86.png" width="215" height="86" /><p>最近4四半期連続でスタートアップの株式上場がゼロだったが、今年第2四半期に入って、ほんのわずかだがIPOが行われている。<a href="http://www.nvca.org/">National Venture Capital Association</a>によると、今期、DigitalGlobe（$279M = 2億7900万ドル）、SolarWinds（$152M = 1億5200万ドル）、OpenTable（$60M= 6千万ドル）などを含む5件の上場が行われている。調達された資金の総額は$721M（7億2100万ドル）。ちなみに、2年前の同期には25件の上場が行われて、総額は$4.15B（41億5千万ドル）だった。</p><p>そうわけで上場マーケットが復活したとは言いにくい。しかしどんな小さな芽でも生えないよりはよい。いずれにせよ、今期は2007年の第4四半期以来、最高の上場件数を記録している。これで今後も上場の動きが継続すればよいのだが。</p><p>一方、M&#38;Aマーケットは依然として低調だ。今期、ベンチャーキャピタルが関係する企業買収の件数はわずか59件だった。 前年同期は84件、前期に62件だった。M&#38;Aの総額は$2.6B（26億ドル）にとどまった。</p><p>M&#38;Aの平均額は$198M（19億800万ドル）に跳ね上がったが、これはIntelがWindo River Systemsを<a href="http://jp.techcrunch.com/archives/20090604intel-to-acquire-wind-river-systems-for-approximately-884-million/">$884M（8億8400万ドル）で買収</a>したせいだ。NetApp&#8217;sはData Domainを $1.5B（15億ドル）で買収している。しかしインターネット関係の小規模な買収は件数ベースで依然29%を占めている。ただし、<a href="http://www.techcrunch.com/2009/06/11/aol-buys-local-startups-going-and-patch-and-ceo-tim-armstrong-brings-an-investment-in-house/">AOLのGoingとPatch、両社の買収</a>のような小規模な買収が大部分だ。</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=660491828660c2d32111e47cdd748d45"/>
+]]></description>
+			<content:encoded><![CDATA[<p><object id='obj' data='http://widget.icharts.net/icharts.swf' type='application/x-shockwave-flash' pluginspage='http://www.macromedia.com/go/getflashplayer' height='459' width='452'><param name='classid' value='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'/><param name='src' value='http://widget.icharts.net/icharts.swf'/><param name='flashVars' value='id=NXjbzw=='/><param name='AllowScriptAccess' value='always'/><img src='http://www.icharts.net/ichart-download/0/published_ichart_7294.png'/><br /></object></p>
+<p>最近4四半期連続でスタートアップの株式上場がゼロだったが、今年第2四半期に入って、ほんのわずかだがIPOが行われている。<a href="http://www.nvca.org/">National Venture Capital Association</a>によると、今期、DigitalGlobe（$279M = 2億7900万ドル）、SolarWinds（$152M = 1億5200万ドル）、OpenTable（$60M= 6千万ドル）などを含む5件の上場が行われている。調達された資金の総額は$721M（7億2100万ドル）。ちなみに、2年前の同期には25件の上場が行われて、総額は$4.15B（41億5千万ドル）だった。</p>
+<p>そうわけで上場マーケットが復活したとは言いにくい。しかしどんな小さな芽でも生えないよりはよい。いずれにせよ、今期は2007年の第4四半期以来、最高の上場件数を記録している。これで今後も上場の動きが継続すればよいのだが。</p>
+<p>一方、M&amp;Aマーケットは依然として低調だ。今期、ベンチャーキャピタルが関係する企業買収の件数はわずか59件だった。 前年同期は84件、前期に62件だった。M&amp;Aの総額は$2.6B（26億ドル）にとどまった。</p>
+<p>M&amp;Aの平均額は$198M（19億800万ドル）に跳ね上がったが、これはIntelがWindo River Systemsを<a href="http://jp.techcrunch.com/archives/20090604intel-to-acquire-wind-river-systems-for-approximately-884-million/">$884M（8億8400万ドル）で買収</a>したせいだ。NetApp&#8217;sはData Domainを $1.5B（15億ドル）で買収している。しかしインターネット関係の小規模な買収は件数ベースで依然29%を占めている。ただし、<a href="http://www.techcrunch.com/2009/06/11/aol-buys-local-startups-going-and-patch-and-ceo-tim-armstrong-brings-an-investment-in-house/">AOLのGoingとPatch、両社の買収</a>のような小規模な買収が大部分だ。</p>
+<p><object id='obj' data='http://widget.icharts.net/icharts.swf' type='application/x-shockwave-flash' pluginspage='http://www.macromedia.com/go/getflashplayer' height='459' width='452'><param name='classid' value='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'/><param name='src' value='http://widget.icharts.net/icharts.swf'/><param name='flashVars' value='id=NXjbyA=='/><param name='AllowScriptAccess' value='always'/><img src='http://www.icharts.net/ichart-download/0/published_ichart_7293.png'/><br /></object></p>
+<p><P>[<A href="http://www.techcrunch.com/2009/07/01/the-venture-backed-ipo-pokes-its-head-out-of-the-water-in-2nd-quarter-ma-still-meh/">原文へ</A>]</P><P>（翻訳：Namekawa, U）</P></p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=660491828660c2d32111e47cdd748d45"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090701the-venture-backed-ipo-pokes-its-head-out-of-the-water-in-2nd-quarter-ma-still-meh/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title><![CDATA[AD: ホームページ広告で集客アップ]]></title>
+			<link>http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=660491828660c2d32111e47cdd748d45&amp;p=4</link>
+			<guid isPermaLink="false">660491828660c2d32111e47cdd748d45</guid>
+			<description><![CDATA[<table border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top">ホームページ広告で集客するなら、まずは料金や費用を無料相談！</td></tr>
+<tr><td><a href="http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=660491828660c2d32111e47cdd748d45&amp;p=4">www.gifu-seo.com</a></td></tr>
+</table>
+<div style="font-size:xx-small; padding-top: 1em;"><span style="border-top: 1px solid">
+<br style="display:none"/>
+Ads by Overture</span><img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/feeds/ht.php?t=v&amp;i=660491828660c2d32111e47cdd748d45&amp;p=4"/>
+<br/>
+</div>
+]]></description>
+			<pubDate>Wed, 01 Jul 2009 16:16:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>昔はライブWeb検索、今はリアルタイム検索, 呼び名は変わってもまだまだ問題山積みの技術</title>
+			<link>http://www.pheedo.jp/click.phdo?i=baf47d25b1934dca9ae8f2aebab1fcfd</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630live-web-real-time-call-it-what-you-will-its-gonna-take-a-while-to-get-it/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630live-web-real-time-call-it-what-you-will-its-gonna-take-a-while-to-get-it/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 10:18:22 +0000</pubDate>
+			<dc:creator>ゲスト ライター</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[crowdeye]]></category>
+			<category><![CDATA[Google]]></category>
+			<category><![CDATA[oneriot]]></category>
+			<category><![CDATA[Technorati]]></category>
+			<category><![CDATA[Twitter]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22113</guid>
+			<description><![CDATA[<em>このゲスト記事を書いた<a href="http://www.crunchbase.com/person/Mary-Hodder">Mary Hodder</a>は、<a href="http://dabble.com">Dabble</a>のファウンダだ。Dabbleの前はコンサルタントとして多くのスタートアップに助言し、Technoratiで研究職を勤め、バークレイ（カリフォルニア大学バークレイ校）ではブログデータに対するライブ検索をテーマに修士論文を書いた。</em>
+<hr />
+<img src="http://farm1.static.flickr.com/81/215459684_83995560b1.jpg" alt="Hands on clock" width="300" height="225" align="right" />
+
+リアルタイム検索は新しいものではない。それは私たちが少なくとも過去10年手がけてきた問題であり、今後の10年間も解を目指して苦闘し続けるだろう。私たちが"<a href="http://blogs.law.harvard.edu/doc/2008/09/26/the-live-web/">ライブWeb</a>検索"と呼んできたこの問題は、実に難しい問題だ。なお、ライブWeb検索(live web search)という言葉は、<a href="http://doc-weblogs.com/2003/04/21#theWorldLiveWeb">Doc Searlsの息子</a>である<a href="http://globealive.blogspot.com/">Allen Searls</a>による造語で、ライブWebとは今生きているWebという意味であり、検索も含めてあらゆる要素に時間成分がある。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=baf47d25b1934dca9ae8f2aebab1fcfd"/>
+]]></description>
+			<content:encoded><![CDATA[<p><em>このゲスト記事を書いた<a href="http://www.crunchbase.com/person/Mary-Hodder">Mary Hodder</a>は、<a href="http://dabble.com">Dabble</a>のファウンダだ。Dabbleの前はコンサルタントとして多くのスタートアップに助言し、Technoratiで研究職を勤め、バークレイ（カリフォルニア大学バークレイ校）ではブログデータに対するライブ検索をテーマに修士論文を書いた。</em></p>
+<hr />
+<a title="Hands on clock by Trevor Manternach, on Flickr" href="http://www.flickr.com/photos/trvr3307/215459684/"><img src="http://farm1.static.flickr.com/81/215459684_83995560b1.jpg" alt="Hands on clock" width="300" height="225" align="right" /></a></p>
+<p>リアルタイム検索は新しいものではない。それは私たちが少なくとも過去10年手がけてきた問題であり、今後の10年間も解を目指して苦闘し続けるだろう。私たちが&#8221;<a href="http://blogs.law.harvard.edu/doc/2008/09/26/the-live-web/">ライブWeb</a>検索&#8221;と呼んできたこの問題は、実に難しい問題だ。なお、ライブWeb検索(live web search)という言葉は、<a href="http://doc-weblogs.com/2003/04/21#theWorldLiveWeb">Doc Searlsの息子</a>である<a href="http://globealive.blogspot.com/">Allen Searls</a>による造語で、ライブWebとは今生きているWebという意味であり、検索も含めてあらゆる要素に時間成分がある。</p>
+<p>名前が&#8221;リアルタイム検索&#8221;に変わったことにより、フィルタの重要成分としての時間がなお一層強調されたように思える。そして今直面している問題は、私たちが10年あまり抱え続けた問題と同じである。<a href="http://jp.techcrunch.com/archives/20090626the-real-time-search-dilemma-consciousness-versus-memory/">Erick Schonfeldが先日名前を挙げた</a>どの会社も、昔ライブWeb検索に取り組んでいた会社と違うことはやっていないみたいだ。今の彼らも問題の最初の部分で間違いを犯しているようだし、実際にやっているのはリアルタイム検索ではなく‘最近検索’なのだ。もちろん苦労して作ったシステムであることは認めるが、問題解決のレベルという点では、昔のライブWeb検索の連中と比べて一歩も前進していない。今の連中は全員が逆時系列のビューを作り出し、Twitterに毛が生えたようなものを提供している…“毛”の部分は、ブログのデータ、Twitter以外のマイクロブログのデータ、写真、最新トレンドの上位リストの作成、といったものだ。その一部にはコンテキストがあり、一定時間内のアクティビティ数や、トレンドがヒストグラムに登場していた時間などを出力する（後者はCrowdeye）。これらはいずれも、TechnoratiやSphereが昔実験していた。また、何かへのリンク数や‘つぶやき’の数を表示するものもある。しかしこれらはすべて、スパムなど関係ないアクティビティの餌食になりやすく、ユーザ経験を劣化させ、ユーザが完成製品に期待する、真のコンテキストと良質なフィルタをもたらさない。全員が、私たちがすでにブログ検索とトピック発見で学んだことを、あらためてまた学習する必要に迫られていると思われる。</p>
+<p>〔以下、英文ママ〕<br />
+Publicly available publishing systems starting in 1999 took the value of time and incorporated it into what was being published (think Pyra which is now Blogger, Moveable Type, Wordpress and Flickr, among the many) as well as search and discovery systems for those published bits like Technorati, Sphere, Rojo, Blogpulse, Feedster, Pubsub and others, to walk down memory lane . . . (btw, for disclosure purposes I should state that I worked for Technorati in 2004 for 10 months, and consulted or advised most all the others in one form or another).</p>
+<p>I started working on this problem in 1999, at UC Berkeley, and eventually did <a href="http://hodder.org">my master&#8217;s thesis</a> on live web data search and topic discovery at SIMS (or the iSchool as it&#8217;s now known). From 2000 to 2004, people at SIMS would say to me, &#8220;What are you doing with blogs and data, it&#8217;s just weird. Why does it matter?&#8221; But the element of time was the captivating piece that was missing for me from regular search. It&#8217;s the element that makes something news, as well as the element that can group items together in a short period to show a focus of attention and activity that often legacy news outlets miss (until more recently when they decided that live web activity was interesting).</p>
+<p><a title="Barney said, you have my explicit permission to flickr me, so get your camera.. by mary hodder, on Flickr" href="http://www.flickr.com/photos/maryhodder/40717214/"><img class="shot2" src="http://www.techcrunch.com/wp-content/uploads/2009/06/pekk.jpg" alt="Barney said, you have my explicit permission to flickr me, so get your camera.." /></a></p>
+<p>At Burning Man in 2005, under a shade structure during a hot, quiet afternoon, I remember having a four or five hour conversation with <a href="http://www.crunchbase.com/person/barney-pell">Barney Pell</a> (who would later found <a href="http://www.crunchbase.com/company/powerset">Powerset</a>) about the Live Web and Live Web Search, how to do it, what it meant, how to understand and present time to the user, how much was discovery and how much was search, how structured was the data you could get and how reliant on the time could you be with the data, what meaning you could make from that data, etc. <a href="http://www.crunchbase.com/person/sergey-brin">Sergey Brin</a> was sitting and listening, and finally, after a couple of hours, he asked me, &#8220;What is the <em>live web</em> and what is <em>live web search</em>?&#8221; Since Barney and I had already been doing a deep dive, I assumed Sergey knew what we were talking about, so it surprised me, but I explained why I thought time was a huge missing element of regular search, and that this was the type of search I worked on. Barney and I continued for a couple more hours. And it got cooler so it was time to go admire the art and that was the end of that. But I have wondered over the years where Google is with the live web and when they might do something with time. Twitter seems to be <a href="http://uk.techcrunch.com/2009/05/19/larry-page-twitter-made-google-focus-on-realtime-search/">prodding them</a>.</p>
+<p>In 2006, <a href="http://www.msnbc.msn.com/id/12015774/site/newsweek/print/1/displaymode/1098/"> &#8220;The Living Web&#8221; Newsweek cover story by Steven Levy and Brad Stone</a> poked at this issue for the first time in a national forum.</p>
+<p>When I look at the latest crop of search startups, I think: Why are we doing it all the same way again? Reinventing the wheel? Is anyone doing anything original either with data or interface? Is anyone building on what we&#8217;ve learned before about the backend or UI&#8217;s?</p>
+<p>Frankly, our filters suck.. and I suppose that if a name change gets us to think anew about better filters, well, I should rejoice. I&#8217;m partly to blame for the bad filters we have to date because in having worked on this problem, I&#8217;ve contributed to some of the various live web or real time or whatever the word of the moment is to describe trying to solve this problem. We are very good at publishing our thoughts and visions, with time stamps, but not very good at the filtering side of things. The old method of information search and discovery was to open the paper or magazine, turn the pages with editorially filtered and placed information, and when you were finished, you said, &#8220;Okay, I&#8217;m informed&#8221; (whether you really were or not). But the media got complacent, missed stories and with the ease of blog publishing and sites like Flickr for photos, we could replace paper and supplement our information needs with the whole web. The only problem is, it&#8217;s the whole freaking web. An avalanche. We feel anxiety on the web from the lack of filter and editorial grace that one or two printed news sources used to give us.</p>
+<p>I did a study in 2002, which I repeated in 2004 and again last year in 2008. I asked users to track their online information intake for one week. There were only 30 people in each study, chosen randomly from Craiglist ads, but what I found across each group of 30 was that the average time spent online with news and information sites was 1.25 hours in 2002, 1.85 hours in 2004 and 2.45 hours in 2008. These people are not in Silicon Valley, but they do all have broadband at home and live in the US.  Every one of them reported some level anxiety over the amount of data they felt they needed to take in in order to feel informed. They often dealt with it by increasing the time they took to stay informed. They didn&#8217;t know that better filters might actually reduce their anxiety.</p>
+<p>As Erick noted, the tension to solve this problem is between memory and consciousness; or as Bob Wyman and <a href="http://www.angstro.com/node/58">Salim Ismail called it at Pubsub</a>: retrospective verses prospective search. And it is part of the issue. But there is more.</p>
+<p>Discovery does mean you have to introduce time as an element. The user cannot be expected to know what is bubbling up, or the specific phrases that will name the latest thing.</p>
+<p>Some people will say &#8220;michael jackson&#8221; and some will say &#8220;MJ&#8221; and some will say &#8220;king of pop.&#8221;  And Michael Jackson as a topic is actually pretty easy. I remember once doing usability tests for a live web search and discovery system in 2003, where we asked users to search on Google News and various live web systems for an incident in Australia where a &#8220;giant sea creature&#8221; was found. But since all the media covering it originated in Australia, and they&#8217;d all called it a &#8220;massive squid,&#8221; and all the follow-on American sources including bloggers had copied the Aussie language, there were no recent hits for &#8220;massive sea creature.&#8221; Testers had to think creatively about how to get to the info they knew was there, and yet it was a semantic leap. One search tester actually cried as she refused to give up, she was so determined to find the result in any of the live web systems we were testing. We begged her to stop; it was painful. Good discovery could have helped.</p>
+<p>Another key element of discovery and live web search is getting structured data, because spidering, which Google uses to get data from the web for it&#8217;s regular retrospective web search, makes understanding time with a published work more difficult. It&#8217;s hard to work with time if you only know for sure when you spidered the page. Twitter on the other hand has structured data because everything is published in their silo so the sites they provide their complete stream to get it in a structured format. They know the time of each tweet. Not to mention the data is available through API&#8217;s. This is the most efficient way to draw out meaning for search because you know for sure about the context of each piece of data, with time as one of the pivots, for search and discovery.</p>
+<p>You also need to get the data model right for the backend search data base, in order to get meaning and link metrics. And you need to understand the different corpuses of data to know what things mean to users (not engineers), and figure out the spam and bad actor problems. There is the original context the data had and there is the UI which is so difficult when trying to make time understandable for many users. In fact some think that communicating the time element to regular users is so hard that making time focused search is really an &#8220;advanced search&#8221; problem.</p>
+<p>If designed poorly, the system can contribute to the unnatural production of skewed data by users. If the system involves some sort of filter for authority or popularity, they are subject to power law effects (Technorati calls their metric &#8220;authority&#8221; but inbound link counts from blogs are not authority, they&#8217;re just a measure of popularity). What&#8217;s <a href="http://en.wikipedia.org/wiki/Power_law">a power law</a> effect? It&#8217;s when a system drives activity to reinforce unnaturally the behavior that caused something to be there in the first place. For example, if one of the metrics of a filter counts the number of people clicking on a top search, then the more clicks, the longer the item will stay at the top of the list of searches, even if naturally it would have fallen off the list earlier. Conversely if a metric for a filter involves a spontaneous act, driven by imagination, like writing a tweet, then exposing those items at the top of the filter might be less likely to drive up activity. However, if you show the results to the users, upon seeing a popular topic, they might begin tweeting about that topic without having thought of it before seeing the popular topic. In other words, by revealing the metrics you focus on, you can push users to change their behavior. By driving behavior, power-law distributions keep things with some power at the top because they are at the top or can drive them higher. It becomes a loop. And because no distinction is made between the quality or strength of a unit or what that unit might mean to a group of users in a topic area, straight number counts just aren&#8217;t very smart.</p>
+<p>For example, if we made a system that counted Om Malik&#8217;s inbound links and called it authority, no matter the topic, I think Om would agree that even he wouldn&#8217;t have great authority and insight on the subjects of say, modern dance or metal working, if he happened to mention those words in a blog post. But on broadband issues, he is most definitely an authority. But Technorati, OneRiot, and other services that take a metric count and apply it for all topics, all circumstances, all search result matches, without context, randomize the quality of the information the user sees. They may provide a filter across the whole web, but they don&#8217;t give us any real help in judging what is useful or not. It&#8217;s why topic communities are helpful, and once you find a good editorial filter, driven by the human touch, you glom onto it for dear life because it&#8217;s such a time and energy saver.</p>
+<p>I&#8217;m under no illusions that we&#8217;re remotely close to solving Live Web or Real Time search or even recent search. We are not. Nor are we near solving discovery. But I hope we will. Sooner rather than later. Because I need it now. The opportunity is huge. It means really building algorithmically the editorial filters we have today in the form of people, while balancing the mobs&#8217; activities. Solve that and the prize will be big.</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/person/mary-hodder">Mary Hodder</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/person/mary-hodder.js" type="text/javascript"></script></div>
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/oneriot">OneRiot</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/oneriot.js" type="text/javascript"></script></div>
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/collecta">Collecta</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/collecta.js" type="text/javascript"></script></div>
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/scoopler">Scoopler</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/scoopler.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/">CrunchBase</a></div>
+</div>
+</div>
+<p>[<A HREF="http://www.techcrunch.com/2009/06/30/live-web-real-time-call-it-what-you-will-its-gonna-take-a-while-to-get-it/">原文へ</A>]</p>
+<p>（翻訳：iwatani(a.k.a. <A HREF="http://homepage1.nifty.com/algafield/">hiwa</A>)）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=baf47d25b1934dca9ae8f2aebab1fcfd"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630live-web-real-time-call-it-what-you-will-its-gonna-take-a-while-to-get-it/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>オバマのオープンな政府は悪用に対して無防備か？</title>
+			<link>http://www.pheedo.jp/click.phdo?i=11205450ed148dea30bdd3bc1af6bb29</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630can-open-government-be-gamed/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630can-open-government-be-gamed/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 05:38:02 +0000</pubDate>
+			<dc:creator>Erick Schonfeld</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[open government]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22107</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/wegov.jpg" class="shot2"/>
+
+国民が情報を持つことが国民の政治的な力であるためには、まず、国民が正しいデータを入手できることが重要だ。オバマ政権は、政府のデータをデジタル化して公開することにたいへん熱心だ。今日（米国時間6/30）、ニューヨーク市で開催された<a href=" http://personaldemocracy.com/pdf-conference/personal-democracy-forum-conference">Personal Democracy Forum</a>（6/29-30）で、政府のCIO(chief information officer) Vivek Kundraが、政府の支出に関する情報をグラフや表で見せるサイト<a href=" http://usaspending.gov/">USAspending.gov</a>を発表した。ここでは主な政府契約企業（Lockheed、Boeing、Northrop Grummanなど）や助成対象機関（Department of Healthcare Services、New York State Dept. of Health、Texas Health &#038; Human Services Commissionなどなど）に対する個別の支出状況も知ることができる。このほかに<a href="http://www.whitehouse.gov/open/innovations/Data/">Data.gov </a>というサイトもあり、ここでは各種の政府データを未加工の原始データの状態で一般に提供している。
+
+政府の公開データはすべてオンライン化すべきだという説にKundraも同意するが、しかし彼によれば、現実はなかなか厳しい。まず、政府のデータは1万以上ものいろんなシステムに散在していて、それらのシステムの多くがCOBOLで書かれていたり、あるいはデータの多くがほこりまみれの紙の山の中にある。しかし少なくとも、政府がこの問題への取り組みを開始したことは事実だ。政府が豊富なデータを収集してそれらを一般公開すれば、政府はより透明になるだろう（そういうデータをもとに新しいサービスを提供するスタートアップも生まれるだろう）。国務省も今ではインターネットを利用しており、とくにオバマ大統領やクリントン国務長官が外国を訪問するときにはYouTubeからそれらの国の人びとに向けたメッセージビデオを提供している。それらのメッセージビデオは、複数の言語のバージョンが作られる。これぞまさに、YouTube外交だ。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=11205450ed148dea30bdd3bc1af6bb29"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/wegov.jpg" class="shot2"/></p>
+<p>国民が情報を持つことが国民の政治的な力であるためには、まず、国民が正しいデータを入手できることが重要だ。オバマ政権は、政府のデータをデジタル化して公開することにたいへん熱心だ。今日（米国時間6/30）、ニューヨーク市で開催された<a href=" http://personaldemocracy.com/pdf-conference/personal-democracy-forum-conference">Personal Democracy Forum</a>（6/29-30）で、政府のCIO(chief information officer) Vivek Kundraが、政府の支出に関する情報をグラフや表で見せるサイト<a href=" http://usaspending.gov/">USAspending.gov</a>を発表した。ここでは主な政府契約企業（Lockheed、Boeing、Northrop Grummanなど）や助成対象機関（Department of Healthcare Services、New York State Dept. of Health、Texas Health &#038; Human Services Commissionなどなど）に対する個別の支出状況も知ることができる。このほかに<a href="http://www.whitehouse.gov/open/innovations/Data/">Data.gov </a>というサイトもあり、ここでは各種の政府データを未加工の原始データの状態で一般に提供している。</p>
+<p>政府の公開データはすべてオンライン化すべきだという説にKundraも同意するが、しかし彼によれば、現実はなかなか厳しい。まず、政府のデータは1万以上ものいろんなシステムに散在していて、それらのシステムの多くがCOBOLで書かれていたり、あるいはデータの多くがほこりまみれの紙の山の中にある。しかし少なくとも、政府がこの問題への取り組みを開始したことは事実だ。政府が豊富なデータを収集してそれらを一般公開すれば、政府はより透明になるだろう（そういうデータをもとに新しいサービスを提供するスタートアップも生まれるだろう）。国務省も今ではインターネットを利用しており、とくにオバマ大統領やクリントン国務長官が外国を訪問するときにはYouTubeからそれらの国の人びとに向けたメッセージビデオを提供している。それらのメッセージビデオは、複数の言語のバージョンが作られる。これぞまさに、YouTube外交だ。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/fed-spending-chart.png" class="shot2"/></p>
+<p>オバマ政権はデータを公開するだけでなく、国民が政府に直接、意見、要望、提案などを述べる場として、<a href="http://www.whitehouse.gov/Open/">Open Government</a>事業を展開している。また、意見、要望などの一部は<a href="http://www.whitehouse.gov/open/blog/">Open Government blog</a>や<a href="http://www.mixedink.com/opengov/">Wiki</a>など個別のサイトやツールでさらに詳細に議論されている。Open Governmentを担当する政府の情報担当次官Beth Noveckは、この政権は選挙時に行った情報のブロードキャストと増幅から一歩前進して、今では国民からフィードバックを受け取り、それを政策に生かすために、インターネットを利用していると言う。彼女はこう言う、“ホワイトハウス内部の少人数のグループではとても思いつかないような、よく考え抜かれた意見等が大量に寄せられている”。</p>
+<p>デジタルなツールによって、民主主義は参加を取り戻しつつある。いや、少なくともそう思われている。しかし、政府のデータへのアクセスが完全に自由になり、また政策に影響を与えるための、これらの新しい方法（==インターネットとその各種アプリケーション）の有効性が実証されたら、データを操作したり、システムを悪用する者も現れるだろう。資金力のあるロビイストや圧力団体などが、この&#8221;open government（オープンな政府）&#8221;と呼ばれる新生児を、まるでGoogleに対するSEOコンサルタントのように、もてあそび利用するかもしれない。当然、二大政党もこの種の“利用”に手を染めるだろう。共和党のニューメディア担当部長Todd Hermanも、そのことを認める。共和党はオバマの選挙戦術から“コミュニティの新しい育て方と新しい活用方法”を学んだ、と彼は言う。彼によれば、この前の選挙での共和党の敗北の原因は、デジタルな組織化とデジタルな到達方法を駆使するための“ツールを使わなかったこと”だそうだ。</p>
+<p>SEOといえば、Hermanの説では、Google Newsに記事が載るためのSEOテクニックでは民主党の活動家のほうが共和党より上手（うわて）だそうだ。彼は、「全米医師会(American Medical Association)がオバマのヘルスケア政策案(&#8221;Obamacare&#8221;)に反対している」というニュースを例に挙げた。彼はGoogle Newsの検索結果のスクリーンショットを見せてくれたが、検索結果の上位にあるのはGoogleが単純に記事の見出しをスキャンして選んだものではない、と彼は言う。だからこれは、左翼の連中のSEOの成果だ、と彼は主張するのだが、ではその“左翼”たちが一体何をどうやったのかという説明はない。彼が示した例には、問題がある。今すぐGoogle Newsへ行って<a href="http://news.google.com/news?um=1&#038;ned=us&#038;hl=en&#038;q=ama+obamacare">&#8220;AMA Obamacare&#8221;</a>で検索すると、トップは&#8221;Will Doctors Buy Obamacare?（医師たちはオバマ案を受け入れるか？&#8221;というForbes誌の記事だ。共和党のSEO担当が反撃したのか、それとも、Google Newsが自己修正したのかな。</p>
+<p>彼のこのコメントが明かしているのは、政治的な工作員や活動家たちが、すでにかなりの程度、オンラインの政治的意見や政策形成過程に影響を与え始めている、ということだ。彼らは&#8221;open government&#8221;に対しても同じことをするだろう。彼らには、それをやるだけの組織力と強力な動機がある。ロビイストたちや政党は、過去にもデータの不足に悩んだことはない。新たにデータが公開されることによって、彼らも一層強くなると同時に、一般市民も強くなる。情報がそのための力であるなら、われわれはそれを得るための場の公平性と公正性を、今後は強く意識しなければならない。</p>
+<p>そしてさらにもう一つ、無関心という問題もある。データをもらったって、何の役にも立たないという人は多い。これから公開されるデータに対して最大の関心を持つのは、ほかならぬ、今のワシントンを牛耳っている圧力団体等の人びとだ。彼らは、新しいデータや、オバマ流の双方向的政策形成過程を利用して、自分たちの（あるいはお金持ちの顧客たちの）目的を達成する方法を工夫するだろう。われわれ一般市民が、彼らに勝てるだろうか？　政府がオープン性の拡大に向けて一歩前進したこと自体は、それが悪用されない保証にはならない。ありとあらゆる、悪用の手口が編み出されるだろう。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/obamacare-google-news.jpg"/></p>
+<p>私たちは、ありとあらゆる、防戦の手段を編み出さなければならないだろう。</p>
+<p>[<A HREF="http://www.techcrunch.com/2009/06/30/can-open-government-be-gamed/">原文へ</A>]</p>
+<p>（翻訳：iwatani(a.k.a. <A HREF="http://homepage1.nifty.com/algafield/">hiwa</A>)）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=11205450ed148dea30bdd3bc1af6bb29"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630can-open-government-be-gamed/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>[jp] 橋本岳衆議院議員、津田大介、山崎富美、3氏が「政治とTwitter」をディスカッション</title>
+			<link>http://www.pheedo.jp/click.phdo?i=0c9387b54b89822c5394b2f8ec4fe441</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090701twpo/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090701twpo/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 02:24:04 +0000</pubDate>
+			<dc:creator>Namekawa</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22068</guid>
+			<description><![CDATA[<a href="http://www.flickr.com/photos/namekawa/3676245628/" title="2009_06300029_twitter_and_politcs by greystork52, on Flickr"><img src="http://farm4.static.flickr.com/3619/3676245628_90decde585.jpg" width="215" height="161" alt="2009_06300029_twitter_and_politcs" /></a><p>〔この記事はTechCrunch Japanオリジナルです。〕</p>
+<P>昨日（日本時間6/30）、六本木のGlocom（国際大学グローバル・コミュニケーション・センター）で<A href="http://www.glocom.ac.jp/2009/06/twitter.html">Twitterと政治を考えるワークショップ</A>が開催された。元デジタルガレージで、現フリー・リサーチャーの<A href="http://fumi.vox.com/">山崎富美</A>（<A href="http://twitter.com/Fumi">Fumi</A>）さんがイランの抗議運動にTwitterが果たしつつある役割を、Twitterを駆使するジャーナリスト、津田大介（<A href="http://twitter.com/tsuda">tsuda</A>）さんが日本のTwitterユーザーの特色を紹介。</P><P>続いてゲストの橋本岳衆議院議員（<A href="http://twitter.com/ga9_h">ga9_h</A>）を交えて、3人が「日本の政治とTwitter」についてディスカッションした。</P><P>内容はハッシュタグ、<A href="http://twitter.com/#search?q=%23TWPO">#TWPO</A>に詳しく投稿されているので参照されたい。</P><P>今回はイベントの内容をリアルタイムで報告するダイナミックなTwitterジャーナリズムのスタイルが「津田る」という流行語を生んだご本人が壇上にいて、「津田られる」対象になっていた。</P><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=0c9387b54b89822c5394b2f8ec4fe441"/>
+]]></description>
+			<content:encoded><![CDATA[<p><a title="2009_06300029_twitter_and_politcs by greystork52, on Flickr" href="http://www.flickr.com/photos/namekawa/3676245628/"><img src="http://farm4.static.flickr.com/3619/3676245628_90decde585.jpg" alt="2009_06300029_twitter_and_politcs" width="500" height="409" /></a></p>
+<p>〔この記事はTechCrunch Japanオリジナルです。〕</p>
+<p>昨日（日本時間6/30）、六本木のGlocom（国際大学グローバル・コミュニケーション・センター）で<a href="http://www.glocom.ac.jp/2009/06/twitter.html">Twitterと政治を考えるワークショップ</a>が開催された。元デジタルガレージで、現フリー・リサーチャーの<a href="http://fumi.vox.com/">山崎富美</a>（<a href="http://twitter.com/Fumi">Fumi</a>）さんがイランの抗議運動にTwitterが果たしつつある役割を、Twitterを駆使するジャーナリスト、津田大介（<a href="http://twitter.com/tsuda">tsuda</a>）さんが日本のTwitterユーザーの特色を紹介。</p>
+<p><a title="2009_06300025_slide by greystork52, on Flickr" href="http://www.flickr.com/photos/namekawa/3676245586/"><img src="http://farm3.static.flickr.com/2462/3676245586_790553567c.jpg" alt="2009_06300025_slide" width="500" height="402" /></a></p>
+<p>続いてゲストの橋本岳衆議院議員（<a href="http://twitter.com/ga9_h">ga9_h</a>）を交えて、3人が「日本の政治とTwitter」についてディスカッションした。</p>
+<p>内容はハッシュタグ、<a href="http://twitter.com/#search?q=%23TWPO">#TWPO</a>に詳しく投稿されている。</p>
+<p>今回はイベントの内容をリアルタイムで報告するダイナミックなTwitterジャーナリズムのスタイルが「津田る」という流行語を生んだご本人が壇上にいて、「津田られる」対象になっていた。</p>
+<p>ただし津田さんはTwitterさえ使っていれば単なる感想を書くことまで「津田る」と表現されることには大いに不満だ。</p>
+<blockquote><p>twitterは最初の設計からして人に紐付いたライブメディアなんだから大体どんな書き込みでも何かの「実況」的要素は含んでいる。俺が「実況」という表現を使わず極力「イベントのテキスト“中継”」という表現を使うのは主観を入れずメディア（medium）としての機能性を強調したいからだ。</p></blockquote>
+<p>山崎さんの「イランの抗議運動とTwitter」では、TechCrunch日本版でも報じてきた<a href="http://jp.techcrunch.com/archives/20090622the-story-of-twitter-in-picture-form/">絵で見るTwitter史</a>や<a href="http://jp.techcrunch.com/archives/20090615twitter-reschedules-maintenance-to-allow-iranian-protests-to-continue/">イランで高まる抗議行動を考慮して、Twitterがメンテナンス時刻を変更</a>などの話題が取り上げられた。詳しく知りたい方は<a href="http://jp.techcrunch.com/archives/20090625the-twitter-cycle-curiosity-abandonment-addiction-global-visitors-hit-37-million/">Twitterサイクル：好奇心、放棄、中毒。全世界ユーザー数が3700万人に</a>などの記事と同時にお読みいただきたい。</p>
+<p>現在Twitterを使う国会議員は今回のゲストの自民党の橋本岳議員、<a href="http://journal.mycom.co.jp/articles/2009/06/29/pol_twitter/?rt=na">党首討論をTwitter中継した</a>民主党の逢坂誠二議員（<a href="http://twitter.com/seiji_ohsaka">seiji_ohsaka</a>）のたった2人だという。インターネット関連の公職選挙法のごく微温的な改正もなかなか進んでいないが、なるほど与野党合わせてTwitterユーザー2人という現状では前途はそう簡単ではなさそうだ。しかし日本が何もかも後ろ向きの沈滞に落ち込むのを防ぐためには政治家のネットリテラシーを上げることがどうしても必要だろう。他人頼みではなくわれわれ一人ひとりが何ができるか考えなくてはなるまい。いずれにせよ、日本を代表するTwitterジャーナリストとTwitterユーザーの政治家がアーリーアダプターの聴衆を交えて2時間半話しあえたのは画期的だったと思う。山崎さん、GlOCOMの庄司昌彦主任研究員はじめオーガナイザーの皆さんに感謝したい。</p>
+<p>ちなみに、逢坂議員からは「今から行きたいが、函館なう。(一一) 　#twpo」とtweetがあった。橋本議員は懇親会にも参加された。</p>
+<p><a title="2009_06300037_hashimoto by greystork52, on Flickr" href="http://www.flickr.com/photos/namekawa/3676245658/"><img src="http://farm3.static.flickr.com/2481/3676245658_92264f19cd.jpg" alt="2009_06300037_hashimoto" width="500" height="398" /></a></p>
+<p><a title="2009_06300037_hashimoto by greystork52, on Flickr" href="http://www.flickr.com/photos/namekawa/3676245658/"> </a></p>
+<p><strong>アップデート：</strong>ワークショップで使用された資料がSlideshareで公開されている。<br />
+<a href="http://www.slideshare.net/siva001/twitter-1665366">Twitter概要</a><br />
+<a href="http://www.slideshare.net/siva001/twitter-1665380">Twitterとイラン</a><br />
+<a href="http://www.slideshare.net/siva001/twitter-1665398">Twitterの日本での活用実態</a></p>
+<p>（</a><a href="http://twitter.com/namekawa01">滑川海彦/namekawa01</a>）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=0c9387b54b89822c5394b2f8ec4fe441"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090701twpo/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>TwitterがUIを改訂、ソーシャルな交流がしやすくなった。</title>
+			<link>http://www.pheedo.jp/click.phdo?i=d9250d6d8cf550ad56c917256380091f</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630twitter-rolls-ui-changes-to-simplify-your-social-connections/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630twitter-rolls-ui-changes-to-simplify-your-social-connections/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 01:59:50 +0000</pubDate>
+			<dc:creator>MG Siegler</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[Twitter]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22102</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-617-215x167.png" width="215" height="167" />Twitterが、同ウェブサイトの「フォローしている」と「フォローされている」ページのユーザーインターフェースに、さりげなくいくつか変更を加えた。この改訂によって、フォローしている人の管理がしやすくなるとともに、その人に対する@返信やダイレクトメッセージがページ内でできるなど、たしかに便利になった。
+
+2種類のビューができた。コンパクトな「縮小リスト」（英語版では"List"）と、ユーザーの最新つぶやきと実名、場所が表示される「拡大リスト」（"Expanded"）。フォローされている人のページには、既に自分をフォローしている人をワンクリックでフォローできるようになった。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=d9250d6d8cf550ad56c917256380091f"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img class="alignright" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-617-215x167.png" alt="" width="215" height="167" />Twitterが、同ウェブサイトの「フォローしている」と「フォローされている」ページのユーザーインターフェースに、さりげなくいくつか変更を加えた。この改訂によって、フォローしている人の管理がしやすくなるとともに、その人に対する@返信やダイレクトメッセージがページ内でできるなど、たしかに便利になった。</p>
+<p>2種類のビューができた。コンパクトな「縮小リスト」（英語版では&#8221;List&#8221;）と、ユーザーの最新つぶやきと実名、場所が表示される「拡大リスト」（&#8221;Expanded&#8221;）。フォローされている人のページには、既に自分をフォローしている人をワンクリックでフォローできるようになった。</p>
+<p>面白いのは、新しいアイコン群がAppleがOS Xで使っているものと全く同じに見えることだ。iPhoneで使われているものもある。これは、Twitterのモバイル版サイトが改訂間近ということなのか。それはわからないが、オーバーホールが必要なことは確かだ。</p>
+<p><img class="alignnone size-medium wp-image-78313" title="picture-136" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-136-630x335.png" alt="picture-136" width="630" height="335" /></p>
+<p><img class="alignnone size-medium wp-image-78314" title="picture-225" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-225-630x394.png" alt="picture-225" width="630" height="394" /></p>
+<p><img class="alignnone size-medium wp-image-78315" title="picture-417" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-417-630x281.png" alt="picture-417" width="630" height="281" /></p>
+<p><img class="alignnone size-medium wp-image-78326" title="picture-715" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-715-630x350.png" alt="picture-715" width="630" height="350" /></p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-817.png" alt="picture-817" title="picture-817" width="573" height="589" class="alignnone size-full wp-image-78331" /></p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/twitter">Twitter</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/twitter.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>[<a href="http://www.techcrunch.com/2009/06/30/twitter-rolls-ui-changes-to-simplify-your-social-connections/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=d9250d6d8cf550ad56c917256380091f"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630twitter-rolls-ui-changes-to-simplify-your-social-connections/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>FlickrとTwitterが正式にキッス</title>
+			<link>http://www.pheedo.jp/click.phdo?i=abb87c371c250bb3e7eee33b014056a4</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630flickr-and-twitter-are-now-officially-sucking-face/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630flickr-and-twitter-are-now-officially-sucking-face/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 01:26:29 +0000</pubDate>
+			<dc:creator>Erick Schonfeld</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[flickr]]></category>
+			<category><![CDATA[Twitter]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22098</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/flickr2twitter-logo-215x170.png" width="215" height="170" />6月にFlickrは、<a href="http://jp.techcrunch.com/archives/20090612flickr-tests-twitter-integration-with-email-uploads/">Twitterとの連携の試行</a>として、ユーザーが両サービスのアカウントをリンクできるようにした。この実験では、メールによるアップロードのみが対象で、同時にhttp://flic.krの短縮URLを使ったFlickr上の写真へのリンクをTwitterに送っていた。このたびこの連携が<a href="http://www.flickr.com/account/blogs/add/twitter">Flickr2Twitter</a>という正式な機能となった。
+
+メールによるアップロードに加えて、Flickrでサイト上のどの写真も直接Twitterに送り出せるようになった。事前にTwitterアカウントをリンクしておけば、Flickrの好きな写真を選んで「Blog this」ボタンをクリックすると、配信オプションの一つとしてTwitterアカウントが表示されるようになる。これは、自分でアップロードした写真にもサイト上で見つけた誰かの写真にも使える。近いうちにTwitterで、http://flic.krのリンクをしょっちゅう見かけることになるだろうと想像している。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=abb87c371c250bb3e7eee33b014056a4"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/flickr2twitter-logo.png" class="shot2"/></p>
+<p>6月にFlickrは、<a href="http://jp.techcrunch.com/archives/20090612flickr-tests-twitter-integration-with-email-uploads/">Twitterとの連携の試行</a>として、ユーザーが両サービスのアカウントをリンクできるようにした。この実験では、メールによるアップロードのみが対象で、同時にhttp://flic.krの短縮URLを使ったFlickr上の写真へのリンクをTwitterに送っていた。このたびこの連携が<a href="http://www.flickr.com/account/blogs/add/twitter">Flickr2Twitter</a>という正式な機能となった。</p>
+<p>メールによるアップロードに加えて、Flickrでサイト上のどの写真も直接Twitterに送り出せるようになった。事前にTwitterアカウントをリンクしておけば、Flickrの好きな写真を選んで「Blog this」ボタンをクリックすると、配信オプションの一つとしてTwitterアカウントが表示されるようになる。これは、自分でアップロードした写真にもサイト上で見つけた誰かの写真にも使える。近いうちにTwitterで、http://flic.krのリンクをしょっちゅう見かけることになるだろうと想像している。</p>
+<p>デスクトップやモバイル用Twitterクライアントに、Flickrオプションを追加したいというデベロッパーは、既存のFlickrAPIを使える（<a href="http://code.flickr.com/blog/2009/06/30/twitter-in-the-api/">詳細はこちら</a>）。そうなれば、クライアントのプルダウンオプションのTwitpicとyFrogに仲間ができることになる。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/flickr-twitter2.jpg"/></p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/flickr2twitter-balloon.jpg"/></p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/flickr">Flickr</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/flickr.js" type="text/javascript"></script></div>
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/twitter">Twitter</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/twitter.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/">CrunchBase</a></div>
+</div>
+</div>
+<p>[<a href="http://www.techcrunch.com/2009/06/30/flickr-and-twitter-are-now-officially-sucking-face/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=abb87c371c250bb3e7eee33b014056a4"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630flickr-and-twitter-are-now-officially-sucking-face/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title><![CDATA[AD: ネットワーク 監視なら河村電器]]></title>
+			<link>http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=abb87c371c250bb3e7eee33b014056a4&amp;p=4</link>
+			<guid isPermaLink="false">abb87c371c250bb3e7eee33b014056a4</guid>
+			<description><![CDATA[<table border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top">ネットワーク監視システム、情報通信関連製品なら河村電器産業へ</td></tr>
+<tr><td><a href="http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=abb87c371c250bb3e7eee33b014056a4&amp;p=4">www.kawamura.co.jp</a></td></tr>
+</table>
+<div style="font-size:xx-small; padding-top: 1em;"><span style="border-top: 1px solid">
+<br style="display:none"/>
+Ads by Overture</span><img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/feeds/ht.php?t=v&amp;i=abb87c371c250bb3e7eee33b014056a4&amp;p=4"/>
+<br/>
+</div>
+]]></description>
+			<pubDate>Wed, 01 Jul 2009 01:26:29 +0000</pubDate>
+		</item>
+		<item>
+			<title>幹部諸君に告ぐ：みなさんの73%は辞めた方がいい</title>
+			<link>http://www.pheedo.jp/click.phdo?i=996fe90ae93c78cb0c9acbf86cab11a5</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630attention-executives-73-of-you-need-to-fire-yourselves/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630attention-executives-73-of-you-need-to-fire-yourselves/#comments</comments>
+			<pubDate>Wed, 01 Jul 2009 00:35:47 +0000</pubDate>
+			<dc:creator>Sarah Lacy</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22092</guid>
+			<description><![CDATA[<img class="alignleft" title="trump" src="http://www.palmbeachpost.com/shared-blogs/palmbeach/cerabino/media/You%27re%20fired.jpg" alt="" width="180" height="250" />私は今でも、「Enterprise 2.0」というのは、ひどい呼び名のどうでもいいビジネストレンドだと<a href="http://www.sarahlacy.com/sarahlacy/2008/10/enterprise-20-h.html">考えている</a>。これはソーシャルメディアや協業ツールがビジネスの役に立たないと言う意味ではなく、個人ユーザー向けツールではうまくいかない場面があるということには私も賛成だ。ぴったりの例がTwitterとYammerだ。（TechCrunchのYammerフィードで交されている会話を見れば・・・）。
+
+それでも私には、Enterprise 2.0が企業で予算の大きな部分を占めるようになるとは思えない。こうしたツールは安すぎるし、山とある無料の代用品が簡単に真似できてしまううえに、ベンダーの多くはまだプライムタイムに出られる準備が整っていないからだ。ブログ用ソフトウェアは例外かもしれないが、企業ブログが欲しいという会社なら、すでに持っていると考えるべきだろう。この分野から新たに出てくるのは、第二のOracle（ちなみに後出の調査の一スポンサーでもある）でも、ましてやSalesforce.comでもなく、私の予想では、既存のSaaS会社が必要な機能を自分で取り込むか、社内でたくさんコードを書くかになるだろう。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=996fe90ae93c78cb0c9acbf86cab11a5"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img class="alignleft" title="trump" src="http://www.palmbeachpost.com/shared-blogs/palmbeach/cerabino/media/You%27re%20fired.jpg" alt="" width="180" height="250" />私は今でも、「Enterprise 2.0」というのは、ひどい呼び名のどうでもいいビジネストレンドだと<a href="http://www.sarahlacy.com/sarahlacy/2008/10/enterprise-20-h.html">考えている</a>。これはソーシャルメディアや協業ツールがビジネスの役に立たないと言う意味ではなく、個人ユーザー向けツールではうまくいかない場面があるということには私も賛成だ。ぴったりの例がTwitterとYammerだ。（TechCrunchのYammerフィードで交されている会話を見れば・・・）。</p>
+<p>それでも私には、Enterprise 2.0が企業で予算の大きな部分を占めるようになるとは思えない。こうしたツールは安すぎるし、山とある無料の代用品が簡単に真似できてしまううえに、ベンダーの多くはまだプライムタイムに出られる準備が整っていないからだ。ブログ用ソフトウェアは例外かもしれないが、企業ブログが欲しいという会社なら、すでに持っていると考えるべきだろう。この分野から新たに出てくるのは、第二のOracle（ちなみに後出の調査の一スポンサーでもある）でも、ましてやSalesforce.comでもなく、私の予想では、既存のSaaS会社が必要な機能を自分で取り込むか、社内でたくさんコードを書くかになるだろう。</p>
+<p>さらに問題なのは、幹部の20%近くが「Enterprise 2.0」が何たるかをわかっていないことだ。これは、<a href="http://www.aiim.org/Research/Collaboration-Enterprise20-Research.aspx">最新の調査結果</a>によるもので、Enterprise 2.0の導入に関して詳しく報告されている。同調査によると、今年始めまでは40%の幹部が全く知らなかったということなので、少なくとも前進はしている。しかも、回答者の50%が、Enterprise 2.0を「非常に重要」であると考えている。（もちろん、私は体重を減らすためには毎日の運動が「非常に重要」であると考えているが、だからといって実行しているとは限らない）。</p>
+<p>それでも、この数値の大きさを踏まえると、45歳以上のわずか7%しかTwitterを高速フィードバック用ビジネスツールとして重要であると考えていないことに驚かされる。残念なことに、これはもっと若い世代でもあまり変わらない。18～30歳でTwitterをビジネス向け高速フィードバックに重要だと考えている人も27%にすぎない。なんと、本当かい。読者のみなさんは、われわれTechCrunchがTwitterに入れ込みすぎていると思うかもしれないが、企業人の殆どが現状を把握していないことも間違いない。</p>
+<p><a href="http://www.informationweek.com/news/hardware/desktop/showArticle.jhtml?articleID=217801030">Dell</a>や<a href="http://blogs.wsj.com/digits/2009/06/02/comcasts-twitter-guru-on-comcastcaress-tipping-point/">Comcast</a>などの企業で、Twitterの利用が役立っているという、かなり明確に証明されたテストケースがあることは、とりあえずおくとしよう。しかし、情報伝達や協業のためのツールに金を払う前に、Twitterなどの無料で簡単なツールを試してみないのは、安価で柔難で普遍的であるというソーシャルメディアの特徴を、全くもってわかっていない。これを（James Carville監督流に）言い換えればこうなる。今は不況だバカ者。まずは無料ツールを試してみろ。</p>
+<p>[<a href="http://www.techcrunch.com/2009/06/30/attention-executives-73-of-you-need-to-fire-yourselves/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=996fe90ae93c78cb0c9acbf86cab11a5"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630attention-executives-73-of-you-need-to-fire-yourselves/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>Intel Capital、Sense Networksへ$6M。これは実を結びそうな投資だ</title>
+			<link>http://www.pheedo.jp/click.phdo?i=2a08b86d0024ff96dbfe85787402ca48</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/200906306-million-for-sense-networks-makes-sense/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/200906306-million-for-sense-networks-makes-sense/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 22:58:39 +0000</pubDate>
+			<dc:creator>Robin Wauters</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[Intel Capital]]></category>
+			<category><![CDATA[Sense Networks]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22088</guid>
+			<description><![CDATA[<a href="http://www.crunchbase.com/company/sense-networks"><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/citysense-small-121x199.png" width="121" height="199" /></a>
+
+<a href="http://www.crunchbase.com/financial-organization/intel-capital">Intel Capital</a>が主導して<a href="http://www.sensenetworks.com/">Sense Networks</a>のシリーズBによる資金調達が行われた。Sense Networksは、データの動きを自動的に把握して、現実世界における場所情報のデータベース化やランキングの提供を行うニューヨークの企業だ。先週末に<a href="http://digital.venturebeat.com/2009/06/26/sense-networks-gets-6m-in-hotly-contested-deal-for-tribe-advertising/">Venturebeatが報じたところによれば</a>、調達額は約$6M（600万ドル）で、このラウンドをどちらが担当するかでIntel CapitalとSequoiaの間でデッドヒートがあったらしい。
+
+Sense NetworksのCEOであるGreg Skibiskiも参加した、「コンテクスト」をテーマとした<a href="http://mobile20.eu">Mobile 2.0 Europe</a>でのパネルディスカッションを見る限り、この投資は実を結ぶ投資となりそうな印象を受けている。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=2a08b86d0024ff96dbfe85787402ca48"/>
+]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.crunchbase.com/company/sense-networks"><img class="shot2" src='http://www.techcrunch.com/wp-content/citysense-small.png' alt='citysense-small.png' /></a></p>
+<p><a href="http://www.crunchbase.com/financial-organization/intel-capital">Intel Capital</a>が主導して<a href="http://www.sensenetworks.com/">Sense Networks</a>のシリーズBによる資金調達が行われた。Sense Networksは、データの動きを自動的に把握して、現実世界における場所情報のデータベース化やランキングの提供を行うニューヨークの企業だ。先週末に<a href="http://digital.venturebeat.com/2009/06/26/sense-networks-gets-6m-in-hotly-contested-deal-for-tribe-advertising/">Venturebeatが報じたところによれば</a>、調達額は約$6M（600万ドル）で、このラウンドをどちらが担当するかでIntel CapitalとSequoiaの間でデッドヒートがあったらしい。</p>
+<p>Sense NetworksのCEOであるGreg Skibiskiも参加した、「コンテクスト」をテーマとした<a href="http://mobile20.eu">Mobile 2.0 Europe</a>でのパネルディスカッションを見る限り、この投資は実を結ぶ投資となりそうな印象を受けている。Sense Networksは「位置情報分析プラットフォーム」の<a href="http://www.sensenetworks.com/macrosense.php">Macrosense</a>を提供している。これは携帯の位置情報を取得して、より詳細なセグメンテーションを可能とするものだ。また、BlackBerryおよびiPhone用には、<a href="http://www.sensenetworks.com/citysense.php">Citysense</a>という素晴らしいアプリケーションも無料で提供している。このアプリケーションではリアルタイムでナイトスポットを検索したり、ソーシャル機能を活用したナビゲーションを利用することができる。簡単に言えば、その時点での携帯端末の位置情報を収集して、大勢が集まっているスポットを知ることができるようになっている。</p>
+<p>ステルスモードから表舞台に登場してきた際、ErickのレビューがTechCrunchに<a href="http://jp.techcrunch.com/archives/20080609location-tracking-startup-sense-networks-emerges-from-stealth-to-answer-the-question-where-is-everybody">掲載されている</a>。</p>
+<blockquote><p>同社の技術は、携帯電話、GPS機器、WiFi、加えてタクシーから人々の膨大な位置情報をかき集める。またCitysenseないし、後続のアプリケーションをダウンロードした人からも位置情報データを取得する（但し、データはそれぞれ個人に属するものとされ、望むならこの情報をデータベースから削除することもできる）。</p>
+<p>機械の学習アルゴリズムを使って位置情報をすべてインデックス化し、検索エンジンがウェブサイトのランクを示すように、現実世界における場所のランキングを行う。ウェブではリンクに基づいてランクが決定されるが、Citysenseではそれぞれのスポットにどれだけのデータ（それがすなわち「人」ということになる）が移動するのかでランクを決定する。Sense Networksはこれらのデータを集約して、人々がどこで買い物をするのかなどの情報を求める投資家や金融機関に販売して収益化したいと考えている。</p></blockquote>
+<p>Sense Networksは、MITのコンピュータサイエンティストであるAlex PentlandとコロンビアのコンピュータサイエンティストのTony Jebaraによって、2003年5月にスタートした。企業としての活動開始は2006年だが、2008年4月には多くのエンジェル投資家や、Passport Capital、Drobny Global Asset Management、およびChallenge FundsなどのヘッジファンドからシリーズAの資金調達を行っている。その際の調達額は明らかにされていないが、VentureWireの記事によれば$3M（300万ドル）だったとのこと。つまり今回の調達額である$6M（600万ドル）を併せて、現在までの調達資金は<a href="http://www.crunchbase.com/company/sense-networks">$9M</a>（900万ドル）に達したことになる。</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/sense-networks">Sense Networks</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/sense-networks.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/">CrunchBase</a></div>
+</div>
+</div>
+<p>［<a href="http://www.techcrunch.com/2009/06/30/6-million-for-sense-networks-makes-sense/">原文へ</a>］</p>
+<p>（翻訳：Maeda, H）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=2a08b86d0024ff96dbfe85787402ca48"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/200906306-million-for-sense-networks-makes-sense/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>お気に入りiPhoneアプリケーション情報を友人と共有するAppFire</title>
+			<link>http://www.pheedo.jp/click.phdo?i=411953c3de85e16595b3727f6c492020</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630recommend-your-favorite-iphone-apps-with-appsfire/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630recommend-your-favorite-iphone-apps-with-appsfire/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 22:01:22 +0000</pubDate>
+			<dc:creator>MG Siegler</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[app-store]]></category>
+			<category><![CDATA[appsfire]]></category>
+			<category><![CDATA[iPhone]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22083</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-130-215x69.png" width="215" height="69" />しばらく前に、<a href="http://www.techcrunch.com/2009/06/13/the-app-store-needs-a-genius-feature-asap/">iPhoneアプリケーションのレコメンドシステムが必要な理由</a>について詳細な記事を掲載した。iTunesで音楽や映画について「Genius」の機能があるように、今やAppStoreでの取り扱い件数が<a href="http://jp.techcrunch.com/archives/2009060840-million-iphones-and-ipod-touches-and-50000-apps/">50,000本以上となったアプリケーション</a>についても、不要なアプリケーションを除外して、必要なものだけを探すための仕組みが求められる状況となっている。iPhoneやiPod Touchを使っている友人が大勢いるなら、<a href="http://appsfire.com/">AppsFire</a>がレコメンドエンジンとして利用できるかもしれない。
+
+このAppsFireは本日（米国時間6/30）にプライベートベータで公開された。これを使えばお気に入りのアプリケーション情報を他の人と共有することができる。念のため言っておくと、アプリケーション自体を共有するわけではない。そうではなくてお気に入りのアプリケーションの名前を公開して、他の人がワンクリックでそのアプリケーションをApp Storeからダウンロードできるようにするものだ。たとえば私が100本のアプリケーションをインストールしているとしよう。その中で気に入っているものが15本だけあるとするなら、その15本を選んで各種ソーシャルネットワーク経由で、そのアプリケーション情報を友人とシェアすることができるようになっている。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=411953c3de85e16595b3727f6c492020"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-77970" title="picture-130" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-130.png" alt="picture-130" width="271" height="87" />しばらく前に、<a href="http://www.techcrunch.com/2009/06/13/the-app-store-needs-a-genius-feature-asap/">iPhoneアプリケーションのレコメンドシステムが必要な理由</a>について詳細な記事を掲載した。iTunesで音楽や映画について「Genius」の機能があるように、今やAppStoreでの取り扱い件数が<a href="http://jp.techcrunch.com/archives/2009060840-million-iphones-and-ipod-touches-and-50000-apps/">50,000本以上となったアプリケーション</a>についても、不要なアプリケーションを除外して、必要なものだけを探すための仕組みが求められる状況となっている。iPhoneやiPod Touchを使っている友人が大勢いるなら、<a href="http://appsfire.com/">AppsFire</a>がレコメンドエンジンとして利用できるかもしれない。</p>
+<p>このAppsFireは本日（米国時間6/30）にプライベートベータで公開された。これを使えばお気に入りのアプリケーション情報を他の人と共有することができる。念のため言っておくと、アプリケーション自体を共有するわけではない。そうではなくてお気に入りのアプリケーションの名前を公開して、他の人がワンクリックでそのアプリケーションをApp Storeからダウンロードできるようにするものだ。たとえば私が100本のアプリケーションをインストールしているとしよう。その中で気に入っているものが15本だけあるとするなら、その15本を選んで各種ソーシャルネットワーク経由で、そのアプリケーション情報を友人とシェアすることができるようになっている。</p>
+<p>尚、AppFireはインストールして使うタイプのアプリケーションとなっている。現在の所はMac版のみが用意されている。PC版も準備中で、そのうちにiPhoneアプリケーションもリリース予定だとのことだ。AppFireをインストールすると、アプリケーションはiTunesフォルダ内のアプリケーションを検索する。そしてAppFireサイトに個人用のページを作成して、そこに利用しているアプリケーションのアイコンを表示する。利用者はそのページ上でお気に入りのアプリケーションを選択するわけだ。お気に入りアプリケーションの選択が完了すれば、それらお気に入りをソーシャルネットワーク、メール、ウィジェット、ないしAppFireページへのリンクにて公開することができる。一例として、AppFireの共同設立者である<a href="http://www.crunchbase.com/person/ouriel-ohayon">Ouriel Ohayon</a>のお気に入りアプリケーションが、<a href="http://appsfire.com/selection.php?cid=1246303514-1467722&amp;title=ouriel+top+apps">こちらのページ</a>にて公開されている。</p>
+<p>このアプリケーションは、まだまだパーフェクトにはほど遠い。お気に入りアプリケーションを公開する方法がそもそも洗練されていない。また、気に入っているアプリケーションの情報に基づいて、自分に適したアプリケーションを見つけてくれる機能もない。知り合いがどのようなアプリケーションを使っているかという情報を見て、そこからまだ使っていない面白そうなアプリケーションを見つけるためのものとなっている。</p>
+<p>収益モデルについては単純で、アフィリエイトを考えているとのことだ（LinkShareやTradedoubler）。ただOhayonによると、これについては「サプライズ」を用意しているとのことだ。</p>
+<p>限定公開のプライベートベータでは、まず1,000名を目処に利用者を募集しているとのこと。<a href="http://appsfire.com/">こちら</a>からサインアップできる。</p>
+<p><img class="alignnone size-medium wp-image-77971" title="picture-224" src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-224-630x542.png" alt="picture-224" width="630" height="542" /></p>
+<p><em>情報開示：AppFireの共同設立者であるOuriel Ohayonは、かつてTechCrunchのメンバーだった。現在でも時に応じて寄稿してくれている。</em></p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/product/appsfire">AppsFire</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/product/appsfire.js" type="text/javascript"></script></div>
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/product/iphone-app-store">iPhone App Store</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/product/iphone-app-store.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>［<a href="http://www.techcrunch.com/2009/06/30/recommend-your-favorite-iphone-apps-with-appsfire/">原文へ</a>］</p>
+<p>（翻訳：Maeda, H）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=411953c3de85e16595b3727f6c492020"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630recommend-your-favorite-iphone-apps-with-appsfire/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>リコー、ビジュアルなオンライン・ストレージ、quanpを米国展開</title>
+			<link>http://www.pheedo.jp/click.phdo?i=ff7216881df6f2c2c858170feb41a16d</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090630ricoh-launches-visual-online-storage-service-quanp/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090630ricoh-launches-visual-online-storage-service-quanp/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 17:08:19 +0000</pubDate>
+			<dc:creator>Serkan Toto</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[quanp]]></category>
+			<category><![CDATA[Ricoh]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22064</guid>
+			<description><![CDATA[<p><img src="http://cache0.techcrunch.com/wp-content/uploads/2009/06/logo_ricoh_quanp.png" alt="logo_ricoh_quanp" title="logo_ricoh_quanp" width="259" height="109" class="alignright size-full wp-image-78098" />たぶん皆さんも私同様、、こまめにファイルのバックアップを取るのは面倒だと感じていると思う。いくら重要なファイルであっても、定期的に忘れずバックアップするのは時間を食うし、まったく退屈な仕事だ。</p><p>そこで今日（日本時間6/30）、<a href="http://www.quanp.com/us/">quanp</a>（クワンプと発音するそうだ）というサービスのベータ版が登場した。開発したのは日本のカメラ、事務機器等の大手メーカー、<a href="http://www.ricoh.com/">リコー</a>である。quanpは個人にとって重要なあらゆるデジタルファイルを整理し、バックアップするためのセンターとなることを目指している。</p><p><a href="http://www.getdropbox.com/">Dropbox</a>を始め、ファイルのバックアップと共有サービスはすでに数多く市場に出ている。quanpの特色は、ビジュアルなインタフェースによって、写真、音楽、ビデオ、PDFといったファイルのストレージと共有のプロセスが快適なものになっている点だ。リコーによると、主にアメリカのユーザー向けにリリースされた今回のサービスは当面無料版のみとなる。（3月から提供されている<a href="http://www.quanp.com">日本版</a>のquanpには無料のトライアル版と2種類の有料版がある）。米国版は、カリフォルニア州クパチーノのRicohが運営する。</p><br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=ff7216881df6f2c2c858170feb41a16d"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://cache0.techcrunch.com/wp-content/uploads/2009/06/logo_ricoh_quanp.png" alt="logo_ricoh_quanp" title="logo_ricoh_quanp" width="259" height="109" class="alignright size-full wp-image-78098" />たぶん皆さんも私同様、、こまめにファイルのバックアップを取るのは面倒だと感じていると思う。いくら重要なファイルであっても、定期的に忘れずバックアップするのは時間を食うし、まったく退屈な仕事だ。</p>
+<p>そこで今日（日本時間6/30）、<a href="http://www.quanp.com/us/">quanp</a>（クワンプと発音するそうだ）というサービスのベータ版が登場した。開発したのは日本のカメラ、事務機器等の大手メーカー、<a href="http://www.ricoh.com/">リコー</a>である。quanpは個人にとって重要なあらゆるデジタルファイルを整理し、バックアップするためのセンターとなることを目指している。</p>
+<p><a href="http://www.getdropbox.com/">Dropbox</a>を始め、ファイルのバックアップと共有サービスはすでに数多く市場に出ている。quanpの特色は、ビジュアルなインタフェースによって、写真、音楽、ビデオ、PDFといったファイルのストレージと共有のプロセスが快適なものになっている点だ。リコーによると、主にアメリカのユーザー向けにリリースされた今回のサービスは当面無料版のみとなる。（3月から提供されている<a href="http://www.quanp.com">日本版</a>のquanpには無料のトライアル版と2種類の有料版がある）。米国版は、カリフォルニア州クパチーノのRicohが運営する。</p>
+<p>quanpサービスの<a href="http://www.quanp.com/us/">仕組み</a>はちょっとややこしい。しかし簡単に言えば、<a href="http://www.quanp.com/us/download/">3種類のツール</a>の組み合わせだ。</p>
+<ul>
+<li><a href="http://www.quanp.com/us/about/on/">quanp.on</a> （Windows版のみのオンライン・ストレージ用クライアント・アプリ）</li>
+<li><a href="https://www.quanp.net/">quanp.net</a> （そのブラウザ版）</li>
+<li><a href="http://www.quanp.com/us/about/drop/">quanp drop</a> （デスクトップ・ウィジェット）</li>
+</ul>
+<p>それぞれを簡単に紹介しておこう。</p>
+<p><a href="http://www.quanp.com/us/about/on/">quanp.on</a><br />Windows版のみなのが残念だが、<a href="http://www.quanp.com/us/about/on/">quanp.on</a>はひとたびインストールしてしまえば（<a href="http://www.quanp.com/us/support/help/on/guidebook_1_2.html">システム要件</a>）、安定して動作する。ユーザーはファイルをドラグ&amp;ドロップしてアップロードし、タグづけできる。アップロードされたファイルは美しい3Dインタフェースを通じて自由に呼び出せる。（リコーではこれを3Dビジュアル・ブラウジングと呼んでいる）。ファイルはウェブを通じて他のquanpユーザーと簡単に共有できる。</p>
+<p><img src="http://cache0.techcrunch.com/wp-content/uploads/2009/06/quanp_on_screen-630x376.jpg" alt="quanp_on_screen" title="quanp_on_screen" width="630" height="376" class="alignnone size-medium wp-image-78080" /></p>
+<p><a href="https://www.quanp.net/">quanp.net</a><br />残念ながらこのブラウザ版はアプリ版やウィジェット版と比べると機能的に見劣りする。すでに似たようなサービスが何年も前から提供されている。ただしWindows版に加えてMac版も用意されている。</p>
+<p><a href="http://www.quanp.com/us/about/drop/">quanp drop</a><br />quanp dropはカスタマイズできるアニメーションを利用したデスクトップ・ウィジェットだ。Mac版とWindows版がある（<a href="http://www.quanp.com/us/about/drop/">システム要件</a>）。ユーザー登録を行うと、フォルダにファイルを加えるのと同様、このウィジェットにドラグ&amp;ドロップするだけでファイルの共有ができる。quanpdropはAdobe AIRを利用しているので、事前にランタイムをインストールしておく必要がある。</p>
+<p><img src="http://cache0.techcrunch.com/wp-content/uploads/2009/06/quanp_drop.png" alt="quanp_drop" title="quanp_drop" width="593" height="357" class="alignnone size-full wp-image-78081" /></p>
+<p>リコーでは「今回リリースしたツールは、主としてギークやパワーユーザー向けだ。サービスを一般ユーザー向けに改良していくため、皆さんからのフィードバックを参考にしていきたい」と述べている。試してみるのであれば、私はウィジェット版とアプリ版をお勧めする。リコーのquanp用Twitterアカウントは<a href="http://twitter.com/quanp/">こちら</a>。フィードバックは<a href="https://www.quanp.com/us/forum">掲示板</a>に投稿するか、<a href="http://www.quanp.com/us/contactinfo.html">メール</a>を送る。</p>
+<p>下のビデオにさらに詳しい情報がある。</p>
+<p><embed src="http://blip.tv/play/grExgY25fInkVA" type="application/x-shockwave-flash" width="630" height="450" allowscriptaccess="always" allowfullscreen="true"></embed> </p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/quanp">quanp</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/quanp.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p><P>[<A href="http://www.techcrunch.com/2009/06/30/ricoh-launches-visual-online-storage-service-quanp/">原文へ</A>]</P><P>（翻訳：Namekawa, U）</P></p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=ff7216881df6f2c2c858170feb41a16d"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090630ricoh-launches-visual-online-storage-service-quanp/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>ベンチャー投資家とファウンダのあいだに大きな溝&#8211;Mochi Mediaのお家騒動</title>
+			<link>http://www.pheedo.jp/click.phdo?i=b585e45353f8ed641fdbe33aed2ca034</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090629venture-capitalists-v-founders-battle-at-mochi-media/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090629venture-capitalists-v-founders-battle-at-mochi-media/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 09:54:36 +0000</pubDate>
+			<dc:creator>Michael Arrington</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[MochiMedia]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22060</guid>
+			<description><![CDATA[<img src='http://www.techcrunch.com/wp-content/uploads/2009/06/duel.jpg'class="snap_nopreview shot2" alt="" />
+
+<a href="http://mochimedia.com/">Mochi Media</a>は、今<a href="http://jp.techcrunch.com/archives/20090529mochi-media-network-attracts-nearly-100-million-online-gamers-a-month-comscore/">急速に伸びている</a>Flashゲーム用の広告ネットワーク兼支払いプラットホームで、先週本誌も<a href="http://www.techcrunch.com/2009/06/25/mochi-media-launching-payments-platform-for-flash-games-early-results-are-stunning/">記事にした</a>が、現在、社運を賭（と）した内部抗争の渦中にある。
+
+同社には今、買収のオファーがあり、成立すると投資家の<a href="http://www.crunchbase.com/financial-organization/accel-partners">Accel Partners</a>と<a href="http://www.crunchbase.com/financial-organization/shasta-ventures">Shasta Ventures</a>には最初の投資額である<a href="http://www.crunchbase.com/company/mochimedia">$14M</a>（1400万ドル）が戻るが、ほかには何も得られない。ファウンダも社員も、会社を売って得るものはない。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=b585e45353f8ed641fdbe33aed2ca034"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src='http://www.techcrunch.com/wp-content/uploads/2009/06/duel.jpg'class="snap_nopreview shot2" alt="" /></p>
+<p><a href="http://mochimedia.com/">Mochi Media</a>は、今<a href="http://jp.techcrunch.com/archives/20090529mochi-media-network-attracts-nearly-100-million-online-gamers-a-month-comscore/">急速に伸びている</a>Flashゲーム用の広告ネットワーク兼支払いプラットホームで、先週本誌も<a href="http://www.techcrunch.com/2009/06/25/mochi-media-launching-payments-platform-for-flash-games-early-results-are-stunning/">記事にした</a>が、現在、社運を賭（と）した内部抗争の渦中にある。</p>
+<p>同社には今、買収のオファーがあり、成立すると投資家の<a href="http://www.crunchbase.com/financial-organization/accel-partners">Accel Partners</a>と<a href="http://www.crunchbase.com/financial-organization/shasta-ventures">Shasta Ventures</a>には最初の投資額である<a href="http://www.crunchbase.com/company/mochimedia">$14M</a>（1400万ドル）が戻るが、ほかには何も得られない。ファウンダも社員も、会社を売って得るものはない。</p>
+<p>ふつうならこれは、あっさり断るようなオファーだ。同社の経営は順調だし、銀行にはたっぷりお金があると情報筋は言う。ファウンダたちは当然このまま成長を続けてさらに良い結果を出したいと願っている。</p>
+<p>ところが少なくとも一人の投資家、Accelの<a href="http://www.crunchbase.com/person/ping-li">Ping Li</a>が、何らかの理由で買収の成立と自分の最初の投資の取り下げを求めている。彼はファウンダたちと経営陣を口説いて、オファーの条件を飲むよう迫っている、と複数の情報筋が言っている。</p>
+<p>ファウンダたちは納得しない。なにしろ彼らは1年前に、Time Warnerからのおよそ$65M（6500万ドル）の買収オファーを、どうやら断ったらしい強者（つわもの）たちだ。しかもそのときは、Liはファウンダたちに、会社を売るなと説得し、“ホームラン”をかっ飛ばすために資金調達を図った。その1年後の今、Liは$65M（6500万ドル）に遠く及ばないはした金で会社を売りたがっている。</p>
+<p>Mochi Mediaの場合のように会社がうまくいっていて倒産の恐れもないなら、一般的にベンチャーキャピタリストたちは資金を引きあげようとしない。誰に聞いても、なぜLiが会社を売ろうとしているのか、誰も説明できない。</p>
+<p>Liは、よく問題を起こすベンチャーキャピタリストだ…昨年のBitTorrentに対する<a href="http://jp.techcrunch.com/archives/20081214bad-times-for-bittorrent-17-m-financing-undone-valuation-plummets/">$17M（1700万ドル）の資金提供の取り消し</a>という異常事態は、彼（または彼一人）が黒幕だった。そのとき本誌は、投資撤回によってLiが会社に対する信託義務を怠ることにならないかと<a href="http://jp.techcrunch.com/archives/20081215the-extraordinary-happenings-at-bittorrent/">問うた</a>。</p>
+<p>ベンチャーキャピタリストが起業家に敵対している光景は、見てて気持ちの良いものではない。それに、このような醜悪な状況では、Ping Liだけを悪者にすることはできない。彼が投資をした企業の経営者の中には、彼をべた褒めする人が多い。たとえば<a href="http://www.crunchbase.com/person/dennis-fong">Dennis Fong</a>に今夜（米国時間6/29）会って話をしたが、彼はLiは投資家の鑑（かがみ）だと言っている。</p>
+<p>この状況は、どちらかというと、よくある傾向の一つだろう。投資家の目標と起業家の目標に、食い違いが生じるのだ。それは、起業家一般にとって危険信号でもある。ベンチャー資金側のニーズが、会社にとってまずい意思決定を招くこともありえるのだ。そういうこともあると自覚して、契約の内容をできるかぎり明確にし、また、慎重に投資家を選ぶべきだ。</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/mochimedia">Mochi Media</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/mochimedia.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>[<A HREF="http://www.techcrunch.com/2009/06/29/venture-capitalists-v-founders-battle-at-mochi-media/">原文へ</A>]</p>
+<p>（翻訳：iwatani(a.k.a. <A HREF="http://homepage1.nifty.com/algafield/">hiwa</A>)）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=b585e45353f8ed641fdbe33aed2ca034"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090629venture-capitalists-v-founders-battle-at-mochi-media/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title><![CDATA[AD: 常連をはなさない効果的サービス]]></title>
+			<link>http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=b585e45353f8ed641fdbe33aed2ca034&amp;p=4</link>
+			<guid isPermaLink="false">b585e45353f8ed641fdbe33aed2ca034</guid>
+			<description><![CDATA[<table border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top">集客力アップ！リピート率アップ！集客と販促につながる新サービス</td></tr>
+<tr><td><a href="http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=b585e45353f8ed641fdbe33aed2ca034&amp;p=4">www.mamailsp.com</a></td></tr>
+</table>
+<div style="font-size:xx-small; padding-top: 1em;"><span style="border-top: 1px solid">
+<br style="display:none"/>
+Ads by Overture</span><img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/feeds/ht.php?t=v&amp;i=b585e45353f8ed641fdbe33aed2ca034&amp;p=4"/>
+<br/>
+</div>
+]]></description>
+			<pubDate>Tue, 30 Jun 2009 09:54:36 +0000</pubDate>
+		</item>
+		<item>
+			<title>Sense Of Fashionはインディーファッションのためのソーシャルなマーケットプレイス</title>
+			<link>http://www.pheedo.jp/click.phdo?i=9e5747f4989b9706b9e800eadc13d579</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090629sense-of-fashion-is-a-social-marketplace-for-indie-fashion/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090629sense-of-fashion-is-a-social-marketplace-for-indie-fashion/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 05:54:28 +0000</pubDate>
+			<dc:creator>Leena Rao</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[senseofashion]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22056</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/sof1.jpg" class="shot2"/>
+
+<a href="http://www.senseofashion.com/home.php">Sense of Fashion</a>というイスラエルのサイトでは、インディー(Indie,独立個人)のファッションデザイナーたちが自分の作品を陳列でき、消費者はまだ無名のデザイナーたちの新作をここで買うことができる。このサイトにはソーシャルな機能もあり、消費者ユーザがファッション関連のホームページを作って自分のお気に入りの服やデザイナーを写真入りで紹介できる。デザイナーは同様に、「自分の店」をページとして持てる。
+
+このサイトは、新しくておもしろいファッションのためのマーケットプレイスで終わりたくないという野望を持っている。買い手と、デザイナーと、流行の仕掛け人たちを結びつけたいのだ。デザイナーは、消費者ユーザのファッションホームページを見て、その写真やコメントなどから未来のお客の要望や好み、センスなどを学ぶことができる。つまり消費者ユーザは、未来のお客様だ。消費者ユーザは、このサイト上のほかの消費者ユーザと対話できる。たとえばこのサイトには<a href="http://www.senseofashion.com/emergencies/">"Fashion Emergency"</a>〔仮訳: お急ぎファッション〕という機能があって、どれを買おうか/着ようか迷っているときに、サイト上の友だちからアドバイスをもらえる。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=9e5747f4989b9706b9e800eadc13d579"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/sof1.jpg" class="shot2"/></p>
+<p><a href="http://www.senseofashion.com/home.php">Sense of Fashion</a>というイスラエルのサイトでは、インディー(Indie,独立個人)のファッションデザイナーたちが自分の作品を陳列でき、消費者はまだ無名のデザイナーたちの新作をここで買うことができる。このサイトにはソーシャルな機能もあり、消費者ユーザがファッション関連のホームページを作って自分のお気に入りの服やデザイナーを写真入りで紹介できる。デザイナーは同様に、「自分の店」をページとして持てる。</p>
+<p>このサイトは、新しくておもしろいファッションのためのマーケットプレイスで終わりたくないという野望を持っている。買い手と、デザイナーと、流行の仕掛け人たちを結びつけたいのだ。デザイナーは、消費者ユーザのファッションホームページを見て、その写真やコメントなどから未来のお客の要望や好み、センスなどを学ぶことができる。つまり消費者ユーザは、未来のお客様だ。消費者ユーザは、このサイト上のほかの消費者ユーザと対話できる。たとえばこのサイトには<a href="http://www.senseofashion.com/emergencies/">&#8220;Fashion Emergency&#8221;</a>〔仮訳: お急ぎファッション〕という機能があって、どれを買おうか/着ようか迷っているときに、サイト上の友だちからアドバイスをもらえる。</p>
+<p>売る側は、Sense of Fashionの上でPaypalを使ってeコマースを行う。サイトは売上の3%のコミッションを取り、デザイナーからの作品陳列に対しても課金する（その料金体系は非公開）。2007年にロンチしたSense of Fashionは、VOIPのパイオニアである<a href="http://www.crunchbase.com/person/jeff-pulver">Jeff Pulver</a>やOri Levyなどの投資家からシード資金の提供を受けた。ソーシャルネットワーキングとファッションとインディーのデザイナーたちのための小売りサービスを結びつける、おもしろい試みだ。ファッションを学んでいる学生たちや、デザイン通の人たちが魅力を感じるサイトだろう。なお、類似サイトとして<a href="http://www.crunchbase.com/company/glammedia">FashionSpace</a>がある。 </p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/sof-1.jpg"/></p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/senseofashion">SenseOFashion</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/senseofashion.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>[<A HREF="http://www.techcrunch.com/2009/06/29/sense-of-fashion-is-a-social-marketplace-for-indie-fashion/">原文へ</A>]</p>
+<p>（翻訳：iwatani(a.k.a. <A HREF="http://homepage1.nifty.com/algafield/">hiwa</A>)）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=9e5747f4989b9706b9e800eadc13d579"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090629sense-of-fashion-is-a-social-marketplace-for-indie-fashion/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>YouTubeが半透明オーバレイによるほかのサイトへのリンク機能を一般公開&#8211;ビデオの関連サイトへ行くのが簡単に</title>
+			<link>http://www.pheedo.jp/click.phdo?i=1cc2f0ad838c563918f014785551ab2e</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090629youtube-to-broadly-release-call-to-action-overlays-allows-linking-off-site/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090629youtube-to-broadly-release-call-to-action-overlays-allows-linking-off-site/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 05:17:51 +0000</pubDate>
+			<dc:creator>Jason Kincaid</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[YouTube]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22050</guid>
+			<description><![CDATA[<img src="http://cache0.techcrunch.com/wp-content/uploads/2009/03/10724v1-max-250x2501.png" class="shot2"/>
+
+明日（米国時間6/30）YouTubeは、同社の一連の広告製品にとても重要な新機能を加える。それはとくに、政治家、企業や製品、慈善団体などにとって重要な意味を持つだろう。これからその新機能を説明するが、ほとんどの読者が、そんなの前からあったんじゃない？と思うかもしれない。
+
+その製品の公式名はCall-To-Action Overlay（アクションを惹起するオーバレイ）で、通常の広告と同じぐらい単純な仕組みだ。それは、今見ているページの上に出る（オーバレイされる）半透明なポップアップで、その中に別のWebサイトのリンクがある。たとえばぼくなら、TechCrunchのビデオの上にそのオーバレイを置いて、ユーザにそのビデオに関する記事を読ませようとするだろう。というわけで、きわめて簡単な仕組みだ。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=1cc2f0ad838c563918f014785551ab2e"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://cache0.techcrunch.com/wp-content/uploads/2009/03/10724v1-max-250x2501.png" class="shot2"/></p>
+<p>明日（米国時間6/30）YouTubeは、同社の一連の広告製品にとても重要な新機能を加える。それはとくに、政治家、企業や製品、慈善団体などにとって重要な意味を持つだろう。これからその新機能を説明するが、ほとんどの読者が、そんなの前からあったんじゃない？と思うかもしれない。</p>
+<p>その製品の公式名はCall-To-Action Overlay（アクションを惹起するオーバレイ）で、通常の広告と同じぐらい単純な仕組みだ。それは、今見ているページの上に出る（オーバレイされる）半透明なポップアップで、その中に別のWebサイトのリンクがある。たとえばぼくなら、TechCrunchのビデオの上にそのオーバレイを置いて、ユーザにそのビデオに関する記事を読ませようとするだろう。というわけで、きわめて簡単な仕組みだ。</p>
+<p>でも、誰も信じないかもしれないが、YouTubeにはこれまでこの機能がなかった。これまで、YouTubeのビデオを見る人に別のサイトへ行かせたかったら、ページの右上の作者コメントの中にリンクを書くしかない…それはほとんど無視されるだろう。注記にもリンクを書けるが、それはほかのYouTubeビデオのリンクだけだ。前（さき）の大統領選で、オバマ候補はYouTubeを利用しまくったが、ビデオをみた視聴者がオバマ氏の選挙戦ホームページを覗いてみたいと思ったら、そのURLを手入力するしかなかった。次の大統領選では、そういう面倒で不便なことがなくなるのだ。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-182.png"/></p>
+<p>ではなぜ、YouTubeはこれまでこの、あって当然のような機能を実装しなかったのだろう？　それは、ビューを稼がなければならないYouTubeのようなサイトは、ユーザによそへ行ってほしくないからだ。だからこれまでずっと導入をためらっていたと思われるが、今回やっと、欠点の克服を決意したのだ。このオーバレイを入れることができるのは、YouTubeの「CPC <a href="https://ads.youtube.com/">Promoted Videos</a>（CPC奨励ビデオ）」 だけだ。もちろんYouTubeにふつうの広告料は払うが、Call-To-Actionオーバレイの使用料というものはない。</p>
+<p>この機能はこれまで、一部のパートナーや非営利団体に使ってもらってテストしていたが、結果はきわめて好評だった。3月には<a href="http://www.charitywater.org/donate/">charity:water</a>という慈善団体がたった一つのビデオにオーバレイを載せただけで、1日で<a href="http://jp.techcrunch.com/archives/20090327special-youtube-ads-earn-nonprofit-10000-in-a-single-day/">1万ドル</a>の寄付を集めた。数名の政治家も試用中で、これを<a href="http://www.youtube.com/watch?v=CBbRTW6Nmks">提出議案</a>への賛成署名集めに使っている。こちらも、使いたいという政治家がこのところ増えている。</p>
+<p>今のところ、この機能の利用者は限られている。企業は製品紹介のページへのリンクを載せるだろうし、（本誌のような）出版者は関連記事のリンクを載せるだろう。もちろん政治家は、選挙戦のホームページや提出議案のページを見てもらいたい。でも今後は、もっとクリエイティブな使い方がいろいろ出てくるのではないか。それはちょうど、YouTubeの注記がビデオによるアドベンチャー作りに使われたように。</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/youtube">YouTube</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/youtube.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>[<A HREF="http://www.techcrunch.com/2009/06/29/youtube-to-broadly-release-call-to-action-overlays-allows-linking-off-site/">原文へ</A>]</p>
+<p>（翻訳：iwatani(a.k.a. <A HREF="http://homepage1.nifty.com/algafield/">hiwa</A>)）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=1cc2f0ad838c563918f014785551ab2e"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090629youtube-to-broadly-release-call-to-action-overlays-allows-linking-off-site/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>OffiSync 2.0がGoogleの画像検索をMicrosoft Officeに組み込む&#8211;クリック一発で画像のコピペ瞬時に完了</title>
+			<link>http://www.pheedo.jp/click.phdo?i=4319ed7869d84f26cf712173aa12ca06</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090629who-needs-clip-art-offisync-20-integrates-google-image-search-into-microsoft-office/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090629who-needs-clip-art-offisync-20-integrates-google-image-search-into-microsoft-office/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 04:09:50 +0000</pubDate>
+			<dc:creator>Jason Kincaid</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[offisync]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22046</guid>
+			<description><![CDATA[<img src="http://cache0.techcrunch.com/wp-content/uploads/2009/05/offisynclogo.png" class="shot2"/>
+
+先月本誌は、Microsoft OfficeとGoogle Docsをダイレクトに結びつけ、デスクトップのファイルを自動的にクラウドに保存できるプラグイン<a href="http://offisync.com/">OffiSync</a>を<a href="http://jp.techcrunch.com/archives/20090504offisync-brings-microsoft-office-and-google-docs-together-at-last/">取り上げた</a>。このプラグインは好評で、これまでに5万回以上ダウンロードされた。そして今日（米国時間6/29）同社が発表した新バージョンは、Officeをよく使うユーザにとってさらにぐーんと便利になったようだ。
+
+最大の新機能は、テキスト検索と画像検索の統合化だ。Officeにはクリップアートのディレクトリがあるが、どの画像もあまりぱっとしないので、ぼくなんかいつもGoogleの画像検索(Google Image)に直行する。ところがOffiSyncの新バージョンを使うと、Officeの中からGoogle Imagesの検索ができるのだ。しかも、画像を色やサイズや使用権のタイプで選り分ける高度な機能もある。気に入った画像を見つけたら、'Insert'をクリックするだけでその画像が今カーソルのある場所に現れる。さらに、ブラウザを内蔵していてテキストについてもこの機能があるので、引用したいテキストをセレクトしてやはり'Insert'をクリックすると自動的にコピペが完了する。
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=4319ed7869d84f26cf712173aa12ca06"/>
+]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.offisync.com"><img src="http://cache0.techcrunch.com/wp-content/uploads/2009/05/offisynclogo.png" class="shot2"/></a></p>
+<p>先月本誌は、Microsoft OfficeとGoogle Docsをダイレクトに結びつけ、デスクトップのファイルを自動的にクラウドに保存できるプラグイン<a href="http://offisync.com/">OffiSync</a>を<a href="http://jp.techcrunch.com/archives/20090504offisync-brings-microsoft-office-and-google-docs-together-at-last/">取り上げた</a>。このプラグインは好評で、これまでに5万回以上ダウンロードされた。そして今日（米国時間6/29）同社が発表した新バージョンは、Officeをよく使うユーザにとってさらにぐーんと便利になったようだ。</p>
+<p>最大の新機能は、テキスト検索と画像検索の統合化だ。Officeにはクリップアートのディレクトリがあるが、どの画像もあまりぱっとしないので、ぼくなんかいつもGoogleの画像検索(Google Image)に直行する。ところがOffiSyncの新バージョンを使うと、Officeの中からGoogle Imagesの検索ができるのだ。しかも、画像を色やサイズや使用権のタイプで選り分ける高度な機能もある。気に入った画像を見つけたら、&#8217;Insert&#8217;をクリックするだけでその画像が今カーソルのある場所に現れる。さらに、ブラウザを内蔵していてテキストについてもこの機能があるので、引用したいテキストをセレクトしてやはり&#8217;Insert&#8217;をクリックすると自動的にコピペが完了する。</p>
+<p><center><br />
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/cgc69mWJwRI&#038;hl=en&#038;fs=1&#038;"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/cgc69mWJwRI&#038;hl=en&#038;fs=1&#038;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object><br />
+</center></p>
+<p>もちろん、通常のブラウザを使っても画像やテキストのコピペはできるが、簡単で速くて、自動的にレイアウトまでやってくれるのはこっち(OffiSync)のほうだ。</p>
+<p>このプラグインに対するぼくの最大の不満は、帰属(attribution)の扱い方だ。というか、それの無視だ。画像やテキストをインポートするとき、著作権があるかもしれないという警告は出るが、そのコンテンツの帰属情報を書誌情報や脚注などとして自動生成できない。すべて手作業になる。重大な欠陥ではないが（剽窃者はそんな情報を無視するだろう）、これをいちいち手作業でやるのは、場合によってはたいへんすぎる。</p>
+<p>OffiSyncは無料だが、企業向けに有料製品を出す計画がある。今のところWindowsのみだが、目下Macバージョンも制作中だ（この夏の終わりごろリリースの予定）。</p>
+<p><center><br />
+<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/picture-1010.png"/><br />
+</center></p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/company/offisync">OffiSync</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/company/offisync.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/" rel="nofollow">CrunchBase</a></div>
+</div>
+</div>
+<p>[<A HREF="http://www.techcrunch.com/2009/06/29/who-needs-clip-art-offisync-20-integrates-google-image-search-into-microsoft-office/">原文へ</A>]</p>
+<p>（翻訳：iwatani(a.k.a. <A HREF="http://homepage1.nifty.com/algafield/">hiwa</A>)）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=4319ed7869d84f26cf712173aa12ca06"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090629who-needs-clip-art-offisync-20-integrates-google-image-search-into-microsoft-office/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>今年もTechCrunch50がやってくる、スタートアップは今すぐ応募して業界エキスパートに売り込もう</title>
+			<link>http://www.pheedo.jp/click.phdo?i=a70260aad1d6257acea05e3d80abdc7c</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090629submit-your-startup-to-techcrunch50-now-for-your-chance-to-pitch-kevin-rose-sean-parker-and-yossi-vardi/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090629submit-your-startup-to-techcrunch50-now-for-your-chance-to-pitch-kevin-rose-sean-parker-and-yossi-vardi/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 01:43:18 +0000</pubDate>
+			<dc:creator>Michael Arrington</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22042</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/tc502009-215x53.jpg" width="215" height="53" />Diggのファウンダー<a href="http://www.crunchbase.com/person/kevin-rose">Kevin Rose</a>、Founders Fundのパートナー<a href="http://www.crunchbase.com/person/sean-parker">Sean Parker</a>、そしてイスラエル屈指のエンジェル投資家<a href="http://www.crunchbase.com/person/yossi-vardi">Yossi Vardi</a>が、第3回TechCrunch50カンファレンスの<a href="http://www.techcrunch50.com/2009/blog/panel-of-experts/">エキスパート・パネル</a>に帰ってくる。9月14～15日に、サンフランシスコで開催される。われわれが集めたエキスパートたちが、当日デビューするスタートアップ50社を審査し、グループ毎に行われる壇上デモについて、一社ずつ討論する。Yossi、Sean、Kevinの3名は昨年も参加したエキスパートで、多くの要望を受けて<a href="http://www.techcrunch.com/2009/06/16/want-to-pitch-marc-andreessen-roelof-botha-or-marissa-mayer-apply-for-your-shot-at-techcrunch50-by-june-30/">Roelof Botha、 Marc Andreessen、Marissa Mayer</a>らと共に今年も帰ってくる。新規、再登場ともに、すばらしいエキスパートの面々を揃えるつもりで、今後数週間のうちに追加の審査員を発表する予定だ。
+
+TechCrunch50でデビューして、壇上で専門のアドバイザー相手に売り込みしたいという新しいスタートアップがいたら、<strong>6月30日（米国時間）</strong>までに<a href="http://www.techcrunch50.com/2009/blog/submit-your-company/">申請書類を提出</a>してほしい。もう明日の晩だ。（50社が決まるまでの間は申請を受け付けるが、期限内に申し込んだ会社を先にレビューする）。
+
+本カンファレンスの詳細は<a href="http://www.techcrunch50.com/2009/blog/">こちら</a>。TechCrunch50は、2日間に50社の新しいスタートアップがデビューするアクション満載のカンファレンスで、会場は昨年2000人近い参加者を収容した巨大かつ美しい施設、<a href="http://www.sfvenues.com/concourse/overview.html">San Francisco Design Center</a>。
+
+
+イベントのチケットは<a href="http://www.techcrunch50.com/2009/blog/get-tickets/">こちらで購入</a>できる。協力：Eventbrite（6月30日までは、特別早割あり）。
+
+詳しくは<a href="http://www.techcrunch50.com/2009/blog">TechCrunch50ブログ</a>で。
+
+【日本語版編集部より】日本からの参加も歓迎。昨年のTechCrunch50 2008には、日本から3社が参加しました。<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=a70260aad1d6257acea05e3d80abdc7c"/>
+]]></description>
+			<content:encoded><![CDATA[<p><img src='http://www.techcrunch.com/wp-content/uploads/2009/03/tc502009.jpg' class="snap_nopreview shot" alt="" />Diggのファウンダー<a href="http://www.crunchbase.com/person/kevin-rose">Kevin Rose</a>、Founders Fundのパートナー<a href="http://www.crunchbase.com/person/sean-parker">Sean Parker</a>、そしてイスラエル屈指のエンジェル投資家<a href="http://www.crunchbase.com/person/yossi-vardi">Yossi Vardi</a>が、第3回TechCrunch50カンファレンスの<a href="http://www.techcrunch50.com/2009/blog/panel-of-experts/">エキスパート・パネル</a>に帰ってくる。9月14～15日に、サンフランシスコで開催される。われわれが集めたエキスパートたちが、当日デビューするスタートアップ50社を審査し、グループ毎に行われる壇上デモについて、一社ずつ討論する。Yossi、Sean、Kevinの3名は昨年も参加したエキスパートで、多くの要望を受けて<a href="http://www.techcrunch.com/2009/06/16/want-to-pitch-marc-andreessen-roelof-botha-or-marissa-mayer-apply-for-your-shot-at-techcrunch50-by-june-30/">Roelof Botha、 Marc Andreessen、Marissa Mayer</a>らと共に今年も帰ってくる。新規、再登場ともに、すばらしいエキスパートの面々を揃えるつもりで、今後数週間のうちに追加の審査員を発表する予定だ。</p>
+<p>TechCrunch50でデビューして、壇上で専門のアドバイザー相手に売り込みしたいという新しいスタートアップがいたら、<strong>6月30日（米国時間）</strong>までに<a href="http://www.techcrunch50.com/2009/blog/submit-your-company/">申請書類を提出</a>してほしい。もう明日の晩だ。（50社が決まるまでの間は申請を受け付けるが、期限内に申し込んだ会社を先にレビューする）。</p>
+<p>本カンファレンスの詳細は<a href="http://www.techcrunch50.com/2009/blog/">こちら</a>。TechCrunch50は、2日間に50社の新しいスタートアップがデビューするアクション満載のカンファレンスで、会場は昨年2000人近い参加者を収容した巨大かつ美しい施設、<a href="http://www.sfvenues.com/concourse/overview.html">San Francisco Design Center</a>。</p>
+<p>イベントのチケットは<a href="http://www.techcrunch50.com/2009/blog/get-tickets/">こちらで購入</a>できる。協力：Eventbrite（6月30日までは、特別早割あり）。</p>
+<p>詳しくは<a href="http://www.techcrunch50.com/2009/blog">TechCrunch50ブログ</a>で。</p>
+<p>【日本語版編集部より】日本からの参加も歓迎。昨年のTechCrunch50 2008には、日本から3社が参加しました。</p>
+<p>【以下、原文のまま】</p>
+<table>
+<tr>
+<td>
+<img src="http://www.techcrunch50.com/2008/blog/wp-content/kevinrose.jpg" />
+</td>
+<td>
+<h3>Kevin Rose</h3>
+<p>Kevin Rose is the founder and chief architect of <a href="http://www.digg.com">Digg</a>. Kevin started Digg in September 2004 as a personal project.  His initial idea was to conduct a social experiment in how masses of users could control and promote news and other content on the Web, without external editorial control.  After a very short time, he realized the power of his idea, as Digg was becoming a resource for breaking news stories and developed a strong user following.  Kevin is also a co-founder of the Internet Television Network <a href="http://www.revision3.com">Revision3</a> where as a member of the board he provides strategic direction to the company. <a href="http://www.crunchbase.com/person/kevin-rose">CrunchBase profile</a>.
+</td>
+</tr>
+<tr>
+<td>
+<img src="http://www.techcrunch50.com/2008/blog/wp-content/seanp.jpg" />
+</td>
+<td>
+<h3>Sean Parker</h3>
+<p>Sean Parker is the co-founder and Chairman of Causes on Facebook and MySpace, a new network that aims to enable large-scale political and social activism on the Internet.  Sean is also a Managing Partner at <a href="http://www.foundersfund.com/">The Founders Fund</a>, an early stage venture capital firm based in San Francisco .  Previously, Sean was the co-founder of the category defining Web ventures Napster, Plaxo, and Facebook.  At Napster, Sean helped to design the Napster client software and led the company’s initial financing and strategy.  Under Sean’s leadership, Napster became the fastest adopted client software application in history.  Following Napster, Sean co-founded and served as President of Plaxo, where he pioneered the viral engineering techniques used to deploy Plaxo&#8217;s flagship smart address book product, ultimately acquiring more than 15 million users.  In 2004, Sean left Plaxo to become the founding President of Facebook, one of the most rapidly growing sites on the Internet today.  Sean sits on the boards of several private companies.  <a href="http://www.crunchbase.com/person/sean-parker">CrunchBase profile</a>.
+</td>
+</tr>
+<tr>
+<td>
+<img src="http://www.techcrunch50.com/2008/blog/wp-content/yossi.jpg" />
+</td>
+<td>
+<h3>Yossi Vardi</h3>
+<p>Yossi Vardi is an Israeli entrepreneur most famous for being the original investor in ICQ - the first Internet-wide instant messaging system. Vardi has invested in over 50 tech companies in diverse areas of software, energy, Internet, mobile, cleantech, and others.  Vardi has been an active civil servant in Israel through projects involving energy and infrastructure. He also co-founded Alon, an Israeli oil company. Vardi acted as an advisor to the World Bank and the United Nations Development Program on issues of energy in the developing world.  Vardi has received many awards including The Prime Minister Award, The Industry Award, Entrepreneur of the Year (Tel Aviv University), and the CEO!’s Entrepreneurs Hall of Fame from the Collegiate Entrepreneurs’ Organization. <a href="http://www.crunchbase.com/person/yossi-vardi">CrunchBase profile.</a>
+</td>
+</tr>
+</table>
+<p>We&#8217;re really lucky to have the corporate support of some of the best names in the business.  <a href="http://www.sequoiacap.com/">Sequoia Capital</a>, <a href="http://www.crv.com">Charles River Ventures</a> and <a href="http://www.perkinscoie.com">Perkins Coie</a> all returned quickly to support us for the third year in a row.  <a href="http://www.google.com">Google</a>, <a href="http://www.foundersfund.com">Founders Fund</a>, <a href="http://www.myspace.com">MySpace</a> and <a href="http://www.microsoftstartupzone.com">Microsoft</a> are back for their second year of partnership. Additional partners will be named in the months leading up to the conference.  Want to learn more? Partner and exhibitor details <a href="http://www.techcrunch50.com/2009/blog/become-a-partner/">here</a>. </p>
+<p>[<a href="http://www.techcrunch.com/2009/06/29/submit-your-startup-to-techcrunch50-now-for-your-chance-to-pitch-kevin-rose-sean-parker-and-yossi-vardi/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=a70260aad1d6257acea05e3d80abdc7c"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090629submit-your-startup-to-techcrunch50-now-for-your-chance-to-pitch-kevin-rose-sean-parker-and-yossi-vardi/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title>Appleはジョブズの復帰をみんなに知ってほしい</title>
+			<link>http://www.pheedo.jp/click.phdo?i=f166f800605dcba5a1bc810dfe97d15a</link>
+			<pheedo:origLink>http://jp.techcrunch.com/archives/20090629apple-wants-you-to-know-steve-jobs-is-back-at-work/</pheedo:origLink>
+			<comments>http://jp.techcrunch.com/archives/20090629apple-wants-you-to-know-steve-jobs-is-back-at-work/#comments</comments>
+			<pubDate>Tue, 30 Jun 2009 01:09:21 +0000</pubDate>
+			<dc:creator>Erick Schonfeld</dc:creator>
+			<category><![CDATA[Uncategorized]]></category>
+			<category><![CDATA[Apple]]></category>
+			<guid isPermaLink="false">http://jp.techcrunch.com/?p=22037</guid>
+			<description><![CDATA[<img src="http://www.techcrunch.com/wp-content/uploads/2009/06/steve-jobs-back-gogle-news-215x179.png" width="215" height="179" />スティーブ・ジョブズが正式に復帰した。Apple広報室の発表による。最近<a href="http://www.techcrunch.com/2009/06/19/not-only-was-steve-jobs-sick-he-had-a-liver-transplant/
+">肝臓移植手術</a>を受けたことを、<em>Wall Street Journal</em>にすっぱ抜かれたが、<a href="http://daringfireball.net/2009/06/wsj_steve_jobs_liver_transplant">記事が出たのは都合よく</a>、金曜日の晩、市場が閉じた後だった。先週ジョブズは<a href="http://www.crunchgear.com/2009/06/22/steve-jobs-spotted-at-apple-hq-today-breaks-his-silence/">Appleのキャンパスに戻ったところを目撃</a>され、プレスリリースに引用まで掲載されていた。今日（米国時間6/29）Appleは、ジョズブが業務に復帰したことを<a href="http://news.google.com/news/more?um=1&#038;ned=us&#038;cf=all&#038;ncl=dFd078VubNedA0MId3pLyizoJ1AXM">強調</a>し、<a href="http://abcnews.go.com/Technology/AheadoftheCurve/story?id=7957415&#038;page=1">ABC News</a>から<a href="http://www.bloomberg.com/apps/news?pid=20601103&#038;sid=ayPLhHtliXIA">Bloomberg</a>、<a href="http://www.nytimes.com/2009/06/30/technology/companies/30apple.html?_r=1&#038;ref=technology">New York Times</a>、<a href="http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSN2936153120090629">Reuters</a>まで複数の報道機関に対して、全く同一文面の声明を送った（広報担当のSteve Dowlingの名前があるものと、そうでないものがある）。
+
+
+<blockquote>スティーブが復帰しました。ジョブズは週の何日かをAppleで過ごし、残りは自宅で仕事をしています。この復帰を社員一同大変喜んでいます。</blockquote>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=f166f800605dcba5a1bc810dfe97d15a"/>
+]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.techcrunch.com/wp-content/uploads/2009/06/steve-jobs-back-gogle-news.png"><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/steve-jobs-back-gogle-news-300x250.png" alt="steve-jobs-back-gogle-news" title="steve-jobs-back-gogle-news" width="300" height="250" class="alignleft size-thumbnail wp-image-77622" /></a>スティーブ・ジョブズが正式に復帰した。Apple広報室の発表による。最近<a href="http://www.techcrunch.com/2009/06/19/not-only-was-steve-jobs-sick-he-had-a-liver-transplant/<br />
+">肝臓移植手術</a>を受けたことを、<em>Wall Street Journal</em>にすっぱ抜かれたが、<a href="http://daringfireball.net/2009/06/wsj_steve_jobs_liver_transplant">記事が出たのは都合よく</a>、金曜日の晩、市場が閉じた後だった。先週ジョブズは<a href="http://www.crunchgear.com/2009/06/22/steve-jobs-spotted-at-apple-hq-today-breaks-his-silence/">Appleのキャンパスに戻ったところを目撃</a>され、プレスリリースに引用まで掲載されていた。今日（米国時間6/29）Appleは、ジョズブが業務に復帰したことを<a href="http://news.google.com/news/more?um=1&#038;ned=us&#038;cf=all&#038;ncl=dFd078VubNedA0MId3pLyizoJ1AXM">強調</a>し、<a href="http://abcnews.go.com/Technology/AheadoftheCurve/story?id=7957415&#038;page=1">ABC News</a>から<a href="http://www.bloomberg.com/apps/news?pid=20601103&#038;sid=ayPLhHtliXIA">Bloomberg</a>、<a href="http://www.nytimes.com/2009/06/30/technology/companies/30apple.html?_r=1&#038;ref=technology">New York Times</a>、<a href="http://www.reuters.com/article/rbssTechMediaTelecomNews/idUSN2936153120090629">Reuters</a>まで複数の報道機関に対して、全く同一文面の声明を送った（広報担当のSteve Dowlingの名前があるものと、そうでないものがある）。</p>
+<blockquote><p>スティーブが復帰しました。ジョブズは週の何日かをAppleで過ごし、残りは自宅で仕事をしています。この復帰を社員一同大変喜んでいます。</p></blockquote>
+<p>願わくば、完治するまでは会社より自宅で仕事をしてもらいたいものだ。それにしても、このメッセージを出す意味は何だったのだろうか。去る1月に、ジョブズが<a href="http://jp.techcrunch.com/archives/20090114steve-jobs-takes-six-month-leave-of-absence-from-apple/">療養休暇</a>を取ったとき、彼は6月30日に戻ると言っていた。これは出資者に対して、手術がいかに重大なものであろうとも期日は守る、ということを伝えるApple流のやり方だ。公式見解としては、たとえパートタイムであってもジョブズは復帰したということだ。しかし実際のところ、あと6ヵ月間休みを取ったとして、それを責める人がいるだろうか。</p>
+<p>Appleの株価は、常にスティーブ・ジョブズと密に結び付いてきた。しかし過去6ヵ月間に投資家が得た教訓があるとすれば、この会社の成功はもっと密に同社の製品と結び付いていた、ということだろう。Apple製品群は、今まさに勢いに乗っている。株価はこの6ヵ月間に82%上昇した。</p>
+<p><img src="http://www.techcrunch.com/wp-content/uploads/2009/06/o-jobs-stock-chart.jpg"/></p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header"><script src="http://www.crunchbase.com/javascripts/widget.js" type="text/javascript"></script>
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/person/steve-jobs">Steve Jobs</a></div>
+<div class="cbw_subcontent"><script src="http://www.crunchbase.com/cbw/person/steve-jobs.js" type="text/javascript"></script></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/">CrunchBase</a></div>
+</div>
+</div>
+<p>[<a href="http://www.techcrunch.com/2009/06/29/apple-wants-you-to-know-steve-jobs-is-back-at-work/">原文へ</a>]</p>
+<p>（翻訳：Nob Takahashi）</p>
+<br clear="both" style="clear: both;"/>
+<img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/img.phdo?i=f166f800605dcba5a1bc810dfe97d15a"/>
+]]></content:encoded>
+			<wfw:commentRss>http://jp.techcrunch.com/archives/20090629apple-wants-you-to-know-steve-jobs-is-back-at-work/feed/</wfw:commentRss>
+		</item>
+		<item>
+			<title><![CDATA[AD: 超長距離、超広域の一元監視計測]]></title>
+			<link>http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=f166f800605dcba5a1bc810dfe97d15a&amp;p=4</link>
+			<guid isPermaLink="false">f166f800605dcba5a1bc810dfe97d15a</guid>
+			<description><![CDATA[<table border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top">光ファイバ不要で100Kmの伝送,予備線等の2本で多点の監視と管理</td></tr>
+<tr><td><a href="http://www.pheedo.jp/feeds/ht.php?t=c&amp;i=f166f800605dcba5a1bc810dfe97d15a&amp;p=4">toyonakakeisou.com</a></td></tr>
+</table>
+<div style="font-size:xx-small; padding-top: 1em;"><span style="border-top: 1px solid">
+<br style="display:none"/>
+Ads by Overture</span><img alt="" style="border: 0;" border="0" src="http://www.pheedo.jp/feeds/ht.php?t=v&amp;i=f166f800605dcba5a1bc810dfe97d15a&amp;p=4"/>
+<br/>
+</div>
+]]></description>
+			<pubDate>Tue, 30 Jun 2009 01:09:21 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
