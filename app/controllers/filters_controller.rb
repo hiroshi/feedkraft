@@ -1,7 +1,7 @@
 class FiltersController < ApplicationController
   before_filter :new_filter, :only => [:new, :create]
-  before_filter :set_filter, :only => [:show, :update, :destroy]
-  before_filter :set_feeds, :only => [:new, :show]
+  before_filter :set_filter, :only => [:show, :update, :destroy, :feed]
+  before_filter :set_feeds, :only => [:new, :show, :feed]
 
   def new
     @filter.title ||= @src_feed.title
@@ -33,6 +33,10 @@ class FiltersController < ApplicationController
   def destroy
     @filter.destroy
     redirect_to root_path
+  end
+
+  def feed
+    send_data @result_feed.to_s, :type => "text/xml; charset=UTF-8"
   end
 
   private
