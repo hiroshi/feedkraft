@@ -7,7 +7,7 @@
   index = nil unless defined?(index)
 %>
 <div class="filter_field">
-  <%= select_tag "filter_key_#{index}", options_for_select([@src_feed.filter_fields.keys, key].uniq, key), :onchange => "update_filter_option(FilterField.getIndex(this));", :name => nil, :class => "span-4" %>
+  <%= select_tag "filter_key_#{index}", options_for_select((@src_feed.filter_fields.keys + [key]).uniq, key), :onchange => "update_filter_option(FilterField.getIndex(this));", :name => nil, :class => "span-4" %>
     contains
   <%= text_field_tag key, val, :id => "filter_value_#{index}", :class => "span-6" %>
   <%= select_tag "filter_option_#{index}", @src_feed.filter_fields[key] && options_for_select(@src_feed.filter_fields[key].map{|v|truncate(v, :length => 80)}, val), :onchange => "update_filter_value(FilterField.getIndex(this));", :name => nil, :class => "span-6" %>
