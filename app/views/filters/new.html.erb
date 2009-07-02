@@ -71,14 +71,14 @@
 
 <% if @src_feed %>
 <div class="span-9">
-  Source: <%= @src_feed.entries.size %> entries.
+  Original (<%= @src_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), filter_params[:url] %>
   <%= render :partial => "entries", :locals => {:feed => @src_feed} %>
 </div>
 <% end %>
 
 <% if @result_feed %>
 <div class="span-9 last">
-  Results: <%= @result_feed.entries.size %> entries. <%= link_to image_tag("feedicons/28x28.png"), feed_path(filter_params) %>
+  Preview (<%= @result_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
   <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
 </div>
 <% end %>
