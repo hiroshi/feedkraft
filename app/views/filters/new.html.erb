@@ -67,8 +67,9 @@
   <%= form.label "title" %>: <%= form.text_field "title", :size => 40 %>
   <button id="filter_submit" type="submit" name="filter[params_string]">save</button>
 <% end %>
-<%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
-
+<% unless @filter.new_record? %>
+  <%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
+<% end %>
 <hr/>
 
 <% if @src_feed %>
