@@ -64,12 +64,28 @@
 <hr/>
 
 <% form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
-  <%= form.label "title" %>: <%= form.text_field "title", :size => 40 %>
-  <button id="filter_submit" type="submit" name="filter[params_string]">save</button>
+<% if @filter.user %>
+  <div>
+    <%= form.label "filter creator" %> : <%= h @filter.user.name %>
+  </div>
 <% end %>
-<% unless @filter.new_record? %>
+  <%= form.label "title" %> : <%= form.text_field "title", :size => 40 %>
+<% if current_user %>
+<% if @filter.new_record? %>
+  <button id="filter_submit" type="submit" name="filter[params_string]">create</button>
+<% elsif @filter.user == current_user %>
+  <button id="filter_submit" type="submit" name="filter[params_string]">update</button>
+<% else %>
+  <button type="button">clone</button>
+<% end %>
+<% else %>
+  <%= link_to @filter.new_record? ? "need login to create filters" : "need login to update the filter", new_session_path %>
+<% end %>
+<% end %>
+<% if !@filter.new_record? && @filter.user == current_user %>
   <%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
 <% end %>
+
 <hr/>
 
 <% if @src_feed %>
