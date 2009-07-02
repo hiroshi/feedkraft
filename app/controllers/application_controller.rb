@@ -12,10 +12,10 @@ class ApplicationController < ActionController::Base
   class FeedSourceUnavailableError < Exception; end
 
   def filter_params
-    if @filter_params.blank?
+    unless @filter_params
       @filter_params = params.reject{|k,v|request.path_parameters[k]}
-      if @filter
-        @filter_params.update(@filter.params)
+      if @filter && @filter_params.blank?
+        @filter_params = @filter.params
       end
     end
     @filter_params

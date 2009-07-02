@@ -5,7 +5,7 @@ class Filter < ActiveRecord::Base
 
   def params
     if self.params_string
-      @params ||= CGI.parse(self.params_string).inject({}){|h,pair| h.update(pair.first.to_sym => pair.last.first) }
+      @params ||= CGI.parse(self.params_string).inject({}){|h,pair| h.update(pair.first => pair.last.join(",")) }.with_indifferent_access
     else
       {}
     end
