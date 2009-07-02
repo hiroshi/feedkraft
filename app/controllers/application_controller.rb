@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
 
   class ForbiddenError < Exception; end
   class NotFoundError < Exception; end
+  class BadRequestError < Exception; end
 
   class FeedSourceUnavailableError < Exception; end
 
@@ -47,9 +48,14 @@ class ApplicationController < ActionController::Base
     end
   rescue SocketError, Feed::InvalidContentError, OpenURI::HTTPError => e
     Rails.logger.debug e.message
-    flash[:error] = e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
-    redirect_to root_path(filter_params)
-    false
+    #flash[:error] = e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
+    #redirect_to root_path(filter_params)
+    raise BadRequestError, e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
+  end
+
+  rescue_from NotFoundError, BadRequestError, ForbiddenError do |e|
+    flash[:error] = e.message
+    redirect_to root_path
   end
 
   helper_method :filter_params, :current_user

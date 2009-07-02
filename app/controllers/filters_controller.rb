@@ -4,6 +4,7 @@ class FiltersController < ApplicationController
   before_filter :set_feeds, :only => [:new, :show, :feed]
 
   def new
+    raise BadRequestError, "Please enter a feed URL" if @src_feed.nil?
     @filter.title ||= @src_feed.title
   end
 
