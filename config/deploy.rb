@@ -6,7 +6,7 @@ set :deploy_via, :remote_cache
 # USAGE: Use this task like:
 #   cap feedkraft.yakitara.com deploy
 desc "set target feedkraft.yakitara.com"
-task "" do
+task "feedkraft.yakitara.com" do
   set :target, task_call_frames.first.task.name
   server "silent.yakitara.com", :app, :web, :db, :primary => true
   set :deploy_to, "/var/www/feedkraft"
