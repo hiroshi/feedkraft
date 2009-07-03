@@ -3,13 +3,13 @@
   <button>new</button>
 <% end %> 
 
-<h2>Latest updated filters</h2>
+<h2>Latest filters</h2>
 <ul>
 <% @filters.each do |filter| %>
   <li>
     <%= link_to h(filter.title), filter_path(filter) %>
     <%= link_to image_tag("feedicons/14x14.png"), feed_filter_path(filter) %>
-    (by <%= h filter.user.name %>)
+    by <%= h filter.user.name %> (<span title="<%= filter.updated_at %>"><%= time_ago_in_words filter.updated_at %></span>)
   </li>
 <% end %>
 </ul>
