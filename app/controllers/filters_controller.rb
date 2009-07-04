@@ -10,7 +10,7 @@ class FiltersController < ApplicationController
 
   def create
     if @filter.save
-      redirect_to filter_path(@filter)
+      redirect_to root_path
     else
       set_feeds
       render :action => "new"
@@ -24,7 +24,7 @@ class FiltersController < ApplicationController
   def update
     @filter.attributes = params[:filter]
     if @filter.save
-      redirect_to filter_path(@filter)
+      redirect_to root_path
     else
       set_feeds
       render :action => "new"
