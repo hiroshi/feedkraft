@@ -19,7 +19,7 @@
   <body>
     <div class="container span-18 no-showgrid" style="margin:0px 26px">
       <div>
-        <span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span>
+        <span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span> (prototype version)
         <div style="float:right">
         <% if current_user %>
           <%= current_user.name ? h(current_user.name) : link_to("please fill your name", edit_user_path(current_user)) %>
@@ -35,7 +35,13 @@
       <%= yield %>
 
       <hr/>
-      <div style="float:right"><a href="http://wiki.github.com/hiroshi/feedkraft" target="_blank">FeedKraft</a> &copy;2009 <a href="http://blog.yakitara.com/" target="_blank">Hiroshi Saito</a></div>
+      <div>
+        <div style="float:right">
+          <a href="http://wiki.github.com/hiroshi/feedkraft">help</a> |
+          <a href="http://github.com/hiroshi/feedkraft/issues">issues</a> |
+          <a href="http://wiki.github.com/hiroshi/feedkraft" target="_blank">FeedKraft</a> &copy;2009 <a href="http://blog.yakitara.com/" target="_blank">Hiroshi Saito</a>
+          </div>
+      </div>
     </div>
     <%= render :partial => "/layouts/analytics" %>
     <%= render :partial => "/layouts/uservoice" %>
