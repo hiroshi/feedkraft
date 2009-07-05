@@ -19,6 +19,14 @@ class Feed
     @doc.to_s
   end
 
+  def title
+    @doc.get_text(self.title_xpath).to_s.strip
+  end
+
+  def title=(text)
+    @doc.get_elements(self.title_xpath).first.text = text
+  end
+
   def entries
     unless @entries
       entry_class = self.class.to_s.sub(/Feed/,"Entry").constantize # TODO: another better awy?
@@ -127,8 +135,8 @@ module RSS1
       @doc = doc
     end
 
-    def title
-      @doc.get_text("/rdf:RDF/channel/title").to_s.strip
+    def title_xpath
+      "/rdf:RDF/channel/title"
     end
 
     def entries_xpath
@@ -183,8 +191,8 @@ module RSS2
       @doc = doc
     end
 
-    def title
-      @doc.get_text("/rss/channel/title").to_s.strip
+    def title_xpath
+      "/rss/channel/title"
     end
 
     def entries_xpath
@@ -238,8 +246,8 @@ module Atom
       @doc = doc
     end
 
-    def title
-      @doc.get_text("/feed/title").to_s.strip
+    def title_xpath
+      "/feed/title"
     end
 
     def entries_xpath

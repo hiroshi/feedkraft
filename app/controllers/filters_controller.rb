@@ -37,6 +37,7 @@ class FiltersController < ApplicationController
   end
 
   def feed
+    @result_feed.title = @filter.title
     send_data @result_feed.to_s, :type => "text/xml; charset=UTF-8"
   end
 
