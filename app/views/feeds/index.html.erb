@@ -14,7 +14,7 @@
 <% @filters.each do |filter| %>
   <li>
     <%= link_to h(filter.title), filter_path(filter) %>
-    <%= link_to image_tag("feedicons/14x14.png"), feed_filter_path(filter) %>
+    <%= link_to image_tag("feedicons/14x14.png"), polymorphic_path([current_user, filter], :action => "feed") %>
     by <%= h filter.user.name %> (<span title="<%= filter.updated_at %>"><%= time_ago_in_words filter.created_at %></span>)
   </li>
 <% end %>

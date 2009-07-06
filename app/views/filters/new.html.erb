@@ -1,6 +1,6 @@
 <% unless @filter.new_record? %>
 <% content_for :auto_discovery_links do %>
-  <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, feed_filter_url(@filter), :title => h(@filter.title) %>
+  <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, polymorphic_url([current_user, @filter], :action => "feed"), :title => h(@filter.title) %>
 <% end %>
 <% end %>
 
