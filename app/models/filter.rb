@@ -2,6 +2,7 @@ class Filter < ActiveRecord::Base
   # TODO: the class name Fileter conflicts in name space of ActionController. Change to an unique name
 
   belongs_to :user
+  has_many :subscriptions
 
   def params
     if self.params_string

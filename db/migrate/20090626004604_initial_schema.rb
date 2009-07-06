@@ -17,9 +17,17 @@ class InitialSchema < ActiveRecord::Migration
     end
     add_index "filters", "sha1", :unique => true
     add_index "filters", "user_id"
+
+    create_table "subscriptions" do |t|
+      t.integer "user_id", :null => false
+      t.integer "filter_id", :null => false
+      t.timestamps
+    end
+    add_index "subscriptions", ["user_id", "filter_id"], :unique => true
   end
 
   def self.down
+    drop_table "subscriptions"
     drop_table "filters"
     drop_table "users"
   end

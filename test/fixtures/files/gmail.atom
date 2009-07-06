@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed version="0.3" xmlns="http://purl.org/atom/ns#">
+  <title>Gmail - Inbox for feedkraft@gmail.com</title>
+  <tagline>New messages in your Gmail Inbox</tagline>
+  <fullcount>4</fullcount>
+  <link rel="alternate" href="http://mail.google.com/mail" type="text/html" />
+  <modified>2009-07-05T13:19:51Z</modified>
+  <entry>
+    <title>test</title>
+    <summary>http://freemyfeed.com/ で gmail のフィードがとれるかテスト</summary>
+    <link rel="alternate" href="http://mail.google.com/mail?account_id=feedkraft%40gmail.com&amp;message_id=12249fc19f4b24e1&amp;view=conv&amp;extsrc=atom" type="text/html" />
+    <modified>2009-07-05T08:16:13Z</modified>
+    <issued>2009-07-05T08:16:13Z</issued>
+    <id>tag:gmail.google.com,2004:1307345445794292961</id>
+    <author>
+      <name>hiroshi saito</name>
+      <email>hiroshi3110@gmail.com</email>
+    </author>
+  </entry>
+  <entry>
+    <title>携帯電話で Gmail にアクセス</title>
+    <summary>外出先でちょっとした空き時間でもケータイから Gmail を使ってメールを ...</summary>
+    <link rel="alternate" href="http://mail.google.com/mail?account_id=feedkraft%40gmail.com&amp;message_id=1223ebb3d2f7580a&amp;view=conv&amp;extsrc=atom" type="text/html" />
+    <modified>2009-07-03T03:49:34Z</modified>
+    <issued>2009-07-03T03:49:34Z</issued>
+    <id>tag:gmail.google.com,2004:1307147474438674442</id>
+    <author>
+      <name>Gmail チーム</name>
+      <email>mail-noreply@google.com</email>
+    </author>
+  </entry>
+  <entry>
+    <title>Gmail の使用を開始する</title>
+    <summary>Gmail ならメールがもっと便利に、もっと楽しくなります。 フォルダに ...</summary>
+    <link rel="alternate" href="http://mail.google.com/mail?account_id=feedkraft%40gmail.com&amp;message_id=1223ebb3c502f0e0&amp;view=conv&amp;extsrc=atom" type="text/html" />
+    <modified>2009-07-03T03:49:34Z</modified>
+    <issued>2009-07-03T03:49:34Z</issued>
+    <id>tag:gmail.google.com,2004:1307147474204553440</id>
+    <author>
+      <name>Gmail チーム</name>
+      <email>mail-noreply@google.com</email>
+    </author>
+  </entry>
+  <entry>
+    <title>連絡先と古いメールをインポート</title>
+    <summary>Yahoo!、Hotmail、AOL などのウェブメールや POP アカウントから連絡先や ...</summary>
+    <link rel="alternate" href="http://mail.google.com/mail?account_id=feedkraft%40gmail.com&amp;message_id=1223ebb3c3657ef8&amp;view=conv&amp;extsrc=atom" type="text/html" />
+    <modified>2009-07-03T03:49:34Z</modified>
+    <issued>2009-07-03T03:49:34Z</issued>
+    <id>tag:gmail.google.com,2004:1307147474177457912</id>
+    <author>
+      <name>Gmail チーム</name>
+      <email>mail-noreply@google.com</email>
+    </author>
+  </entry>
+</feed>

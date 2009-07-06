@@ -52,6 +52,14 @@ class FiltersController < ApplicationController
   end
 
   def feed
+    if params[:user_id]
+      if @subscription = @filter.subscriptions.find_by_user_id(params[:user_id])
+        @subscription.update_attribute(:updated_at, Time.now.utc)
+      else
+        @subscription = @filter.subscriptions.create!(:user_id => params[:user_id])
+      end
+    end
+
     @result_feed.title = @filter.title
     send_data @result_feed.to_s, :type => "text/xml; charset=UTF-8"
   end
