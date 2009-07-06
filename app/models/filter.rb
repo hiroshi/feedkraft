@@ -18,8 +18,17 @@ class Filter < ActiveRecord::Base
     self.sha1 = Digest::SHA1.hexdigest(self.params_string)
   end
 
-  # 
-  named_scope :latests, lambda{|options|
+  # == named scopes
+  named_scope :latest, lambda{|options|
     {:include => :user, :order => "created_at DESC"}.merge(options || {})
+  }
+
+  named_scope :popular, lambda{|options|
+    {
+      :select => "filters.*, COUNT(subscriptions.id) subscription_count",
+      :joins => :subscriptions,
+      :include => :user,
+      :conditions => ["subscriptions.updated_at > ?", 1.day.ago],
+    }
   }
 end
