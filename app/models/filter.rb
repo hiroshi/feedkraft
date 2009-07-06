@@ -16,4 +16,9 @@ class Filter < ActiveRecord::Base
     require "digest/sha1"
     self.sha1 = Digest::SHA1.hexdigest(self.params_string)
   end
+
+  # 
+  named_scope :latests, lambda{|options|
+    {:include => :user, :order => "created_at DESC"}.merge(options || {})
+  }
 end

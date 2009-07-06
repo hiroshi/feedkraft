@@ -2,7 +2,7 @@ class FeedsController < ApplicationController
   before_filter :set_feeds, :only => [:feed]
 
   def index
-    @filters = ::Filter.find(:all, :limit => 10, :order => "updated_at DESC")
+    @filters = ::Filter.latests(:limit => 10)
   end
 
   def feed

@@ -1,3 +1,9 @@
+<% unless @filter.new_record? %>
+<% content_for :auto_discovery_links do %>
+  <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, feed_filter_url(@filter), :title => h(@filter.title) %>
+<% end %>
+<% end %>
+
 <% form_tag "", :method => "get", :id => "filter_form" do %>
   <div>
     <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>

@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
   <!--[if IE]><link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
     <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen, projection" />
-  <% if @filter && !@filter.new_record? %>
-    <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, feed_filter_url(@filter), :title => h(@filter.title) %>
-  <% end %>
+    <%= yield :auto_discovery_links %>
     <%= javascript_include_tag :defaults %>
   </head>
   <body>

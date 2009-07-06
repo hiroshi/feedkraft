@@ -1,15 +1,21 @@
+<% content_for :auto_discovery_links do %>
+  <%= auto_discovery_link_tag :atom, latest_filters_url, :title => "Latest filters" %>
+<% end %>
+
 <% form_tag new_filter_path, :method => "get" do %>
   <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", params[:url], :size => 80 %>
   <button>new</button>
 <% end %> 
 
-<h2>Latest filters</h2>
+<hr/>
+
+<h2>Latest filters <%= link_to image_tag("feedicons/28x28.png"), latest_filters_path %></h2>
 <ul>
 <% @filters.each do |filter| %>
   <li>
     <%= link_to h(filter.title), filter_path(filter) %>
     <%= link_to image_tag("feedicons/14x14.png"), feed_filter_path(filter) %>
-    by <%= h filter.user.name %> (<span title="<%= filter.updated_at %>"><%= time_ago_in_words filter.updated_at %></span>)
+    by <%= h filter.user.name %> (<span title="<%= filter.updated_at %>"><%= time_ago_in_words filter.created_at %></span>)
   </li>
 <% end %>
 </ul>
