@@ -10,7 +10,7 @@ class InitialSchema < ActiveRecord::Migration
 
     create_table "filters" do |t|
       t.string "params_string", :limit => 2048, :null => false
-      t.string "sha1", :limit => 30, :null => false
+      t.string "sha1", :limit => 40, :null => false
       t.string "title"
       t.integer "user_id", :null => false
       t.timestamps

@@ -25,10 +25,13 @@ class Filter < ActiveRecord::Base
 
   named_scope :popular, lambda{|options|
     {
-      :select => "filters.*, COUNT(subscriptions.id) subscription_count",
+      :select => "filters.*, COUNT(subscriptions.id) AS subscription_count",
       :joins => :subscriptions,
       :include => :user,
       :conditions => ["subscriptions.updated_at > ?", 1.day.ago],
+      # NOTE: PostgreSQL requires all column name specified in select with COUNT a columns of joined table
+      # TODO: hide this implementation dependent code...
+      :group => column_names.map{|n| "filters.#{n}"}.join(", "),
     }
   }
 end
