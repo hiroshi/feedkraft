@@ -1,6 +1,6 @@
 <div style="border-top:1px solid black;">
 <% feed.entries.each do |entry| %>
-  <div style="border-bottom:1px dotted gray;margin:1em 0px;">
+  <div style="border-bottom:1px dotted gray;margin:0.5em 0px;padding-bottom:0.5em;">
     <div><%= link_to h(entry.title), entry.link, :target => "_blank", :style => "font-weight:bold;" %></div>
 <!--
     <div title='<%= entry.identifier %>' style="overflow:hidden;">
