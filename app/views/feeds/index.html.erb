@@ -3,9 +3,9 @@
 <% end %>
 
 <% form_tag new_filter_path, :method => "get" do %>
-  <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", params[:url], :size => 80 %>
+  <%= label_tag "url", "Feed URL" %> : <%= text_field_tag "url", params[:url], :size => 80, :placeholder => "Enter any RSS or Atom URL to be filtered" %><!-- TOOD: placeholder is effective only some browser like Safari. Mootool.js has a portable implementation, but may confilict with prototype.js... -->
   <button>new</button>
-<% end %> 
+<% end %>
 
 <hr/>
 
