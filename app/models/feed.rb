@@ -89,10 +89,10 @@ class Feed
       xpath = "#{entries_xpath}[not(#{condition})]"
       result = nil
       ms = Benchmark.ms { @doc.elements.delete_all xpath }
-      Rails.logger.debug "  #{self.class.name}:filter! (%.1fms) #{xpath}" % [ms]
+      Rails.logger.debug "#{self.class.name}:filter! (%.1fms) #{xpath}" % [ms]
     end
   rescue
-    Rails.logger.debug "  #{self.class.name}:filter! #{params.inspect} => #{xpath}"
+    Rails.logger.debug "#{self.class.name}:filter! #{params.inspect} => #{xpath}"
     raise
   end
 end
