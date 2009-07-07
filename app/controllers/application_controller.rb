@@ -37,11 +37,28 @@ class ApplicationController < ActionController::Base
     unless filter_params[:url].blank?
       # sample: src = http://feeds.journal.mycom.co.jp/haishin/rss/pc?format=xml
       uri = URI.parse(filter_params[:url])
-      if Rails.env == "development" && uri.relative?
-        src = File.read(File.join(Rails.root,uri.to_s))
+      # cache feed
+      cache_key = Digest::SHA1.hexdigest(uri.to_s)
+      cache_path = Rails.root.join("tmp", "cache", "feeds", cache_key)
+      if cache_path.exist? && (cache_path.mtime + FeedKraft[:feed_cache_expires]) > Time.now
+        src = cache_path.read
+        Rails.logger.info "Feed cache read: #{uri.to_s}"
       else
-        src = open(uri).read
+        src = nil
+        ms = Benchmark.ms do
+          if Rails.env == "development" && uri.relative?
+            src = File.read(File.join(Rails.root, uri.to_s))
+          else
+            src = open(uri).read
+          end
+        end
+        cache_path.dirname.mkpath
+        cache_path.open("w") do |file|
+          file.print src
+        end
+        Rails.logger.info "Feed cache write (%.1fms): #{uri.to_s}" % [ms]
       end
+
       @src_feed = Feed.parse(src)
       @result_feed = Feed.parse(src)
       @result_feed.filter!(filter_params.except(:url))
