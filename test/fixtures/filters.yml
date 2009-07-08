@@ -1,7 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+blog:
+  title: a blog
+  user: taro
+  params_string: url%3Dtest%2Ffixtures%2Ffiles%2Fyakitara.atom
+  sha1: b8a84c5aa1e7680f91eecd3c932c256583fe05a8

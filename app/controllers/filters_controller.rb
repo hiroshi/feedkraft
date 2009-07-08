@@ -1,6 +1,8 @@
 class FiltersController < ApplicationController
+  before_filter :login_required, :only => [:create, :update, :destroy]
   before_filter :new_filter, :only => [:new, :create]
   before_filter :set_filter, :only => [:show, :update, :destroy, :feed]
+  before_filter :author_required, :only => [:update, :destroy]
   before_filter :set_feeds, :only => [:new, :show, :feed]
 
   def latest
@@ -76,5 +78,9 @@ class FiltersController < ApplicationController
 
   def set_filter
     @filter = ::Filter.find_by_id(params[:id]) or raise NotFoundError
+  end
+
+  def author_required
+    raise ForbiddenError, "author required" unless current_user == @filter.user
   end
 end

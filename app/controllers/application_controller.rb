@@ -6,9 +6,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   filter_parameter_logging :password # Scrub sensitive parameters from your log
 
-  class ForbiddenError < Exception; end
-  class NotFoundError < Exception; end
-  class BadRequestError < Exception; end
+  class HttpError < Exception; end
+  class BadRequestError < HttpError; def status; 400; end; end
+  class ForbiddenError < HttpError; def status; 403; end; end
+  class NotFoundError < HttpError; def status; 404; end; end
 
   class FeedSourceUnavailableError < Exception; end
 
@@ -22,6 +23,7 @@ class ApplicationController < ActionController::Base
     @filter_params
   end
 
+  # == login user
   def current_user
     if session[:user_id]
       @current_user ||= User.find_by_id(session[:user_id])
@@ -30,6 +32,9 @@ class ApplicationController < ActionController::Base
   def set_current_user(user)
     reset_session
     session[:user_id] = user && user.id
+  end
+  def login_required
+    raise ForbiddenError, "login required" unless current_user
   end
 
   def set_feeds
@@ -46,7 +51,7 @@ class ApplicationController < ActionController::Base
       else
         src = nil
         ms = Benchmark.ms do
-          if Rails.env == "development" && uri.relative?
+          if Rails.env != "production" && uri.relative?
             src = File.read(File.join(Rails.root, uri.to_s))
           else
             src = open(uri).read
@@ -72,7 +77,7 @@ class ApplicationController < ActionController::Base
 
   rescue_from NotFoundError, BadRequestError, ForbiddenError do |e|
     flash[:error] = e.message
-    redirect_to root_path
+    render :inline => "", :layout => true, :status => e.status
   end
 
   helper_method :filter_params, :current_user

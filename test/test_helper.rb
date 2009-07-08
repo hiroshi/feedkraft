@@ -38,4 +38,12 @@ class ActiveSupport::TestCase
   def fixture_file_read(path)
     File.read(File.join(Rails.root,"test","fixtures",path))
   end
+
+  def login_as(user)
+    @controller.set_current_user users(user)
+  end
+
+  def pending(message=nil, &block)
+    puts "PENDING: #{caller[-1]}: #{message}"
+  end
 end

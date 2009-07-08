@@ -12,7 +12,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: test_development
+  database: feedkraft_test
   username: postgres
   password:
   pool: 5

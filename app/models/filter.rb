@@ -6,7 +6,7 @@ class Filter < ActiveRecord::Base
 
   def params
     if self.params_string
-      @params ||= CGI.parse(self.params_string).inject({}){|h,pair| h.update(pair.first => pair.last.join(",")) }.with_indifferent_access
+      @params ||= CGI.parse(CGI.unescape(self.params_string)).inject({}){|h,pair| h.update(pair.first => pair.last.join(",")) }.with_indifferent_access
     else
       {}
     end
@@ -19,11 +19,13 @@ class Filter < ActiveRecord::Base
   end
 
   # == named scopes
-  named_scope :latest, lambda{|options|
+  named_scope :latest, lambda{|*args|
+    options = args.extract_options!
     {:include => :user, :order => "created_at DESC"}.merge(options || {})
   }
 
-  named_scope :popular, lambda{|options|
+  named_scope :popular, lambda {|*args|
+    options = args.extract_options!
     {
       :select => "filters.*, COUNT(subscriptions.id) AS subscription_count",
       :joins => :subscriptions,
@@ -32,6 +34,6 @@ class Filter < ActiveRecord::Base
       # NOTE: PostgreSQL requires all column name specified in select with COUNT a columns of joined table
       # TODO: hide this implementation dependent code...
       :group => column_names.map{|n| "filters.#{n}"}.join(", "),
-    }
+    }.merge(options || {})
   }
 end
