@@ -9,9 +9,13 @@
     <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>
   </div>
   <div id="filter_fields">
+  <% if (conditions = filter_params.except(:url)).blank? %>
+      <%= render :partial => "filter_field", :locals => {:index => 0} %>
+  <% else %>
     <% filter_params.except(:url).each_with_index do |pair, index| %>
       <%= render :partial => "filter_field", :object => {pair.first => pair.last}, :locals => {:index => index} %>
     <% end %>
+  <% end %>
   </div>
   <div>
     <button type="button" onclick="add_filter_field();">add condition</button>
