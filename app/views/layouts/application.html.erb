@@ -17,7 +17,7 @@
   <body>
     <div class="container span-18 no-showgrid" style="margin:0px 26px">
       <div>
-        <span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span> (prototype version)
+        <h1><span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span> (prototype version)</h1>
         <div style="float:right">
         <% if current_user %>
           <%= current_user.name ? h(current_user.name) : link_to("please fill your name", edit_user_path(current_user)) %>

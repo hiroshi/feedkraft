@@ -102,6 +102,7 @@
 
 <hr/>
 
+<h2>Preview</h2>
 <% if @src_feed %>
 <div class="span-9">
   Original (<%= @src_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), filter_params[:url] %>
@@ -111,7 +112,7 @@
 
 <% if @result_feed %>
 <div class="span-9 last">
-  Preview (<%= @result_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
+  Filtered (<%= @result_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
   <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
 </div>
 <% end %>
