@@ -67,26 +67,29 @@ class Feed
   private :update_filter_field
 
   def filter!(params={})
+    params = params.clone
     @entries = nil
 
+    allow_all = params.delete("!all") == "deny" ? false : true
+
     condition = params.map do |key, val|
-      #filter_case(key.to_sym, val)
-      # "contains(@rdf:about,'#{val}')" # an attribute of entries
-      # "category[@term='#{val}']" # an attribute of child elements
-      # "category[normalize-space(text())='#{val}']" # text of child elements
       case key
-      when /^@/ # attribute of entry
-        "contains(#{key},'#{val}')" # an attribute of entries
-      when /^[^@]+@/ # attribute of a child of entry
+      when /^@/ # an attribute of entries
+        "contains(#{key},'#{val}')"
+      when /^[^@]+@/ # an attribute of a child element of entries
         tag, attr = key.split("@")
-        "#{tag}[@#{attr}='#{val}']" # an attribute of child elements
+        "#{tag}[@#{attr}='#{val}']"
       else # child of entry (e.g. <entry>...<category>Rails</category>...</entry>)
         "#{key}[contains(normalize-space(text()),'#{val}')]" # text of child elements
       end
     end.compact.join(" and ")
 
     unless condition.blank?
-      xpath = "#{entries_xpath}[not(#{condition})]"
+      if allow_all
+        xpath = "#{entries_xpath}[not(#{condition})]"
+      else # deny all
+        xpath = "#{entries_xpath}[#{condition}]"
+      end
       result = nil
       ms = Benchmark.ms { @doc.elements.delete_all xpath }
       Rails.logger.debug "#{self.class.name}:filter! (%.1fms) #{xpath}" % [ms]

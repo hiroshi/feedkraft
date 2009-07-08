@@ -8,11 +8,15 @@
   <div>
     <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>
   </div>
+  <div>
+    <%= select_tag "!all", options_for_select([["allow all", "allow"],["deny all", "deny"]], params["!all"]) %>
+    <!-- <span style="font-weight:bold">if all</span> -->
+  </div>
   <div id="filter_fields">
-  <% if (conditions = filter_params.except(:url)).blank? %>
+  <% if (conditions = filter_params.except(:url, "!all")).blank? %>
       <%= render :partial => "filter_field", :locals => {:index => 0} %>
   <% else %>
-    <% filter_params.except(:url).each_with_index do |pair, index| %>
+    <% conditions.each_with_index do |pair, index| %>
       <%= render :partial => "filter_field", :object => {pair.first => pair.last}, :locals => {:index => index} %>
     <% end %>
   <% end %>
