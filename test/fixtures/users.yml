@@ -7,3 +7,7 @@ taro:
 jiro:
   name: jiro
   identity: http://jiro.example.com
+
+noname:
+  name:
+  identity: http://noname.example.com
