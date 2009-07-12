@@ -3,7 +3,7 @@ class InitialSchema < ActiveRecord::Migration
     create_table "users" do |t|
       t.string "identity", :limit => 2048, :null => false
       t.string "name"
-      t.timestamp
+      t.timestamps
     end
     add_index "users", "identity", :unique => true
     add_index "users", "name", :unique => true
