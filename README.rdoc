@@ -1,4 +1,4 @@
 = FeedKraft
 will be a feed generator, but is a feed filter yet.
 
-It is also available as a prototype service at http://feedkraft.yakitara.com/
+It is also available as a prototype service at http://feedkraft.com/
