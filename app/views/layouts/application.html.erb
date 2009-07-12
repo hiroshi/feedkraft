@@ -2,8 +2,8 @@
 <html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
     <meta content='text/html; charset=utf-8' http-equiv='Content-type' />
-  <% if @filter && !@filter.new_record? %>
-    <title><%= @filter.title %> - FeedKraft (prototype version)</title>
+  <% if has_content_for? :title %>
+    <title><%= yield :title %> - FeedKraft (prototype version)</title>
   <% else %>
     <title>FeedKraft (prototype version)</title>
   <% end %>

@@ -1,3 +1,5 @@
+<% content_for :title, @filter.new_record? ? @src_feed.title : @filter.title  %>
+
 <% unless @filter.new_record? %>
 <% content_for :auto_discovery_links do %>
   <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, polymorphic_url([current_user, @filter], :action => "feed"), :title => h(@filter.title) %>
