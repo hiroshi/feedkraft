@@ -73,14 +73,19 @@ class Feed
     allow_all = params.delete("!all") == "deny" ? false : true
 
     condition = params.map do |key, val|
+      val.gsub!(/,(?=[^\s])/,", ") # ensure a space after comma to confirm YAML syntax
+      vals = YAML.load("[#{val}]")
+
       case key
       when /^@/ # an attribute of entries
-        "contains(#{key},'#{val}')"
+        vals.map{|val| "contains(#{key},'#{val}')" }.join(" or ")
       when /^[^@]+@/ # an attribute of a child element of entries
         tag, attr = key.split("@")
-        "#{tag}[contains(@#{attr},'#{val}')]"
+        exp = vals.map{|val| "contains(@#{attr},'#{val}')" }.join(" or ")
+        "#{tag}[#{exp}]"
       else # child of entry (e.g. <entry>...<category>Rails</category>...</entry>)
-        "#{key}[contains(normalize-space(text()),'#{val}')]" # text of child elements
+        exp = vals.map{|val| "contains(normalize-space(text()),'#{val}')" }.join(" or ")
+        "#{key}[#{exp}]"
       end
     end.compact.join(" and ")
 

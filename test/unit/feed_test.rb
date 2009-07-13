@@ -1,24 +1,22 @@
 require 'test_helper'
 
 class FeedTest < ActiveSupport::TestCase
-  test "rss1 filter" do
-    feed = Feed.parse(fixture_file_read("files/mycom.rss1"))
-    assert_equal 50, feed.entries.size
-    feed.filter!("@rdf:about" => "column")
-    assert_equal 3, feed.entries.size
-  end
-
-  test "rss2 filter" do
-    feed = Feed.parse(fixture_file_read("files/yakitara.rss2"))
-    assert_equal 25, feed.entries.size
-    feed.filter!(:category => "Rails")
-    assert_equal 9, feed.entries.size
-  end
-
-  test "atom filter" do
-    feed = Feed.parse(fixture_file_read("files/yakitara.atom"))
-    assert_equal 25, feed.entries.size
-    feed.filter!("category@term" => "Rails")
-    assert_equal 9, feed.entries.size
+  [
+    ["files/mycom.rss1", 50, {"@rdf:about" => "column"}, 3],
+    ["files/mycom.rss1", 50, {"@rdf:about" => "column", "!all" => "deny"}, 50 - 3],
+    ["files/mycom.rss1", 50, {"@rdf:about" => "column, articles"}, 10],
+    ["files/yakitara.rss2", 25, {"category" => "Rails"}, 9],
+    ["files/yakitara.rss2", 25, {"category" => "Rails", "!all" => "deny"}, 25 - 9],
+    ["files/yakitara.rss2", 25, {"category" => "Rails, Ruby"}, 11],
+    ["files/yakitara.atom", 25, {"category@term" => "Rails"}, 9],
+    ["files/yakitara.atom", 25, {"category@term" => "Rails", "!all" => "deny"}, 25 - 9],
+    ["files/yakitara.atom", 25, {"category@term" => "Rails, Ruby"}, 11],
+  ].each do |path, before_count, filter_params, after_count|
+    test "#{path} with #{filter_params}" do
+      feed = Feed.parse(fixture_file_read(path))
+      assert_equal before_count, feed.entries.size
+      feed.filter!(filter_params)
+      assert_equal after_count, feed.entries.size
+    end
   end
 end
