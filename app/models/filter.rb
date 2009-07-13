@@ -21,7 +21,7 @@ class Filter < ActiveRecord::Base
   # == named scopes
   named_scope :latest, lambda{|*args|
     options = args.extract_options!
-    {:include => :user, :order => "created_at DESC"}.merge(options || {})
+    {:include => :user, :order => "filters.created_at DESC"}.merge(options || {})
   }
 
   named_scope :popular, lambda {|*args|

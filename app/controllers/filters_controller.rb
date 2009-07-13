@@ -9,11 +9,11 @@ class FiltersController < ApplicationController
     # NOTE: Results must includes items at least a day before.
     # NOTE: Because of feed readers possibly retrieve once a day (or maybe more large span, but omit them).
     # NOTE: However, on the top page, they sould be limited to fixed number without date time condition.
-    count = ::Filter.latest(:conditions => ["created_at > ?", 1.day.ago]).count
+    count = ::Filter.latest(:conditions => ["filters.created_at > ?", 1.day.ago]).count
     if count < 100 # less than 100, grab 100s no matter how they are old
       @filters = ::Filter.latest(:limit => 100)
     else # enough amount per day
-      @filters = ::Filter.latest(:conditions => ["created_at > ?", 1.day.ago]).all
+      @filters = ::Filter.latest(:conditions => ["filters.created_at > ?", 1.day.ago]).all
     end
     respond_to do |format|
       format.atom
