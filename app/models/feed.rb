@@ -78,7 +78,7 @@ class Feed
         "contains(#{key},'#{val}')"
       when /^[^@]+@/ # an attribute of a child element of entries
         tag, attr = key.split("@")
-        "#{tag}[@#{attr}='#{val}']"
+        "#{tag}[contains(@#{attr},'#{val}')]"
       else # child of entry (e.g. <entry>...<category>Rails</category>...</entry>)
         "#{key}[contains(normalize-space(text()),'#{val}')]" # text of child elements
       end
