@@ -34,6 +34,7 @@ class Filter < ActiveRecord::Base
       # NOTE: PostgreSQL requires all column name specified in select with COUNT a columns of joined table
       # TODO: hide this implementation dependent code...
       :group => column_names.map{|n| "filters.#{n}"}.join(", "),
+      :order => "subscription_count DESC"
     }.merge(options || {})
   }
 end
