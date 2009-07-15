@@ -21,9 +21,12 @@ class InitialSchema < ActiveRecord::Migration
     create_table "subscriptions" do |t|
       t.integer "user_id", :null => false
       t.integer "filter_id", :null => false
+      t.string "key", :limit => 8, :null => false
+      t.datetime "accessed_at"
       t.timestamps
     end
     add_index "subscriptions", ["user_id", "filter_id"], :unique => true
+    add_index "subscriptions", "key", :unique => true
   end
 
   def self.down

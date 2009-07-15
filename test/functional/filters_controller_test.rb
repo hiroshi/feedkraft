@@ -54,15 +54,15 @@ class FiltersControllerTest < ActionController::TestCase
     assert_response :forbidden
   end
 
-  test "feed" do
-    get :feed, :id => filters(:blog).id
-    assert_response :success
-  end
+#   test "feed" do
+#     get :feed, :id => filters(:blog).id
+#     assert_response :success
+#   end
 
-  test "feed with user_id" do
-    assert_difference "filters(:blog).subscriptions.count(:conditions => {:user_id => users(:taro)})" do
-      get :feed, :id => filters(:blog).id, :user_id => users(:taro).id
-      assert_response :success
-    end
-  end
+#   test "feed with user_id" do
+#     assert_difference "filters(:blog).subscriptions.count(:conditions => {:user_id => users(:taro)})" do
+#       get :feed, :id => filters(:blog).id, :user_id => users(:taro).id
+#       assert_response :success
+#     end
+#   end
 end
