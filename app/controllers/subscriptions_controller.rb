@@ -9,6 +9,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def feed
+    # @result_feed.title += " for #{current_user.name}"
     @subscription.update_attribute(:accessed_at, Time.now.utc)
     send_data @result_feed.to_s, :type => "text/xml; charset=UTF-8"
   end
