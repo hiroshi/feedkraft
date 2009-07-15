@@ -3,7 +3,7 @@
 <% unless @filter.new_record? %>
 <% content_for :auto_discovery_links do %>
   <% if current_user && key = @filter.subscription_key %>
-    <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, subscription_path(key), :title => h(@filter.title) %>
+    <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, subscription_url(key), :title => h(@filter.title) %>
   <% end %>
 <% end %>
 <% end %>
