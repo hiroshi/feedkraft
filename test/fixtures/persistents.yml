@@ -1,0 +1,5 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+secret:
+  key: secret
+  value: dc0961136f5690061859fae11c7daa570a4f971f
