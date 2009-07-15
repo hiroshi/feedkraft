@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   def new
-    session[:return_to] = request.referer
   end
 
   def inquire
@@ -27,7 +26,7 @@ class SessionsController < ApplicationController
 #       flash[:success] += sreg_resp.data.inspect
       # TODO: User.find or redirect ot users#new
       user = User.find_or_create_by_identity(oidresp.identity_url)
-      redirect_to session[:return_to] || root_path
+      redirect_to session.delete(:return_to) || root_path
       set_current_user(user)
     when OpenID::Consumer::FAILURE
       if oidresp.display_identifier

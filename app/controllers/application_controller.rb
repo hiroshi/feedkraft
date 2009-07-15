@@ -34,7 +34,16 @@ class ApplicationController < ActionController::Base
     session[:user_id] = user && user.id
   end
   def login_required
-    raise ForbiddenError, "login required" unless current_user
+    #raise ForbiddenError, "login required" unless current_user
+    unless current_user
+      flash[:error] = "Login required"
+      if request.get?
+        session[:return_to] = request.uri
+      else
+        session[:return_to] = request.referer
+      end
+      redirect_to new_session_path
+    end
   end
 
   def set_feeds

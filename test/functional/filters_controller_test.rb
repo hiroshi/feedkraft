@@ -20,7 +20,7 @@ class FiltersControllerTest < ActionController::TestCase
 
   test "create without login" do
     post :create, :filter => {:title => "test create", :params_string => CGI.escape("url=test/fixtures/files/mycom.rss1")}
-    assert_response :forbidden
+    assert_redirected_to new_session_path
   end
 
   test "show" do
