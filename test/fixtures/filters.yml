@@ -5,3 +5,9 @@ blog:
   user: taro
   params_string: url%3Dtest%2Ffixtures%2Ffiles%2Fyakitara.atom
   sha1: b8a84c5aa1e7680f91eecd3c932c256583fe05a8
+
+news:
+  title: a news
+  user: jiro
+  params_string: url%3Dtest%2Ffixtures%2Ffiles%2Fmycom.rss1
+  sha1: b8a84c5aa1e7680f91eecd3c932c256583fe05a9

@@ -15,7 +15,7 @@
   <% @latest_filters.each do |filter| %>
     <li>
       <%= link_to h(filter.title), filter_path(filter) %>
-      <%= link_to image_tag("feedicons/14x14.png"), polymorphic_path([current_user, filter], :action => "feed") %>
+      <%= subscription_link filter %>
       by <%= user_name filter.user %> (<span title="<%= filter.updated_at %>"><%= time_ago_in_words filter.created_at %> ago</span>)
     </li>
   <% end %>
@@ -28,7 +28,7 @@
   <% @popular_filters.each do |filter| %>
     <li>
       <%= link_to h(filter.title), filter_path(filter) %>
-      <%= link_to image_tag("feedicons/14x14.png"), polymorphic_path([current_user, filter], :action => "feed") %>
+      <%= subscription_link filter %>
       by <%= user_name filter.user %> (<%= filter.subscription_count %> subscriptions)
     </li>
   <% end %>

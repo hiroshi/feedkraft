@@ -1,9 +1,9 @@
 class FiltersController < ApplicationController
   before_filter :login_required, :only => [:create, :update, :destroy]
   before_filter :new_filter, :only => [:new, :create]
-  before_filter :set_filter, :only => [:show, :update, :destroy, :feed]
+  before_filter :set_filter, :only => [:show, :update, :destroy] #, :feed]
   before_filter :author_required, :only => [:update, :destroy]
-  before_filter :set_feeds, :only => [:new, :show, :feed]
+  before_filter :set_feeds, :only => [:new, :show] #, :feed]
 
   def latest
     # NOTE: Results must includes items at least a day before.
@@ -53,18 +53,10 @@ class FiltersController < ApplicationController
     redirect_to root_path
   end
 
-  def feed
-    if params[:user_id]
-      if @subscription = @filter.subscriptions.find_by_user_id(params[:user_id])
-        @subscription.update_attribute(:updated_at, Time.now.utc)
-      else
-        @subscription = @filter.subscriptions.create!(:user_id => params[:user_id])
-      end
-    end
-
-    @result_feed.title = @filter.title
-    send_data @result_feed.to_s, :type => "text/xml; charset=UTF-8"
-  end
+#   def feed
+#     @result_feed.title = @filter.title
+#     send_data @result_feed.to_s, :type => "text/xml; charset=UTF-8"
+#   end
 
   private
 
@@ -77,7 +69,7 @@ class FiltersController < ApplicationController
   end
 
   def set_filter
-    @filter = ::Filter.find_by_id(params[:id]) or raise NotFoundError
+    @filter = ::Filter.with_subscription_key_for(current_user).find_by_id(params[:id]) or raise NotFoundError
   end
 
   def author_required

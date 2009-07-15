@@ -2,7 +2,9 @@
 
 <% unless @filter.new_record? %>
 <% content_for :auto_discovery_links do %>
-  <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, polymorphic_url([current_user, @filter], :action => "feed"), :title => h(@filter.title) %>
+  <% if current_user && key = @filter.subscription_key %>
+    <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, subscription_path(key), :title => h(@filter.title) %>
+  <% end %>
 <% end %>
 <% end %>
 
@@ -78,6 +80,8 @@
 <% end %> 
 
 <hr/>
+<div>
+  <div style="float:right"><%= subscription_link @filter %></div>
 
 <% form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
 <% if @filter.user %>
@@ -102,6 +106,7 @@
   <%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
 <% end %>
 
+</div>
 <hr/>
 
 <h2>Preview</h2>
@@ -114,7 +119,7 @@
 
 <% if @result_feed %>
 <div class="span-9 last">
-  Filtered (<%= @result_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
+  Filtered (<%= @result_feed.entries.size %> entries) <%#= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
   <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
 </div>
 <% end %>
