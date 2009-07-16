@@ -97,7 +97,7 @@
 <% elsif @filter.user == current_user %>
   <button id="filter_submit" type="submit" name="filter[params_string]">update</button>
 <% else %>
-  <button type="button">clone</button>
+<!--  <button type="button">clone</button> -->
 <% end %>
 <% else %>
   <%= link_to @filter.new_record? ? "need login to create filters" : "need login to update the filter", new_session_path %>
