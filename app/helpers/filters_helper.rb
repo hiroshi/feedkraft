@@ -16,6 +16,7 @@ module FiltersHelper
         [key.split("/").map{|tag|"<#{tag}>"}.join, key]
       end
     end
+    (selected ? "" : options_for_select([""])) +
     grouped_options_for_select({"<#{entry_tag}>" => options}, selected)
   end
 end
