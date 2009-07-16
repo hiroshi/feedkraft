@@ -78,7 +78,8 @@ class Feed
 
       case key
       when /^@/ # an attribute of entries
-        vals.map{|val| "contains(#{key},'#{val}')" }.join(" or ")
+        exp = vals.map{|val| "contains(#{key},'#{val}')" }.join(" or ")
+        "(#{exp})"
       when /^[^@]+@/ # an attribute of a child element of entries
         tag, attr = key.split("@")
         exp = vals.map{|val| "contains(@#{attr},'#{val}')" }.join(" or ")
