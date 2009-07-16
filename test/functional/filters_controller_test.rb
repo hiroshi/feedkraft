@@ -7,6 +7,12 @@ class FiltersControllerTest < ActionController::TestCase
   end
 
   test "new" do
+    login_as :taro
+    get :new, :url => "test/fixtures/files/mycom.rss1"
+    assert_response :success
+  end
+
+  test "new without login" do
     get :new, :url => "test/fixtures/files/mycom.rss1"
     assert_response :success
   end
