@@ -1,5 +1,12 @@
 class InitialSchema < ActiveRecord::Migration
   def self.up
+    create_table "persistents", :id => false do |t|
+      t.string "key"
+      t.string "value"
+    end
+    add_index "persistents", "key", :unique => true
+    execute("INSERT INTO persistents (key, value) VALUES ('secret', '#{Digest::SHA1.hexdigest(Time.now.to_s)}')")
+
     create_table "users" do |t|
       t.string "identity", :limit => 2048, :null => false
       t.string "name"
@@ -33,5 +40,6 @@ class InitialSchema < ActiveRecord::Migration
     drop_table "subscriptions"
     drop_table "filters"
     drop_table "users"
+    drop_table "persistents"
   end
 end

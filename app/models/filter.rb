@@ -14,7 +14,6 @@ class Filter < ActiveRecord::Base
 
   before_save :set_sha1
   def set_sha1
-    require "digest/sha1"
     self.sha1 = Digest::SHA1.hexdigest(self.params_string)
   end
 
