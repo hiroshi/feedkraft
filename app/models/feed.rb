@@ -1,5 +1,40 @@
 class Feed
-  class InvalidContentError < Exception; end
+  class FeedError < RuntimeError; end
+  class InvalidURLError < FeedError; end
+  class InvalidContentError < FeedError; end
+
+  def self.open(url_or_path)
+    uri = URI.parse(url_or_path)
+    # cache feed
+    cache_key = Digest::SHA1.hexdigest(uri.to_s)
+    cache_path = Rails.root.join("tmp", "cache", "feeds", cache_key)
+    if cache_path.exist? && (cache_path.mtime + FeedKraft[:feed_cache_expires]) > Time.now
+      # on cache
+      src = cache_path.read
+      Rails.logger.info "Feed cache read: #{uri.to_s}"
+      Feed.parse(src)
+    else
+      # off cache
+      src = nil
+      ms = Benchmark.ms do
+        if Rails.env != "production" && uri.relative?
+          # local file (for development/test)
+          src = File.read(File.join(Rails.root, uri.to_s))
+        else
+          # URL
+          if uri.respond_to?(:open)
+            src = uri.open{|io| io.read }
+          else
+            raise InvalidURLError, "Invalid URL: #{uri.to_s}"
+          end
+        end
+      end
+      cache_path.dirname.mkpath
+      cache_path.open("w") {|file| file.print src }
+      Rails.logger.info "Feed cache write (%.1fms): #{uri.to_s}" % [ms]
+      Feed.parse(src)
+    end
+  end
 
   def self.parse(src)
     doc = REXML::Document.new(src)

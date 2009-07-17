@@ -49,47 +49,24 @@ class ApplicationController < ActionController::Base
   def set_feeds
     require "open-uri"
     unless filter_params[:url].blank?
-      # sample: src = http://feeds.journal.mycom.co.jp/haishin/rss/pc?format=xml
-      uri = URI.parse(filter_params[:url])
-      # cache feed
-      cache_key = Digest::SHA1.hexdigest(uri.to_s)
-      cache_path = Rails.root.join("tmp", "cache", "feeds", cache_key)
-      if cache_path.exist? && (cache_path.mtime + FeedKraft[:feed_cache_expires]) > Time.now
-        src = cache_path.read
-        Rails.logger.info "Feed cache read: #{uri.to_s}"
-      else
-        src = nil
-        ms = Benchmark.ms do
-          if Rails.env != "production" && uri.relative?
-            src = File.read(File.join(Rails.root, uri.to_s))
-          else
-            src = open(uri).read
-          end
-        end
-        cache_path.dirname.mkpath
-        cache_path.open("w") do |file|
-          file.print src
-        end
-        Rails.logger.info "Feed cache write (%.1fms): #{uri.to_s}" % [ms]
-      end
+      @src_feed = Feed.open(filter_params[:url])
+      @result_feed = Feed.open(filter_params[:url])
 
-      @src_feed = Feed.parse(src)
-      @result_feed = Feed.parse(src)
       @result_feed.filter!(filter_params.except(:url))
       if @filter
         @result_feed.title = @filter.title
       end
     end
-  rescue SocketError, Feed::InvalidContentError, OpenURI::HTTPError => e
+  rescue Errno::ENOENT, SocketError, OpenURI::HTTPError, Feed::FeedError => e
     Rails.logger.debug e.message
-    #flash[:error] = e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
-    #redirect_to root_path(filter_params)
     raise BadRequestError, e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
   end
 
   rescue_from NotFoundError, BadRequestError, ForbiddenError do |e|
-    flash[:error] = e.message
-    render :inline => "", :layout => true, :status => e.status
+    flash.now[:error] = e.message
+    render :inline => <<-INLINE, :layout => true, :status => e.status
+      <%= link_to "back", request.referer unless request.referer.blank? %>
+    INLINE
   end
 
   helper_method :filter_params, :current_user

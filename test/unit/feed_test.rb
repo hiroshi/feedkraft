@@ -12,7 +12,7 @@ class FeedTest < ActiveSupport::TestCase
     ["files/yakitara.atom", 25, {"category@term" => "Rails", "!all" => "deny"}, 25 - 9],
     ["files/yakitara.atom", 25, {"category@term" => "Rails, Ruby"}, 11],
   ].each do |path, before_count, filter_params, after_count|
-    test "#{path} with #{filter_params}" do
+    test "filter #{path} with #{filter_params}" do
       feed = Feed.parse(fixture_file_read(path))
       assert_equal before_count, feed.entries.size
       feed.filter!(filter_params)
