@@ -9,12 +9,22 @@ class SessionsController < ApplicationController
     else
       url = params[:url]
     end
-    oidreq = consumer.begin(url)
+    if url.blank?
+      flash[:error] = "Please choose an OpenID provider or enter URL"
+      redirect_to new_session_path
+    else
+      begin
+        oidreq = consumer.begin(url)
     # TODO: get nickname or kind
 #     sregreq = OpenID::SReg::Request.new
 #     sregreq.request_fields(['nickname'], true)
 #     oidreq.add_extension(sregreq)
-    redirect_to oidreq.redirect_url(root_url, identify_session_url)
+        redirect_to oidreq.redirect_url(root_url, identify_session_url)
+      rescue OpenID::DiscoveryFailure => e
+        flash[:error] = e.message
+        redirect_to new_session_path
+      end
+    end
   end
 
   def identify
