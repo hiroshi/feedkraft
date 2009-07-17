@@ -10,4 +10,10 @@ module ApplicationHelper
   def feed_text_escape(s)
     s.to_s.gsub(/["><]/) { |special| FEED_TEXT_ESCAPE[special] }
   end
+
+  def commit
+    if commit = FeedKraft[:commit]
+      "(" + link_to(commit[0...8], "http://github.com/hiroshi/feedkraft/commit/#{commit}") + ")"
+    end
+  end
 end

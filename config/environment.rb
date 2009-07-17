@@ -20,6 +20,7 @@ module FeedKraft
     @@config[key.to_sym] = val
   end
 end
+FeedKraft[:commit] = (path = Rails.root.join("REVISION"); path.exist? && path.read)
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
