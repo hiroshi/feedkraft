@@ -46,22 +46,6 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def set_feeds
-    require "open-uri"
-    unless filter_params[:url].blank?
-      @src_feed = Feed.open(filter_params[:url])
-      @result_feed = Feed.open(filter_params[:url])
-
-      @result_feed.filter!(filter_params.except(:url))
-      if @filter
-        @result_feed.title = @filter.title
-      end
-    end
-  rescue Errno::ENOENT, SocketError, OpenURI::HTTPError, Feed::FeedError => e
-    Rails.logger.debug e.message
-    raise BadRequestError, e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
-  end
-
   rescue_from NotFoundError, BadRequestError, ForbiddenError do |e|
     flash.now[:error] = e.message
     render :inline => <<-INLINE, :layout => true, :status => e.status

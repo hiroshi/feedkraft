@@ -75,4 +75,25 @@ class FiltersController < ApplicationController
   def author_required
     raise ForbiddenError, "author required" unless current_user == @filter.user
   end
+
+  def set_feeds
+    unless filter_params[:url].blank?
+      # exceptional replacement for Safari's "feed" scheme
+      if normalized_url = Feed.normalize_url(filter_params[:url])
+        redirect_to :url => normalized_url
+        return false
+      end
+
+      @src_feed = Feed.open(filter_params[:url])
+      @result_feed = Feed.open(filter_params[:url])
+
+      @result_feed.filter!(filter_params.except(:url))
+      if @filter
+        @result_feed.title = @filter.title
+      end
+    end
+  rescue Errno::ENOENT, SocketError, OpenURI::HTTPError, Feed::FeedError => e
+    Rails.logger.debug e.message
+    raise BadRequestError, e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
+  end
 end

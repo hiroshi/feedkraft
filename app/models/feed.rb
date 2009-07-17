@@ -3,7 +3,13 @@ class Feed
   class InvalidURLError < FeedError; end
   class InvalidContentError < FeedError; end
 
+  def self.normalize_url(url)
+    url = url.dup
+    url.sub!(/^feed:\/\//, "http://")
+  end
+
   def self.open(url_or_path)
+    require "open-uri"
     uri = URI.parse(url_or_path)
     # cache feed
     cache_key = Digest::SHA1.hexdigest(uri.to_s)
