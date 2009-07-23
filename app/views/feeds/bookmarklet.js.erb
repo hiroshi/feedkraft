@@ -1,0 +1,21 @@
+// Please bookmark a line below to use this script:
+// javascript:void(e=document.createElement('script'));void(e.src='<%= bookmarklet_url %>');void(document.body.appendChild(e));
+(function(){
+  var ls = document.getElementsByTagName('link');
+  for (var i = 0, link; link = ls[i]; i++) {
+    var t = link.getAttribute('type');
+    var r = link.getAttribute('rel');
+    if (t && (t == 'application/rss+xml' || t == 'application/atom+xml') && r && r=='alternate') {
+      var h = link.getAttribute('href');
+      if (h.indexOf('/') == 0) {
+        h = location.protocol + "//" + location.host + h;
+      } else if (h.search(/https?:\/\//) != 0) {
+        h = location.protocol + "//" + location.host + location.pathname + h;
+      }
+      location = '<%= new_filter_url(:url => "") %>' + h;
+      f = true;
+      return;
+    }
+  }
+  alert('Feed not found.');
+})();
