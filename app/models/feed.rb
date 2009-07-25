@@ -43,6 +43,11 @@ class Feed
   end
 
   def self.parse(src)
+    # dereferencing numerical caracter references. Why bother?
+    # 1. options_for_select does html_escape without choice, so '&' is going to be decoded.
+    # 2. It will be complex dereference everytime before comparing with filter condition values.
+    src = src.gsub(/&#(\d+);/){|u| [$1.to_i].pack("U")}
+
     doc = REXML::Document.new(src)
     case doc.root.expanded_name
     when "rdf:RDF" # RSS 1.0
