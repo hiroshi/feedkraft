@@ -2,8 +2,9 @@
 // javascript:void(w=window.open());void(e=document.createElement('script'));void(e.src='<%= bookmarklet_url %>');void(e.addEventListener('load',function(){w.location=FeedKraft.bookmarkURL()},false));void(document.body.appendChild(e));
 var FeedKraft = {
   bookmarkURL: function () {
-    var ls = document.getElementsByTagName('link');
-    for (var i = 0, link; link = ls[i]; i++) {
+    // First, find auto discovery links in HTML
+    var links = document.getElementsByTagName('link');
+    for (var i = 0, link; link = links[i]; i++) {
       var t = link.getAttribute('type');
       var r = link.getAttribute('rel');
       if (t && (t == 'application/rss+xml' || t == 'application/atom+xml') && r && r=='alternate') {
@@ -16,6 +17,19 @@ var FeedKraft = {
         return '<%= new_filter_url(:url => "") %>' + h;
       }
     }
+    // Or, in feed viewer of Safari 4?
+    var metas = document.getElementsByTagName('meta');
+    for (var i = 0, meta; meta = metas[i]; i++) {
+      if (meta.id == "AppleSyndicationInfo") {
+        return '<%= new_filter_url(:url => "") %>' + meta.attributes["urltobookmark"].value;
+      }
+    }
+    // Or, in feed viewer of Firefox 3.5?
+    var html = document.getElementsByTagName('html')[0];
+    if (html.id == "feedHandler") {
+      return '<%= new_filter_url(:url => "") %>' + location;
+    }
     alert('Feed not found.');
+    // alert('Feed not found.');
   }
 }
