@@ -46,9 +46,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  rescue_from NotFoundError, BadRequestError, ForbiddenError do |e|
+  rescue_from NotFoundError, BadRequestError, ForbiddenError, ActionController::MethodNotAllowed do |e|
     flash.now[:error] = e.message
-    render :inline => <<-INLINE, :layout => true, :status => e.status
+    render :inline => <<-INLINE, :layout => true, :status => e.respond_to?(:status) ? e.status : :bad_request
       <%= link_to "back", request.referer unless request.referer.blank? %>
     INLINE
   end
