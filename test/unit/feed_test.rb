@@ -20,4 +20,19 @@ class FeedTest < ActiveSupport::TestCase
       assert_equal after_count, feed.entries.size
     end
   end
+
+  test "split_value" do
+    {
+      '' => [""],
+      'foo' => ["foo"],
+      'foo, bar' => ["foo", "bar"],
+      'foo, "bar"' => ["foo", "bar"],
+      'foo, "bar "' => ["foo", "bar "],
+      'foo, "bar" ' => ["foo", "bar"],
+      'foo, "  ", baz ' => ["foo", "  ", "baz"],
+      'foo, "bar, baz", 日本語' => ["foo", "bar, baz", "日本語"],
+    }.each do |string, array|
+      assert_equal array, Feed.split_value(string)
+    end
+  end
 end

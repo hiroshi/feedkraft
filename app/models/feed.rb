@@ -119,8 +119,7 @@ class Feed
     allow_all = params.delete("!all") == "deny" ? false : true
 
     condition = params.map do |key, val|
-      val.gsub!(/,(?=[^\s])/,", ") # ensure a space after comma to confirm YAML syntax
-      vals = YAML.load("[#{val}]")
+      vals = Feed.split_value(val)
 
       case key
       when /^@/ # an attribute of entries
@@ -149,6 +148,22 @@ class Feed
   rescue
     Rails.logger.debug "#{self.class.name}:filter! #{params.inspect} => #{xpath}"
     raise
+  end
+
+  # Split string value with comma like CSV
+  # Why parse by hand? Because CSV, FasterCSV nor YAML.load doesn't work for me
+  def self.split_value(value)
+    values = [""]
+    quote = false
+    value.each_char do |c|
+      if !quote && c == ',' # ignore ',' in quotes
+        values << ""
+      else
+        quote = !quote if c == '"' 
+        values.last << c
+      end
+    end
+    values.map(&:strip).map{|v| v.gsub(/"/,"")} # strip white space and quotes
   end
 end
 
