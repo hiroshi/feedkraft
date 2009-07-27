@@ -2,14 +2,14 @@
 <% feed.entries.each do |entry| %>
   <div style="border-bottom:1px dotted gray;margin:0.5em 0px;padding-bottom:0.5em;">
     <div><%= link_to feed_text_escape(entry.title), entry.link, :target => "_blank", :style => "font-weight:bold;" %></div>
-<!--
-    <div title='<%= entry.identifier %>' style="overflow:hidden;">
-      <%= entry.identifier_name %>: <%= truncate h(entry.identifier), :length => (50 - entry.identifier_name.size) %>
-    </div>
--->
   <% unless entry.categories.blank? %>
     <div>
        Categories: <%= entry.categories.join(", ") %>
+    </div>
+  <% end %>
+  <% unless entry.content.blank? %>
+    <div>
+      <%= truncate entry.content, :length => 40 %>
     </div>
   <% end %>
   </div>

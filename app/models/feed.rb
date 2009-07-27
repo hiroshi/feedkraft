@@ -20,7 +20,7 @@ class Feed
       Rails.logger.info "Feed cache read: #{uri.to_s}"
       Feed.parse(src)
     else
-      # off cache
+      # out of cache
       src = nil
       ms = Benchmark.ms do
         if Rails.env != "production" && uri.relative?
@@ -153,9 +153,13 @@ class Feed
 end
 
 class Entry
-  def identifier_name
-    self.class.identifier_name
+  def text(name)
+    @doc.get_text(self.class::XPATHS[name]).to_s.strip
   end
+
+#   def identifier_name
+#     self.class.identifier_name
+#   end
 end
 
 module RSS1
@@ -168,12 +172,16 @@ module RSS1
       @element.attributes["rdf:about"].to_s
     end
 
-    def self.identifier_name
-      "rdf:about"
-    end
+#     def self.identifier_name
+#       "rdf:about"
+#     end
 
     def title
       @element.get_text("title").to_s
+    end
+
+    def content
+      @element.get_text("description").to_s
     end
 
     def link
@@ -198,9 +206,9 @@ module RSS1
       "/rdf:RDF/item"
     end
 
-    def content_tag_name
-      "description"
-    end
+#     def content_tag_name
+#       "description"
+#     end
 
     def filter_case(key, val)
       case key
@@ -224,12 +232,16 @@ module RSS2
       @element.get_text("guid").to_s
     end
 
-    def self.identifier_name
-      "guid"
-    end
+#     def self.identifier_name
+#       "guid"
+#     end
 
     def title
       @element.get_text("title").to_s
+    end
+
+    def content
+      @element.get_text("description").to_s
     end
 
     def link
@@ -254,9 +266,9 @@ module RSS2
       "/rss/channel/item"
     end
 
-    def content_tag_name
-      "description"
-    end
+#     def content_tag_name
+#       "description"
+#     end
 
     def filter_case(key, val)
       case key
@@ -279,12 +291,20 @@ module Atom
       @element.get_text("id").to_s
     end
 
-    def self.identifier_name
-      "id"
-    end
+#     def self.identifier_name
+#       "id"
+#     end
 
     def title
       @element.get_text("title").to_s
+    end
+
+    def content
+      @element.get_text("content").to_s
+    end
+
+    def text(name)
+      @element.get_text(XPATHS[name.to_sym]).to_s.strip
     end
 
     def link
@@ -309,9 +329,9 @@ module Atom
       "/feed/entry"
     end
 
-    def content_tag_name
-      "content"
-    end
+#     def content_tag_name
+#       "content"
+#     end
 
     def filter_case(key, val)
       case key
