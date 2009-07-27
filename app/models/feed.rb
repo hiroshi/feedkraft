@@ -1,6 +1,7 @@
 class Feed
   class FeedError < RuntimeError; end
   class InvalidURLError < FeedError; end
+  class InvalidConnectionError < FeedError; end
   class InvalidContentError < FeedError; end
 
   def self.normalize_url(url)
@@ -29,7 +30,13 @@ class Feed
         else
           # URL
           if uri.respond_to?(:open)
-            src = uri.open{|io| io.read }
+            begin
+              src = uri.open{|io| io.read }
+            rescue SocketError => e
+              raise InvalidConnectionLError, "#{e}: #{uri.to_s}"
+            rescue OpenURI::HTTPError, Errno::ECONNREFUSED => e
+              raise InvalidURLError, "#{e}: #{uri.to_s}"
+            end
           else
             raise InvalidURLError, "Invalid URL: #{uri.to_s}"
           end

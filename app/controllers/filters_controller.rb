@@ -92,7 +92,7 @@ class FiltersController < ApplicationController
         @result_feed.title = @filter.title
       end
     end
-  rescue Errno::ENOENT, SocketError, OpenURI::HTTPError, Feed::FeedError => e
+  rescue Feed::FeedError => e
     Rails.logger.debug e.message
     raise BadRequestError, e.message.mb_chars[0..1024] # because of common limitation of cookies are 4K
   end

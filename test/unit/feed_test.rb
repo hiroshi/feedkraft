@@ -37,4 +37,9 @@ class FeedTest < ActiveSupport::TestCase
       assert_equal array, Feed.split_value(string)
     end
   end
+
+  # TODO: describe it using RSpec's mock
+  # TODO: use partial mock against URI#open to raise Errno::ECONNREFUSED or other errors
+#   test "handling connection refused" do
+#   end
 end
