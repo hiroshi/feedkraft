@@ -154,16 +154,18 @@ class Feed
   # Why parse by hand? Because CSV, FasterCSV nor YAML.load doesn't work for me
   def self.split_value(value)
     values = [""]
-    quote = false
+    quote = nil
     value.each_char do |c|
-      if !quote && c == ',' # ignore ',' in quotes
+      if quote.nil? && c == ',' # ignore ',' in quotes
         values << ""
       else
-        quote = !quote if c == '"' 
+        if ['"',"'"].include?(c)
+          quote = quote ? nil : c
+        end
         values.last << c
       end
     end
-    values.map(&:strip).map{|v| v.gsub(/"/,"")} # strip white space and quotes
+    values.map(&:strip).map{|v| v.gsub(/["']/,"")} # strip white space and quotes
   end
 end
 
