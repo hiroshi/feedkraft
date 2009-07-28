@@ -1,3 +1,14 @@
+# extends XPath functions
+module REXML
+  module Functions
+    # same as contains but case-insensitive manner
+    def Functions::containsi(string, test)
+      # string(string).include?(string(test)) # original
+      !!(string(string) =~ /#{Regexp.escape(string(test))}/i)
+    end
+  end
+end
+
 class Feed
   class FeedError < RuntimeError; end
   class InvalidURLError < FeedError; end
@@ -130,14 +141,14 @@ class Feed
 
       case key
       when /^@/ # an attribute of entries
-        exp = vals.map{|val| "contains(#{key},'#{val}')" }.join(" or ")
+        exp = vals.map{|val| "containsi(#{key},'#{val}')" }.join(" or ")
         "(#{exp})"
       when /^[^@]+@/ # an attribute of a child element of entries
         tag, attr = key.split("@")
-        exp = vals.map{|val| "contains(@#{attr},'#{val}')" }.join(" or ")
+        exp = vals.map{|val| "containsi(@#{attr},'#{val}')" }.join(" or ")
         "#{tag}[#{exp}]"
       else # child of entry (e.g. <entry>...<category>Rails</category>...</entry>)
-        exp = vals.map{|val| "contains(normalize-space(text()),'#{val}')" }.join(" or ")
+        exp = vals.map{|val| "containsi(normalize-space(text()),'#{val}')" }.join(" or ")
         "#{key}[#{exp}]"
       end
     end.compact.join(" and ")
