@@ -214,26 +214,6 @@ module RSS1
       @element = element
     end
 
-#     def identifier
-#       @element.attributes["rdf:about"].to_s
-#     end
-
-#     def self.identifier_name
-#       "rdf:about"
-#     end
-
-#     def title
-#       @element.get_text("title").to_s
-#     end
-
-#     def content
-#       @element.get_text("description").to_s
-#     end
-
-#     def link
-#       @element.get_text("link").to_s
-#     end
-
     def categories
       []
     end
@@ -251,19 +231,6 @@ module RSS1
     def entries_xpath
       "/rdf:RDF/item"
     end
-
-#     def content_tag_name
-#       "description"
-#     end
-
-#     def filter_case(key, val)
-#       case key
-#       when :identifier
-#         "contains(@rdf:about,'#{val}')"
-#       when :category
-#         # TODO: use dc:type?
-#       end
-#     end
   end
 end
 
@@ -276,28 +243,6 @@ module RSS2
     def initialize(element)
       @element = element
     end
-
-#     def identifier
-#       #%w(guid link title).map{|name| @element.get_text(name) }.compact.first.to_s
-#       @element.get_text("guid").to_s
-#     end
-
-#     def self.identifier_name
-#       "guid"
-#     end
-
-#     def title
-#       @element.get_text("title").to_s
-#     end
-
-#     def content
-#       p @element.get_elements("description").first.cdatas
-#       @element.get_text("description").to_s
-#     end
-
-#     def link
-#       @element.get_text("link").to_s
-#     end
 
     def categories
       @element.get_elements("category").map{|c| c.text.strip }
@@ -316,19 +261,6 @@ module RSS2
     def entries_xpath
       "/rss/channel/item"
     end
-
-#     def content_tag_name
-#       "description"
-#     end
-
-#     def filter_case(key, val)
-#       case key
-#       when :identifier
-#         # FIXME
-#       when :category
-#         "category[normalize-space(text())='#{val}']"
-#       end
-#     end
   end
 end
 
@@ -336,31 +268,10 @@ module Atom
   class Entry < ::Entry
     child_reader :title
     child_reader :content
-#    child_reader :link
 
     def initialize(element)
       @element = element
     end
-
-#     def identifier
-#       @element.get_text("id").to_s
-#     end
-
-#     def self.identifier_name
-#       "id"
-#     end
-
-#     def title
-#       @element.get_text("title").to_s
-#     end
-
-#     def content
-#       @element.get_text("content").to_s
-#     end
-
-#     def text(name)
-#       @element.get_text(XPATHS[name.to_sym]).to_s.strip
-#     end
 
     def link
       @element.elements["link[@rel='alternate']"].attributes["href"]
@@ -383,19 +294,6 @@ module Atom
     def entries_xpath
       "/feed/entry"
     end
-
-#     def content_tag_name
-#       "content"
-#     end
-
-#     def filter_case(key, val)
-#       case key
-#       when :identifier
-#         # FIXME
-#       when :category
-#         "category[@term='#{val}']"
-#       end
-#     end
   end
 end
 
