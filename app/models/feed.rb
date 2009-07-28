@@ -234,14 +234,14 @@ module RSS1
 #       "description"
 #     end
 
-    def filter_case(key, val)
-      case key
-      when :identifier
-        "contains(@rdf:about,'#{val}')"
-      when :category
-        # TODO: use dc:type?
-      end
-    end
+#     def filter_case(key, val)
+#       case key
+#       when :identifier
+#         "contains(@rdf:about,'#{val}')"
+#       when :category
+#         # TODO: use dc:type?
+#       end
+#     end
   end
 end
 
@@ -294,14 +294,14 @@ module RSS2
 #       "description"
 #     end
 
-    def filter_case(key, val)
-      case key
-      when :identifier
-        # FIXME
-      when :category
-        "category[normalize-space(text())='#{val}']"
-      end
-    end
+#     def filter_case(key, val)
+#       case key
+#       when :identifier
+#         # FIXME
+#       when :category
+#         "category[normalize-space(text())='#{val}']"
+#       end
+#     end
   end
 end
 
@@ -357,14 +357,14 @@ module Atom
 #       "content"
 #     end
 
-    def filter_case(key, val)
-      case key
-      when :identifier
-        # FIXME
-      when :category
-        "category[@term='#{val}']"
-      end
-    end
+#     def filter_case(key, val)
+#       case key
+#       when :identifier
+#         # FIXME
+#       when :category
+#         "category[@term='#{val}']"
+#       end
+#     end
   end
 end
 
