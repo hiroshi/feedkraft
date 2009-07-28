@@ -64,19 +64,6 @@
     <% end %>
   </div>
   <p class="small quiet">You can specify multiple values with commas(e.g. Ruby, Rails)</p>
-<% if false %>
-<% @src_feed.filter_fields.each do |k,v| %>
-   <%= label_tag k %>: <%= select_tag k, options_for_select(v) %><br/>
-<% end %>
-<% end %>
-<% if false %>
-  <div>
-    <%= label_tag "identifier" %> contains <%= text_field_tag "identifier", filter_params[:identifier], :size => 40 %>
-  </div>
-  <div>
-    <%= label_tag "category" %>: <%= text_field_tag "category", filter_params[:category] %>
-  </div>
-<% end %>
   <button type="submit">prevew</button>
 <% end %> 
 

@@ -9,6 +9,23 @@ module REXML
   end
 end
 
+class Entry
+  # define reader method for child elements or attributes
+  def self.child_reader(*args)
+    case args.first
+    when Symbol, String
+      name, xpath = args.first.to_sym, args.first.to_s
+    when Hash
+      name, xpath = args.first.to_a.first
+    end
+
+    define_method name do
+      e = @element.get_elements(xpath).first
+      (e.cdatas.first || e.texts.first).to_s
+    end
+  end
+end
+
 class Feed
   class FeedError < RuntimeError; end
   class InvalidURLError < FeedError; end
@@ -125,7 +142,7 @@ class Feed
         update_filter_field(hash, [path, e.expanded_name].compact.join("/"), e)
       end
     elsif element.has_text?
-      (hash[path] ||= []) << element.get_text.to_s.strip
+      (hash[path] ||= []) << (element.cdatas.first || element.texts.first).to_s.strip
     end
   end
   private :update_filter_field
@@ -187,41 +204,35 @@ class Feed
   end
 end
 
-class Entry
-  def text(name)
-    @doc.get_text(self.class::XPATHS[name]).to_s.strip
-  end
-
-#   def identifier_name
-#     self.class.identifier_name
-#   end
-end
-
 module RSS1
   class Entry < ::Entry
+    child_reader :title
+    child_reader :content => "description"
+    child_reader :link
+
     def initialize(element)
       @element = element
     end
 
-    def identifier
-      @element.attributes["rdf:about"].to_s
-    end
+#     def identifier
+#       @element.attributes["rdf:about"].to_s
+#     end
 
 #     def self.identifier_name
 #       "rdf:about"
 #     end
 
-    def title
-      @element.get_text("title").to_s
-    end
+#     def title
+#       @element.get_text("title").to_s
+#     end
 
-    def content
-      @element.get_text("description").to_s
-    end
+#     def content
+#       @element.get_text("description").to_s
+#     end
 
-    def link
-      @element.get_text("link").to_s
-    end
+#     def link
+#       @element.get_text("link").to_s
+#     end
 
     def categories
       []
@@ -258,30 +269,35 @@ end
 
 module RSS2
   class Entry < ::Entry
+    child_reader :title
+    child_reader :content => "description"
+    child_reader :link
+
     def initialize(element)
       @element = element
     end
 
-    def identifier
-      #%w(guid link title).map{|name| @element.get_text(name) }.compact.first.to_s
-      @element.get_text("guid").to_s
-    end
+#     def identifier
+#       #%w(guid link title).map{|name| @element.get_text(name) }.compact.first.to_s
+#       @element.get_text("guid").to_s
+#     end
 
 #     def self.identifier_name
 #       "guid"
 #     end
 
-    def title
-      @element.get_text("title").to_s
-    end
+#     def title
+#       @element.get_text("title").to_s
+#     end
 
-    def content
-      @element.get_text("description").to_s
-    end
+#     def content
+#       p @element.get_elements("description").first.cdatas
+#       @element.get_text("description").to_s
+#     end
 
-    def link
-      @element.get_text("link").to_s
-    end
+#     def link
+#       @element.get_text("link").to_s
+#     end
 
     def categories
       @element.get_elements("category").map{|c| c.text.strip }
@@ -318,29 +334,33 @@ end
 
 module Atom
   class Entry < ::Entry
+    child_reader :title
+    child_reader :content
+#    child_reader :link
+
     def initialize(element)
       @element = element
     end
 
-    def identifier
-      @element.get_text("id").to_s
-    end
+#     def identifier
+#       @element.get_text("id").to_s
+#     end
 
 #     def self.identifier_name
 #       "id"
 #     end
 
-    def title
-      @element.get_text("title").to_s
-    end
+#     def title
+#       @element.get_text("title").to_s
+#     end
 
-    def content
-      @element.get_text("content").to_s
-    end
+#     def content
+#       @element.get_text("content").to_s
+#     end
 
-    def text(name)
-      @element.get_text(XPATHS[name.to_sym]).to_s.strip
-    end
+#     def text(name)
+#       @element.get_text(XPATHS[name.to_sym]).to_s.strip
+#     end
 
     def link
       @element.elements["link[@rel='alternate']"].attributes["href"]

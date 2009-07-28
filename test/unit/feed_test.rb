@@ -2,20 +2,20 @@ require 'test_helper'
 
 class FeedTest < ActiveSupport::TestCase
   [
-    ["files/mycom.rss1", 50, {"@rdf:about" => "column"}, 3],
-    ["files/mycom.rss1", 50, {"@rdf:about" => "column", "!all" => "deny"}, 50 - 3],
-    ["files/mycom.rss1", 50, {"@rdf:about" => "column, articles"}, 10],
-    ["files/yakitara.rss2", 25, {"category" => "Rails"}, 9],
-    ["files/yakitara.rss2", 25, {"category" => "Rails", "!all" => "deny"}, 25 - 9],
-    ["files/yakitara.rss2", 25, {"category" => "Rails, Ruby"}, 11],
-    ["files/yakitara.atom", 25, {"category@term" => "Rails"}, 9],
-    ["files/yakitara.atom", 25, {"category@term" => "Rails", "!all" => "deny"}, 25 - 9],
-    ["files/yakitara.atom", 25, {"category@term" => "Rails, Ruby"}, 11],
-    ["files/kohmi.rss2", 20, {"title" => "明日"}, 4], # shuld much with numerical character references
-    ["files/yakitara.atom", 25, {"category@term" => "rails"}, 9], # should much case-insensitive
-  ].each do |path, before_count, filter_params, after_count|
-    test "filter #{path} with #{filter_params}" do
-      feed = Feed.parse(fixture_file_read(path))
+    ["mycom.rss1", 50, {"@rdf:about" => "column"}, 3],
+    ["mycom.rss1", 50, {"@rdf:about" => "column", "!all" => "deny"}, 50 - 3],
+    ["mycom.rss1", 50, {"@rdf:about" => "column, articles"}, 10],
+    ["yakitara.rss2", 25, {"category" => "Rails"}, 9],
+    ["yakitara.rss2", 25, {"category" => "Rails", "!all" => "deny"}, 25 - 9],
+    ["yakitara.rss2", 25, {"category" => "Rails, Ruby"}, 11],
+    ["yakitara.atom", 25, {"category@term" => "Rails"}, 9],
+    ["yakitara.atom", 25, {"category@term" => "Rails", "!all" => "deny"}, 25 - 9],
+    ["yakitara.atom", 25, {"category@term" => "Rails, Ruby"}, 11],
+    ["kohmi.rss2", 20, {"title" => "明日"}, 4], # shuld much with numerical character references
+    ["yakitara.atom", 25, {"category@term" => "rails"}, 9], # should much case-insensitive
+  ].each do |file, before_count, filter_params, after_count|
+    test "filter #{file} with #{filter_params}" do
+      feed = Feed.parse(fixture_file_read(File.join("files",file)))
       assert_equal before_count, feed.entries.size
       feed.filter!(filter_params)
       assert_equal after_count, feed.entries.size
@@ -36,6 +36,30 @@ class FeedTest < ActiveSupport::TestCase
       'foo, "bar, baz", 日本語' => ["foo", "bar, baz", "日本語"],
     }.each do |string, array|
       assert_equal array, Feed.split_value(string)
+    end
+  end
+
+  [
+    ["mycom.rss1", {
+        :title => /^【レビュー】起動オプション/, 
+        :content => /^「起動オプション」/, 
+        :link => %r"^http://feeds.journal.mycom.co.jp/~r/haishin/rss/pc/~3/Yal9w1GBqW0/index.html"
+      }],
+    ["atnd.rss2", {
+        :title => /^日本Android/,
+        :content => /^<B>【注意】ご自身/, # content is cdata
+        :link => %r"^http://atnd.org/events/1179"}],
+    ["yakitara.atom", {
+        :title => /^annotates where partial/,
+        :content => /^Rails アプリケーション/,
+        :link => %r"^http://blog.yakitara.com/2009/06/annotates-where-partial-code-come-from.html"}],
+  ].each do |file, children|
+    test "child_reader #{file} with #{children}" do
+      feed = Feed.parse(fixture_file_read(File.join("files",file)))
+      entry = feed.entries.first
+      children.each do |name, regexp|
+        assert_match regexp, entry.send(name)
+      end
     end
   end
 

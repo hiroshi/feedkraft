@@ -9,7 +9,7 @@
   <% end %>
   <% unless entry.content.blank? %>
     <div>
-      <%= truncate entry.content, :length => 40 %>
+      <%= truncate feed_text_escape(entry.content), :length => 40 %>
     </div>
   <% end %>
   </div>
