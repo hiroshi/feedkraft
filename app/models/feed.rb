@@ -61,9 +61,9 @@ class Feed
             begin
               src = uri.open{|io| io.read }
             rescue SocketError => e
-              raise InvalidConnectionLError, "#{e}: #{uri.to_s}"
+              raise InvalidConnectionLError, e.to_s
             rescue OpenURI::HTTPError, Errno::ECONNREFUSED => e
-              raise InvalidURLError, "#{e}: #{uri.to_s}"
+              raise InvalidURLError, e.to_s
             end
           else
             raise InvalidURLError, "Invalid URL: #{uri.to_s}"
@@ -75,6 +75,8 @@ class Feed
       Rails.logger.info "Feed cache write (%.1fms): #{uri.to_s}" % [ms]
       Feed.parse(src)
     end
+  rescue FeedError => e
+    raise e.class, e.message + ": #{url_or_path}"
   end
 
   def self.parse(src)
@@ -91,6 +93,8 @@ class Feed
       RSS2::Feed.new(doc)
     when "feed" # Atom
       Atom::Feed.new(doc)
+    else
+      raise InvalidContentError, "Not a feed"
     end
   rescue REXML::ParseException => e
     raise InvalidContentError, e.message
