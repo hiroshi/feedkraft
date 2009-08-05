@@ -12,13 +12,16 @@
   <!--[if IE]><link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
     <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" media="screen, projection" />
     <%= yield :auto_discovery_links %>
-    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag :defaults, "jquery-1.3.2.min", "jquery.cookie" %>
   </head>
   <body>
     <div class="container span-18 no-showgrid" style="margin:0px 26px">
       <div>
         <h1><span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span> (prototype version)</h1>
         <div style="float:right">
+          <%= select_tag "locale", options_for_select(I18n.available_locales.map{|v| [t("locale", :locale => v),v.to_s]}, I18n.locale) %>
+          <%= observe_field "locale", :function => "j$.cookie('locale',value,{expires:365,path:'/'});location='';" %>
+          |
         <% if current_user %>
           <%= current_user.name ? h(current_user.name) : link_to("please fill your name", edit_user_path(current_user)) %>
           | <%= link_to "logout", session_path, :method => "delete" %>

@@ -1,0 +1,7 @@
+# FeedKraft dependent or altered default Japanese localizations are here
+
+ja:
+  locale: "日本語"
+
+  help:
+    top: "ようこそ。 FeekKraft を使うと..."

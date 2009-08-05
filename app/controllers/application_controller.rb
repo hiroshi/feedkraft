@@ -11,7 +11,13 @@ class ApplicationController < ActionController::Base
   class ForbiddenError < HttpError; def status; 403; end; end
   class NotFoundError < HttpError; def status; 404; end; end
 
-  class FeedSourceUnavailableError < Exception; end
+#  class FeedSourceUnavailableError < Exception; end
+
+  # I18n
+  def set_locale
+    I18n.locale = cookies[:locale] || request.compatible_language_from(I18n.available_locales)
+  end
+  before_filter :set_locale
 
   def filter_params
     unless @filter_params
