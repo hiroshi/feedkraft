@@ -3,33 +3,35 @@
 <% end %>
 
 <% form_tag new_filter_path, :method => "get" do %>
-  <%= label_tag "url", "Feed URL" %> : <%= text_field_tag "url", params[:url], :size => 80, :placeholder => "Enter any RSS or Atom URL to be filtered" %><!-- TOOD: placeholder is effective only some browser like Safari. Mootool.js has a portable implementation, but may confilict with prototype.js... -->
-  <button>new</button>
+  <%= label_tag "url", t("Feed URL") %> : <%= text_field_tag "url", params[:url], :size => 80, :placeholder => t("url placeholder") %><!-- TOOD: placeholder is effective only some browser like Safari. Mootool.js has a portable implementation, but may confilict with prototype.js... -->
+  <button><%= t("new") %></button>
 <% end %>
 
 <hr/>
+  <%= t("help.top") %>
+<hr/>
 
 <div class="span-9">
-  <h2>Latest filters <%= link_to image_tag("feedicons/28x28.png"), latest_filters_path %></h2>
+  <h2><%= t("Latest filters") %> <%= link_to image_tag("feedicons/28x28.png"), latest_filters_path %></h2>
   <ul>
   <% @latest_filters.each do |filter| %>
     <li>
       <%= link_to h(filter.title), filter_path(filter) %>
       <%= subscription_link filter %>
-      by <%= user_name filter.user %> (<span title="<%= filter.updated_at %>"><%= time_ago_in_words filter.created_at %> ago</span>)
+      by <%= user_name filter.user %> (<span title="<%= filter.updated_at %>"><%= t("{{ago}} ago", :ago => time_ago_in_words(filter.created_at)) %></span>)
     </li>
   <% end %>
   </ul>
 </div>
 
 <div class="span-9 last">
-  <h2>Popular filters <span class="small quiet">(in 24h)</span></h2>
+  <h2><%= t("Popular filters") %> <span class="small quiet">(<%= t("in 24h") %>)</span></h2>
   <ul>
   <% @popular_filters.each do |filter| %>
     <li>
       <%= link_to h(filter.title), filter_path(filter) %>
       <%= subscription_link filter %>
-      by <%= user_name filter.user %> (<%= filter.subscription_count %> subscriptions)
+      by <%= user_name filter.user %> (<%= count = filter.subscription_count %> <%= t("subscription", :count => count) %>)
     </li>
   <% end %>
   </ul>

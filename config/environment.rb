@@ -56,6 +56,29 @@ Rails::Initializer.run do |config|
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
-  config.i18n.load_path += Dir[Rails.root.join('config', 'locales', 'app', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+  config.i18n.load_path += Dir[Rails.root.join('config', 'locales', 'app', '*.{rb,yml}')]
+#   I18n.module_eval do
+#     def self.humanize_handler(exception, locale, key, options)
+#       return "hie"
+#     end
+#   end
+#  I18n.exception_handler = :humanize_handler
+ # p I18n.send(:class_variable_get, "@@exception_handler")
 end
+
+# I18n.class_eval do
+#   def self.default_exception_handler(exception, locale, key, options)
+# raise exception.message
+#     return exception.message if MissingTranslationData === exception
+#     raise exception
+#   end
+# end
+# I18n::Backend::Simple.class_eval do
+#   def translate_with_foo(locale, key, options = {})
+#     translate_without_foo(locale, key, options)
+#   rescue => e
+#     raise "foo"
+#   end
+#   alias_method_chain :translate, :foo
+# end

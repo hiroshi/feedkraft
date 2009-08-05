@@ -4,4 +4,14 @@ ja:
   locale: "日本語"
 
   help:
-    top: "ようこそ。 FeekKraft を使うと..."
+    top: "FeedKraft を使うと <a href='http://reader.google.com/'>Google Reader</a> などで購読しているフィードをフィルターにかけることができます。"
+
+  Latest filters: "新着フィルター"
+  Feed URL: "フィード URL"
+  url placeholder: "RSS や Atom の URL を入力してください"
+  Popular filters: "利用されているフィルター"
+  in 24h: 24時間
+  "{{ago}} ago": "{{ago}}前"
+  subscription: 購読
+  login: ログイン
+  logout: ログアウト

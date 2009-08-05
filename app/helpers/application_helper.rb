@@ -1,5 +1,13 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  # Overwrite original ActionView::Helpers::TranslationHelper#translate to pass through missing translations
+  def translate(key, options={})
+    I18n.translate(scope_key_by_partial(key), options.merge(:raise => true))
+  rescue I18n::MissingTranslationData => e
+    key
+  end
+  alias :t :translate
+
   def has_content_for?(name)
     !instance_variable_get("@content_for_#{name}").nil?
   end

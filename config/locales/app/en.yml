@@ -1,2 +1,9 @@
+# FeedKraft dependent or altered default English localizations are here
+
 en:
   locale: English
+
+  help:
+    top: "Hi, FeekKraft ..."
+
+  url placeholder: Enter any RSS or Atom URL to be filtered
