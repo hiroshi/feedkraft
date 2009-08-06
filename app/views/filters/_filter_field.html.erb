@@ -8,10 +8,10 @@
 %>
 <div class="filter_field">
   <%= select_tag "filter_key_#{index}", filter_key_options(@src_feed, key), :onchange => "update_filter_option(FilterField.getIndex(this));", :name => nil, :class => "span-4" %>
-    contains
+    <%= t("contains") %>
   <%= text_field_tag key, val, :id => "filter_value_#{index}", :class => "span-6" %>
   <%= select_tag "filter_option_#{index}", @src_feed.filter_fields[key] && options_for_select(@src_feed.filter_fields[key].map{|v|truncate(v, :length => 80)}, val), :onchange => "update_filter_value(FilterField.getIndex(this));", :name => nil, :class => "span-6" %>
-  <button type="button" onclick="Element.remove(this.parentNode);">delete</button>
+  <button type="button" onclick="Element.remove(this.parentNode);"><%= t("delete") %></button>
 <% if false %>
 <% unless key %>
   <% javascript_tag do %>

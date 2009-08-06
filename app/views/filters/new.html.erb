@@ -10,10 +10,10 @@
 
 <% form_tag "", :method => "get", :id => "filter_form" do %>
   <div>
-    <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>
+    <%= label_tag "url", t("Feed URL") %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>
   </div>
   <div>
-    <%= select_tag "!all", options_for_select([["allow all", "allow"],["deny all", "deny"]], params["!all"]) %>
+    <%= select_tag "!all", options_for_select([[t("allow all"), "allow"],[t("deny all"), "deny"]], params["!all"]) %>
     <!-- <span style="font-weight:bold">if all</span> -->
   </div>
   <div id="filter_fields">
@@ -26,7 +26,7 @@
   <% end %>
   </div>
   <div>
-    <button type="button" onclick="add_filter_field();">add condition</button>
+    <button type="button" onclick="add_filter_field();"><%= t("add condition") %></button>
     <% javascript_tag do %>
       var FilterField = {
         nextIndex: function() {
@@ -63,8 +63,8 @@
 
     <% end %>
   </div>
-  <p class="small quiet">You can specify multiple values with commas(e.g. Ruby, Rails)</p>
-  <button type="submit">prevew</button>
+  <p class="small quiet"><%= t("multiple hint") %></p>
+  <button type="submit"><%= t("preview") %></button>
 <% end %> 
 
 <hr/>
@@ -74,15 +74,15 @@
 <% form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
 <% if @filter.user %>
   <div>
-    <%= form.label "filter creator" %> : <%= h @filter.user.name %>
+    <%= label_tag t("filter creator") %> : <%= h @filter.user.name %>
   </div>
 <% end %>
   <%= form.label "title" %> : <%= form.text_field "title", :size => 40 %>
 <% if current_user %>
 <% if @filter.new_record? %>
-  <button id="filter_submit" type="submit" name="filter[params_string]">create</button>
+  <button id="filter_submit" type="submit" name="filter[params_string]"><%= t("create") %></button>
 <% elsif @filter.user == current_user %>
-  <button id="filter_submit" type="submit" name="filter[params_string]">update</button>
+  <button id="filter_submit" type="submit" name="filter[params_string]"><%= t("update") %></button>
 <% else %>
 <!--  <button type="button">clone</button> -->
 <% end %>
@@ -91,23 +91,23 @@
 <% end %>
 <% end %>
 <% if !@filter.new_record? && @filter.user == current_user %>
-  <%= button_to "delete", filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
+  <%= button_to t("delete"), filter_path(@filter), :method => "delete", :confirm => "Are you sure?" %>
 <% end %>
 
 </div>
 <hr/>
 
-<h2>Preview</h2>
+<h2><%= t("Preview") %></h2>
 <% if @src_feed %>
 <div class="span-9">
-  Original (<%= @src_feed.entries.size %> entries) <%= link_to image_tag("feedicons/14x14.png"), filter_params[:url] %>
+  <%= t("Original") %> (<%= t("entry", :count => @src_feed.entries.size) %>) <%= link_to image_tag("feedicons/14x14.png"), filter_params[:url] %>
   <%= render :partial => "entries", :locals => {:feed => @src_feed} %>
 </div>
 <% end %>
 
 <% if @result_feed %>
 <div class="span-9 last">
-  Filtered (<%= @result_feed.entries.size %> entries) <%#= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
+  <%= t("Filtered") %>  (<%= t("entry", :count => @result_feed.entries.size) %>) <%#= link_to image_tag("feedicons/14x14.png"), feed_path(filter_params) %>
   <%= render :partial => "entries", :locals => {:feed => @result_feed} %>
 </div>
 <% end %>

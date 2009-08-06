@@ -3,8 +3,12 @@
 ja:
   locale: "日本語"
 
+  delete: 削除
+  create: 作成
+  update: 更新
+
   help:
-    top: "FeedKraft を使うと <a href='http://reader.google.com/'>Google Reader</a> などで購読しているフィードをフィルターにかけることができます。"
+    top: "FeedKraft を使うと <a href='http://reader.google.com/'>Google Reader</a> などで購読しているフィードにフィルターをかけることができます。"
 
   Latest filters: "新着フィルター"
   Feed URL: "フィード URL"
@@ -12,6 +16,24 @@ ja:
   Popular filters: "利用されているフィルター"
   in 24h: 24時間
   "{{ago}} ago": "{{ago}}前"
-  subscription: 購読
+  subscription: "{{count}} 購読"
   login: ログイン
   logout: ログアウト
+  Preview: プレビュー
+  Original: オリジナル
+  Filtered: フィルター結果
+  "entry": "{{count}} エントリー"
+  allow all: 以下の条件に一致するものを含む
+  deny all: 以下の条件に一致するものを除く
+  contains: の一部が
+  add condition: 条件を追加
+  multiple hint: "カンマ(,)区切りはOR条件になります(例: Ruby, Rails)"
+  preview: プレビュー
+  filter creator: フィルター作者
+  title: タイトル
+
+
+  activerecord:
+    attributes:
+      filter:
+        title: タイトル

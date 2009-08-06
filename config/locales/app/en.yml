@@ -7,3 +7,13 @@ en:
     top: "Hi, FeekKraft ..."
 
   url placeholder: Enter any RSS or Atom URL to be filtered
+
+  subscription:
+    zero: no subscription
+    one: "{{count}} subscription"
+    other: "{{count}} subscriptions"
+  entry:
+    zero: no entry
+    one: "{{count}} entry"
+    other: "{{count}} entries"
+  multiple hint: "You can specify multiple values with commas(e.g. Ruby, Rails)"

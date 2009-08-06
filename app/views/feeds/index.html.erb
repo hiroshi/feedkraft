@@ -31,7 +31,7 @@
     <li>
       <%= link_to h(filter.title), filter_path(filter) %>
       <%= subscription_link filter %>
-      by <%= user_name filter.user %> (<%= count = filter.subscription_count %> <%= t("subscription", :count => count) %>)
+      by <%= user_name filter.user %> (<%= t("subscription", :count => filter.subscription_count.to_i) %>)
     </li>
   <% end %>
   </ul>
