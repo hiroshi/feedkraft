@@ -60,7 +60,7 @@ class Feed
           if uri.respond_to?(:open)
             begin
               src = uri.open{|io| io.read }
-            rescue SocketError => e
+            rescue SocketError, EOFError => e
               raise InvalidConnectionLError, e.to_s
             rescue OpenURI::HTTPError, Errno::ECONNREFUSED => e
               raise InvalidURLError, e.to_s
