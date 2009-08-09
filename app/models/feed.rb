@@ -86,6 +86,7 @@ class Feed
     src = src.gsub(/&#(\d+);/){|u| [$1.to_i].pack("U")}
 
     doc = REXML::Document.new(src)
+    raise InvalidContentError, "No XML root" if doc.root.nil?
     case doc.root.expanded_name
     when "rdf:RDF" # RSS 1.0
       RSS1::Feed.new(doc)
