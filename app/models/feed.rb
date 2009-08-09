@@ -61,7 +61,7 @@ class Feed
             begin
               src = uri.open{|io| io.read }
             rescue SocketError, EOFError, Timeout::Error => e
-              raise InvalidConnectionLError, e.to_s
+              raise InvalidConnectionError, e.to_s
             rescue OpenURI::HTTPError, Errno::ECONNREFUSED => e
               raise InvalidURLError, e.to_s
             end
