@@ -11,10 +11,11 @@ ja:
     top: "FeedKraft を使うと <a href='http://reader.google.com/'>Google Reader</a> などで購読しているフィードにフィルターをかけることができます。"
 
   Latest filters: "新着フィルター"
+  Popular filters: "人気のフィルター"
   Feed URL: "フィード URL"
+  new: "フィルター"
   url placeholder: "RSS や Atom の URL を入力してください"
-  Popular filters: "利用されているフィルター"
-  in 24h: 24時間
+  in 24h: 過去24時間
   "{{ago}} ago": "{{ago}}前"
   subscription: "{{count}} 購読"
   login: ログイン
