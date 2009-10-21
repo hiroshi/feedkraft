@@ -1,3 +1,5 @@
+require "rexml/document"
+
 # extends XPath functions
 module REXML
   module Functions
