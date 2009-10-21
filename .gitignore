@@ -2,3 +2,5 @@
 log/*.log
 db/schema.rb
 db/*.sqlite3
+db/cstore
+tmp/*
