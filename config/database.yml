@@ -9,7 +9,7 @@ development:
   pool: 5
   timeout: 5000
 
-test:
+test: &TEST
   adapter: postgresql
   encoding: unicode
   database: feedkraft_test
@@ -45,3 +45,6 @@ production-sqlite3:
   pool: 5
   timeout: 5000
 
+
+cucumber:
+  <<: *TEST
