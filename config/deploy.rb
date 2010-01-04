@@ -8,9 +8,9 @@ set :deploy_via, :remote_cache
 desc "set target feedkraft.com"
 task "feedkraft.com" do
   set :target, task_call_frames.first.task.name
-  server "tay.yakitara.com", :app, :web, :db, :primary => true
+  server "silent.yakitara.com", :app, :web, :db, :primary => true
   set :deploy_to, "/var/www/feedkraft"
-#  set :user, "www-data"
+  set :user, "www-data"
   set :group, "www-data"
   set :use_sudo, false
 end
