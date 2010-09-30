@@ -17,23 +17,20 @@ class Filter < ActiveRecord::Base
     self.sha1 = Digest::SHA1.hexdigest(self.params_string)
   end
 
-  # == named scopes
-  named_scope :latest, lambda {
-    {:include => :user, :order => "filters.created_at DESC"}
-  }
+  # == scopes
+  scope :latest, includes(:user).order("filters.created_at DESC")
+  
   # NOTE: those nasty named scopes below are just for smaller number of queries
-  named_scope :with_subscription_key_for, lambda{|user|
+  scope :with_subscription_key_for, lambda{|user|
     if user
-      {
-        :select => "filters.*, s.key AS subscription_key",
-        :joins => "LEFT JOIN subscriptions AS s ON s.filter_id = filters.id AND s.user_id = #{user.id}"
-      }
+      select("filters.*, s.key AS subscription_key").
+        joins("LEFT JOIN subscriptions AS s ON s.filter_id = filters.id AND s.user_id = #{user.id}")
     else
       {}
     end
   }
 
-  named_scope :popular, lambda {|*args|
+  scope :popular, lambda {|*args|
     options = args.extract_options!
     result = {
       :select => "filters.*, COUNT(subscriptions.id) AS subscription_count",

@@ -1,14 +1,14 @@
 <% content_for :title, @filter.new_record? ? @src_feed.title : @filter.title  %>
 
 <% unless @filter.new_record? %>
-<% content_for :auto_discovery_links do %>
+<%= content_for :auto_discovery_links do %>
   <% if current_user && key = @filter.subscription_key %>
     <%= auto_discovery_link_tag @result_feed.is_a?(Atom::Feed) ? :atom : :rss, subscription_url(key), :title => h(@filter.title) %>
   <% end %>
 <% end %>
 <% end %>
 
-<% form_tag "", :method => "get", :id => "filter_form" do %>
+<%= form_tag "", :method => "get", :id => "filter_form" do %>
   <div>
     <%= label_tag "url", "Feed URL" %>: <%= text_field_tag "url", filter_params[:url], :size => 80, :readonly => true %>
   </div>
@@ -27,7 +27,7 @@
   </div>
   <div>
     <button type="button" onclick="add_filter_field();">add condition</button>
-    <% javascript_tag do %>
+    <%= javascript_tag do %>
       var FilterField = {
         nextIndex: function() {
           return $$(".filter_field").length;
@@ -71,7 +71,7 @@
 <div>
   <div style="float:right"><%= subscription_link @filter %></div>
 
-<% form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
+<%= form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
 <% if @filter.user %>
   <div>
     <%= form.label "filter creator" %> : <%= h @filter.user.name %>

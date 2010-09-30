@@ -2,7 +2,9 @@ require 'test_helper'
 
 class FiltersControllerTest < ActionController::TestCase
   test "latest" do
-    get :latest
+    # NOTE: Rails 3 needs :fomat => :atom for functional tests, even normal requests through routes can deal
+    # without any format infomation.
+    get :latest, :format => :atom
     assert_response :success
   end
 

@@ -3,9 +3,9 @@
   <head>
     <meta content='text/html; charset=utf-8' http-equiv='Content-type' />
   <% if has_content_for? :title %>
-    <title><%= yield :title %> - FeedKraft (prototype version)</title>
+    <title><%= yield :title %> - Feedkraft (prototype version)</title>
   <% else %>
-    <title>FeedKraft (prototype version)</title>
+    <title>Feedkraft (prototype version)</title>
   <% end %>
     <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
@@ -17,7 +17,7 @@
   <body>
     <div class="container span-18 no-showgrid" style="margin:0px 26px">
       <div>
-        <h1><span style="font-size:2em;"><%= link_to "FeedKraft", root_path %></span> (prototype version)</h1>
+        <h1><span style="font-size:2em;"><%= link_to "Feedkraft", root_path %></span> (prototype version)</h1>
         <div style="float:right">
         <% if current_user %>
           <%= current_user.name ? h(current_user.name) : link_to("please fill your name", edit_user_path(current_user)) %>
@@ -39,7 +39,7 @@
           <a href="http://wiki.github.com/hiroshi/feedkraft/bookmarklet" target="_blank">bookmarklet</a> |
           <a href="http://github.com/hiroshi/feedkraft/issues" target="_blank">issues</a>
           <div style="float:right">
-            <a href="http://wiki.github.com/hiroshi/feedkraft" target="_blank">FeedKraft</a> <%= commit %>
+            <a href="http://wiki.github.com/hiroshi/feedkraft" target="_blank">Feedkraft</a> <%= commit %>
             &copy;2009 <a href="http://blog.yakitara.com/" target="_blank">Hiroshi Saito</a>
             </div>
         </div>

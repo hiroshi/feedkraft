@@ -4,8 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-  filter_parameter_logging :password # Scrub sensitive parameters from your log
-
+  
   class HttpError < Exception; end
   class BadRequestError < HttpError; def status; 400; end; end
   class ForbiddenError < HttpError; def status; 403; end; end

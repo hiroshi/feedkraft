@@ -45,7 +45,7 @@ class Feed
     # cache feed
     cache_key = Digest::SHA1.hexdigest(uri.to_s)
     cache_path = Rails.root.join("tmp", "cache", "feeds", cache_key)
-    if cache_path.exist? && (cache_path.mtime + FeedKraft[:feed_cache_expires]) > Time.now
+    if cache_path.exist? && (cache_path.mtime + Feedkraft[:feed_cache_expires]) > Time.now
       # on cache
       src = cache_path.read
       Rails.logger.info "Feed cache read: #{uri.to_s}"

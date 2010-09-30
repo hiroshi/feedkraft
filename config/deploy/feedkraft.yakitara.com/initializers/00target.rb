@@ -1,5 +1,5 @@
-FeedKraft[:google_analytics_id] = "UA-768998-4"
-FeedKraft[:user_voice_options] = {
+Feedkraft[:google_analytics_id] = "UA-768998-4"
+Feedkraft[:user_voice_options] = {
   :key => 'feedkraft',
   :host => 'feedkraft.uservoice.com', 
   :forum => 'general', 
