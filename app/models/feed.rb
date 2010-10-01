@@ -61,7 +61,7 @@ class Feed
           # URL
           if uri.respond_to?(:open)
             begin
-              src = uri.open{|io| io.read }
+              src = uri.open{|io|io.set_encoding(Encoding::UTF_8); io.read }
             rescue SocketError, EOFError, Timeout::Error => e
               raise InvalidConnectionError, e.to_s
             rescue OpenURI::HTTPError, Errno::ECONNREFUSED => e
