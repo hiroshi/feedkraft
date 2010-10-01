@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
 
   def filter_params
     unless @filter_params
-      @filter_params = params.reject{|k,v|request.path_parameters[k]}
+      @filter_params = params.reject{|k,v|request.path_parameters[k.to_sym]}
       if @filter && @filter_params.blank?
         @filter_params = @filter.params
       end
