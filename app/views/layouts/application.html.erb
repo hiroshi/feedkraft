@@ -28,7 +28,9 @@
         </div>
       </div>
       <hr/>
-      <%= flash.map{|k,v| "<p class='#{k}'>#{h(v)}</p>"}.join %>
+      <% flash.each do |k,v| %> 
+        <p class='<%=k%>'><%=v%></p>
+      <% end %>
 
       <%= yield %>
 
