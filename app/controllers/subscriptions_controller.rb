@@ -1,4 +1,5 @@
 class SubscriptionsController < ApplicationController
+  skip_before_filter :verify_authenticity_token, :only => :create
   before_filter :login_required, :only => [:create, :destroy]
   before_filter :set_subscription_and_filter, :only => [:feed, :destroy]
   before_filter :set_feed, :only => [:feed]
