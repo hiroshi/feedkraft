@@ -13,7 +13,7 @@ module ApplicationHelper
 
   def commit
     if commit = Feedkraft[:commit]
-      "(" + link_to(commit[0...8], "http://github.com/hiroshi/feedkraft/commit/#{commit}") + ")"
+      "(" + link_to(commit[0...8], "http://github.com/hiroshi/feedkraft/commit/#{commit}") + ")".html_safe
     end
   end
 end
