@@ -14,10 +14,10 @@ class ApplicationController < ActionController::Base
 
   def filter_params
     unless @filter_params
-      rejects_keys = (request.path_parameters.keys + [:utf8]).map(&:to_sym)
-      @filter_params = params.symbolize_keys.reject{|k,v| rejects_keys.include?(k)}
+      rejects_keys = (request.path_parameters.keys + [:utf8]).map(&:to_s)
+      @filter_params = params.stringify_keys.reject{|k,v| rejects_keys.include?(k)}
       if @filter && @filter_params.blank?
-        @filter_params = @filter.params.symbolize_keys
+        @filter_params = @filter.params.stringify_keys
       end
     end
     @filter_params

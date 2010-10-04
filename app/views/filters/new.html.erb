@@ -47,7 +47,7 @@
       function filter_value_options(key) {
         var opts = <%= @src_feed.filter_fields.inject({}) do |h,pair|
               h.update(pair.first => options_for_select(pair.last.map{|v|truncate(v, :length => 80)}))
-            end.to_json
+            end.to_json.html_safe
         %>;
         return opts[key];
       }
