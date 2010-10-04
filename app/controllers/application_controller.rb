@@ -14,8 +14,8 @@ class ApplicationController < ActionController::Base
 
   def filter_params
     unless @filter_params
-      request_path_params = request.path_parameters.symbolize_keys
-      @filter_params = params.symbolize_keys.reject{|k,v|request_path_params[k.to_sym]}
+      rejects_keys = (request.path_parameters.keys + [:utf8]).map(&:to_sym)
+      @filter_params = params.symbolize_keys.reject{|k,v| rejects_keys.include?(k)}
       if @filter && @filter_params.blank?
         @filter_params = @filter.params.symbolize_keys
       end
