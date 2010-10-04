@@ -3,7 +3,7 @@ module FiltersHelper
   def filter_key_options(feed, selected=nil)
     entry_tag = feed.entries_xpath.split("/").last
 
-    options = ([selected] + feed.filter_fields.keys).uniq.compact.sort.map do |key|
+    options = ([selected] + feed.filter_fields.keys).uniq.compact.map(&:to_s).sort.map do |key|
       case key
       when /^@(.+)$/
         [$1, key]
