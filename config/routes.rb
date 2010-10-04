@@ -11,9 +11,9 @@ Rails.application.routes.draw do
     end
   end
   
-  get "subscription/:key", :to => "subscriptions#feed", :constraints => {:key => /[0-9a-f]{8}/i}
+  get "subscription/:key", :to => "subscriptions#feed", :constraints => {:key => /[0-9a-f]{8}/i}, :as => "subscription"
   resources :subscriptions, :only => [:create]
-  delete "subscription/:key", :to => "subscriptions#destroy", :constraints => {:key => /[0-9a-f]{8}/i}
+  delete "subscription/:key", :to => "subscriptions#destroy", :constraints => {:key => /[0-9a-f]{8}/i}, :as => "unsubscribe"
   
   resource :session, :only => [:new, :destroy] do
     member do 
