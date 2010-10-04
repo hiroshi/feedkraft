@@ -74,7 +74,7 @@
 <%= form_for @filter, :html => {:onsubmit => "$('filter_submit').value=Form.serialize('filter_form');"} do |form| %>
 <% if @filter.user %>
   <div>
-    <%= form.label "filter creator" %> : <%= h @filter.user.name %>
+    <%= form.label "filter creator" %> : <%= user_name(@filter.user) %>
   </div>
 <% end %>
   <%= form.label "title" %> : <%= form.text_field "title", :size => 40 %>

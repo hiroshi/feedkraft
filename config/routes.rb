@@ -22,6 +22,4 @@ Rails.application.routes.draw do
     end
   end
   get "oauth", :to => "sessions#oauth"
-  
-  resources :users, :only => [:edit, :update]
 end

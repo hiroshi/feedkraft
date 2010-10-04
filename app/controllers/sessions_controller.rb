@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
     # NOTE: TwitterOAuth::Client#authorize issues an http request to the OAuth server
     access_token = client.authorize(session[:oauth_token], session[:oauth_secret], :oauth_verifier => params[:oauth_verifier])
     session[:identifier] = access_token.params[:screen_name]
-    user = User.find_or_create_by_identity(session[:identifier])
+    user = User.find_or_create_by_identifier(session[:identifier])
     redirect_to session.delete(:return_to) || root_path
     set_current_user(user)
   rescue Net::HTTPFatalError, OAuth::Unauthorized => e

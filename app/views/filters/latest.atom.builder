@@ -14,7 +14,7 @@ xml.feed(:xmlns => "http://www.w3.org/2005/Atom") do
       xml.published filter.created_at.to_s(:rfc3339)
       xml.updated filter.updated_at.to_s(:rfc3339)
       xml.author do
-        xml.name filter.user.name
+        xml.name "@#{filter.user.identifier}"
       end
     end
   end
