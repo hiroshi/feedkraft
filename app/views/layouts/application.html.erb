@@ -2,6 +2,7 @@
 <html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
     <meta content='text/html; charset=utf-8' http-equiv='Content-type' />
+    <%= csrf_meta_tag %>
   <% if has_content_for? :title %>
     <title><%= yield :title %> - Feedkraft (prototype version)</title>
   <% else %>
