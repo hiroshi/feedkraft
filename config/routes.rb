@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root :to => "feeds#index", :via => :get
-  get "bookmarklet.js", :to => "feeds#bookmarklet"
+  get "bookmarklet.js", :to => "feeds#bookmarklet", :as => "bookmarklet"
   
   resources :filters, :except => [:edit] do
     member do
