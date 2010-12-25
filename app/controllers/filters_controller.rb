@@ -63,10 +63,14 @@ class FiltersController < ApplicationController
   private
 
   def new_filter
+    # excludes utf8, the snowman param from params_string
+    if new_filter_params = params[:filter]
+      new_filter_params[:params_string] = Rack::Utils::build_query(Rack::Utils::parse_query(new_filter_params[:params_string]).except("utf8"))
+    end
     if current_user
-      @filter = current_user.filters.build(params[:filter])
+      @filter = current_user.filters.build(new_filter_params)
     else
-      @filter = ::Filter.new(params[:filter])
+      @filter = ::Filter.new(new_filter_params)
     end
   end
 
