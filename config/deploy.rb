@@ -1,3 +1,7 @@
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano" # Load RVM's capistrano plugin.
+require 'bundler/capistrano'
+
 set :application, "feedkraft"
 set :repository,  "git://github.com/hiroshi/feedkraft.git"
 set :branch, "ruby19_rails3"
