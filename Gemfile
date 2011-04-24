@@ -1,7 +1,7 @@
 # -*-ruby-*-
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails'
 gem 'pg'
 #gem 'ruby-openid'
 gem 'twitter_oauth'
