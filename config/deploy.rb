@@ -1,5 +1,6 @@
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 require "rvm/capistrano" # Load RVM's capistrano plugin.
+set :rvm_ruby_string, 'ruby-1.9.2-p180'
 require 'bundler/capistrano'
 
 set :application, "feedkraft"
@@ -10,15 +11,15 @@ set :deploy_via, :remote_cache
 
 # USAGE: Use this task like:
 #   cap feedkraft.yakitara.com deploy
-desc "set target feedkraft.com"
-task "feedkraft.com" do
-  set :target, task_call_frames.first.task.name
-  server "silent.yakitara.com", :app, :web, :db, :primary => true
-  set :deploy_to, "/var/www/feedkraft"
-  set :user, "www-data"
-  set :group, "www-data"
-  set :use_sudo, false
-end
+# desc "set target feedkraft.com"
+# task "feedkraft.com" do
+#   set :target, task_call_frames.first.task.name
+#   server "silent.yakitara.com", :app, :web, :db, :primary => true
+#   set :deploy_to, "/var/www/feedkraft"
+#   set :user, "www-data"
+#   set :group, "www-data"
+#   set :use_sudo, false
+# end
 
 desc "set target feedkraft.yakitara.com"
 task "feedkraft.yakitara.com" do
